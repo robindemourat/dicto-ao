@@ -1,0 +1,338 @@
+<div
+	class="column main-column left-column animate-medium"
+	ng-class="{'col-xs-6' : $parent.active, 'col-xs-12':!$parent.active}"
+	ng-style="{marginLeft : (optionsMode)?'-50%':'0'}"
+>
+	<div class="column-header brand flexed-item">
+		<a href="/dashboard">HKW exhibition - materials management tool
+		 </a>
+		<div class="btn animate-medium" ng-click="introMethod()" id="tour">
+				Tool walkthrough
+				<span class="glyphicon glyphicon-info-sign" ></span>
+			</div>
+
+		<!--<a href="/home" class="brand">Dicto - the transcription curation companion</a>
+
+		<div class="btn-line">
+			<div class="btn glyphicon glyphicon-user">You are connected as kikou@gmail.com</div>
+			<button class="btn">Disconnect</button>
+		</div>-->
+	</div>
+
+	<div class="column-contents-wrapper"  fit-header-height=".column-header">
+		<div class="column-contents">
+
+
+			<div class="btn important-btn animate-medium" id="downloadall">
+				<span class="glyphicon glyphicon-download"></span>
+				<a  href="api/files/downloadall" target="_blank">Download all your data</a>
+			</div>
+
+			<div class="big-list col-xs-6" id="transcriptions-container">
+				<h3 class="list-header secondary-list-header" id="transcriptions-header">
+					Your transcriptions
+				</h3>
+
+				<div
+					class="big-list-item animate-fast btn"
+					ng-click="newItem('transcription')"
+				><span class="glyphicon glyphicon-plus-sign"></span>Create a new transcription</div>
+
+				<div
+					class="big-list-item animate-fast btn"
+					ng-repeat="transcription in filesList.transcriptions track by $index | orderBy:'metadata.title'"
+					ng-class="{'active' : active.metadata.slug == transcription.slug}"
+					ng-click="setActive(transcription)"
+				>
+					<span
+						ng-bind="transcription.title"
+					></span>
+
+					<!--<span
+						class="glyphicon glyphicon-cog"
+						style="float:right;"
+						ng-click="setActive(transcription)"
+					></span>
+
+					<a
+						class="glyphicon glyphicon-pencil"
+						style="float:right; margin-right : 1em;"
+						href="edit/{{transcription.type}}/{{transcription.slug}}"
+					></a>-->
+				</div>
+			</div>
+			<div class="big-list col-xs-6" id="montages-container">
+				<h3 class="list-header secondary-list-header" id="montages-header">
+					Your montages
+				</h3>
+
+				<div
+					class="big-list-item animate-fast btn"
+					ng-click="newItem('montage')"
+				><span class="glyphicon glyphicon-plus-sign"></span>Create a new montage</div>
+
+				<div
+					class="big-list-item animate-fast btn"
+					ng-repeat="montage in filesList.montages track by $index  | orderBy:'metadata.title'"
+					ng-bind="montage.title"
+					ng-class="{'active' : active.metadata.slug == montage.slug}"
+					ng-click="setActive(montage)"
+				>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div
+	ng-class="{'col-xs-6' : $parent.active, 'main-column' : optionsMode}"
+	class="column right-column animate-medium"
+>
+	<div
+		class="column-header options-header"
+		ng-if="active"
+	>
+		<div class="list-header">
+			<h4>{{active.metadata.title}} - {{active.metadata.type}}</h4>
+			<span
+				class="glyphicon glyphicon-remove"
+				style="cursor:pointer;"
+				ng-click="setActive(active)"
+				ng-if="!optionsMode"
+			></span>
+		</div>
+	</div>
+	<div
+		class="column-contents-wrapper"
+			ng-if="active"
+			fit-header-height=".right-column .column-header"
+	>
+		<div
+			class="column-contents"
+
+		>
+			<form
+				class="big-list-item flexed-item"
+				ng-submit="updateActive(true)"
+				id="edit-title-form"
+			>
+				<span
+					style="width:4em"
+				>Title :</span>
+				<span
+					class="big-growth"
+				><input
+						type="text"
+						ng-model="active.metadata.title"
+						ng-blur="updateActive(true)"
+						class="animate-medium"
+					></span>
+			</form>
+
+
+			<div
+				class="flexed-item big-list-item"
+				style="padding-top:0;padding-bottom:0;padding-right:0;overflow:hidden;"
+				ng-if="active.metadata.type == 'transcription'"
+			>
+				<form
+					class=" big-growth flexed-item"
+					ng-submit="updateActive()"
+					style="padding-top : 0.5em;"
+					id="edit-media-form"
+				>
+					<span
+						style="width:4em"
+					>Media :</span>
+					<span
+						class="big-growth"
+					><input
+						type="text"
+						ng-model="active.metadata.mediaUrl"
+						ng-blur="updateActive();$parent.viewSettings.showMetaMedia = true"
+						class="animate-medium"
+					></span>
+				</form>
+
+				<span
+						class="glyphicon glyphicon-eye-open showmetamedia animate-medium"
+						ng-click="toggleShowMetaMedia()"
+						ng-class="{'active': $parent.viewSettings.showMetaMedia}"
+				></span>
+			</div>
+
+			<div
+				class="media-container slide-height"
+				ng-if="$parent.viewSettings.showMetaMedia && active.metadata.mediaUrl && active.metadata.mediaUrl.length > 0"
+			>
+				<vimeo-embed-mini
+					player-id="vimeoMini"
+					video-url="active.metadata.mediaUrl"
+					style="width : 100%;height : 50%;"
+					ng-if="activeMediaType == 'vimeo'"
+				></vimeo-embed-mini>
+
+				<iframe
+					ng-if="activeMediaType == 'youtube'"
+					width="100%"
+					height="50%"
+					ng-src = '{{embedUrl}}'
+					frameborder="0"
+				></iframe>
+			</div>
+
+			<div class="content-preview-wrapper" ng-if="active.data.length > 0">
+					<div class="content-preview-container">
+						<p
+							ng-repeat="transcript in active.data track by $index"
+							marked="transcript.content"
+						>
+
+						</p>
+					</div>
+			</div>
+
+			<div
+						class="big-list-item flexed-item"
+						ng-if="active.metadata.tags && active.metadata.tags.length > 0"
+					>
+						<span class="value">Featured tags</span>
+						<span class="value"
+						>
+							<span
+								ng-repeat="tag in active.metadata.tags"
+								ng-style="{'background' : tag.color}"
+								class="tag"
+							>
+								{{ tag.name }}
+							</span>
+						</span>
+			</div>
+
+			<div class="edition-footer">
+					<div
+						class="btn-line"
+
+					>
+						<button
+							class="btn"
+							ng-click="toggleOptions('export')"
+							ng-class="{'active':optionsMode=='export'}"
+							id="export-btn"
+						>
+							<span class="glyphicon glyphicon-download" style="padding-right:1em"></span>Export/share
+						</button>
+						<button
+							class="btn"
+							ng-click="deleteActiveQuestion = !deleteActiveQuestion"
+							ng-class="{'active':deleteActiveQuestion}"
+						>
+							<span class="glyphicon glyphicon-trash" style="padding-right:1em"></span>
+							Delete this {{active.metadata.type}}
+						</button>
+
+						<button
+							class="btn"
+							ng-click="toggleOptions('import')"
+							ng-class="{'active':optionsMode=='import'}"
+							id="import-btn"
+						>
+							<span class="glyphicon glyphicon-upload" style="padding-right:1em"></span>Import
+						</button>
+					</div>
+
+					<div
+						class="btn-line slide-height"
+						ng-show="deleteActiveQuestion"
+					>
+						<input focus-me="deleteActiveQuestion" focus-me-delay="500" style="opacity : 0;width:0;height:0;">
+						<button
+							class="btn"
+							ng-click="deleteActive()"
+							style="background : #911937; color : white"
+						>
+							Delete the {{active.metadata.type}} "{{active.metadata.title}}" ?
+						</button>
+						<button
+							class="btn"
+							ng-click="deleteActiveQuestion = !deleteActiveQuestion"
+						>
+							Don't
+						</button>
+					</div>
+
+
+
+				<a
+					class="btn important-btn animate-medium"
+					ng-init="mediaAvailable = false"
+					ng-href="{{(activeMediaType || active.metadata.type == 'montage')?'/edit/'+active.metadata.type+'/'+active.metadata.slug:'#'}}"
+					ng-class="{'failure':!(activeMediaType || active.metadata.type == 'montage')}"
+					ng-if="!firstMedia"
+					id="edit-btn"
+				>
+					<h4>
+						<span
+							class="glyphicon glyphicon-pencil"
+							ng-class="{'glyphicon-pencil' : (activeMediaType || active.metadata.type == 'montage'), 'glyphicon-remove' : !(activeMediaType || active.metadata.type == 'montage')}"
+							style="padding-right : 1em"
+						></span>
+						<span
+							ng-if="activeMediaType || active.metadata.type == 'montage'"
+						>
+							{{'Edit this '+active.metadata.type}}
+						</span>
+						<span
+							ng-if="!activeMediaType && active.metadata.type != 'montage'"
+						>
+							{{'Please input a valid media URL'}}
+						</span>
+					</h4>
+				</a>
+
+
+
+				<a
+          class="btn important-btn animate-medium"
+          ng-click="toggleOptions()"
+          ng-if="optionsMode"
+        >
+          <h4>
+            <span class="glyphicon glyphicon-arrow-left" style="float:left;margin-left:2em"></span>
+            Go back to dashboard
+          </h4>
+        </a>
+			</div>
+		</div>
+	</div>
+	</div>
+
+
+
+
+
+
+<!-- options column -->
+<div
+	class="col-xs-6 column animate-medium"
+>
+	<div
+		class="column-header options-header"
+		ng-if="active"
+	>
+		<div class="list-header">
+			<h4 ng-bind="optionsMode"></h4>
+			<span
+				class="glyphicon glyphicon-remove"
+				style="cursor:pointer;"
+				ng-click="toggleOptions()"
+			></span>
+		</div>
+	</div>
+	<div
+		class="column-contents-wrapper"
+		fit-header-height=".column-header"
+		ng-if="optionsMode"
+		ng-include="'assets/html/'+optionsMode+'.html'"
+	>
+	</div>
+</div>

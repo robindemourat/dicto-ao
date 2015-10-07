@@ -1,0 +1,179 @@
+/*
+layout
+*/
+
+.montage-edit-aside-container
+{
+    width: 100%;
+    height: 100%;
+}
+
+/*
+main column idosyncrasies
+*/
+
+.dicto-item-edit-wrapper{
+  padding : 0;
+  margin : 0;
+}
+
+.dicto-item-edit-wrapper .comment-proposal{
+  padding : 0;
+  margin : 0;
+
+  background : @buttonLightBackground;
+  text-transform : uppercase;
+  text-align : center;
+  cursor : pointer;
+}
+
+.dicto-item-edit-wrapper:not(.first-item) .comment-proposal{
+  opacity : 0;
+  max-height : 0;
+}
+
+.dicto-item-edit-wrapper.first-item .comment-proposal{
+  padding : @itemPadding;
+}
+
+
+.dicto-item-edit-wrapper:hover .comment-proposal{
+  opacity : .6;
+  max-height : 100px;
+}
+
+.dicto-item-edit-wrapper .comment-proposal:hover{
+
+  -webkit-transition-delay: 1s; /* Safari */
+    transition-delay: 1s;
+  opacity : : 1;
+  font-weight : 800;
+  background : @buttonMediumBackground;
+  padding : @itemInternalPadding @itemPadding @itemInternalPadding @itemPadding;
+}
+
+
+/*
+aside edition idiosyncrasies
+*/
+
+.right-column .dicto-item,
+.right-column .dicto-item-contents{
+  cursor : move;
+}
+
+.dicto-item .top-right-items .glyphicon
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    opacity: 0;
+}
+
+
+
+.dicto-item:not(.selected):hover .top-right-items .glyphicon-plus-sign
+{
+    font-size: 1.5em;
+    opacity: 1;
+}
+
+
+.dicto-item.selected .top-right-items .glyphicon-ok-sign,
+.dicto-item.selected .top-right-items .glyphicon-trash,
+.dicto-item.selected .top-right-items:hover .glyphicon-remove-sign,
+{
+    font-size: 1.5em;
+    opacity: 1;
+}
+
+.dicto-item.selected .top-right-items:hover .glyphicon-ok-sign,
+.dicto-item.selected .top-right-items .glyphicon-remove-sign,
+{
+    opacity: 0;
+}
+
+
+.preview-mode .dicto-item-edit-wrapper .comment-proposal,
+.preview-mode .dicto-item .glyphicon{
+  display : none;
+}
+
+
+/*
+sort options
+*/
+
+.as-sortable-dragging
+{
+    overflow: hidden;
+    /*background : @buttonDarkBackground;
+  color : white;*/
+
+    width: auto;
+    height: auto!important;
+    min-height: 1em;
+    margin: 0!important;
+    padding: @itemPadding!important;
+
+    -webkit-transition: all @shortDuration ease;
+            transition: all @shortDuration ease;
+
+    opacity: .5;
+    color: @buttonDarkBackground;
+    background: transparent;
+}
+
+.as-sortable-dragging > *
+{
+    position: relative!important;
+
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+    border: none!important;
+}
+
+.as-sortable-dragging .glyphicon
+{
+    display: none;
+}
+
+.aside-edit .as-sortable-placeholder{
+  display : none;
+}
+
+.preview-mode .as-sortable-item-handle{
+  cursor : pointer!important;
+}
+
+.column-contents.onDrag .dicto-item,
+.column-contents.onDrag .dicto-item > *
+{
+    font-size: .5em;
+}
+
+
+.full-header .side-item{
+  position : absolute;
+  top : 1em;
+  opacity : 0.5;
+  cursor : pointer;
+}
+
+.full-header .side-item.pull-left{
+  left : @itemPadding;
+}
+
+
+.full-header .side-item.pull-right{
+  right : @itemPadding;
+}
+
+.full-header .side-item:hover{
+  opacity : 1;
+}
+
+

@@ -1,0 +1,552 @@
+<div
+  class="time-grads-container"
+  ng-if="$parent.viewSettings.showTime"
+>
+  <div
+    class="time-grad animate-medium"
+    ng-repeat="grad in grads track by $index"
+    ng-style="{'top' : grad.top}"
+    ng-bind="grad.text"
+    ng-click="$parent.mediaSeekTo(grad.val)"
+  ></div>
+
+  <div
+      class="seeking-bar"
+    ></div>
+
+
+  <div
+    class="main-player animate-medium"
+    ng-if="$parent.viewSettings.viewAside == 'media'"
+  >
+    <div
+      ng-bind="$parent.currentTimeT"
+      class="time-placeholder"
+    ></div>
+    <div
+      class="main-player-drag-bar"
+    ></div>
+    <div class="main-player-buttons animate-medium">
+      <div class="main-btn-line">
+        <span
+          style="transform:rotate(90deg)"
+          class="glyphicon glyphicon-step-backward  animate-medium"
+          dicto-tooltip="go to previous paragraph"
+          ng-click="$parent.mediaJump(false)"
+        ></span>
+      </div>
+      <div class="main-btn-line">
+        <span style="transform:rotate(90deg)"class="glyphicon glyphicon-backward  animate-medium"
+          ng-click="$parent.mediaSpeedSeek(false)"
+          dicto-tooltip="go 5 seconds backward"
+        ></span>
+      </div>
+      <div class="main-btn-line play-btn">
+        <span
+          class="glyphicon glyphicon-play animate-medium"
+          ng-class="{'glyphicon-play': !$parent.mediaPlaying, 'glyphicon-pause': $parent.mediaPlaying}"
+          dicto-tooltip="play"
+          ng-click="$parent.mediaPlayToggle()"
+        ></span>
+      </div>
+      <div class="main-btn-line"><span style="transform:rotate(90deg)" class="glyphicon glyphicon-forward   animate-medium"
+          ng-click="$parent.mediaSpeedSeek(true)"
+          dicto-tooltip="go 5 seconds forward"
+      ></span></div>
+      <div class="main-btn-line">
+        <span style="transform:rotate(90deg)" class="glyphicon glyphicon-step-forward   animate-medium"
+          dicto-tooltip="go to next paragraph"
+          ng-click="$parent.mediaJump(true)"
+        ></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- case begining of transcription -->
+<div
+        class="dicto-item-edit-wrapper first-item"
+        ng-if="active.data.length == 0"
+>
+    <div
+        class="animate-medium"
+        ng-click="addNewTranscript(0)"
+        ng-if="mode == 'edit'"
+        analytics-on="click"
+        analytics-event="Transcription created"
+    >
+        Click here to start your transcription
+    </div>
+</div>
+
+<!-- case existing transcription-->
+<div
+  class="dicto-item-gui-wrapper animate-fast"
+  ng-repeat="item in active.data track by $index"
+   ng-class="setDictoItemClass(item, $index, $parent.searchTerm)"
+>
+  <div
+          class="dicto-item slide-height"
+          ng-class="setDictoItemClass(item, $index, $parent.searchTerm)"
+          ng-click="handleClickOnMainItem(item, $event)"
+          fit-minheight-to=".edit-toolbar"
+          context-menu
+          data-target="main-item-menu-{{ $index }}"
+  >
+          <div
+            class="timecode-handler timecode-in"
+            ng-if="$parent.viewSettings.showTime == true"
+            dicto-drag="item.begin"
+            dicto-drag-display="item.beginSrtFormat"
+            dicto-drag-factor="$parent.viewSettings.computedZoom"
+            dicto-drag-start="toggleOnDrag(true)"
+            dicto-drag-end="toggleOnDrag(false);saveTimecodeOnBlur(item, $index, true, false)"
+            dicto-drag-upper-limit="item.end"
+            dicto-drag-lower-limit="dragPrevLimit($index)"
+          >
+            <form
+                ng-submit = "saveTimecodeOnBlur(item, $index, true, false);blurChildren($event)"
+            >
+              <input
+                type="text"
+                class="animate-medium"
+                ng-model='item.beginSrtFormat'
+                ng-blur = "saveTimecodeOnBlur(item, $index, true, false)"
+              >
+            </form>
+          </div>
+          <!-- begining dicto-item-contents-->
+          <div
+              class="dicto-item-contents animate-medium"
+          >
+               <!--case edited -->
+              <div
+                ng-if="item.contentEdited"
+              >
+                <textarea
+                  ng-model="item.content"
+                  ui-codemirror="{onLoad : codemirrorLoaded}"
+                  ui-codemirror-opts="editorOptions"
+                ></textarea>
+              </div>
+              <!-- case not edited -->
+              <div
+                ng-if="!item.contentEdited"
+                ng-click="handleClickOnItemContents(item, $event)"
+                ng-bind-html="renderMarkdownItem(item.content, $parent.searchTerm)"
+              > </div>
+
+              <!-- case tags -->
+
+              <div
+                class="tags-container"
+                ng-if="$parent.viewSettings.showTags === true"
+                ng-init="categories=['speaker', 'theme', 'place']"
+
+              >
+                <div
+                  class="tags-category-container"
+                  ng-repeat="category in categories track by $index"
+                >
+                  <div
+                    class="tag-category-name"
+                    ng-bind="category + 's'"
+                  ></div>
+                  <div class="tag-subcontainer">
+                    <span
+                      class="tag animate-fast flexed-items"
+                      ng-repeat="tag in item.tags|filter:{'category':category} track by $index"
+                      edit-inline="{{tag.name}}"
+                      ng-class="{'focused' : tag.focused}"
+                      ng-style="{'background': tag.color,
+                                  'color' : getContrastYIQ(tag.color)
+                                }"
+                      ng-click="tag.focused = true;$event.stopPropagation()"
+                      ng-init="similarTags = similarTags(category)"
+                    >
+                      <!--<span
+                        class="glyphicon glyphicon-pencil animate"
+                        ng-click="tag.focused = true"
+                      ></span>-->
+                      <span
+                        class="glyphicon glyphicon-remove"
+                        ng-click="userRemovesTag(item, tag, $parent.$index);$event.stopPropagation()"
+                        style="top:-.3em;"
+                      ></span>
+
+                      <span class="placeholder noselect" ng-bind="tag.name"></span>
+                      <form
+                        ng-submit="blurChildren($event);addTag(item, category);"
+                        focus-me="tag.focused"
+                        focus-me-find-input="da"
+                        change-input-on-model-change="{{tag.name}}"
+                      >
+                          <angucomplete-alt
+                            id="{{$parent.$index}}{{category}}{{$index}}"
+                            placeholder="Tag name"
+                            selected-object="tagSelected"
+
+                            focus-out="focusOutTag(item, tag, $index, $parent.$index)"
+                            focus-in="focusInTag()"
+
+
+                            pause="100"
+                            local-data="similarTags"
+                            search-fields="name"
+                            title-field="name"
+                            minlength="1"
+                            input-class="form-control form-control-small"
+                            text-no-results="No existing tag matching in {{category}}s category"
+                            text-searching="Searching for existing tags in {{category}}s category"
+
+                            initial-value="tag.name"
+                            override-suggestion="true"
+                            ng-style="{'background': tag.color,
+                                'color' : getContrastYIQ(tag.color)
+                              }"
+                        />
+                      </form>
+
+                          <!-- plain form for tag adding
+                          <form
+                            ng-submit="blurChildren($event);addTag(item, category);"
+                          >
+                            <input
+                              type="text"
+                              ng-model="tag.name"
+                              place-holder="new tag"
+                              ng-focus="tag.focused = true"
+                              ng-blur="blurTag(item, tag, $index, $parent.$index)"
+                              focus-me="tag.focused"
+                              ng-style="{'background': tag.color,
+                                  'color' : getContrastYIQ(tag.color)
+                                }"
+                            >
+                          </form>
+                      <span
+                        class="glyphicon glyphicon-remove"
+                        ng-click="userRemovesTag(item, tag, $parent.$index);$event.stopPropagation()"
+                      ></span>-->
+                    </span>
+
+                    <span class="tag animate-fast" ng-click="addTag(item, category);$event.stopPropagation()">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </span>
+                  </div>
+
+                </div>
+                <!-- DO NOT DELETE - extended version with dynamic categories
+                <div
+                  class="tags-category-container"
+                  ng-repeat="category in item.tagCategories"
+                >
+                  <div
+                    class="tag-category-name"
+                    ng-bind="category"
+                    dicto-tooltip="Specify a category with the ':' sign (e.g.:'{{category}} : alpha')"
+                    dicto-tooltip-placement="right"
+                  ></div>
+                  <div class="tag-subcontainer">
+                    <span
+                      class="tag animate-fast flexed-items"
+                      ng-repeat="tag in item.tags|filter:{'category':category} track by $index"
+                      edit-inline="{{tag.name}}"
+                      ng-class="{'focused' : tag.focused}"
+                      ng-style="{'background': tag.color,
+                                  'color' : getContrastYIQ(tag.color)
+                                }"
+                      ng-click="tag.focused = true;$event.stopPropagation()"
+                    >
+                      <span
+                        class="glyphicon glyphicon-pencil animate"
+                        ng-click="tag.focused = true"
+                      ></span>
+                          <span class="placeholder noselect" ng-bind="tag.name"></span>
+                          <form
+                            ng-submit="blurChildren($event);"
+                          >
+                            <input
+                              type="text"
+                              ng-model="tag.name"
+                              place-holder="new tag"
+                              ng-focus="tag.focused = true"
+                              ng-blur="blurTag(item, tag, $index, $parent.$index)"
+                              focus-me="tag.focused"
+                              ng-style="{'background': tag.color,
+                                  'color' : getContrastYIQ(tag.color)
+                                }"
+                            >
+                          </form>
+                        <span
+                          class="glyphicon glyphicon-remove"
+                          ng-click="userRemovesTag(item, tag, $parent.$index);$event.stopPropagation()"
+                        ></span>
+                    </span>
+
+                    <span class="tag animate-fast" ng-click="addTag(item, category);$event.stopPropagation()">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </span>
+                  </div>
+                  </div>-->
+
+                  <!-- "virgin" placeholder -->
+                  <!--<div
+                    class="tags-category-container"
+                  >
+                      <div
+                        class="tag-category-name"
+                      ></div>
+                      <div class="tag-subcontainer">
+
+                        <span class="tag animate-fast" ng-click="addTag(item, category);$event.stopPropagation()">
+                            <span class="glyphicon glyphicon-plus">Add new tag</span>
+                        </span>
+                    </div>
+                  </div>-->
+
+              </div>
+              <!-- end tags -->
+          </div>
+          <!-- end dicto-contents -->
+
+          <div
+            class="timecode-handler timecode-out"
+            ng-if="$parent.viewSettings.showTime == true"
+            dicto-drag="item.end"
+            dicto-drag-display="item.endSrtFormat"
+            dicto-drag-factor="$parent.viewSettings.computedZoom"
+            dicto-drag-start="toggleOnDrag(true)"
+            dicto-drag-end="toggleOnDrag(false);saveTimecodeOnBlur(item, $index, false, true)"
+            dicto-drag-upper-limit="dragNextLimit($index)"
+            dicto-drag-lower-limit="item.begin"
+          >
+            <form
+                ng-submit = "saveTimecodeOnBlur(item, $index, false, true);blurChildren($event)"
+            >
+              <input
+                type="text"
+                class="animate-medium"
+                ng-model="item.endSrtFormat"
+                ng-blur = "saveTimecodeOnBlur(item, $index, false, true)"
+              >
+            </form>
+          </div>
+
+
+          <!-- edit btns -->
+          <div
+              class="top-left-items animate-fast edit-toolbar"
+              style="width : 2em"
+          >
+              <span
+                class="glyphicon glyphicon-pencil animate-medium visible-on-hover edit-toggle"
+                ng-click="$event.stopPropagation();toggleEdited(item)"
+                ng-class="{'circled' : item.contentEdited}"
+                dicto-tooltip="edit item content"
+                dicto-tooltip-delay="1000"
+              ></span>
+
+              <span
+                class="circled  animate-fast glyphicon glyphicon-text-size"
+                ng-click="markdownAddEl('# ', item, $event)"
+                ng-if="item.contentEdited"
+
+                dicto-tooltip="title"
+                dicto-tooltip-delay="500"
+                dicto-tooltip-placement="right"
+              ></span>
+
+              <span
+                class="circled  animate-fast glyphicon glyphicon-italic"
+                ng-click="markdownAddEl('*', item, $event)"
+                ng-if="item.contentEdited"
+
+                dicto-tooltip="italic"
+                dicto-tooltip-delay="500"
+                dicto-tooltip-placement="right"
+              ></span>
+
+              <span
+                class="circled  animate-fast glyphicon glyphicon-bold"
+                ng-click="markdownAddEl('**', item, $event)"
+                ng-if="item.contentEdited"
+
+                dicto-tooltip="bold"
+                dicto-tooltip-delay="500"
+                dicto-tooltip-placement="right"
+              ></span>
+
+              <span
+                class="glyphicon glyphicon-comment circled  animate-fast"
+                ng-click="markdownAddEl('> ', item, $event)"
+                ng-if="item.contentEdited"
+
+                dicto-tooltip="quote block"
+                dicto-tooltip-delay="500"
+                dicto-tooltip-placement="right"
+              ></span>
+
+              <span
+                class="circled  animate-fast glyphicon glyphicon-picture"
+                ng-click="markdownAddEl('picture', item, $event)"
+                ng-if="item.contentEdited"
+                dicto-tooltip="add a picture"
+                dicto-tooltip-delay="500"
+                dicto-tooltip-placement="right"
+              ></span>
+
+               <span
+                class="circled  animate-fast glyphicon glyphicon-link"
+                ng-click="markdownAddEl('link', item, $event)"
+                ng-if="item.contentEdited"
+                dicto-tooltip="add a hyperlink"
+                dicto-tooltip-delay="500"
+                dicto-tooltip-placement="right"
+              ></span>
+
+              <!--trash item -->
+              <span
+                  class="glyphicon glyphicon-trash animate-medium visible-on-hover"
+                  style="margin-top :2em;"
+                  ng-click="$event.stopPropagation();removeItemGen($index, $parent.active.data)"
+                  dicto-tooltip="remove item from transcription"
+                  dicto-tooltip-placement="right"
+                  dicto-tooltip-delay="500"
+              ></span>
+          </div>
+
+        <!-- trash item -->
+       <!-- <div
+              class="middle-left-items animate-medium visible-on-hover"
+              ng-class="{'middle-left-items' : !item.contentEdited, 'bottom-left-items':item.contentEdited}"
+          >
+              <span
+                  class="glyphicon glyphicon-trash animate-medium middled-items trash-button"
+                  ng-click="removeItemGen($index, $parent.active.data)"
+                  dicto-tooltip="remove item from transcription"
+                  dicto-tooltip-placement="left"
+                  dicto-tooltip-delay="1000"
+              ></span>
+        </div>-->
+
+
+        <!-- move item -->
+        <div
+              class="middle-right-items animate-fast visible-on-hover"
+              ng-if="$parent.viewSettings.showTime == true"
+        >
+              <span
+                  class="glyphicon glyphicon-move animate-medium middled-items"
+                  dicto-tooltip="move item (change timecodes in and out)"
+                  dicto-tooltip-placement="left"
+                  dicto-tooltip-delay="1000"
+              ></span>
+        </div>
+
+         <div
+            class="top-right-items animate-fast"
+            style="width:3em;height:3em;"
+            ng-click="splitActiveItem(item, $index, $event)"
+            ng-if="item.contentEdited && okSplitActive(item, $index)"
+          >
+            <span
+              style="float : right;opacity : 1"
+              class="glyphicon glyphicon-scissors animate-medium circled"
+              dicto-tooltip="split item at cursor position"
+              dicto-tooltip-delay="500"
+              dicto-tooltip-placement="left"
+              analytics-on="click"
+              analytics-event="Button split item here clicked"
+            ></span>
+        </div>
+  </div>
+
+
+  <!-- drag zone -->
+  <div
+    class="drag-item-zone"
+    ng-if="$parent.viewSettings.showTime == true && !item.contentEdited"
+    dicto-drag="item.begin"
+    dicto-drag-model-bis="item.end"
+
+    dicto-drag-display="item.beginSrtFormat"
+
+    dicto-drag-display-bis="item.endSrtFormat"
+    dicto-drag-factor="$parent.viewSettings.computedZoom"
+
+    dicto-drag-start="toggleOnDrag(true)"
+    dicto-drag-end="toggleOnDrag(false);saveTimecodeOnBlur(item, $index, true, true)"
+    dicto-drag-end-bis="toggleOnDrag(false);"
+    dicto-drag-upper-limit="dragNextLimit($index)"
+    dicto-drag-lower-limit="dragPrevLimit($index)"
+  ></div>
+
+
+  <!-- border buttons -->
+  <div
+    class="top-left-button animate-medium"
+    dicto-tooltip="add a new item here"
+    dicto-tooltip-delay="500"
+    dicto-tooltip-placement="right"
+    half-hover="top"
+    ng-if="$parent.viewSettings.showTime == true"
+    ng-click="addNewItemBefore(item, $index)"
+  >
+        <span class="glyphicon glyphicon-plus"></span>
+  </div>
+
+  <div
+    class="bottom-left-button animate-medium"
+    dicto-tooltip="add a new item here"
+    dicto-tooltip-delay="500"
+    dicto-tooltip-placement="right"
+    half-hover="bottom"
+    ng-if="$parent.viewSettings.showTime == true"
+    ng-click="addNewItemAfter(item, $index)"
+
+  >
+        <span class="glyphicon glyphicon-plus"></span>
+  </div>
+
+  <div
+    class="top-right-button animate-medium"
+    dicto-tooltip="play from begining of transcript"
+    dicto-tooltip-delay="500"
+    dicto-tooltip-placement="right"
+    half-hover="top"
+    ng-if="$parent.viewSettings.showTime == true"
+    ng-click="setActiveItem(item, item.begin)"
+  >
+        <span class="glyphicon glyphicon-play-circle"></span>
+  </div>
+
+ <div
+    class="bottom-right-button animate-medium"
+    dicto-tooltip="play from end of transcript"
+    dicto-tooltip-delay="500"
+    dicto-tooltip-placement="right"
+    half-hover="bottom"
+    ng-if="$parent.viewSettings.showTime == true"
+    ng-click="setActiveItem(item, item.end)"
+  >
+        <span class="glyphicon glyphicon-play-circle"></span>
+  </div>
+</div>
+
+<!-- case begining of transcription -->
+<div
+  ng-if="active.data.length == 0 && !showMenu"
+  class="first-transcript"
+>
+  <div class="first-transcript-content">
+  Click on this space to add a first transcript
+  </div>
+</div>
+<!-- END case begining of transcription -->
+
+
+<!-- contextual menus -->
+<div
+  ng-include="'/assets/html/transcription-edition-contextual-menus.html'"
+></div>

@@ -1,0 +1,177 @@
+<header class="full-header animate-medium">
+    <div
+      class="main-header-container animate-medium thin-header"
+    >
+      <ul class="btn-line animate-fast">
+        <li
+          class="btn"
+          ng-class="{'active': $parent.viewSettings.tagsTable}"
+          ng-click="$parent.viewSettings.tagsTable = true"
+        >Tags table</li>
+        <li
+          ng-class="{'active': !$parent.viewSettings.tagsTable}"
+          ng-click="$parent.viewSettings.tagsTable = false"
+          ng-if="$parent.active.metadata.tags.length > 0"
+          class="btn"
+        >Tags time frequency</li>
+      </ul>
+    </div>
+</header>
+
+<div
+  class="tags-frequency-wrapper"
+  ng-if="!viewSettings.tagsTable"
+>
+  <div class="tags-frequency-container">
+
+
+    <div
+      class="gui-item-container animate-fast"
+      ng-repeat="item in $parent.active.data track by $index"
+      target-in=".left-column .column-contents"
+      id="frequency-gui-item-container-{{$index}}"
+      gui-frequency
+    >
+    </div>
+  </div>
+
+  <div class="tag-frequency-headers">
+    <div
+      class="tag-frequency-header"
+      ng-repeat="tag in $parent.active.metadata.tags track by $index"
+      ng-style="{'width' : (100/$parent.active.metadata.tags.length) + '%'}"
+    >
+    <span class="icons">
+      <span
+        class="glyphicon glyphicon-plus"
+        dicto-tooltip="add this tag to all paragraphs"
+        ng-click="addGlobalTag(tag)"
+      ></span>
+      <span
+        class="glyphicon glyphicon-trash"
+        dicto-tooltip="remove this tag from all paragraphs"
+        ng-click="removeGlobalTag(tag)"
+      ></span>
+    </span>
+
+    <span ng-bind="tag.name"></span>
+    </div>
+  </div>
+</div>
+
+<div
+  class="column-contents-wrapper"
+  ng-if="viewSettings.tagsTable"
+>
+  <div
+    class="column-contents"
+    fit-header-height=".main-column .main-header-container"
+    fit-header-trigger=""
+  >
+    <table
+      class="tags-grid table"
+    >
+      <tr class="header">
+        <td></td>
+        <td></td>
+        <td>Tag categories</td>
+        <td>Tag names</td>
+        <td>Tag count</td>
+      </tr>
+      <tr class="squeeze-height" ng-repeat="tag in $parent.active.metadata.tags track by $index">
+        <td>
+          <span
+            class="glyphicon glyphicon-trash animate-medium"
+            ng-click="removeGlobalTag(tag)"
+          ></span>
+        </td>
+        <td
+        >
+
+          <!-- extended version
+          <form ng-submit="blurColor(tag, $index)">
+            <input
+              colorpicker
+              class="color-placeholder"
+              ng-model="tag.color"
+              colorpicker-close-on-select
+              ng-blur="blurColor(tag, $index)"
+              type="text"
+              ng-style="{'background':tag.color}"
+            ></input>
+          </form>
+          -->
+          <span
+            ng-style="{'background':tag.color}"
+            class="color-placeholder"
+          ></span>
+        </td>
+        <td>
+          <span
+              class="btn-group big-growth"
+              dropdown
+              ng-init="asidemenuOpen = false"
+              on-toggle="asidemenuOpen = !asidemenuOpen"
+          >
+              <button id="single-button" type="button" class="btn btn-primary" dropdown-toggle ng-disabled="disabled">
+                <span  ng-bind="tag.category"></span>
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="single-button"
+              ng-init="categories = ['theme', 'speaker', 'place']"
+              >
+                <li
+                  ng-repeat="category in categories| filter:'!'+tag.category"
+                  role="menuitem"
+                  ng-bind="category"
+                  ng-click="tag.category = category;globalTagUpdateCategory(tag, $index)"
+                ></li>
+              </ul>
+            </span>
+          <!-- extended version - do not delete plz
+          <form ng-submit="globalTagUpdateCategory(tag, $index)">
+            <input
+              type="text"
+              ng-model="tag.category"
+              ng-blur="globalTagUpdateCategory(tag, $index)"
+            ></input>
+          </form>-->
+        </td>
+        <td>
+          <form ng-submit="globalTagUpdateName(tag, $index);blurChildren($event)">
+            <input
+              type="text"
+              ng-model="tag.name"
+              ng-blur="globalTagUpdateName(tag, $index)"
+            ></input>
+          </form>
+        </td>
+        <td>
+          {{ tag.count }}/{{ $parent.active.data.length}}
+        </td>
+      </tr>
+
+
+
+      <tr
+        ng-if="$parent.active.metadata.tags.length == 0"
+      >
+
+        <td></td>
+        <td></td>
+        <td>There are no tags</td>
+        <td>to display ...</td>
+        <td></td>
+      </tr>
+    </table>
+
+    <div
+      class="big-item btn"
+      style="width : 100%"
+      ng-click="addGlobalTagVirgin()"
+    >
+      Add a new tag to all paragraphs
+    </div>
+
+  </div>
+</div>

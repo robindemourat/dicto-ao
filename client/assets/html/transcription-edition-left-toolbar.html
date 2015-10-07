@@ -1,0 +1,154 @@
+<!-- menu -->
+    <div class="btn-group pull-top">
+      <div
+        class="btn animate-medium toggle"
+        ng-click="toggleAsideEditionMenu()"
+        ng-class="{'active' : showMenu}"
+        id="menu-btn"
+      ><span
+          class="glyphicon"
+          ng-class="{'glyphicon-arrow-left':!showMenu,
+          'glyphicon-remove':showMenu}"
+          dicto-tooltip="toggle menu"
+        ></span>
+      </div>
+
+      <div
+        class="btn animate-medium toggle"
+        ng-click="toggleViewSetting('showTime')"
+        ng-class="{'active' : $parent.viewSettings.showTime}"
+        ng-if="$parent.viewSettings.viewAside == 'media'"
+        id="timecode-btn"
+      ><span
+          class="glyphicon glyphicon-play-circle"
+          dicto-tooltip="edit timecodes"
+        ></span>
+      </div>
+
+      <!--zoom in and out -->
+      <div
+        class="btn slide-height toggle"
+        ng-click="zoomIn()"
+        ng-if="$parent.viewSettings.showTime && $parent.viewSettings.viewAside == 'media'"
+      ><span
+          class="glyphicon glyphicon-zoom-in"
+          dicto-tooltip="zoom in (current level : {{roundFloat($parent.viewSettings.zoomLevel)}})"
+        ></span>
+      </div>
+      <div
+        class="btn slide-height toggle"
+        ng-click="zoomOut()"
+        ng-if="$parent.viewSettings.showTime && $parent.viewSettings.viewAside == 'media'"
+      ><span
+          class="glyphicon glyphicon-zoom-out"
+          dicto-tooltip="zoom out (current level : {{roundFloat($parent.viewSettings.zoomLevel)}})"
+        ></span>
+      </div>
+      <!--end zoom in and out -->
+
+
+      <div
+        class="btn animate-medium"
+        ng-click="toggleViewSetting('showTags')"
+        ng-if="$parent.viewSettings.viewAside == 'media'"
+        ng-class="{'active' : $parent.viewSettings.showTags, 'toggle' : $parent.viewSettings.viewAside != 'tags'}"
+        id="tagging-btn"
+      ><span
+          class="glyphicon glyphicon-tag"
+          dicto-tooltip="edit tags"
+        ></span>
+      </div>
+    </div>
+
+  <div class="pull-bottom">
+    <div class="btn animate-medium" ng-click="introMethod(13)">
+        <span class="glyphicon glyphicon-info-sign"></span>
+    </div>
+  </div>
+
+    <!--UNDO/REDO - not stable enough
+    <div class="pull-bottom">
+      <div
+        class="btn animate-medium toggle"
+        ng-if="mode == 'edit'"
+        ng-click="historyUndo()"
+        ng-class="{'active' : operationsHistory.length > 0 && historyCursor >= 0}"
+
+      ><span
+          class="glyphicon glyphicon-share-alt h-mirrored"
+         dicto-tooltip="undo"
+
+        ></span>
+      </div>
+
+      <div
+        class="btn animate-medium toggle"
+        ng-if="mode == 'edit'"
+        ng-click="historyRedo()"
+        ng-class="{'active' : operationsHistory.length > 0 && historyCursor != operationsHistory.length - 1}"
+      ><span
+          class="glyphicon glyphicon-share-alt"
+          dicto-tooltip="redo"
+        ></span>
+      </div>
+    </div>
+
+
+
+    <div class="pull-bottom">
+      <div
+        class="btn animate"
+        ng-click="historyUndo()"
+        ng-class="{'active' : operationsHistory.length > 0 && historyCursor >= 0}"
+
+      ><span
+          class="glyphicon glyphicon-share-alt h-mirrored"
+         dicto-tooltip="undo"
+
+        ></span>
+      </div>
+
+      <div
+        class="btn animate"
+        ng-click="historyRedo()"
+        ng-class="{'active' : operationsHistory.length > 0 && historyCursor != operationsHistory.length - 1}"
+      ><span
+          class="glyphicon glyphicon-share-alt"
+          dicto-tooltip="redo"
+        ></span>
+      </div>
+    </div>
+  -->
+
+    <div class="middle-aligned-container" style="width:100%">
+
+      <!-- media in aside -->
+      <div class="btn animate-medium middled-item"
+        ng-click="toggleAside('media')"
+        ng-style="{'cursor':($parent.viewSettings.viewAside == 'media')?'default':'pointer'}"
+        analytics-on="click"
+        analytics-event="Transcription switch to media in aside"
+        ng-class="{'active' : $parent.viewSettings.viewAside == 'media'}"
+        id="mediamode-btn"
+      ><span
+          class="glyphicon glyphicon-facetime-video"
+          dicto-tooltip="display media view"
+          ng-style="{'cursor':($parent.viewSettings.viewAside == 'media')?'default':'pointer'}"
+        ></span>
+      </div>
+
+      <!-- edit mode -->
+      <div class="btn animate-medium middled-item"
+        ng-click="toggleAside('tags')"
+        ng-style="{'cursor':($parent.viewSettings.viewAside == 'tags')?'default':'pointer'}"
+        analytics-on="click"
+        analytics-event="Transcription switch to tags in aside"
+        ng-class="{'active' : $parent.viewSettings.viewAside == 'tags'}"
+        id="tagmode-btn"
+      ><span
+          class="glyphicon glyphicon-tags"
+          dicto-tooltip="display tags view"
+          ng-style="{'cursor':($parent.viewSettings.viewAside == 'tags')?'default':'pointer'}"
+        ></span>
+      </div>
+    </div>

@@ -1,0 +1,1618 @@
+@import 'bootstrap/less/bootstrap.less';
+@import 'font-awesome/less/font-awesome.less';
+
+@icon-font-path: '/bower_components/bootstrap/fonts/';
+@fa-font-path: '/bower_components/font-awesome/fonts';
+
+/**
+ * App-wide Styles
+ */
+
+@backgroundLightColor : #e5e1da;
+@backgroundMediumColor : #d0cfbf;
+
+@buttonLightBackground : #b4b4a6;
+@buttonMediumBackground : #848777;
+@buttonDarkBackground : #53544d;
+
+@importantHeaderBackground : #7A7787;
+@secondaryHeaderBackground : #9A98A2;
+@importantBackground : #567D84;
+@importantBackgroundHover : #2F5A62;
+
+
+@columnLateralPadding : 10em;
+@columnLateralPaddingPlus : 11em;
+@columnLateralPaddingMedium : 5em;
+@columnLateralPaddingSmall : 5em;
+
+
+@headerPadding : 1em;
+
+@itemPadding : 1em;
+@itemInternalPadding : 3em;
+
+@shortDuration : .1s;
+@mediumDuration : .5s;
+@longDuration : 1s;
+
+.pull-left-in-column
+{
+    left: @headerPadding;
+}
+
+.pull-right-in-column
+{
+    right: @headerPadding;
+}
+
+.position-fixed
+{
+    position: fixed;
+}
+
+.pull-bottom
+{
+    position: absolute;
+    bottom: @itemPadding;
+    left: 0;
+}
+
+.pull-top
+{
+    position: absolute;
+    top: @itemPadding;
+    left: @itemPadding;
+}
+
+
+
+
+/*
+PRIMARY LAYOUT
+*/
+
+body,
+#view-container
+{
+    font-family: 'Lato', 'Helvetica Neue', 'sans-serif';
+
+    position: fixed;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+       -moz-user-select: none;     /* Firefox all */
+        -ms-user-select: none;      /* IE 10+ */
+            user-select: none;          /* Likely future */
+
+    outline: none;
+    background: @backgroundLightColor;
+}
+
+
+
+.column
+{
+    height: 100%;
+    /*padding: 0 @columnLateralPadding 0 @columnLateralPadding;*/
+    padding: 0;
+}
+
+.column.main-column
+{
+    background: @backgroundMediumColor;
+}
+
+.column.stack-left
+{
+    overflow: hidden;
+
+    margin-left: -50%;
+}
+
+
+.column.media-column
+{
+    color: @backgroundLightColor;
+    background: black;
+}
+
+/*
+SECONDARY LAYOUT
+*/
+
+.centered-content-wrapper
+{
+    position: absolute;
+
+    display: table;
+
+    width: 75%;
+    height: 100%;
+}
+
+.centered-content-wrapper > div:first-child,
+.centered-content-wrapper > form:first-child
+{
+    display: table-cell;
+
+    vertical-align: middle;
+}
+
+.column-header
+{
+    position: absolute;
+    left: 0;
+
+    width: 100%;
+    padding: @headerPadding @columnLateralPadding @headerPadding  @columnLateralPadding;
+
+    /*background: inherit;*/
+}
+
+.column-contents-wrapper
+{
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+    padding-top: 5em;
+
+    background: inherit;
+    /*padding-right: @columnLateralPadding;*/
+}
+
+.column-contents
+{
+    position: relative;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    width: 100%;
+    height: 100%;
+    padding-right: @columnLateralPadding;
+    padding-bottom: 10em;
+    /*padding-right: 18%;*/
+    padding-left: @columnLateralPadding;
+}
+
+.column-contents-wrapper::after,
+{
+    position: absolute;
+    top: 0;
+    right : 0;
+
+    width: 5%;
+    height: 100%;
+
+    content: '';
+    -webkit-transition: all .5s ease;
+       -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+         -o-transition: all .5s ease;
+            transition: all .5s ease;
+    pointer-events: none;
+
+    background: @backgroundLightColor;
+}
+
+.main-column .column-contents-wrapper::after
+{
+    background: @backgroundMediumColor;
+}
+
+
+
+
+
+.media-container
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+vimeo-embed iframe
+{
+    width: 100%!important;
+    height: 100%!important;
+}
+
+.youtube-embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.youtube-embed-responsive.youtube-embed-responsive-16by9 {
+  padding-bottom: 56.25%;
+}
+
+.youtube-embed-responsive-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+/*
+CSS AND BOOTSTRAP RESETS
+*/
+
+.select-helper
+{
+    position: fixed;
+    z-index: 2000;
+
+    pointer-events: none;
+
+    opacity: .2;
+    border: 1px dashed brown;
+}
+
+
+*
+{
+    outline: none;
+}
+
+iframe
+{
+    border: none;
+    outline: none;
+}
+
+input
+{
+    border: none!important;
+    border-radius: 0!important;
+    box-shadow: none!important;
+}
+
+input:focus
+{
+    outline: none;
+    box-shadow: none!important;
+}
+
+.btn
+{
+    font-family: 'Lato', 'sans serif';
+
+    padding: 1em;
+
+    text-transform: uppercase;
+
+    color: black;
+    border: none!important;
+    border-radius: 0!important;
+    background: @buttonLightBackground;
+
+    font-size : auto!important;
+}
+
+.btn:hover,
+.btn:focus,
+.btn.active
+{
+    outline: none;
+    background: @buttonMediumBackground;
+    box-shadow: none!important;
+}
+
+.btn.inactive
+{
+    cursor: not-allowed;
+
+    opacity: .2;
+}
+
+.btn.active:not(.toggle){
+    cursor : default!important;
+}
+.btn.active
+{
+    color: white;
+    background: @buttonDarkBackground;
+}
+
+ul,
+ol
+{
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:hover,
+a:visited
+{
+    font-weight: 800;
+
+    text-decoration: none;
+
+    color: inherit;
+}
+
+input[type='file']
+{
+    display: none;
+}
+
+
+.as-sortable-item
+{
+    border: none;
+    border-top: 1px solid #848777;
+    border-radius: inherit;
+    background: inherit;
+}
+
+.dropdown .li
+{
+    cursor: pointer!important;
+
+    outline: none!important;
+}
+
+.dropdown .li:hover
+{
+    background: @buttonMediumBackground;
+}
+
+
+/*
+COMPONENTS
+*/
+
+/* generic */
+
+.v-mirrored
+{
+    -webkit-transform: scale(1, -1);
+       -moz-transform: scale(1, -1);
+        -ms-transform: scale(1, -1);
+         -o-transform: scale(1, -1);
+            transform: scale(1, -1);
+}
+
+.h-mirrored
+{
+    -webkit-transform: scale(-1, 1);
+       -moz-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+         -o-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+}
+
+.d-mirrored
+{
+    -webkit-transform: scale(-1, -1);
+       -moz-transform: scale(-1, -1);
+        -ms-transform: scale(-1, -1);
+         -o-transform: scale(-1, -1);
+            transform: scale(-1, -1);
+}
+
+
+.flexed-item
+{
+    display: flex!important;
+
+    flex-flow: row wrap;
+}
+
+.flexed-inline
+{
+    display: flex;
+}
+
+
+.big-growth
+{
+    flex-grow: 5;
+}
+
+.selectable
+{
+    -webkit-user-select: all;  /* Chrome all / Safari all */
+       -moz-user-select: all;     /* Firefox all */
+        -ms-user-select: all;      /* IE 10+ */
+            user-select: all;          /* Likely future */
+}
+
+.middle-aligned-container,
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+
+    pointer-events: none;
+}
+
+
+/* middled elements */
+.middle-aligned-container .middled-item
+{
+    position: relative;
+    top: 50%;
+
+    display: block;
+    overflow: hidden;
+
+    transform: translateY(-50%);
+    pointer-events: all;
+}
+
+.success
+{
+    background: #7aac37!important;
+}
+
+.failure
+{
+    background: brown!important;
+}
+
+/* recurrent */
+
+.dicto-tooltip
+{
+    position: fixed;
+    z-index: 20000;
+
+    min-height: 15px;
+
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+.dicto-tooltip-content
+{
+    position: relative;
+    /*max-width: 15em;*/
+
+    padding: .5em;
+
+    color: white;
+    background: @buttonDarkBackground;
+}
+
+.dicto-tooltip-arrow
+{
+    position: absolute;
+
+    display: none;/*todo : remove when tooltip ok */
+}
+
+
+
+
+
+.dicto-tooltip-right .dicto-tooltip-content
+{
+    left: 20%;
+
+    width: 80%;
+    height: 100%;
+}
+
+.dicto-tooltip-right .dicto-tooltip-arrow
+{
+    top: 0;
+    left: 0;
+
+    width: 20%;
+    height: 15px;
+
+    border-top: 50px solid transparent;
+    border-right: 100px solid @buttonDarkBackground;
+    border-bottom: 50px solid transparent;
+    border-left: 0 solid @buttonDarkBackground;
+}
+
+
+
+
+
+.dicto-tooltip-left .dicto-tooltip-content
+{
+    width: 80%;
+    height: 100%;
+
+    text-align: right;
+}
+
+.dicto-tooltip-left .dicto-tooltip-arrow
+{
+    top: 0;
+    right: 0;
+
+    width: 20%;
+    height: 15px;
+
+    border-top: 50px solid transparent;
+    border-right: 0 solid @buttonDarkBackground;
+    border-bottom: 50px solid transparent;
+    border-left: 100px solid @buttonDarkBackground;
+}
+
+
+.dicto-item
+{
+    font-family: 'Inconsolata', 'Sans Serif';
+
+    position: relative;
+
+    max-height: auto;
+    padding: @itemPadding 0 @itemPadding 1em;
+
+    cursor: pointer;
+
+    opacity: .9;
+    border-bottom: 1px solid @buttonMediumBackground;
+    background: @backgroundLightColor;
+}
+
+.dicto-item:first-child
+{
+    margin-top: 2em;
+
+    border-top: 1px solid @buttonMediumBackground;
+}
+
+.dicto-item:last-child
+{
+    margin-bottom: 2em;
+}
+
+.dicto-item.passed
+{
+    opacity: .6;
+}
+
+.dicto-item.future
+{
+    opacity: .5;
+}
+
+.dicto-item:hover
+{
+    opacity: .8;
+    background: @buttonLightBackground;
+}
+
+.dicto-item.active
+{
+    background: @buttonLightBackground;
+}
+
+.dicto-item.active:hover
+{
+    opacity: 1;
+    background: @buttonMediumBackground;
+}
+
+.dicto-item-gui-wrapper.background-item,
+.dicto-item.background-item
+{
+    overflow: hidden;
+
+    max-height: 3em;
+    padding: 0;
+
+    color: rgba(255,255,255,0);
+}
+
+
+
+.dicto-item .highlight
+{
+    color: white;
+    background: brown;
+}
+
+.dicto-item .dicto-item-contents
+{
+    margin: 2em @itemInternalPadding 2em @itemInternalPadding;
+}
+
+.dicto-item.selected
+{
+    color: white;
+    background: @buttonDarkBackground;
+}
+
+
+.CodeMirror
+{
+    height: auto;
+
+    background: inherit;
+}
+
+.dicto-item.selected .CodeMirror,
+{
+    color: white;
+}
+
+.dicto-item.selected .CodeMirror .CodeMirror-cursor
+{
+    border-left: 1px solid white;
+}
+
+
+
+
+.CodeMirror .cm-header-1
+{
+    font-size: 2.4em;
+}
+
+.CodeMirror .cm-header-2
+{
+    font-size: 2em;
+}
+
+.CodeMirror .cm-header-3
+{
+    font-size: 1.6em;
+}
+
+.CodeMirror .cm-header-4
+{
+    font-size: 1.4em;
+}
+
+.CodeMirror .cm-header-5
+{
+    font-size: 1.2em;
+}
+
+.CodeMirror .cm-header-6
+{
+    font-size: 1.1em;
+}
+
+.CodeMirror .cm-quote
+{
+    display: block;
+
+    padding-left: @itemPadding;
+
+    border-left: solid @itemPadding @backgroundLightColor;
+}
+
+
+
+
+.CodeMirror .cm-link,
+.CodeMirror .cm-string,
+{
+    color: blue;
+}
+
+.dicto-item .angular-medium-editor,
+.dicto-item div[contenteditable='true']
+{
+    cursor: text;
+}
+
+
+
+
+/* decorating items for dicto */
+.dicto-item .top-right-items,
+.dicto-item .bottom-right-items,
+.dicto-item .middle-right-items,
+.dicto-item .top-left-items,
+.dicto-item .bottom-left-items,
+.dicto-item .middle-left-items
+{
+    position: absolute;
+}
+
+.dicto-item .top-right-items,
+.dicto-item .bottom-right-items,
+.dicto-item .middle-right-items
+{
+    right: @itemPadding;
+}
+
+.dicto-item .top-left-items,
+.dicto-item .bottom-left-items,
+.dicto-item .middle-left-items
+{
+    left: @itemPadding;
+}
+
+.dicto-item .top-left-items,
+.dicto-item .top-right-items
+{
+    top: @itemPadding;
+}
+
+.dicto-item .bottom-left-items,
+.dicto-item .bottom-right-items
+{
+    bottom: @itemPadding;
+}
+
+.dicto-item .middle-right-items,
+.dicto-item .middle-left-items
+{
+    top: 0;
+
+    height: 100%;
+
+    pointer-events: none;
+}
+
+
+/* middled elements */
+.dicto-item .middle-right-items .middled-items,
+.dicto-item .middle-left-items .middled-items
+{
+    position: relative;
+    top: 50%;
+
+    display: block;
+    overflow-y: hidden;
+
+    width: 1em;
+
+    transform: translateY(-50%);
+    pointer-events: all;
+}
+
+
+.dicto-item .circled
+{
+    font-size: 12.5px;
+
+    position: relative;
+
+    width: 25px;
+    height: 25px;
+    margin-bottom: 7.4px;
+    padding-top: 6px;
+    padding-left: 6px;
+
+    color: white;
+    border-radius: 50%;
+    background: @buttonDarkBackground;
+}
+
+.dicto-item.selected .circled
+{
+    color: @buttonDarkBackground;
+    background: white;
+}
+
+.dicto-item .middle-right-items .circled
+.dicto-item .top-right-items .circled
+.dicto-item .bottom-right-items .circled
+{
+    right: @itemPadding;
+}
+
+.dicto-item .middle-left-items .circled
+.dicto-item .top-left-items .circled
+.dicto-item .bottom-left-items .circled
+{
+    left: @itemPadding;
+}
+
+.dicto-item .visible-on-hover:not(.circled)
+{
+    opacity: 0;
+}
+
+.dicto-item:hover .visible-on-hover:not(.circled)
+{
+    opacity: 1;
+}
+
+
+.dicto-item.content-edited .edit-toolbar
+{
+    font-size: 1.3em;
+
+    left: .5em;
+
+    padding-bottom: 1.5em;
+
+}
+
+.dicto-item .edit-toolbar .glyphicon:not(.circled){
+    border-radius : 50%;
+    padding : .5em;
+}
+
+.dicto-item .edit-toolbar .glyphicon:not(.circled):hover{
+    background : @buttonDarkBackground;
+    color: white;
+}
+
+/* lists */
+
+.big-list
+{
+    margin-bottom: 1em;
+}
+
+.big-list:first-child{
+    padding-left : 0;
+}
+.big-list:last-child{
+    padding-right : 0;
+}
+
+.big-list-item
+{
+    display: block;
+    overflow-x: hidden;
+
+    margin: .5em 0 .5em 0;
+    padding: .5em;
+    /*cursor: pointer;*/
+
+    text-align: center;
+    text-transform: uppercase;
+
+    background: @buttonLightBackground;
+}
+
+.big-list-item:first-child{
+    margin-top : 0;
+}
+
+.big-list-item input{
+    width : 100%;
+    background: inherit;
+}
+
+.big-list-item input:hover{
+    background : @buttonMediumBackground;
+}
+
+.big-list-item input:focus{
+    background : @buttonDarkBackground;
+    color : white;
+}
+
+.big-list-item span:first-child{
+    margin-right : 2em;
+}
+
+.big-list-item span:last-child:nth-child(3){
+    margin-left : 2em;
+}
+
+.big-list-item .value .tag
+{
+   margin : .2em;
+   overflow : hidden;
+}
+
+
+
+.list-header
+{
+    padding: .5em;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    background: @buttonMediumBackground;
+}
+
+/* buttons & gui */
+
+.btn-line
+{
+    display: flex;
+
+    margin-top: 1em;
+
+    overflow : hidden;
+
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.btn-line .btn
+{
+    /*margin-bottom: 1em;*/
+
+    flex-grow: 1;
+}
+
+/*.btn-line .btn:not(:last-child)
+{
+    margin-right: 1em;
+}*/
+
+.btn-group .btn
+{
+    margin-right: @itemPadding;
+}
+
+.btn-group .btn:last-child
+{
+    margin-right: 0;
+}
+
+
+
+/* forms */
+
+.form-container
+{
+    padding: 1em;
+}
+
+.form-container .form-group
+{
+    display: flex;
+
+    margin: 0;
+    padding: 1em;
+
+    background: @buttonLightBackground;
+}
+
+.form-container label
+{
+    font-size: 200%;
+
+    padding-right: 1em;
+
+    color: @buttonMediumBackground;
+}
+
+.form-group input
+{
+    background: @backgroundLightColor;
+
+    flex-grow: 1;
+}
+
+.form-group .submit
+{
+    text-transform: uppercase;
+
+    background: @buttonMediumBackground;
+}
+
+
+
+.form-group input:not(:last-child)
+{
+    margin-right: 1em;
+}
+
+
+.form-group .btn-line
+{
+    margin-top: 1em;
+}
+
+
+/*
+
+TRANSITIONS
+
+*/
+
+.animate-short
+{
+    -webkit-transition: all @shortDuration ease;
+            transition: all @shortDuration ease;
+}
+
+.animate-medium
+{
+    -webkit-transition: all @mediumDuration ease;
+            transition: all @mediumDuration ease;
+}
+
+.animate-long
+{
+    -webkit-transition: all @longDuration ease;
+            transition: all @longDuration ease;
+}
+
+.animate-long.ng-enter
+{
+    opacity: 1;
+}
+
+.animate-long.ng-enter-active
+{
+    opacity: .5;
+}
+
+.animate-long.ng-leave
+{
+    opacity: .5;
+}
+
+.animate-long.ng-leave-active
+{
+    opacity: 0;
+}
+
+/*
+vary height
+*/
+.slide-height
+{
+    overflow-y: hidden;
+
+    max-height: 5000px;
+
+    -webkit-transition: all .5s ease;
+       -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+         -o-transition: all .5s ease;
+}
+
+.slide-height.ng-enter,
+.slide-height.ng-show
+{
+    max-height: 0;
+}
+
+.slide-height.ng-enter-active,
+.slide-height.ng-show-add
+{
+    max-height: 5000px;
+}
+
+.slide-height.ng-leave,
+.slide-height.ng-hide
+{
+    max-height: 5000px;
+}
+
+.slide-height.ng-leave-active,
+.slide-height.ng-hide-add
+{
+    max-height: 0px;
+}
+
+.squeeze-height{
+    -webkit-transition: all @mediumDuration ease;
+            transition: all @mediumDuration ease;
+}
+
+.squeeze-height.ng-leave-active,
+.squeeze-height.ng-hide-add
+{
+    transform : scale(1, 0);
+}
+
+.squeeze-height.ng-enter,
+.squeeze-height.ng-show
+{
+    transform : scale(1, 0);
+}
+
+.squeeze-height.ng-enter-active,
+.squeeze-height.ng-show-add
+{
+    transform : scale(1, 1);
+
+}
+
+.squeeze-height.ng-leave,
+.squeeze-height.ng-hide
+{
+    transform : scale(1,1);
+}
+
+.squeeze-height.ng-leave-active,
+.squeeze-height.ng-hide-add
+{
+    transform : scale(1, 0);
+}
+
+/*
+vary width
+*/
+.slide-width
+{
+    overflow-x: hidden;
+
+    -webkit-transition: all @longDuration ease;
+            transition: all @longDuration ease;
+}
+
+.slide-width.ng-enter,
+.slide-width.ng-show
+{
+    max-width: 0;
+}
+
+.slide-width.ng-enter-active,
+.slide-width.ng-show-add
+{
+    max-width: 1000px;
+}
+
+.slide-width.ng-leave,
+.slide-width.ng-hide
+{
+    max-width: 1000px;
+}
+
+.slide-width.ng-leave-active,
+.slide-width.ng-hide-add
+{
+    max-width: 0;
+}
+
+
+  @keyframes Fade-Enter-Anime {
+       from { opacity: 0; }
+       to { opacity: 1; }
+     }
+
+  @keyframes Fade-Leave-Anime {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+
+
+  @-webkit-keyframes Fade-Enter-Anime {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @-webkit-keyframes Fade-Leave-Anime {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+
+  @-moz-keyframes Fade-Enter-Anime {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @-moz-keyframes Fade-Leave-Anime {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+
+
+/*slide in simple*/
+.slide-in-simple.ng-enter
+{
+    position: absolute;
+    z-index: 1;
+
+    -webkit-transition-duration: @mediumDuration;
+       -moz-transition-duration: @mediumDuration;
+         -o-transition-duration: @mediumDuration;
+            transition-duration: @mediumDuration;
+    -webkit-transition-property: -webkit-transform, opacity;
+       -moz-transition-property:    -moz-transform, opacity;
+         -o-transition-property:      -o-transform, opacity;
+            transition-property:         transform, opacity;
+
+    opacity: 0;
+}
+
+.slide-in-simple.ng-enter-active
+{
+    position: absolute;
+
+    opacity: 1;
+}
+
+/*slide out simple */
+.slide-out-simple.ng-leave
+{
+    -webkit-transition-duration: @mediumDuration;
+       -moz-transition-duration: @mediumDuration;
+         -o-transition-duration: @mediumDuration;
+            transition-duration: @mediumDuration;
+    -webkit-transition-property: -webkit-transform, opacity;
+       -moz-transition-property:    -moz-transform, opacity;
+         -o-transition-property:      -o-transform, opacity;
+            transition-property:         transform, opacity;
+
+    opacity: 1;
+}
+
+.slide-out-simple.ng-enter-leave
+{
+    opacity: 0;
+}
+
+
+/*slide in left*/
+.slide-in-left.ng-enter
+{
+    position: absolute;
+    z-index: 1;
+
+    -webkit-transition-duration: @mediumDuration;
+       -moz-transition-duration: @mediumDuration;
+         -o-transition-duration: @mediumDuration;
+            transition-duration: @mediumDuration;
+    -webkit-transition-property: -webkit-transform, opacity;
+       -moz-transition-property:    -moz-transform, opacity;
+         -o-transition-property:      -o-transform, opacity;
+            transition-property:         transform, opacity;
+    -webkit-transform: translate(-100%, 0px);
+       -moz-transform: translate(-100%, 0px);
+        -ms-transform: translate(-100%, 0px);
+         -o-transform: translate(-100%, 0px);
+            transform: translate(-100%, 0px);
+
+    opacity: 0;
+}
+
+.slide-in-left.ng-enter-active
+{
+    position: absolute;
+
+    -webkit-transform: translate(0px, 0px);
+       -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+         -o-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+/*slide out left*/
+.slide-out-left{
+    -webkit-transition-duration: @mediumDuration;
+       -moz-transition-duration: @mediumDuration;
+         -o-transition-duration: @mediumDuration;
+            transition-duration: @mediumDuration;
+    -webkit-transition-property: -webkit-transform, opacity;
+       -moz-transition-property:    -moz-transform, opacity;
+         -o-transition-property:      -o-transform, opacity;
+            transition-property:         transform, opacity;
+}
+
+.slide-out-left.ng-leave
+{
+    position: absolute;
+    z-index: 3;
+
+    -webkit-transform: translate(0px, 0px);
+       -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+         -o-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+
+    opacity: 1;
+}
+
+.slide-out-left.ng-leave-active
+{
+    -webkit-transform: translate(-100%, 0px);
+       -moz-transform: translate(-100%, 0px);
+        -ms-transform: translate(-100%, 0px);
+         -o-transform: translate(-100%, 0px);
+            transform: translate(-100%, 0px);
+
+    opacity: 0;
+}
+
+
+/*slide in right*/
+.slide-in-right{
+    -webkit-transition-duration: @mediumDuration;
+       -moz-transition-duration: @mediumDuration;
+         -o-transition-duration: @mediumDuration;
+            transition-duration: @mediumDuration;
+    -webkit-transition-property: -webkit-transform, opacity;
+       -moz-transition-property:    -moz-transform, opacity;
+         -o-transition-property:      -o-transform, opacity;
+            transition-property:         transform, opacity;
+}
+.slide-in-right.ng-animate
+{
+    position: absolute;
+    z-index: 1;
+    -webkit-transform: translate(200%, 0px);
+       -moz-transform: translate(200%, 0px);
+        -ms-transform: translate(200%, 0px);
+         -o-transform: translate(200%, 0px);
+            transform: translate(200%, 0px);
+
+    opacity: 0;
+}
+
+.slide-in-right.ng-enter
+{
+    position: absolute;
+    z-index: 1;
+    -webkit-transform: translate(200%, 0px);
+       -moz-transform: translate(200%, 0px);
+        -ms-transform: translate(200%, 0px);
+         -o-transform: translate(200%, 0px);
+            transform: translate(200%, 0px);
+
+    opacity: 0;
+}
+
+.slide-in-right.ng-enter-active
+{
+    position: absolute;
+
+    -webkit-transform: translate(0px, 0px);
+       -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+         -o-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+
+    opacity: 1;
+}
+
+/*slide out right*/
+.slide-out-right.ng-leave
+{
+    position: absolute;
+    z-index: 3;
+
+    -webkit-transition-duration: @mediumDuration;
+       -moz-transition-duration: @mediumDuration;
+         -o-transition-duration: @mediumDuration;
+            transition-duration: @mediumDuration;
+    -webkit-transition-property: -webkit-transform, opacity;
+       -moz-transition-property:    -moz-transform, opacity;
+         -o-transition-property:      -o-transform, opacity;
+            transition-property:         transform, opacity;
+    -webkit-transform: translate(0px, 0px);
+       -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+         -o-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+
+    opacity: 1;
+}
+
+.slide-out-right.ng-leave-active
+{
+    -webkit-transform: translate(100%, 0px);
+       -moz-transform: translate(100%, 0px);
+        -ms-transform: translate(100%, 0px);
+         -o-transform: translate(100%, 0px);
+            transform: translate(100%, 0px);
+
+    opacity: 0;
+}
+
+/*slide-in-top*/
+.slide-in-top.ng-enter
+{
+    position: absolute;
+    z-index: 1;
+
+    -webkit-transition-duration: @mediumDuration;
+       -moz-transition-duration: @mediumDuration;
+         -o-transition-duration: @mediumDuration;
+            transition-duration: @mediumDuration;
+    -webkit-transition-property: -webkit-transform, opacity;
+       -moz-transition-property:    -moz-transform, opacity;
+         -o-transition-property:      -o-transform, opacity;
+            transition-property:         transform, opacity;
+    -webkit-transform: translate(0px,-100%);
+       -moz-transform: translate(0px,-100%);
+        -ms-transform: translate(0px,-100%);
+         -o-transform: translate(0px,-100%);
+            transform: translate(0px, -100%);
+
+    opacity: 0;
+}
+
+.slide-in-top.ng-enter-active
+{
+    position: absolute;
+
+    -webkit-transform: translate(0px, 0px);
+       -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+         -o-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+
+    opacity: 1;
+}
+
+/*slide-out-top*/
+.slide-out-top.ng-leave
+{
+    position: absolute;
+    z-index: 3;
+
+    -webkit-transition-duration: @mediumDuration;
+       -moz-transition-duration: @mediumDuration;
+         -o-transition-duration: @mediumDuration;
+            transition-duration: @mediumDuration;
+    -webkit-transition-property: -webkit-transform, opacity;
+       -moz-transition-property:    -moz-transform, opacity;
+         -o-transition-property:      -o-transform, opacity;
+            transition-property:         transform, opacity;
+    -webkit-transform: translate(0px, 0px);
+       -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+         -o-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+
+    opacity: 1;
+}
+
+.slide-out-top.ng-leave-active
+{
+    -webkit-transform: translate(0px, -100%);
+       -moz-transform: translate(0px, -100%);
+        -ms-transform: translate(0px, -100%);
+         -o-transform: translate(0px, -100%);
+            transform: translate(0px, -100%);
+
+    opacity: 0;
+}
+
+/*slide-in-bottom*/
+.slide-in-bottom.ng-enter
+{
+    position: absolute;
+    z-index: 1;
+
+    -webkit-transition-duration: @mediumDuration;
+       -moz-transition-duration: @mediumDuration;
+         -o-transition-duration: @mediumDuration;
+            transition-duration: @mediumDuration;
+    -webkit-transition-property: -webkit-transform, opacity;
+       -moz-transition-property:    -moz-transform, opacity;
+         -o-transition-property:      -o-transform, opacity;
+            transition-property:         transform, opacity;
+    -webkit-transform: translate(0px,200%);
+       -moz-transform: translate(0px,200%);
+        -ms-transform: translate(0px,200%);
+         -o-transform: translate(0px,200%);
+            transform: translate(0px, 200%);
+
+    opacity: 0;
+}
+
+.slide-in-bottom.ng-enter-active
+{
+    position: absolute;
+
+    -webkit-transform: translate(0px, 0px);
+       -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+         -o-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+
+    opacity: 1;
+}
+
+/*slide-out-bottom*/
+.slide-out-bottom.ng-leave
+{
+    position: absolute;
+    z-index: 3;
+
+    -webkit-transition-duration: @longDuration;
+       -moz-transition-duration: @longDuration;
+         -o-transition-duration: @longDuration;
+            transition-duration: @longDuration;
+    -webkit-transition-property: -webkit-transform, opacity;
+       -moz-transition-property:    -moz-transform, opacity;
+         -o-transition-property:      -o-transform, opacity;
+            transition-property:         transform, opacity;
+    -webkit-transform: translate(0px, 0px);
+       -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+         -o-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+
+    opacity: 1;
+}
+
+.slide-out-bottom.ng-leave-active
+{
+    -webkit-transform: translate(0px, 200%);
+       -moz-transform: translate(0px, 200%);
+        -ms-transform: translate(0px, 200%);
+         -o-transform: translate(0px, 200%);
+            transform: translate(0px, 200%);
+
+    opacity: 0;
+}
+
+.ng-hide-add,
+.ng-hide-remove
+{
+    /* ensure visibility during the transition */
+    display: block !important; /* yes, important */
+}
+
+
+/* MEDIA QUERIES */
+/* col-xs*/
+@media screen and (max-width:800px)
+{
+    .column-contents,
+    .column-header
+    {
+        padding-right: @columnLateralPaddingSmall;
+        fon-size : .6em;
+    }
+
+    .left-column .column-contents::after
+    {
+        right: 16.6%;
+    }
+
+    .options-header .glyphicon{
+        right : 3em!important;
+    }
+}
+
+/* col-sm */
+@media screen and (max-width:992px)
+{
+    .column-contents,
+    .column-header
+    {
+        padding-right: @columnLateralPaddingSmall;
+        font-size : .8em;
+    }
+    .edition-overview-wrapper{
+        flex-flow : row wrap;
+    }
+    h4{
+        font-size : 1em;
+    }
+    .options-header .glyphicon{
+        right : 3em!important;
+    }
+}
+
+/* col-md */
+@media screen and (max-width:1200px)
+{
+    h4{
+        font-size : 1em;
+    }
+}
+
+
+
+
+
+// injector
+@import 'dashboard/dashboard.less';
+@import 'editmontage/editmontage.less';
+@import 'edittranscription/edittranscription.less';
+@import 'gui-item-container/gui-item-container.less';
+@import 'home/home.less';
+@import 'main/main.less';
+@import 'share/share.less';
+// endinjector

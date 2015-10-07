@@ -1,0 +1,200 @@
+/*
+GENERAL
+*/
+
+.list-header{
+    color : white;
+    background : @buttonDarkBackground;
+}
+
+.secondary-list-header{
+    color : black;
+    background: @buttonMediumBackground;
+}
+
+.important-btn{
+    background : @importantBackground;
+    display : block;
+    margin-top : 1em;
+}
+.important-btn:hover{
+    background: @importantBackgroundHover;
+    color : white;
+}
+
+.brand
+{
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: inherit;
+
+    text-align : center;
+}
+
+.brand a{
+    background : @buttonDarkBackground;
+    color: white;
+    flex-grow : 1;
+    /*width : 100%;*/
+    padding : 1em 0 1em 0;
+    /*display : block;*/
+    /*font-size : 1.4em;*/
+}
+
+.brand:hover,
+.brand:visited
+{
+    font-weight: 800;
+
+    text-decoration: none;
+
+    color: inherit;
+}
+
+.edition-overview-wrapper
+{
+    display: flex;
+
+    padding-top: @headerPadding;
+}
+
+.edition-overview-wrapper .half-column
+{
+    flex-grow: 1;
+}
+
+.edition-overview-wrapper .half-column:first-child
+{
+    margin-right : 1em;
+}
+
+.edition-overview-wrapper input
+{
+    background: @backgroundLightColor;
+}
+
+.showmetamedia{
+    cursor : pointer;
+    /*width: 3em;*/
+    padding-top : .7em;
+    flex-grow : 2;
+    /*margin-left : 1em;*/
+    height : 2.5em;
+    text-align : center;
+    background : @buttonLightBackground;
+}
+
+.showmetamedia.active{
+    background: @buttonDarkBackground;
+    color : white;
+}
+
+.media-container{
+    margin-bottom : 1em;
+}
+
+
+vimeo-embed-mini iframe
+{
+    width: 100%!important;
+    height: 100%!important;
+}
+
+.content-preview-wrapper
+{
+    overflow: hidden;
+
+    width: 100%;
+    height: 200px;
+
+    background: @backgroundMediumColor;
+}
+
+.content-preview-container
+{
+    overflow: hidden;
+
+    width: 100%;
+    height: 200px;
+    /*padding-right: 18%;*/
+}
+
+.content-preview-container p
+{
+    font-style : italic;
+    padding : .1em 3em .1em 3em;
+    margin : 0;
+
+    /*border-top: 1px solid @buttonMediumBackground;
+    border-bottom: 1px solid @buttonMediumBackground;*/
+}
+
+.content-preview-container p:first-child
+{
+    border-top: none;
+}
+
+.content-preview-container p:last-child
+{
+    border-bottom: none;
+}
+
+
+.options-header
+{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.options-header .glyphicon{
+    color : white;
+    position : absolute;
+    top : 2.5em;
+    right : 11em;
+}
+
+.options-header .glyphicon:hover{
+    opacity : 1;
+}
+
+/*
+import
+*/
+
+.dropbox
+{
+    height: 50%;
+    padding-top: 20%;
+}
+/*
+export
+*/
+.download-form
+{
+    margin: 0;
+    padding: 0;
+
+    background: @backgroundMediumColor;
+}
+
+.download-form input
+{
+    margin: .5em;
+}
+
+.download-form .submit
+{
+    margin: 0;
+    padding: 1em;
+}
+
+.export-preview,
+.file-name-output
+{
+    margin-top: 1em;
+}
+
+.share-preview-toggle-container{
+    margin-bottom : 1em;
+}

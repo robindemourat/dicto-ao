@@ -1,0 +1,135 @@
+<div
+    class="slide-in-left slide-out-left column-contents-wrapper"
+    ng-if="active"
+  >
+    <div
+    class="column-header options-header"
+    ng-if="active"
+  >
+    <div class="list-header">
+      <h4 ng-bind="$parent.active.metadata.type + ' settings'"></h4>
+    </div>
+  </div>
+
+    <div class="column-contents" fit-header-height=".column-header">
+
+
+        <form
+          class="big-list-item flexed-item"
+          ng-submit="updateActive(true)"
+        >
+          <span
+            style="width:4em"
+          >Title :</span>
+          <span
+            class="big-growth"
+          ><input
+              type="text"
+              ng-model="active.metadata.title"
+              ng-blur="updateActive(true)"
+              class="animate-medium"
+            ></span>
+        </form>
+
+
+        <div
+          class="flexed-item big-list-item"
+          ng-if="active.metadata.type == 'transcription'"
+        >
+          <form
+            class=" big-growth flexed-item"
+            ng-submit="updateActive()"
+          >
+            <span
+              style="width:4em"
+            >Media :</span>
+            <span
+              class="big-growth"
+            ><input
+              type="text"
+              ng-model="active.metadata.mediaUrl"
+              ng-blur="updateActive()"
+              class="animate-medium"
+            ></span>
+          </form>
+      </div>
+
+      <div class="edition-footer">
+          <div
+            class="btn-line"
+
+          >
+            <button
+              class="btn"
+              ng-click="toggleOptions('export')"
+              ng-class="{'active':optionsMode=='export'}"
+              id="export-btn"
+            >
+              <span class="glyphicon glyphicon-download" style="padding-right:1em"></span>Export/share
+            </button>
+            <button
+              class="btn"
+              ng-click="deleteActiveQuestion = !deleteActiveQuestion"
+              ng-class="{'active':deleteActiveQuestion}"
+            >
+              <span class="glyphicon glyphicon-trash" style="padding-right:1em"></span>
+              Delete this {{active.metadata.type}}
+            </button>
+
+            <button
+              class="btn"
+              ng-click="toggleOptions('import')"
+              ng-class="{'active':optionsMode=='import'}"
+              id="import-btn"
+            >
+              <span class="glyphicon glyphicon-upload" style="padding-right:1em"></span>Import
+            </button>
+          </div>
+
+          <div
+            class="btn-line slide-height"
+            ng-show="deleteActiveQuestion"
+          >
+            <input focus-me="deleteActiveQuestion" style="opacity : 0;width:0;height:0;">
+            <button
+              class="btn"
+              ng-click="deleteActive()"
+              style="background : #911937; color : white"
+            >
+              Delete the {{active.metadata.type}} "{{active.metadata.title}}" ?
+            </button>
+            <button
+              class="btn"
+              ng-click="deleteActiveQuestion = !deleteActiveQuestion"
+            >
+              Don't
+            </button>
+          </div>
+
+
+
+        <a
+          class="btn important-btn animate-medium"
+          ng-href="/dashboard?active={{$parent.active.metadata.type}}%252F{{$parent.active.metadata.slug}}"
+        >
+          <h4>
+            <span class="glyphicon glyphicon-arrow-left" style="float:left;margin-left:2em"></span>
+            Go to dashboard
+          </h4>
+        </a>
+
+
+        <a
+          class="btn important-btn animate-medium"
+          ng-click="toggleAsideEditionMenu()"
+        >
+          <h4>
+            Come back to {{$parent.active.metadata.type}} edition
+            <span class="glyphicon glyphicon-arrow-right" style="position:relative;float:right;margin-right:2em"></span>
+
+          </h4>
+        </a>
+
+      </div>
+  </div>
+

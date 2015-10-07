@@ -1,0 +1,511 @@
+/*
+Media column
+*/
+
+.media-column .media-loader
+{
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    width: 100%;
+
+    text-align: center;
+
+    color: white;
+    pointer-events : none;
+}
+
+/*
+Lateral menu
+*/
+.left-aside-menu
+{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+
+    width: 5em;
+    height: 100%;
+
+    background: @backgroundMediumColor;
+}
+
+.left-aside-menu .btn
+{
+    font-size: 100%;
+
+    width: 80%;
+    margin-left: 10%;
+
+    opacity: .7;
+    color: @buttonMediumBackground;
+    background: transparent;
+}
+
+.left-aside-menu .btn.active
+{
+    color: black;
+}
+
+.left-aside-menu .btn:hover
+{
+    opacity: 1;
+}
+.left-aside-menu .btn:active
+{
+    color: black;
+}
+
+/*
+Header
+*/
+
+.full-header
+{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+
+    overflow-x: hidden;
+
+    width: 100%;
+    height: auto;
+    min-height: 3000px;
+    padding: 0;
+
+    pointer-events: none;
+}
+
+
+.full-header > *
+{
+    pointer-events: all;
+}
+
+.full-header .item-detail
+{
+    font-size: 1em;
+
+    margin: 0;
+    padding-right: @columnLateralPadding;
+    padding-left: @columnLateralPadding;
+
+    text-transform: uppercase;
+}
+
+.full-header .item-detail .item-title {
+    margin-top : 0!important;
+}
+.full-header .item-detail .item-title input,
+.full-header .item-detail h1.item-title
+{
+    font-size: 1.2em;
+    font-weight: 800;
+
+    margin: 0;
+    padding: 0;
+    background : inherit;
+}
+
+.full-header .item-detail .btn
+{
+    padding: 0 1em 0 1em;
+    /*margin : 0;*/
+}
+
+.full-header ul
+{
+    overflow-y: auto;
+
+    height: auto;
+
+    background: @backgroundMediumColor;
+}
+
+.full-header li
+{
+    padding: .5em;
+
+    cursor: pointer;
+}
+
+.full-header li:hover
+{
+    color: white;
+    background: @buttonDarkBackground;
+}
+
+.full-header .main-header-container,
+.full-header .second-header-container
+{
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: auto;
+    padding: @headerPadding 0 @headerPadding 0;
+
+    background: @backgroundLightColor;
+}
+
+.main-column .full-header .main-header-container
+{
+    background: @backgroundMediumColor;
+}
+
+.full-header .main-header-container
+{
+    box-shadow: 0 10px 20px rgba(0,0,0,.3);
+}
+
+.full-header .second-header-container
+{
+    padding-left: @columnLateralPadding;
+
+    background: @backgroundMediumColor;
+}
+
+
+.full-header .item-detail form
+{
+    display: flex;
+    overflow-x: hidden;
+
+    width: 100%;
+    margin-top: 1em;
+    /*padding-right : @headerPadding;*/
+}
+
+.full-header .item-detail .form-group
+{
+    flex-grow: 1;
+}
+
+.full-header .item-detail input
+{
+    width: 100%;
+
+    background: @buttonLightBackground;
+}
+
+
+.exportToggler,
+.closeToggler,
+.searchToggler
+{
+    position: absolute;
+    top: @headerPadding;
+
+    cursor: pointer;
+}
+
+.exportToggler .glyphicon,
+.closeToggler .glyphicon,
+.searchToggler .glyphicon
+{
+    font-size: 1.2em;
+}
+.exportToggler
+{
+    /*left : @headerPadding;*/
+}
+
+.searchToggler
+{
+    left: @columnLateralPadding;
+
+    margin-left: -2em;
+}
+
+.searchToggler.active
+{
+    top: 3.3em;
+}
+
+.search-options-toggle{
+    cursor : pointer;
+    width : 10%;
+    text-align : center;
+    padding-top : .2em;
+}
+
+.search-options-toggle.active{
+    background :@buttonDarkBackground;
+    color : white;
+}
+
+
+
+.closeToggler
+{
+    left: @headerPadding;
+}
+
+.second-header-container .btn-line
+{
+    margin-top: 0;
+    margin-right: @headerPadding;
+    padding-right: 2em;
+}
+
+.second-header-container .btn-line .btn
+{
+    padding: .1em;
+}
+
+/*
+===================================================================
+===================================================================
+===================================================================
+*/
+
+/*
+GUI BAR
+*/
+
+/*video gui*/
+.gui-wrapper
+{
+    font-family: 'inconsolata';
+
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+}
+
+.gui-container
+{
+    height: 100%;
+
+    pointer-events: none;
+}
+
+.gui-subcontainer
+{
+    position: absolute;
+    z-index: 11;
+    top: 0;
+    left: 35%;
+
+    width: 30%;
+    height: 100%;
+
+    pointer-events: all;
+}
+
+.gui-background
+{
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+
+    opacity: .5;
+    background: #22231e;
+}
+
+.gui-time
+{
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    margin-top: 1em;
+
+    text-align: center;
+
+    color: white;
+}
+
+.gui-items-container
+{
+    position: absolute;
+    top: 10%;
+
+    overflow-y: hidden;
+
+    width: 50%;
+    height: 80%;
+    margin-left: 25%;
+
+
+    border-top: 1px white solid;
+    border-bottom: 1px white solid;
+}
+
+
+.gui-item-container
+{
+    cursor: pointer;
+
+    position: absolute;
+    left: 0.3;
+    width: 100%;
+    /*left: 40%;
+
+    width: 20%;*/
+
+    opacity: 0.3;
+    /*border-top: 1px white solid;
+    border-bottom: 1px white solid;*/
+    background: rgba(255,255,255,.2);
+
+    display : flex;
+
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.gui-item-container .tag-marker{
+    height : 100%;
+    flex-grow : 1;
+}
+
+.gui-item-container:hover
+{
+
+    opacity: .7;
+}
+
+.gui-item-container.active
+{
+    opacity: .5;
+}
+
+.gui-item-container.active:hover
+{
+    opacity: 1;
+}
+
+.gui-vert
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: inline;
+
+    width: 50%;
+    height: 100%;
+
+    pointer-events: none;
+
+    border-right: 1px solid white;
+}
+
+.grad-playing
+{
+    position: absolute;
+    left: 0;
+
+    width: 100%;
+    margin-left: 0;
+
+    text-align: center;
+}
+
+.grad-playing .grad-playing-head
+{
+    position: absolute;
+    top: 0;
+    left: 40%;
+
+    cursor: pointer;
+
+
+    width: 20%;
+    height: .7em;
+
+    border-radius: 50%;
+    background-color: white;
+}
+
+
+.grad-playing .grad-playing-head.active{
+  left : 0;
+  width : 100%;
+  border-top : 1px solid brown;
+  border-radius : none;
+  background-color : transparent;
+  height : 0;
+}
+
+.grad-playing-line
+{
+    position: absolute;
+    left: 40%;
+    /*display: inline-block;*/
+
+    width: 20%;
+    height: .7em;
+
+    cursor: pointer;
+
+
+    vertical-align: top;
+
+    pointer-events: none;
+
+    border-radius: 50%;
+    /*border-top : 1px solid #B8382F;*/
+    background: white;
+}
+
+
+
+
+.lift
+{
+    position: absolute;
+    left: 0;
+
+    width: 50%;
+    height: 30%;
+    margin-left: 25%;
+
+    opacity: .3;
+    background: white;
+
+    /*cursor : ns-resize;*/
+}
+
+@keyframes blink
+{
+    0%
+    {
+        background-color: rgba(255,255,255,.2);
+    }
+    100%
+    {
+        background-color: rgba(255,255,255,.8);
+    }
+}
+@-webkit-keyframes blink
+{
+    0%
+    {
+        background-color: rgba(255,255,255,.2);
+
+    }
+    100%
+    {
+        background-color: rgba(255,255,255,.8);
+    }
+}
+.blink
+{
+    -webkit-animation: blink 1s linear infinite;
+       -moz-animation: blink 1s linear infinite;
+            animation: blink 1s linear infinite;
+}

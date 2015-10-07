@@ -1,0 +1,252 @@
+<!-- case begining of montage -->
+
+<div
+        data-as-sortable-item
+        class="dicto-item-edit-wrapper first-item"
+        ng-if="active.data.length == 0"
+>
+    <div
+        class="comment-proposal animate-medium"
+        ng-click="addNewComment(0)"
+        ng-if="mode == 'edit'"
+        analytics-on="click"
+        analytics-event="Comment used"
+    >
+        Drag here some transcriptions chunks from the right column
+        <!--, or start by writing a comment here-->
+    </div>
+    <div
+        class="btn animate-medium"
+        ng-click="toggleMode('edit')"
+        ng-if="mode != 'edit'"
+        style="width:100%"
+    >
+        Nothing in montage for now. Click here to switch to edit mode.
+    </div>
+</div>
+
+<!-- case existing montage-->
+<div
+        ng-repeat="item in active.data track by $index"
+        data-as-sortable-item
+        class="dicto-item-edit-wrapper"
+>
+    <!-- extended version
+    <div
+        class="comment-proposal animate-medium"
+        ng-click="addNewComment($index)"
+        ng-show="$parent.searchTerm.length <= 2 && item.status != 'selected'"
+        analytics-on="click"
+        analytics-event="Comment used"
+
+    >Drag a paragraph from the right colimn or click to add a comment here</div>
+    -->
+    <div
+        class="comment-proposal animate-medium"
+        ng-show="$parent.searchTerm.length <= 2 && item.status != 'selected'"
+    >
+      Drag a paragraph from the right column there to add it here
+    </div>
+    <div
+        class="dicto-item squeeze-height"
+        ng-class="setDictoItemClass(item, $index, $parent.searchTerm)"
+        ng-click="handleClickOnMainItem(item, $event)"
+        fit-minheight-to=".edit-toolbar"
+        context-menu
+        data-target="main-item-menu-{{ $index }}"
+        ng-rectangable="toggleSelected(item)"
+    >
+        <div
+            class="dicto-item-contents"
+
+            data-as-sortable-item-handle
+        >
+             <!--case edited -->
+            <div
+              ng-if="item.contentEdited"
+              no-drag
+            >
+              <textarea
+                ng-model="item.content"
+                ui-codemirror="{onLoad : codemirrorLoaded}"
+                ui-codemirror-opts="editorOptions"
+              ></textarea>
+            </div>
+            <!-- case not edited -->
+            <div
+              ng-if="!item.contentEdited"
+              ng-bind-html="renderMarkdownItem(item.content, $parent.searchTerm)"
+              ng-click="handleClickOnMainItemContent(item, $event)"
+            > </div>
+            <!-- case tags -->
+            <div
+              class="tags-container"
+              ng-if="$parent.viewSettings.showTags === true"
+            >
+              <div
+                class="tags-category-container"
+                ng-repeat="category in item.tagCategories"
+              >
+                <div
+                  class="tag-category-name"
+                  ng-bind="category"
+                ></div>
+                <div class="tag-subcontainer">
+                  <span
+                    class="tag animate-fast flexed-items"
+                    ng-repeat="tag in item.tags|filter:{'category':category} track by $index"
+                    ng-class="{'focused' : tag.focused}"
+                    ng-style="{'background': tag.color,
+                                'color' : getContrastYIQ(tag.color)
+                              }"
+                    ng-bind="tag.name"
+                  >
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- end tags -->
+        </div>
+        <!-- end dicto-contents -->
+
+        <!-- edit btns -->
+        <div
+            class="top-left-items animate-fast edit-toolbar"
+            style="width : 2em"
+        >
+            <span
+              class="glyphicon glyphicon-pencil animate-medium visible-on-hover"
+              ng-click="toggleEdited(item)"
+              ng-class="{'circled' : item.contentEdited}"
+              dicto-tooltip="edit item content"
+              dicto-tooltip-delay="1000"
+            ></span>
+
+            <span
+              class="circled  animate-fast glyphicon glyphicon-text-size"
+              ng-click="markdownAddEl('# ', item, $event)"
+              ng-if="item.contentEdited"
+
+              dicto-tooltip="title"
+              dicto-tooltip-delay="500"
+              dicto-tooltip-placement="right"
+            ></span>
+
+            <span
+              class="circled  animate-fast glyphicon glyphicon-italic"
+              ng-click="markdownAddEl('*', item, $event)"
+              ng-if="item.contentEdited"
+
+              dicto-tooltip="italic"
+              dicto-tooltip-delay="500"
+              dicto-tooltip-placement="right"
+            ></span>
+
+            <span
+              class="circled  animate-fast glyphicon glyphicon-bold"
+              ng-click="markdownAddEl('**', item, $event)"
+              ng-if="item.contentEdited"
+
+              dicto-tooltip="bold"
+              dicto-tooltip-delay="500"
+              dicto-tooltip-placement="right"
+            ></span>
+
+            <span
+              class="glyphicon glyphicon-comment circled  animate-fast"
+              ng-click="markdownAddEl('> ', item, $event)"
+              ng-if="item.contentEdited"
+
+              dicto-tooltip="quote block"
+              dicto-tooltip-delay="500"
+              dicto-tooltip-placement="right"
+            ></span>
+
+            <span
+              class="circled  animate-fast glyphicon glyphicon-picture"
+              ng-click="markdownAddEl('picture', item, $event)"
+              ng-if="item.contentEdited"
+              dicto-tooltip="add a picture"
+              dicto-tooltip-delay="500"
+              dicto-tooltip-placement="right"
+            ></span>
+
+             <span
+              class="circled  animate-fast glyphicon glyphicon-link"
+              ng-click="markdownAddEl('link', item, $event)"
+              ng-if="item.contentEdited"
+              dicto-tooltip="add a hyperlink"
+              dicto-tooltip-delay="500"
+              dicto-tooltip-placement="right"
+            ></span>
+        </div>
+
+
+
+        <!-- selection indicator /toggle when editing-->
+      <div
+        class="top-right-items animate-fast"
+        ng-click="toggleSelected(item)"
+        hide-if-overflow=".middled-items"
+        style="width:3em;height:3em;"
+      >
+        <span class="glyphicon glyphicon-remove-sign animate-medium"></span>
+        <span class="glyphicon glyphicon-ok-sign animate-medium"></span>
+        <span
+          class="glyphicon glyphicon-plus-sign animate-medium"
+          dicto-tooltip="select/deselect item"
+          dicto-tooltip-delay="1000"
+          dicto-tooltip-placement="left"
+        ></span>
+      </div>
+
+      <!-- trash item -->
+      <div
+            class="middle-right-items animate-fast visible-on-hover"
+        >
+            <span
+                class="glyphicon glyphicon-trash animate-medium middled-items"
+                ng-click="removeItemGen($index, $parent.active.data)"
+                dicto-tooltip="remove item from montage"
+                dicto-tooltip-placement="left"
+                dicto-tooltip-delay="1000"
+            ></span>
+        </div>
+
+         <div
+            class="bottom-right-items animate-fast"
+            hide-if-overflow=".middled-items"
+            style="width:3em;height:3em;"
+            ng-click="splitActiveItem(item, $index, $event)"
+            ng-if="item.contentEdited && okSplitActive(item, $index)"
+          >
+            <span
+              style="float : right"
+              class="glyphicon glyphicon-scissors animate-medium circled"
+              dicto-tooltip="split item at cursor position"
+              dicto-tooltip-delay="500"
+              dicto-tooltip-placement="left"
+              analytics-on="click"
+              analytics-event="Button split item here clicked"
+            ></span>
+          </div>
+
+
+
+    </div>
+    <!--<div
+        class="comment-proposal animate-medium"
+        ng-click="addNewComment($index+1)"
+        ng-show="$parent.searchTerm.length <= 2 && item.status != 'selected'"
+        analytics-on="click"
+        analytics-event="Comment used"
+    >
+      Drag a paragraph from the right column or click to add a comment here
+    </div>-->
+    <div
+        class="comment-proposal animate-medium"
+        ng-show="$parent.searchTerm.length <= 2 && item.status != 'selected'"
+    >
+      Drag a paragraph from the right column to add it here
+    </div>
+</div>

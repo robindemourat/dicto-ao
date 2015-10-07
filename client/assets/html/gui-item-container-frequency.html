@@ -1,0 +1,20 @@
+<div
+  class="tag-marker"
+  ng-repeat="tag in active.metadata.tags"
+  ng-style ="{'background': (tagInItem(item, tag))?tag.color:'transparent'}"
+  ng-show="$parent.viewSettings.showTags"
+  dicto-tooltip="<p>{{item.content.substring(0, 30)}}...</p><p><i>click to {{tagInItem(item, tag)?'remove':'add'}} tag : {{tag.name}} ({{tag.category}}) {{tagInItem(item, tag)?'from':'to'}} this paragraph</i></p>"
+  ng-click="toggleTagInFrequency(tag, item, $index, $parent.$index)"
+>
+  <span
+    class="glyphicon glyphicon-plus-sign animate-medium"
+    ng-if="!tagInItem(item, tag)"
+    ng-style="{'color' : $parent.getContrastYIQ(tag.color)}"
+  ></span>
+
+  <span
+    class="glyphicon glyphicon-remove-sign animate-medium"
+    ng-style="{'color' : $parent.getContrastYIQ(tag.color)}"
+    ng-if="tagInItem(item, tag)"
+  ></span>
+</div>

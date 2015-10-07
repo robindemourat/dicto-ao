@@ -1,0 +1,180 @@
+ <!-- wrapper -->
+<div
+  class="dicto-item slide-height"
+  ng-repeat="item in asideActive.data track by $index"
+  ng-class="setDictoItemClass(item, $index, inputs.asideSearchTerm)"
+  context-menu
+  data-target="aside-item-menu-{{ $index }}"
+  data-as-sortable-item
+  fit-minheight-to=".edit-toolbar"
+  ng-rectangable="toggleSelected(item)"
+>
+  <!-- content wrapper -->
+  <div
+    class="dicto-item-contents"
+    data-as-sortable-item-handle
+  >
+    <!--case edited -->
+    <div
+      ng-if="item.contentEdited"
+      no-drag
+    >
+      <textarea
+        ng-model="item.content"
+        ui-codemirror="{onLoad : codemirrorLoaded}"
+        ui-codemirror-opts="editorOptions"
+      ></textarea>
+    </div>
+    <!-- case not edited -->
+    <div
+      ng-if="!item.contentEdited"
+      ng-bind-html="renderMarkdownItem(item.content, inputs.asideSearchTerm)"
+      ng-click="toggleSelected(item)"
+    > </div>
+    <!-- case tags -->
+    <div
+      class="tags-container"
+      ng-if="$parent.viewSettings.showTags === true"
+    >
+      <div
+        class="tags-category-container"
+        ng-repeat="category in item.tagCategories"
+      >
+        <div
+          class="tag-category-name"
+          ng-bind="category"
+        ></div>
+        <div class="tag-subcontainer">
+          <span
+            class="tag animate-fast flexed-items"
+            ng-repeat="tag in item.tags|filter:{'category':category} track by $index"
+            ng-class="{'focused' : tag.focused}"
+            ng-style="{'background': tag.color,
+                        'color' : getContrastYIQ(tag.color)
+                      }"
+            ng-bind="tag.name"
+          >
+          </span>
+        </div>
+      </div>
+    </div>
+    <!-- end tags -->
+  </div>
+
+  <!-- insert and begin or end -->
+  <div
+    class="middle-left-items animate-fast"
+    ng-if="!item.contentEdited"
+
+    analytics-on="click"
+    analytics-event="Montage insert at begining/end buttons clicked"
+  >
+    <span class="middled-items animate-medium"
+        hide-if-overflow=".top-left-items"
+    >
+      <span
+        class="glyphicon glyphicon-import animate-medium d-mirrored visible-on-hover"
+        ng-click="addItemsToMontage(0, [item])"
+
+        dicto-tooltip="add item at begining of montage"
+        dicto-tooltip-delay="500"
+        dicto-tooltip-placement="right"
+      ></span>
+      <span
+        class="glyphicon glyphicon-import animate-medium h-mirrored visible-on-hover"
+        ng-click="addItemsToMontage(active.data.length, [item])"
+
+        dicto-tooltip="add item at end of montage"
+        dicto-tooltip-delay="500"
+        dicto-tooltip-placement="right"
+      ></span>
+    </span>
+  </div>
+
+  <!-- edit btn -->
+  <div
+      class="top-left-items animate-fast edit-toolbar"
+      style="width : 2em"
+  >
+      <span
+        class="glyphicon glyphicon-pencil animate-medium visible-on-hover"
+        ng-click="toggleEdited(item)"
+        ng-class="{'circled' : item.contentEdited}"
+        dicto-tooltip="edit item"
+        dicto-tooltip-delay="1000"
+      ></span>
+
+      <span
+        class="circled  animate-fast glyphicon glyphicon-text-size"
+        ng-click="markdownAddEl('# ', item, $event)"
+        ng-if="item.contentEdited"
+
+        dicto-tooltip="title"
+        dicto-tooltip-delay="500"
+        dicto-tooltip-placement="right"
+      ></span>
+
+      <span
+        class="circled  animate-fast glyphicon glyphicon-italic"
+        ng-click="markdownAddEl('*', item, $event)"
+        ng-if="item.contentEdited"
+
+        dicto-tooltip="italic"
+        dicto-tooltip-delay="500"
+        dicto-tooltip-placement="right"
+      ></span>
+
+      <span
+        class="circled  animate-fast glyphicon glyphicon-bold"
+        ng-click="markdownAddEl('**', item, $event)"
+        ng-if="item.contentEdited"
+
+        dicto-tooltip="bold"
+        dicto-tooltip-delay="500"
+        dicto-tooltip-placement="right"
+      ></span>
+
+      <span
+        class="glyphicon glyphicon-comment circled  animate-fast"
+        ng-click="markdownAddEl('> ', item, $event)"
+        ng-if="item.contentEdited"
+
+        dicto-tooltip="quote block"
+        dicto-tooltip-delay="500"
+        dicto-tooltip-placement="right"
+      ></span>
+
+      <span
+        class="circled  animate-fast glyphicon glyphicon-picture"
+        ng-click="markdownAddEl('picture', item, $event)"
+        ng-if="item.contentEdited"
+        dicto-tooltip="add a picture"
+        dicto-tooltip-delay="500"
+        dicto-tooltip-placement="right"
+      ></span>
+
+       <span
+        class="circled  animate-fast glyphicon glyphicon-link"
+        ng-click="markdownAddEl('link', item, $event)"
+        ng-if="item.contentEdited"
+        dicto-tooltip="add a hyperlink"
+        dicto-tooltip-delay="500"
+        dicto-tooltip-placement="right"
+      ></span>
+  </div>
+
+
+  <!-- selection indicator /toggle when editing-->
+  <div
+    class="top-right-items animate-fast"
+    ng-click="item.status = (item.status)?undefined:'selected'"
+
+    dicto-tooltip="select/deselect item"
+    dicto-tooltip-delay="1000"
+    dicto-tooltip-placement="left"
+  >
+    <span class="glyphicon glyphicon-remove-sign animate-medium"></span>
+    <span class="glyphicon glyphicon-ok-sign animate-medium"></span>
+    <span class="glyphicon glyphicon-plus-sign animate-medium"></span>
+  </div>
+</div>

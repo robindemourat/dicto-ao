@@ -1,0 +1,265 @@
+<!-- menu -->
+<div
+  class="column animate-medium"
+  ng-class="{'main-column col-xs-6' : optionsMode, 'stack-left' : !showMenu,
+              'col-xs-12 col-sm-3 col-md-6 ' : !options-mode}"
+  ng-include="'/assets/html/aside-edition-menu.html'"
+>
+</div>
+
+<!-- menu extra-->
+<div
+  class="col-xs-6 col-sm-9 col-md-6 column slide-width"
+  ng-if="optionsMode != undefined"
+  ng-include="'/assets/html/aside-edition-menu-extra.html'"
+>
+</div>
+
+<!-- begining of edit view -->
+<section
+  class="column animate-medium col-xs-10 col-sm-9 col-md-6"
+  ng-class="{'left-column':!showMenu,'right-column':showMenu}"
+>
+
+  <!-- aside left menu -->
+  <aside
+    class="left-aside-menu"
+    ng-include="'/assets/html/transcription-edition-left-toolbar.html'"
+  >
+  </aside>
+  <!-- END aside left menu -->
+  <!-- left header -->
+  <header class="full-header animate-medium">
+    <div
+      class="second-header-container animate-medium"
+      ng-style="{'left':(exportMode)?0:'-100%'}"
+    >
+      <div class="btn-line">
+            <div
+              class="btn glyphicon glyphicon-copy"
+              clip-copy="'https://dicto-local.herokuapp.com/share/'+active.metadata.type+'/'+active.metadata.slug"
+              clip-click="confirmLinkCopy()"
+            >
+              Copy url
+            </div>
+            <div
+              class="btn glyphicon glyphicon-copy"
+              clip-copy="makeEmbed()"
+              clip-click="confirmLinkCopy()"
+            >
+              Copy embed code
+            </div>
+
+        </div>
+
+      <div
+        class="closeToggler"
+        ng-click="exportMode = !exportMode"
+      >
+        <span class="glyphicon glyphicon-remove"></span>
+      </div>
+    </div>
+    <div
+      class="main-header-container animate-medium"
+      ng-style="{'left':(!exportMode)?0:'100%'}"
+    >
+
+
+      <div class="item-detail">
+        <form
+          class="item-title"
+          ng-submit="updateActive(true)"
+        >
+          <input
+            type="text"
+            ng-model="active.metadata.title"
+            ng-blur="updateActive(true)"
+          >
+        </form>
+        <form
+          class="slide-height"
+          ng-show="searchMode || $parent.viewSettings.searchOptionsVisible"
+          ng-submit="mainSelectMatchingSearch()"
+        >
+        <div class="form-group flexed-inline">
+              <input
+                type="text"
+                ng-model="$parent.searchTerm"
+                focus-one-way
+                focus-me="searchMode"
+                ng-blur="searchAutoBlur($parent.searchTerm)"
+              >
+              <span
+                class="search-options-toggle glyphicon glyphicon-cog"
+                ng-click="toggleViewSetting('searchOptionsVisible')"
+                ng-class="{'active' : $parent.viewSettings.searchOptionsVisible}"
+                ng-if="$parent.viewSettings.showTags"
+              ></span>
+        </div>
+        </form>
+
+        <div
+          class="btn-line slide-height"
+          ng-if="$parent.viewSettings.searchOptionsVisible && $parent.viewSettings.showTags"
+        >
+          <div
+            class="btn"
+            ng-class="{'active' : searchSettingsClass(true, false)}"
+            ng-click="toggleSearchSettings(true, false)"
+          >
+            <span class="glyphicon glyphicon-search">
+              Content only
+            </span>
+          </div>
+          <div
+            class="btn"
+            ng-class="{'active' : searchSettingsClass(false, true)}"
+            ng-click="toggleSearchSettings(false, true)"
+          >
+            <span class="glyphicon glyphicon-search">
+              Tags only
+            </span>
+          </div>
+
+          <div
+            class="btn"
+            ng-class="{'active' : searchSettingsClass(true, true)}"
+            ng-click="toggleSearchSettings(true, true)"
+          >
+            <span class="glyphicon glyphicon-search">
+              Content & tags
+            </span>
+          </div>
+        </div>
+
+        <form
+          class="slide-height"
+          ng-show="$parent.searchTerm.length > 2 && $parent.viewSettings.showTags == true"
+          ng-submit="addGlobalTag(undefined, matchingSearchName);matchingSearchName=''"
+
+        >
+          <div class="form-group flexed-inline">
+            <input
+              type="text"
+              ng-model="matchingSearchName"
+              placeholder="Type the name of tag to add to items matching your search"
+              dicto-tooltip="Add a tag to all search matching chunks"
+            >
+            <span
+              class="slide-width search-options-toggle glyphicon glyphicon-tags"
+              ng-click="addGlobalTag(undefined, matchingSearchName);matchingSearchName='';$parent.searchTerm = ''"
+              ng-style="{'inactive' : matchingSearchName.length == 0}"
+              dicto-tooltip="Add this tag to all search matching chunks"
+            >
+            </span>
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+
+    <div
+        class="searchToggler animate-medium"
+        ng-init="searchMode = false"
+        ng-click="searchMode = !$parent.searchMode"
+        ng-class="{'active' : searchMode}"
+      >
+        <span
+          class="glyphicon glyphicon-search"
+        ></span>
+    </div>
+
+  </header>
+  <!-- end left header -->
+
+  <!-- begin contents column containers -->
+  <section
+    class="column-contents-wrapper left-column"
+    context-menu
+    data-target="transcription-global-menu"
+    ng-click="handleClickOnWrapper($event)"
+  >
+    <div
+      class="column-contents"
+      ng-class="{'tags-mode' : $parent.viewSettings.viewAside == 'tags'}"
+      ng-model="active.data"
+      ng-include="'/assets/html/dicto-transcription-main-item.html'"
+      scroll-manager="leftColumn"
+      fit-header-height=".left-column .main-header-container"
+
+      dicto-item-dimensionner='active.data'
+      dicto-item-dimensionner-multiplier='$parent.viewSettings.zoomLevel'
+      dicto-item-dimensionner-max='$parent.activeMediaDuration'
+      dicto-item-dimensionner-if='$parent.viewSettings.showTime'
+      dicto-item-dimensionner-update-if='onDrag == false'
+      dicto-item-dimensionner-grads='grads'
+      dicto-item-dimensionner-play-at='$parent.currentTimeS'
+      dicto-item-dimensionner-seeking-at='$parent.mediaIsSeekingAt'
+      dicto-item-dimensionner-factor-output='$parent.viewSettings.computedZoom'
+      dicto-item-dimensionner-triggers='{{activeMediaDuration}}'
+
+      ng-dblclick="clickOnMainColumn($event)"
+    >
+    </div>
+  </section>
+</section>
+<!-- end of left column -->
+
+
+<!--begining of right column -->
+<section
+  class="right-column col-xs-2 col-sm-3 col-md-6 column animate-medium slide-in-right slide-out-right aside-edit"
+  ng-class="{'main-column' : $parent.viewSettings.viewAside== 'tags', 'media-column' : $parent.viewSettings.viewAside == 'media'}"
+  ng-controller="MediaCtrl"
+  rectangle-selection
+  rectangle-selection-if="mode == 'edit' && !onItemDrag"
+  rectangle-selection-abort-hover=".CodeMirror-lines"
+
+>
+
+  <!-- preview mode column -->
+  <div
+    ng-if="$parent.viewSettings.viewAside=='media'"
+    ng-switch="activeMediaType"
+    class="media-container"
+
+  >
+    <vimeo-embed
+      ng-switch-when="vimeo"
+      player-id="vimeo"
+      video-url="activeMediaUrl"
+      style="width : 100%;height : 100%;"
+    ></vimeo-embed>
+    <div
+      class="youtube-embed-responsive youtube-embed-responsive-16by9"
+      ng-switch-when="youtube"
+
+    >
+          <youtube-video
+            class="youtube-embed-responsive-item"
+            video-id="activeMediaId"
+            player-vars="youtubePlayerVars"
+            player="player"
+          ></youtube-video>
+    </div>
+    <h3 class="media-loader animate-medium"
+      ng-if="(!mediaReady && activeMediaUrl)||$parent.$parent.$parent.mediaWorking"
+    >Loading media, please wait ...</h3>
+  </div>
+  <!-- end preview mode column -->
+
+  <div
+      ng-if="$parent.viewSettings.viewAside=='tags'"
+      class="main-column media-container"
+      ng-include="'assets/html/transcription-edition-tags-column.html'"
+  >
+  </div>
+</section>
+
+<!-- GUI bar -->
+<div
+  class="gui-wrapper slide-in-right slide-out-right"
+  ng-if="!showMenu"
+  ng-include="'/assets/html/central-player-gui.html'"
+></div>

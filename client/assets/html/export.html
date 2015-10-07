@@ -1,0 +1,159 @@
+  <div
+    class="column-contents"
+    fit-to-header-height=".options-header"
+  >
+    <ul
+    class="btn-line animate-fast">
+      <li
+        ng-class="{'active' : $parent.exportMode == 'file'}"
+        ng-click="$parent.exportMode = 'file'"
+        class="btn"
+      >Export as file
+      </li>
+      <li
+        ng-class="{'active' : $parent.exportMode == 'link'}"
+        ng-click="$parent.exportMode = 'link';updateIframe(tagLabel, railwayLabel)"
+        class="btn"
+      >
+        Export as web content
+      </li>
+    </ul>
+
+  <div class="export-options-container"
+  ng-show="$parent.exportMode == 'file'">
+    <div class="export-type">
+      <ul
+      class='btn-line animate-fast'>
+        <li
+        ng-class="{'active' : $parent.exportType == 'srt'}"
+        ng-click="$parent.switchExportType('srt')"
+        class="btn"
+        >.srt</li>
+        <li
+        ng-class="{'active' : $parent.exportType == 'txt'}"
+        ng-click="$parent.switchExportType('txt')"
+        class="btn"
+        >.txt</li>
+        <li
+        ng-class="{'active' : $parent.exportType == 'csv'}"
+        ng-click="$parent.switchExportType('csv')"
+        class="btn"
+        >.csv</li>
+        <li
+        ng-class="{'active' : $parent.exportType == 'json'}"
+        ng-click="$parent.switchExportType('json')"
+        class="btn"
+        >.json</li>
+
+      </ul>
+    </div>
+
+    <div class="export-preview"
+    ng-show='$parent.exportType'>
+      <div class="content-preview-wrapper">
+        <div class="content-preview-container">
+          <pre
+            class="selectable"
+            ng-bind="$parent.$parent.$parent.exports[$parent.exportType]"
+          >
+          </pre>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="file-name-output"
+    ng-show='$parent.exportType'>
+      <form
+        class='download-form'
+        ng-init="exportFileName = ''"
+        ng-submit="downloadActive(exportFileName, exportType)"
+      >
+        <div class="form-group flexed-item">
+          <input type="text" class="animate-fast" ng-model="exportFileName" name=""
+        class="form-control" placeholder="{{$parent.active.metadata.slug}}.{{$parent.exportType}}" />
+        <input type="submit" class="animate-fast submit" id="submit" value="Download" />
+        </div>
+    </form>
+    </div>
+  </div>
+
+
+  <div class="share-container"
+        ng-show="$parent.exportMode == 'link'"
+  >
+    <div class="btn-line">
+        <a
+          class="btn"
+          ng-href="/share/{{active.metadata.type}}/{{active.metadata.slug}}?{{tagLabel}}&{{railwayLabel}}"
+          ng-click="toggleOptions()"
+          target="_blank"
+        >
+          <span
+            class=" glyphicon glyphicon-link"
+            ng-bind="'Open link'"
+          ></span>
+        </a>
+
+        <div
+          class="btn"
+          clip-copy="'https://dicto-local.herokuapp.com/share/'+active.metadata.type+'/'+active.metadata.slug + '?' + tagLabel + '&' + railwayLabel"
+          clip-click="confirmLinkCopy()"
+        >
+          <span
+            class="glyphicon glyphicon-copy"
+            ng-bind="'Copy URL'"
+          ></span>
+        </div>
+
+        <div
+          class="btn"
+          clip-copy="makeEmbed(taglLabel, railwayLabel)"
+          clip-click="confirmLinkCopy()"
+        >
+          <span
+            class="glyphicon glyphicon-copy"
+            ng-bind="'Copy embed code'"
+          ></span>
+        </div>
+    </div>
+    <div
+      class="btn-line share-preview-toggle-container"
+      ng-click="updateIframe(tagLabel, railwayLabel)"
+    >
+      <div
+        class="btn"
+        ng-init="tagLabel = 'showtags=1'"
+        ng-click="tagLabel = (tagLabel)?undefined:'showtags=1'"
+        ng-class="{'active':tagLabel}"
+        ng-if="active.metadata.tags && active.metadata.tags.length > 0"
+      >
+      Show tags
+      </div>
+      <div
+        class="btn"
+        ng-init="railwayLabel = 'showrailway=1'"
+        ng-click="railwayLabel = (railwayLabel)?undefined:'showrailway=1'"
+        ng-class="{'active':railwayLabel}"
+      >Show central railway</div>
+    </div>
+    <div
+        class="animate-long"
+        ng-if="$parent.copyConfirmed"
+      >
+        <div class="big-list-item success">
+          Copied to clipboard
+        </div>
+    </div>
+
+    <div
+    >
+      <iframe
+        ng-src="{{iframeUrl}}"
+        width = "100%"
+        height = '1000px'
+      ></iframe>
+    </div>
+  </div>
+  </div>

@@ -1,0 +1,7 @@
+<div
+  class="tag-marker"
+  ng-repeat="tag in active.metadata.tags"
+  ng-style ="{'background': tag.color, 'opacity':(tagInItem(item, tag))?1:0}"
+  ng-show="$parent.viewSettings.showTags"
+>
+</div>

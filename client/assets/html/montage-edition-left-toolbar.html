@@ -1,0 +1,93 @@
+<!-- menu -->
+    <div class="btn-group pull-top">
+      <div
+        class="btn animate toggle"
+        ng-click="toggleAsideEditionMenu()"
+        ng-class="{'active' : showMenu}"
+        id="menu-btn"
+      ><span
+          class="glyphicon"
+          ng-class="{'glyphicon-arrow-left':!showMenu,
+          'glyphicon-remove':showMenu}"
+          dicto-tooltip="toggle menu"
+        ></span>
+      </div>
+
+      <div
+        class="btn animate toggle"
+        ng-click="toggleViewSetting('showTags')"
+        ng-class="{'active' : viewSettings.showTags}"
+        id="tags-btn"
+      ><span
+          class="glyphicon glyphicon-tags"
+          dicto-tooltip="show/hide tags"
+        ></span>
+      </div>
+    </div>
+
+    <div class="pull-bottom">
+      <div class="btn animate-medium" ng-click="introMethod(28)">
+          <span class="glyphicon glyphicon-info-sign"></span>
+      </div>
+    </div>
+
+
+    <!--<div class="pull-bottom">
+      <div
+        class="btn animate toggle"
+        ng-if="mode == 'edit'"
+        ng-click="historyUndo()"
+        ng-class="{'active' : operationsHistory.length > 0 && historyCursor >= 0}"
+
+      ><span
+          class="glyphicon glyphicon-share-alt h-mirrored"
+         dicto-tooltip="undo"
+
+        ></span>
+      </div>
+
+      <div
+        class="btn animate toggle"
+        ng-if="mode == 'edit'"
+        ng-click="historyRedo()"
+        ng-class="{'active' : operationsHistory.length > 0 && historyCursor != operationsHistory.length - 1}"
+      ><span
+          class="glyphicon glyphicon-share-alt"
+          dicto-tooltip="redo"
+        ></span>
+      </div>
+    </div>-->
+
+
+    <div class="middle-aligned-container" style="width:100%">
+      <!-- edit mode -->
+      <div class="btn animate middled-item"
+          ng-click="toggleMode('edit')"
+          ng-style="{'cursor':(mode == 'edit')?'default':'pointer'}"
+          ng-class="{'active' : mode == 'edit'}"
+          analytics-on="click"
+          analytics-event="Montage switch to edit mode"
+          id="editmode-btn"
+      ><span
+          class="glyphicon glyphicon-pencil"
+          dicto-tooltip="edit montage"
+          ng-style="{'cursor':(mode == 'edit')?'default':'pointer'}"
+        >
+        </span>
+      </div>
+      <!-- view mode -->
+      <div class="btn animate middled-item"
+        ng-click="toggleMode('preview')"
+        ng-style="{'cursor':(mode == 'preview')?'default':'pointer'}"
+        analytics-on="click"
+        analytics-event="Montage switch to preview mode"
+        ng-class="{'active' : mode == 'preview'}"
+        id="previewmode-btn"
+      ><span
+          class="glyphicon glyphicon-eye-open"
+          dicto-tooltip="preview montage"
+          ng-style="{'cursor':(mode == 'preview')?'default':'pointer'}"
+
+        ></span>
+      </div>
+    </div>

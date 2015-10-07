@@ -1,0 +1,164 @@
+<section class="  col-xs-10 col-sm-9 col-md-6 column animate-medium left-column">
+	<header class="full-header animate-medium">
+		<div
+			class="second-header-container animate-medium"
+			ng-style="{'left':(exportMode)?0:'-100%'}"
+		>
+			<div class="btn-line">
+			      <div
+			        class="btn"
+			        clip-copy="'https://dicto-local.herokuapp.com/share/'+active.metadata.type+'/'+active.metadata.slug"
+			        clip-click="confirmLinkCopy()"
+			      >
+              <span class="glyphicon glyphicon-copy"></span>
+			        Copy url
+			      </div>
+			      <div
+			        class="btn"
+			        clip-copy="makeEmbed()"
+			        clip-click="confirmLinkCopy()"
+			      >
+              <span class="glyphicon glyphicon-copy"></span>
+			        Copy embed code
+			      </div>
+			  </div>
+
+			<div
+				class="closeToggler"
+				ng-click="exportMode = !exportMode"
+			>
+				<span class="glyphicon glyphicon-remove"></span>
+			</div>
+
+		</div>
+		<div
+			class="main-header-container animate-medium"
+			ng-style="{'left':(!exportMode)?0:'100%'}"
+		>
+
+			<div
+				class="exportToggler pull-left-in-column"
+				ng-init="exportMode = false"
+				ng-click="exportMode = !exportMode"
+			>
+				<span
+					class="glyphicon glyphicon-send"
+				></span>
+			</div>
+
+			<div
+				class="searchToggler animate-medium"
+				ng-init="searchMode = false"
+				ng-click="searchMode = !searchMode"
+				ng-class="{'active' : searchMode}"
+			>
+				<span
+					class="glyphicon glyphicon-search"
+				></span>
+			</div>
+
+
+			<div class="item-detail">
+				<h1
+					ng-bind="active.metadata.title"
+          class="item-title"
+				>
+					Dicto - share
+				</h1>
+				<form
+					class="slide-height"
+					ng-show="searchMode"
+				>
+					<div class="form-group">
+						<input
+							type="text"
+							ng-model="$parent.searchTerm"
+							focus-me="searchMode"
+							focus-one-way
+							ng-blur="searchAutoBlur($parent.searchTerm)"
+						>
+					</div>
+				</form>
+			</div>
+		</div>
+	</header>
+	<section
+		class="column-contents-wrapper"
+	>
+		<div
+			class="column-contents animate-medium"
+			fit-header-height=".main-header-container"
+			fit-header-trigger="{{searchMode}}"
+			scroll-manager="leftColumn"
+		>
+      <!-- dicto-item-gui-wrapper-->
+      <div
+        class="dicto-item-gui-wrapper animate-medium"
+        ng-repeat="item in active.data track by $index"
+        ng-click="setActiveItem(item)"
+      >
+        <div
+          class="dicto-item selectable animate-medium"
+          ng-class="setDictoItemClass(item, $index, $parent.searchTerm)"
+        >
+          <div
+          ng-bind-html="renderMarkdownItem(item.content, $parent.searchTerm)"
+
+          ></div>
+          <!-- case tags -->
+              <div
+                class="tags-container"
+                ng-if="showTagsLabels === true"
+              >
+                <div
+                  class="tags-category-container"
+                  ng-repeat="category in item.tagCategories"
+                >
+                  <div
+                    class="tag-category-name"
+                    ng-bind="category"
+                  ></div>
+                  <div class="tag-subcontainer">
+                    <span
+                      class="tag animate-fast flexed-items"
+                      ng-repeat="tag in item.tags|filter:{'category':category} track by $index"
+                      ng-class="{'focused' : tag.focused}"
+                      ng-style="{'background': tag.color,
+                                  'color' : getContrastYIQ(tag.color)
+                                }"
+                      ng-bind="tag.name"
+                    >
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <!-- end tags -->
+        </div>
+      </div>
+      <!-- END dicto-item-gui-wrapper-->
+
+
+		</div>
+	</section>
+</section>
+<section class="col-xs-2 col-sm-3 col-md-6 column animate-medium media-column right-column" ng-controller="MediaCtrl">
+
+	<div ng-switch="activeMediaType" class="media-container">
+		<vimeo-embed
+			ng-switch-when="vimeo"
+			player-id="vimeo"
+			video-url="activeMediaUrl"
+			style="width : 100%;height : 100%;"
+		></vimeo-embed>
+	</div>
+
+	<h3 class="media-loader animate-medium" ng-if="!mediaReady && activeMediaUrl">Loading media, please wait ...</h3>
+</section>
+
+<!-- GUI bar -->
+<div
+  class="gui-wrapper"
+  ng-if="showRailway"
+  ng-include="'/assets/html/central-player-gui.html'"
+></div>
+

@@ -1,0 +1,20 @@
+<div
+    class="column-header options-header"
+    ng-if="active"
+  >
+    <div class="list-header">
+      <h4 ng-bind="optionsMode"></h4>
+      <span
+        class="glyphicon glyphicon-remove"
+        style="cursor:pointer;"
+        ng-click="toggleOptions()"
+      ></span>
+    </div>
+  </div>
+  <div
+    class="column-contents-wrapper"
+    fit-header-height=".column-header"
+    ng-if="optionsMode"
+    ng-include="'assets/html/'+optionsMode+'.html'"
+  >
+</div>

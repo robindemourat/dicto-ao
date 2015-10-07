@@ -1,0 +1,158 @@
+<div
+  class="dropdown position-fixed"
+  id="main-item-menu-{{ $index }}"
+  ng-repeat="item in $parent.active.data track by $index"
+>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a class="pointer" role="menuitem" tabindex="1"
+         ng-click=""
+         ng-if="item.contentEdited"
+      >
+         Split this item at cursor position
+      </a>
+    </li>
+    <li>
+      <a class="pointer" role="menuitem" tabindex="1"
+         ng-click="item.status = (item.status == 'selected')?undefined:'selected'"
+         ng-bind="(item.status === 'selected')?'Deselect this item':'Select this item'"
+      >
+         Select this item
+      </a>
+    </li>
+
+
+    <li>
+      <a class="pointer" role="menuitem" tabindex="1"
+         ng-click="removeItem($index, $parent.active.data)"
+        >
+         Remove this item from montage
+      </a>
+    </li>
+
+
+    <li>
+      <a class="pointer" role="menuitem" tabindex="1"
+         ng-click="mainRemoveSelected()"
+         ng-if="mainHasSelected"
+        >
+         Remove selected items from montage
+      </a>
+    </li>
+
+    <li>
+      <a class="pointer" role="menuitem" tabindex="1"
+          ng-if="!asideAllSelected"
+         ng-click="mainSelectAll()"
+      >
+         Select all items
+      </a>
+    </li>
+
+    <li>
+      <a class="pointer" role="menuitem" tabindex="1"
+          ng-if="!asideHasSelected"
+         ng-click="mainDeselectAll()"
+      >
+         Deselect all items
+      </a>
+    </li>
+
+    <li>
+      <a class="pointer" role="menuitem" tabindex="1"
+          ng-if="$parent.active.data.length > 1"
+          ng-click="moveItemsInMontage(0, $index, [], false, true, [$index])"
+      >
+         Move this item at begining of montage
+      </a>
+    </li>
+
+    <li>
+      <a class="pointer" role="menuitem" tabindex="1"
+          ng-if="$parent.active.data.length > 1"
+          ng-click="moveItemsInMontage($parent.active.data.length - 1, $index, [], false, true, [$index])"
+      >
+         Move this item at end of montage
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+<div
+  class="dropdown position-fixed"
+  id="aside-item-menu-{{ $index }}"
+  ng-repeat="item in asideActive.data track by $index"
+>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a class="pointer" role="menuitem" tabindex="1"
+         ng-click="item.status = (item.status == 'selected')?undefined:'selected'"
+         ng-bind="(item.status === 'selected')?'Deselect this item':'Select this item'"
+      >
+         Select this item
+      </a>
+    </li>
+
+
+    <li>
+      <a class="pointer" role="menuitem" tabindex="1"
+         ng-click="addItemsToMontage(0, [item])"
+        >
+         Add this item at begining of montage
+      </a>
+    </li>
+    <li>
+      <a class="pointer" role="menuitem" tabindex="1"
+         ng-click="addItemsToMontage(active.data.length, [item])"
+      >
+         Add this item at end of montage
+      </a>
+    </li>
+
+
+    <li>
+      <a class="pointer" role="menuitem" tabindex="1"
+         ng-click="addItemsToMontage(0)"
+         ng-if="asideHasSelected"
+        >
+         Add selected items at begining of montage
+      </a>
+    </li>
+    <li>
+      <a class="pointer" role="menuitem" tabindex="1"
+         ng-click="addItemsToMontage(active.data.length)"
+         ng-if="asideHasSelected"
+
+      >
+         Add selected items at end of montage
+      </a>
+    </li>
+
+    <li>
+      <a class="pointer" role="menuitem" tabindex="1"
+          ng-if="!asideAllSelected"
+         ng-click="asideSelectAll()"
+      >
+         Select all items
+      </a>
+    </li>
+
+    <li>
+      <a class="pointer" role="menuitem" tabindex="1"
+          ng-if="!asideHasSelected"
+         ng-click="asideDeselectAll()"
+      >
+         Deselect all items
+      </a>
+    </li>
+
+    <li>
+      <a class="pointer" role="menuitem" tabindex="1"
+          ng-href="edit/transcription/{{asideActive.metadata.slug}}" target="_blank"
+      >
+         Edit this {{asideActive.metadata.type}} in a new window
+      </a>
+    </li>
+  </ul>
+</div>

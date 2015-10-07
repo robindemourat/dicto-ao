@@ -1,0 +1,460 @@
+<!-- menu -->
+<div
+  class="col-xs-12 col-sm-3 col-md-6 column animate-medium"
+  ng-class="{'main-column' : optionsMode, 'stack-left' : !showMenu}"
+  ng-include="'/assets/html/aside-edition-menu.html'"
+>
+</div>
+
+<!-- menu extra-->
+<div
+  class="col-xs-6 column slide-width"
+  ng-if="optionsMode != undefined"
+  ng-include="'/assets/html/aside-edition-menu-extra.html'"
+>
+</div>
+<!-- end of menu-->
+
+<!-- begining of edit view -->
+<section
+  class="column animate-medium left-column"
+  ng-class="{'col-xs-10 col-sm-9 col-md-6' : !fullMain, 'col-xs-12' : fullMain, 'left-column':!showMenu,'right-column':showMenu}"
+>
+
+  <!-- aside left menu -->
+  <aside
+    class="left-aside-menu"
+    ng-include="'/assets/html/montage-edition-left-toolbar.html'"
+  >
+  </aside>
+  <!-- END aside left menu -->
+
+  <!-- left header -->
+  <header class="full-header animate-medium">
+    <div
+      class="second-header-container animate-medium"
+      ng-style="{'left':(exportMode)?0:'-100%'}"
+    >
+      <div class="btn-line">
+            <div
+              class="btn glyphicon glyphicon-copy"
+              clip-copy="'https://dicto-local.herokuapp.com/share/'+active.metadata.type+'/'+active.metadata.slug"
+              clip-click="confirmLinkCopy()"
+            >
+              Copy url
+            </div>
+            <div
+              class="btn glyphicon glyphicon-copy"
+              clip-copy="makeEmbed()"
+              clip-click="confirmLinkCopy()"
+            >
+              Copy embed code
+            </div>
+
+        </div>
+
+      <div
+        class="closeToggler"
+        ng-click="exportMode = !exportMode"
+      >
+        <span class="glyphicon glyphicon-remove"></span>
+      </div>
+    </div>
+    <div
+      class="main-header-container animate-medium"
+      ng-style="{'left':(!exportMode)?0:'100%'}"
+    >
+
+     <!-- <div
+        class="exportToggler pull-right-in-column"
+        ng-init="exportMode = false"
+        ng-click="exportMode = !exportMode"
+      >
+        <span
+          class="glyphicon glyphicon-send"
+        ></span>
+      </div>-->
+
+
+
+      <div class="item-detail">
+        <form
+          class="item-title"
+          ng-submit="updateActive(true)"
+        >
+          <input
+            type="text"
+            ng-model="active.metadata.title"
+            ng-blur="updateActive(true)"
+          >
+        </form>
+        <form
+          class="slide-height"
+          ng-show="searchMode || $parent.viewSettings.searchOptionsVisible"
+
+          ng-submit="mainSelectMatchingSearch()"
+        >
+          <div class="form-group flexed-inline">
+                <input
+                  type="text"
+                  ng-model="$parent.searchTerm"
+                  focus-one-way
+                  focus-me="searchMode"
+                  ng-blur="searchAutoBlur($parent.searchTerm)"
+                >
+                <span
+                  class="btn slide-width"
+                  ng-if="$parent.searchTerm.length > 2 && mode == 'edit'"
+                  ng-click="mainSelectMatchingSearch()"
+                >Select</span>
+                <span
+                  class="search-options-toggle glyphicon glyphicon-cog"
+                  ng-click="toggleViewSetting('searchOptionsVisible')"
+                  ng-class="{'active' : $parent.viewSettings.searchOptionsVisible}"
+                  ng-if="$parent.viewSettings.showTags"
+                ></span>
+          </div>
+        </form>
+
+        <div
+          class="btn-line slide-height"
+          ng-if="$parent.viewSettings.searchOptionsVisible && $parent.viewSettings.showTags"
+        >
+          <div
+            class="btn"
+            ng-class="{'active' : searchSettingsClass(true, false)}"
+            ng-click="toggleSearchSettings(true, false)"
+          >
+            <span class="glyphicon glyphicon-search">
+              Content only
+            </span>
+          </div>
+          <div
+            class="btn"
+            ng-class="{'active' : searchSettingsClass(false, true)}"
+            ng-click="toggleSearchSettings(false, true)"
+          >
+            <span class="glyphicon glyphicon-search">
+              Tags only
+            </span>
+          </div>
+
+          <div
+            class="btn"
+            ng-class="{'active' : searchSettingsClass(true, true)}"
+            ng-click="toggleSearchSettings(true, true)"
+          >
+            <span class="glyphicon glyphicon-search">
+              Content & tags
+            </span>
+          </div>
+        </div>
+        <form
+          class="slide-height flexed-item"
+          ng-show="mode == 'edit'"
+        >
+            <div class="btn-group big-growth">
+              <button
+                class="btn"
+                ng-class="{'inactive':mainAllSelected}"
+                ng-click="mainSelectAll()"
+              >Select all items</button>
+              <button
+                class="btn"
+                ng-class="{'inactive':mainHasSelected == false}"
+                ng-click="mainDeselectAll()"
+              >Deselect all items</button>
+            </div>
+            <button
+              class="btn"
+              ng-class="{'inactive':mainHasSelected == false}"
+              ng-click="mainRemoveSelected()"
+            >Remove selected items</button>
+        </form>
+      </div>
+
+    </div>
+
+    <div
+        class="searchToggler animate-medium"
+        ng-init="searchMode = false"
+        ng-click="searchMode = !searchMode"
+        ng-class="{'active' : searchMode}"
+      >
+        <span
+          class="glyphicon glyphicon-search"
+        ></span>
+    </div>
+
+
+    <div
+        class="side-item pull-right animate"
+        ng-click="toggleFullMain(false)"
+        ng-if="fullMain && mode == 'edit'"
+      >
+        <span
+          class="glyphicon glyphicon-plus"
+        ></span>
+    </div>
+
+  </header>
+  <!-- end left header -->
+  <section
+    class="column-contents-wrapper"
+    rectangle-selection
+    rectangle-selection-if="mode == 'edit' && !onItemDrag"
+    rectangle-selection-abort-hover=".CodeMirror-lines"
+
+  >
+    <div
+      class="column-contents"
+      fit-header-height=".main-header-container"
+      fit-header-trigger="{{searchMode}},{{mode}}"
+      ng-model="active.data"
+      data-as-sortable="dragControlListeners"
+      is-disabled="mode == 'preview'"
+      ng-class="{'onDrag': onMainItemsDrag,'preview-mode':mode=='preview'}"
+      ng-include="'/assets/html/dicto-montage-main-item.html'"
+      scroll-manager="leftColumn"
+    >
+    </div>
+  </section>
+</section>
+<!--end of left column -->
+
+
+<!--begining of right column -->
+<section
+  class="right-column col-xs-2 col-sm-3 col-md-6 column animate-medium slide-in-right slide-out-right aside-edit"
+  ng-class="{'main-column' : mode== 'edit', 'media-column' : mode == 'preview'}"
+  ng-controller="MediaCtrl"
+  rectangle-selection
+  rectangle-selection-if="mode == 'edit' && !onItemDrag"
+  rectangle-selection-abort-hover=".CodeMirror-lines"
+
+>
+
+  <!-- preview mode column -->
+  <div ng-if="mode=='preview'" ng-switch="activeMediaType" class="media-container">
+    <vimeo-embed
+      ng-switch-when="vimeo"
+      player-id="vimeo"
+      video-url="activeMediaUrl"
+      style="width : 100%;height : 100%;"
+    ></vimeo-embed>
+    <div
+      class="youtube-embed-responsive youtube-embed-responsive-16by9"
+      ng-switch-when="youtube"
+
+    >
+          <youtube-video
+            class="youtube-embed-responsive-item"
+            video-id="activeMediaId"
+            player-vars="youtubePlayerVars"
+            player="player"
+          ></youtube-video>
+    </div>
+    <h3 class="media-loader animate-medium" ng-if="!mediaReady && activeMediaUrl">Loading media, please wait ...</h3>
+  </div>
+  <!-- end preview mode column -->
+
+  <!-- edit mode column -->
+  <div ng-if="mode == 'edit'" class="montage-edit-aside-container animate-medium">
+    <header class="full-header animate-medium">
+      <div
+        class="second-header-container animate-medium"
+      >
+      </div>
+      <div
+        class="main-header-container aside-header-container animate-medium"
+        style="padding-bottom:12px"
+      >
+
+        <div
+          class="searchToggler animate-medium"
+          ng-click="toggleAsideSearch()"
+          ng-class="{'active' : asideSearchMode}"
+        >
+          <span
+            class="glyphicon glyphicon-search"
+          ></span>
+        </div>
+
+
+        <div class="item-detail">
+          <div
+            class="flexed-item"
+          >
+            <span class="">You are browsing the transcription :</span>
+            <span
+              class="btn-group big-growth"
+              dropdown
+              ng-init="asidemenuOpen = false"
+              on-toggle="asidemenuOpen = !asidemenuOpen"
+              style="margin-left:1em"
+
+            >
+              <button id="single-button" type="button" class="btn btn-primary" dropdown-toggle ng-disabled="disabled">
+                <span  ng-bind="asideActive.metadata.title"></span>
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="single-button">
+
+                <li class="flexed-item">
+                  <span class="glyphicon glyphicon-search"></span>
+                  <input
+                    style="width:auto;margin-left:1em;flex-grow:2"
+                    type="text"
+                    ng-model="asidemenu"
+                    focus-me="asidemenuOpen"
+                  >
+                </li>
+
+                <li
+                  ng-repeat="item in filesList.transcriptions|filter:asidemenu track by $index"
+                  role="menuitem"
+                  ng-bind="item.title"
+                  ng-class="{'active' : asideActive === item}"
+                  ng-click="setAsideActive(item)"
+                ></li>
+              </ul>
+            </span>
+
+            <div class="btn-group">
+              <a ng-if="asideActive" ng-href="edit/transcription/{{asideActive.metadata.slug}}" target="_blank" class="btn">Edit</a>
+              <span ng-if="asideActive" ng-click="setAsideActive(asideActive)" class="btn"
+              >Refresh</span>
+            </div>
+          </div>
+          <form
+            class="slide-height"
+            ng-show="asideSearchMode"
+            ng-submit="asideSelectMatchingSearch()"
+          >
+            <div class="form-group flexed-inline">
+              <input
+                type="text"
+                ng-model="inputs.asideSearchTerm"
+                focus-one-way
+                focus-me="asideSearchMode"
+                ng-blur="asideSearchAutoBlur(inputs.asideSearchTerm)"
+              >
+
+              <span
+                class="btn slide-width"
+                ng-if="inputs.asideSearchTerm.length > 2"
+                ng-click="asideSelectMatchingSearch()"
+              >Select</span>
+
+              <span
+                  class="search-options-toggle glyphicon glyphicon-cog"
+                  ng-click="toggleViewSetting('asideSearchOptionsVisible')"
+                  ng-class="{'active' : $parent.viewSettings.asideSearchOptionsVisible}"
+                  ng-if="$parent.viewSettings.showTags"
+                ></span>
+            </div>
+          </form>
+
+          <div
+            class="btn-line slide-height"
+            ng-if="$parent.viewSettings.asideSearchOptionsVisible && $parent.viewSettings.showTags"
+          >
+            <div
+              class="btn"
+              ng-class="{'active' : searchSettingsClass(true, false)}"
+              ng-click="toggleSearchSettings(true, false)"
+            >
+              <span class="glyphicon glyphicon-search">
+                Content only
+              </span>
+            </div>
+            <div
+              class="btn"
+              ng-class="{'active' : searchSettingsClass(false, true)}"
+              ng-click="toggleSearchSettings(false, true)"
+            >
+              <span class="glyphicon glyphicon-search">
+                Tags only
+              </span>
+            </div>
+
+            <div
+              class="btn"
+              ng-class="{'active' : searchSettingsClass(true, true)}"
+              ng-click="toggleSearchSettings(true, true)"
+            >
+              <span class="glyphicon glyphicon-search">
+                Content & tags
+              </span>
+            </div>
+          </div>
+
+          <form class="slide-height flexed-item" id="aside-operations">
+            <div class="btn-group big-growth">
+              <button
+                class="btn glyphicon"
+                ng-class="{'inactive':asideHasSelected == false}"
+                ng-click="addItemsToMontage(active.data.length);asideDeselectAll()"
+              >Add selected items</button>
+            </div>
+            <div class="btn-group">
+              <button
+                class="btn"
+                ng-class="{'inactive':asideAllSelected}"
+                ng-click="asideSelectAll()"
+              >Select all items</button>
+              <button
+                class="btn"
+                ng-class="{'inactive':asideHasSelected == false}"
+                ng-click="asideDeselectAll()"
+              >Deselect all items</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div
+        class="side-item pull-left animate"
+        ng-click="toggleFullMain(true)"
+        ng-if="!fullMain && mode == 'edit'"
+      >
+        <span
+          class="glyphicon glyphicon-minus"
+        ></span>
+    </div>
+
+    </header>
+
+    <section
+      class="column-contents-wrapper rightColumn"
+    >
+      <!-- main dicto items container -->
+      <div
+        class="column-contents"
+        fit-header-height=".aside-header-container"
+        fit-header-trigger="{{asideSearchMode}}"
+        ng-model="asideActive.data"
+        data-as-sortable="asideDragControlListeners"
+        ng-include="'assets/html/dicto-montage-aside-item.html'"
+        scroll-manager="rightColumn"
+      >
+
+      </div>
+  </section>
+
+  </div>
+  <!-- end edit mode column -->
+</section>
+
+<!-- GUI bar -->
+<div
+  class="gui-wrapper slide-in-right slide-out-right"
+  ng-include="'/assets/html/central-player-gui.html'"
+  ng-if="mode === 'preview' && !showMenu"
+></div>
+
+
+<!-- contextual menus -->
+<div
+  ng-include="'/assets/html/montage-edition-contextual-menus.html'"
+></div>

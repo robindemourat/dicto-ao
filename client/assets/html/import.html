@@ -1,0 +1,35 @@
+<div
+  class="column-contents"
+  fit-to-header-height=".options-header"
+>
+  <div
+    nv-file-drop
+    uploader="$parent.uploader"
+    class="big-list-item dropbox"
+  >
+    Drop a file in this box (supported : .json, .srt)
+  </div>
+
+
+
+
+  <div class="big-list-item btn" ng-click="$parent.selectFile()">
+    Upload a file from your computer
+  </div>
+
+  <input type="file" id="file-select" nv-file-select uploader="$parent.uploader">
+
+  <div
+    class="big-list-item failure animate-long"
+    ng-if="importFailMsg"
+    ng-bind="importFailMsg"
+  >
+  </div>
+
+  <div
+    class="big-list-item success animate-long"
+    ng-if="importSuccessMsg"
+    ng-bind="importSuccessMsg"
+  >
+  </div>
+</div>

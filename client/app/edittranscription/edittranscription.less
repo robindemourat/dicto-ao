@@ -1,0 +1,602 @@
+
+.dicto-item-gui-wrapper{
+    /*margin-top : -2em;*/
+    margin-bottom : -2em;
+    position : relative;
+    padding-left : .5em;
+    padding-right : .5em;
+}
+
+
+
+.timecode-handler{
+    width : 100%;
+    margin : 0;
+    padding : 0;
+    cursor : ns-resize;
+    text-align : center;
+}
+
+.timecode-mode .timecode-in::before{
+    content:"";
+    position : absolute;
+    top : .7em;
+    left : 0;
+    width : 100%;
+    border-top : 1px solid black;
+    z-index : -1;
+}
+
+.timecode-mode .timecode-out::before{
+    content:"";
+    position : absolute;
+    bottom : .7em;
+    left : 0;
+    width : 100%;
+    border-top : 1px solid black;
+    z-index : -1;
+}
+
+
+.timecode-mode .dicto-item{
+    /*padding : 0 0 0 1em;*/
+    border : none;
+    padding: 0;
+    margin: 0;
+}
+
+.timecode-mode .dicto-item-contents{
+    cursor : text;
+}
+
+
+.dicto-item-gui-wrapper .tags-container{
+    /*border-top : 1px solid rgba(0,0,0,.8);*/
+    /*padding : @itemPadding 0 @itemPadding 0;*/
+}
+
+
+.thin-header{
+    margin : 0;
+    padding : 0!important;
+}
+
+.thin-header .btn-line{
+    margin : 0 @columnLateralPadding 0 @columnLateralPadding;
+}
+
+.thin-header .btn{
+    margin-top : .5em;
+    margin-bottom : .5em;
+}
+
+.time-grads-container{
+    width : 100%;
+    position : absolute;
+    left : 0;
+    font-family : "Inconsolata", "sans serif";
+    /*top : -2em;*/
+    /*overflow-y : hidden;
+    overflow-x : visible;*/
+}
+
+.time-grad{
+    position : absolute;
+    border-top : 1px dashed @buttonMediumBackground;
+    width : 200%;
+    left : 10em;
+    font-size : .6em;
+    opacity : .7;
+    cursor : pointer;
+}
+
+.time-grad:hover{
+    font-size : 1em;
+    left : 6em;
+    z-index : 10;
+}
+
+/*
+Player line
+*/
+
+.time-grads-container .main-player{
+    border-top : 1px solid brown;
+    position : absolute;
+    width: 95%;
+    left : 0;
+    text-align : right;
+    top : 0;
+    pointer-events : none;
+}
+
+.time-grads-container  .time-placeholder{
+    color : brown;
+    text-align : left;
+    position : absolute;
+    left : 0;
+    top : -1.2em;
+    font-size : .6em;
+}
+
+.time-grads-container  .seeking-bar{
+    position : absolute;
+    border-top : 1px dashed brown;
+    width : 200%;
+    left : -8em;
+
+    -webkit-animation: blinkdashed 1s linear infinite;
+       -moz-animation: blinkdashed 1s linear infinite;
+            animation: blinkdashed 1s linear infinite;
+}
+
+@keyframes blinkdashed
+{
+    0%
+    {
+        border-top : 3px dashed brown;
+    }
+    100%
+    {
+        border-top : 1px dashed transparent;
+    }
+}
+@-webkit-keyframes blinkdashed
+{
+    0%
+    {
+        border-top : 3px dashed brown;
+
+    }
+    100%
+    {
+        border-top : 1px dashed transparent;
+    }
+}
+
+.time-grads-container .main-player .main-player-drag-bar:hover,
+.time-grads-container .main-player .main-player-buttons:hover{
+    z-index : 5;
+}
+
+.main-player .main-player-drag-bar{
+    position: absolute;
+    top : 0;
+    left : 0;
+    width : 100%;
+    height : 1em;
+   /* cursor: ns-resize;*/
+    pointer-events : all;
+
+}
+
+.main-player .main-btn-line{
+    pointer-events : none;
+
+}
+
+.main-player .main-player-buttons{
+    position : relative;
+    top : -6.5em;
+    pointer-events : none;
+}
+
+.main-player .main-btn-line{
+    margin-bottom : .3em;
+}
+
+.time-grads-container .main-player .glyphicon{
+    border-radius : 50%;
+    font-size : 1.3em;
+    padding : .4em;
+    cursor : pointer;
+    color : brown;
+    pointer-events : all;
+    position : relative;
+    right : 0;
+}
+
+.time-grads-container .main-player .play-btn .glyphicon{
+    color : white;
+    background: brown;
+}
+
+.main-player .main-player-buttons:hover{
+    top : -7em;
+}
+
+
+.main-player .main-btn-line:not(.play-btn) .glyphicon{
+    opacity : 0;
+}
+
+.main-player .main-player-buttons:hover .glyphicon{
+    opacity : 1;
+}
+.main-player .main-player-buttons:hover .play-btn .glyphicon{
+    font-size : 2em;
+    right : -.35em;
+}
+
+.main-player .main-btn-line:not(.play-btn) .glyphicon:hover{
+    color : white;
+    background: brown;
+}
+
+
+
+/*
+COMPONENTS
+*/
+
+
+.tags-grid{
+    width : 100%;
+    height: auto;
+    font-family: "Inconsolata", "Sans Serif";
+}
+
+.tags-grid th,
+.tags-grid tr{
+    border : none;
+}
+
+.tags-grid tr:nth-child(odd){
+    background : @buttonMediumBackground;
+}
+
+.tags-grid .header,
+.tag-frequency-header{
+    text-transform : uppercase;
+    font-weight : 800;
+    color : white;
+    background : @buttonDarkBackground!important;
+}
+
+.tags-grid td{
+    padding : @itemPadding;
+}
+
+.tags-grid .color-placeholder{
+    border : 1px solid white!important;
+    width : 1.5em;
+    height : 1.5em;
+    color : transparent;
+    cursor : pointer;
+    display : block;
+}
+
+.tags-grid .glyphicon-trash{
+    border-radius : 50%;
+
+    cursor : pointer;
+    padding : .5em;
+}
+
+.tags-grid .glyphicon-trash:hover{
+    background : @buttonDarkBackground;
+    color : white;
+}
+
+.tags-grid input{
+    background : transparent;
+}
+
+.tags-grid input:hover
+{
+    background : @buttonLightBackground;
+}
+
+.tags-grid input:focus
+{
+    background : @buttonDarkBackground;
+    color : white;
+}
+
+
+.tags-grid button{
+    padding : 0;
+    background : inherit;
+    width: 100%;
+}
+
+.tags-grid .dropdown-menu{
+    border-radius : 0;
+    border : 0;
+    background: @buttonDarkBackground;
+    color : white;
+    text-transform : uppercase;
+}
+
+.tags-grid .dropdown-menu li{
+    padding : .5em;
+    cursor : pointer;
+    opacity : .5;
+}
+
+.tags-grid .dropdown-menu li:hover{
+    background: @buttonDarkBackground;
+    opacity : 1;
+}
+
+.tags-frequency-wrapper{
+    position : absolute;
+    width : 100%;
+    height : 100%;
+    left : 0;
+    top : 0;
+}
+
+
+.tag-frequency-headers{
+    display : flex;
+    width : 80%;
+    height : 9%;
+    bottom : 1%;
+    position : absolute;
+    left : 10%;
+}
+
+.tag-frequency-header{
+    padding : 1em;
+    font-family : "Inconsolata";
+    display : flex;
+}
+
+
+.tag-frequency-header:not(:last-child){
+    border-right : 2px white solid;
+}
+
+.tag-frequency-header .icons{
+    min-width : 1.3em;
+    position : relative;
+    height : 100%;
+}
+.tag-frequency-header .icons span{
+    position : absolute;
+    left : 0;
+}
+
+.tag-frequency-header .icons span:first-child{
+    top : 0;
+}
+
+
+.tag-frequency-header .icons span:last-child{
+    top : 1.5em;
+}
+
+
+
+.tags-frequency-container .tag-marker{
+    text-align : right;
+}
+
+.tags-frequency-container{
+    position : absolute;
+    top : 10%;
+    height : 80%;
+    left : 10%;
+    width : 80%;
+}
+
+
+.tags-frequency-container .gui-item-container{
+    border : none!important;
+}
+
+
+
+.tags-frequency-container .glyphicon{
+    font-size : 1.2em;
+    opacity : 0;
+    cursor : pointer;
+}
+
+.tags-frequency-container .tag-frequency-header .glyphicon{
+    font-size : 1em;
+    opacity : 1;
+}
+
+.tags-frequency-container .tag-marker:hover .glyphicon{
+    opacity : 1;
+}
+
+
+.tag{
+    background : rgba(0,0,0,.3);
+    margin-right : 1em;
+    padding : 0.5em;
+    border-radius : .3em;
+    color : white;
+    display: inline-block;
+    margin-bottom : 1em;
+    height : 2.5em;
+}
+
+
+.tag form{
+    display : inline;
+    background : transparent;
+    position : relative;
+    top : -.3em;
+}
+
+.tag .angucomplete-holder{
+    display : inline;
+}
+
+.tag input{
+    width : auto!important;
+    background: transparent;
+    display : inline;
+    color : inherit;
+}
+
+.tag:not(.focused){
+    cursor : pointer!important;
+}
+
+.tag.focused{
+    background : rgba(0,0,0,.6);
+}
+.tag .placeholder{
+    position : absolute;
+    opacity : 0;
+    pointer-events : none;
+}
+
+
+.tags-category-container{
+    display : flex;
+}
+
+.tags-category-container .tag-category-name{
+    padding-right : @itemPadding;
+    text-transform : uppercase;
+    font-weight : 800;
+    width : 15%;
+    text-align : right;
+}
+
+.tags-category-container .tag-subcontainer{
+    width : 85%;
+    padding-left : @itemPadding;
+}
+
+.timecode-handler.timecode-in,
+.timecode-handler.timecode-out{
+    position : absolute;
+    width : 100%;
+    left : 0;
+}
+
+.timecode-in{
+    top : 0;
+}
+
+.timecode-out{
+    bottom : 0;
+}
+
+/* DICTO ITEMS SPECIFICS **/
+
+.dicto-item-gui-wrapper .timecode-handler input{
+    background : @backgroundLightColor;
+    text-align : center;
+}
+
+.dicto-item-gui-wrapper:hover .timecode-handler input,
+.dicto-item-gui-wrapper.active .timecode-handler input
+{
+    background : @buttonMediumBackground;
+}
+
+.timecode-handler input:hover{
+    background : @buttonMediumBackground!important;
+    color : white;
+}
+
+.dicto-item-gui-wrapper.active .timecode-handler input:hover{
+    background : @buttonDarkBackground!important;
+}
+
+.dicto-item-gui-wrapper .timecode-handler input:focus{
+    background : @buttonDarkBackground!important;
+    color : white;
+    text-align : center;
+    font-size : 2em!important;
+}
+
+.drag-item-zone{
+    position : absolute;
+    top : 0;
+    right : 0;
+    cursor : all-scroll;
+    width : 3em;
+    height :100%;
+}
+
+.dicto-item-gui-wrapper .top-left-button,
+.dicto-item-gui-wrapper .top-right-button,
+.dicto-item-gui-wrapper .bottom-right-button,
+.dicto-item-gui-wrapper .bottom-left-button
+{
+    position : absolute;
+    font-size : 1.5em;
+    cursor : pointer;
+    /*height : 1.1em;
+    width : 1.15em;
+    padding-left : .05em;
+    background : @backgroundLightColor;
+    border-radius : 50%;*/
+    z-index : 7;
+    opacity : 0;
+}
+
+.dicto-item-gui-wrapper:hover .top-left-button,
+.dicto-item-gui-wrapper:hover .top-right-button,
+.dicto-item-gui-wrapper:hover .bottom-right-button,
+.dicto-item-gui-wrapper:hover .bottom-left-button
+{
+    opacity : 1;
+}
+
+.dicto-item-gui-wrapper .top-left-button,
+.dicto-item-gui-wrapper .bottom-left-button{
+    left : 0;
+}
+
+.dicto-item-gui-wrapper .top-right-button,
+.dicto-item-gui-wrapper .bottom-right-button{
+    right : 0;
+}
+
+.dicto-item-gui-wrapper .top-left-button,
+.dicto-item-gui-wrapper .top-right-button
+{
+    top : -.25em;
+}
+
+.dicto-item-gui-wrapper .bottom-left-button,
+.dicto-item-gui-wrapper .bottom-right-button
+{
+    bottom : -.25em;
+}
+
+.dicto-item-gui-wrapper .top-left-button:hover,
+.dicto-item-gui-wrapper .top-right-button:hover,
+.dicto-item-gui-wrapper .bottom-right-button:hover,
+.dicto-item-gui-wrapper .bottom-left-button:hover{
+    font-size : 2em;
+}
+
+.dicto-item-gui-wrapper .colors-inversed{
+    background : black;
+    color : @backgroundLightColor;
+}
+
+
+/* TAGS MODE */
+.tags-mode .dicto-item{
+    cursor : default;
+}
+
+
+/* CASE BEGINING */
+.first-transcript{
+    position : fixed;
+    left : 0;
+    top : 50%;
+    width : 50%;
+    pointer-events : none;
+}
+
+.first-transcript-content{
+    background : @buttonLightBackground;
+    margin : 0 @columnLateralPadding 0 @columnLateralPadding;
+    padding : @itemPadding;
+    text-align : center;
+    opacity : .7;
+}

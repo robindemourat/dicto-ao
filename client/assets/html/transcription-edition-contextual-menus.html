@@ -1,0 +1,67 @@
+
+
+<div
+  class="dropdown position-fixed"
+  id="main-item-menu-{{ $index }}"
+  ng-repeat="item in $parent.active.data track by $index"
+>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a class="pointer" role="menuitem" tabindex="1"
+         ng-click="toggleEdited(item)"
+         ng-if="!item.contentEdited"
+      >
+         Edit this item
+      </a>
+    </li>
+
+     <li>
+      <a class="pointer" role="menuitem" tabindex="1"
+         ng-click="removeItemGen($index, $parent.active.data)"
+      >
+         Remove this item
+      </a>
+    </li>
+
+    <li>
+      <a class="pointer" role="menuitem" tabindex="1"
+         ng-click="setActiveItem(item, item.begin)"
+      >
+         Play media at the begining of this item
+      </a>
+    </li>
+
+     <li>
+      <a class="pointer" role="menuitem" tabindex="1"
+         ng-click="setActiveItem(item, item.end)"
+      >
+         Play media at the end of this item
+      </a>
+    </li>
+
+  </ul>
+</div>
+
+
+<div
+  class="dropdown position-fixed"
+  id="transcription-global-menu"
+>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a class="pointer" role="menuitem" tabindex="1"
+         ng-click="clickOnMainColumn($event)"
+      >
+         Play media here
+      </a>
+    </li>
+
+    <li>
+      <a class="pointer" role="menuitem" tabindex="1"
+         ng-click="addNewItemAtMousePosition($event)"
+      >
+         Add an item here
+      </a>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,383 @@
+/*
+Dicto metadata - see dicto.org
+
+type:transcription
+title:Ici et ailleurs
+slug:cap_ailleurs-fr.srt
+tags:tag 1:blue, tag 2:red, tag 3:green, tag 4:purple
+mediaUrl:https://vimeo.com/132553779
+sharable:true
+*/
+
+0
+00:00:04:000 --> 00:00:06:780
+Donc j’étais en pleine rédaction de ce livre
+
+1
+00:00:06:780 --> 00:00:09:560
+et le projet que nous avions avec le professeur
+
+2
+00:00:09:560 --> 00:00:12:340
+d’arts plastiques pour mener avec les élèves
+
+3
+00:00:12:340 --> 00:00:15:120
+c’était un projet qui se faisait en parallèle
+
+4
+00:00:15:120 --> 00:00:17:900
+à l’écriture de ce livre puisque les élèves
+
+5
+00:00:17:900 --> 00:00:20:680
+participaient aussi, en tout cas suivaient
+
+6
+00:00:20:680 --> 00:00:23:460
+l’élaboration du texte ; un projet qui partait
+
+7
+00:00:23:460 --> 00:00:26:240
+de ce mélange entre l’ici et d’ailleurs pour
+
+8
+00:00:26:240 --> 00:00:28:736
+C’est-à-dire en fait comment on est nourris
+
+9
+00:00:28:736 --> 00:00:31:232
+des lieux lointains que ce soit les lieux
+
+10
+00:00:31:232 --> 00:00:33:728
+d’où l’on vient, ce qui était d’autant plus
+
+11
+00:00:33:728 --> 00:00:36:224
+intéressant dans ce lycée puisque la classe
+
+12
+00:00:36:224 --> 00:00:38:720
+avec laquelle on travaillait était constituée
+
+13
+00:00:38:720 --> 00:00:41:216
+par des élèves qui avait des origines pour
+
+14
+00:00:41:220 --> 00:00:43:492
+les lieux d’où l’on vient, mais pas forcément,
+
+15
+00:00:43:492 --> 00:00:45:764
+parce qu’on ne voulait pas non plus les cantonner
+
+16
+00:00:45:764 --> 00:00:48:036
+à leurs origines ni les forcer à travailler
+
+17
+00:00:48:036 --> 00:00:50:308
+sur leurs origines s’ils ne le souhaitaient
+
+18
+00:00:50:308 --> 00:00:52:580
+pas ça pouvait aussi être des lieux lointains
+
+19
+00:00:52:580 --> 00:00:54:852
+qui nous font rêver, où on a envie d’aller,
+
+20
+00:00:54:852 --> 00:00:57:124
+où on est allé, où on a vécu quelque chose.
+
+21
+00:00:57:130 --> 00:01:00:140
+Et comment l’ici et l’ailleurs se mélangent
+
+22
+00:01:00:140 --> 00:01:03:150
+en fait dans l’imaginaire, dans le territoire
+
+23
+00:01:03:150 --> 00:01:05:645
+Entre la fiction et la réalité, c’est-à-dire
+
+24
+00:01:05:645 --> 00:01:08:140
+vraiment se nourrir de la réalité, essayer
+
+25
+00:01:08:140 --> 00:01:10:635
+de l’appréhender autrement aussi grâce à
+
+26
+00:01:10:635 --> 00:01:13:130
+la fiction. Et ensuite revenir vers l’écriture,
+
+27
+00:01:13:140 --> 00:01:16:131
+Les deux côtés qu’on trouve toujours dans
+
+28
+00:01:16:131 --> 00:01:19:122
+la fiction c’est-à-dire vraiment le côté vitrine
+
+29
+00:01:19:122 --> 00:01:22:113
+d’abord, donc avec la jolie maison, le petit
+
+30
+00:01:22:113 --> 00:01:25:104
+jardin, la famille proprette etc. Et aussi
+
+31
+00:01:25:104 --> 00:01:28:095
+tout ce que la maison, forcément, renferme
+
+32
+00:01:28:095 --> 00:01:31:086
+de secrets, de vie familiale pas forcément
+
+33
+00:01:31:090 --> 00:01:33:605
+Enfin tout ce cliché qu’on trouve dans les
+
+34
+00:01:33:605 --> 00:01:36:120
+séries comme Desperate Housewife où, vraiment,
+
+35
+00:01:36:120 --> 00:01:38:635
+on a toujours le décalage entre la maison,
+
+36
+00:01:38:635 --> 00:01:41:150
+ce qu’elle cherche à montrer et ce qu’elle
+
+37
+00:01:41:160 --> 00:01:44:476
+Et on était surpris, au fil du travail, de
+
+38
+00:01:44:476 --> 00:01:47:792
+se rendre compte à quel point leurs textes
+
+39
+00:01:47:792 --> 00:01:51:108
+étaient sombres et très nourris par un imaginaire
+
+40
+00:01:51:108 --> 00:01:54:424
+dans lequel on les avait pas forcément poussé
+
+41
+00:01:54:424 --> 00:01:57:740
+mais qui était pour eux l’imaginaire américain,
+
+42
+00:01:57:740 --> 00:02:01:056
+c’est-à-dire plutôt l’imaginaire du polar,
+
+43
+00:02:01:060 --> 00:02:03:068
+Et les histoires qu’on a eu dans ces maisons
+
+44
+00:02:03:068 --> 00:02:05:076
+étaient toutes absolument atroces. Et je
+
+45
+00:02:05:076 --> 00:02:07:084
+pense qu’on leur avait demandé aussi de se
+
+46
+00:02:07:084 --> 00:02:09:092
+servir vraiment du décor, des éléments de
+
+47
+00:02:09:092 --> 00:02:11:100
+détail du décor pour raconter leur histoire.
+
+48
+00:02:11:100 --> 00:02:13:950
+Donc là par exemple, on a une élève qui a
+
+49
+00:02:13:950 --> 00:02:16:800
+vraiment utilisé les barbelés, les volets,
+
+50
+00:02:16:800 --> 00:02:19:650
+là-bas, condamnés et qui a raconté, donc,
+
+51
+00:02:19:650 --> 00:02:22:500
+une sombre histoire de meurtre dans cette
+
+52
+00:02:22:500 --> 00:02:25:350
+maison, où chaque détail... La poubelle aussi,
+
+53
+00:02:25:350 --> 00:02:28:200
+elle avait utilisé la poubelle dans des circonstances
+
+54
+00:02:28:220 --> 00:02:30:711
+Les élèves ont découvert, en visitant ce
+
+55
+00:02:30:711 --> 00:02:33:202
+quartier, sa spécificité qu’ils n’avaient
+
+56
+00:02:33:202 --> 00:02:35:693
+pas forcément vu avant. Et c’est vrai que
+
+57
+00:02:35:693 --> 00:02:38:184
+les maisons ne sont pas forcément spectaculaires
+
+58
+00:02:38:184 --> 00:02:40:675
+au premier abord parce qu’elles sont de taille
+
+59
+00:02:40:675 --> 00:02:43:166
+modeste et qu’on est habitués, en tous cas
+
+60
+00:02:43:166 --> 00:02:45:657
+dans l’image d’Épinal de la maison américaine,
+
+61
+00:02:45:657 --> 00:02:48:148
+vraiment à avoir des grandes maisons avec
+
+62
+00:02:48:150 --> 00:02:49:917
+Et bon, ces maisons sont quand même de taille
+
+63
+00:02:49:917 --> 00:02:51:684
+relativement modeste et ne sont pas spectaculaires
+
+64
+00:02:51:684 --> 00:02:53:451
+même si elles sont quand même, dès qu’on
+
+65
+00:02:53:451 --> 00:02:55:218
+les regarde un petit peu, très différentes.
+
+66
+00:02:55:220 --> 00:02:57:940
+Et c’est ça que j’ai trouvé vraiment intéressant,
+
+67
+00:02:57:940 --> 00:03:00:660
+c’est, cette différence qui est vraiment
+
+68
+00:03:00:660 --> 00:03:03:380
+signifiante, significative et en même temps
+
+69
+00:03:03:380 --> 00:03:06:100
+cette discrétion, cette manière de se fondre,
+
+70
+00:03:07:080 --> 00:03:08:858
+Donc je pense que les élèves ont été surpris
+
+71
+00:03:08:858 --> 00:03:10:636
+et peut-être même un peu déçus même, au premier
+
+72
+00:03:10:636 --> 00:03:12:414
+abord, parce qu’ on ne leur avait pas dit
+
+73
+00:03:12:414 --> 00:03:14:192
+où on les emmenait puisque justement le but
+
+74
+00:03:14:192 --> 00:03:15:970
+c’était de partir de cette photo mystérieuse
+
+75
+00:03:15:970 --> 00:03:17:748
+et ensuite de les emmener là où elle avait
+
+76
+00:03:17:748 --> 00:03:19:526
+été prise et ils se sont retrouvés à 10 mètres
+
+77
+00:03:19:526 --> 00:03:21:304
+du lycée alors que je pense qu’ils pensaient
+
+78
+00:03:21:304 --> 00:03:23:082
+qu’on allait les emmener dans un endroit
+
+79
+00:03:23:090 --> 00:03:26:093
+Donc je pense que début il y a eu une sorte
+
+80
+00:03:26:093 --> 00:03:29:096
+d’étonnement, un peu déçu de dire vraiment mais
+
+81
+00:03:29:096 --> 00:03:32:099
+qu’est-ce qu’on fait là à deux pas du lycée
+
+82
+00:03:32:100 --> 00:03:35:418
+Et là, petit à petit, je pense qu’ils ont
+
+83
+00:03:35:418 --> 00:03:38:736
+vraiment vu ce quartier autrement et moi c’était
+
+84
+00:03:38:736 --> 00:03:42:054
+ça qui comptait aussi, pour moi, dans ce
+
+85
+00:03:42:054 --> 00:03:45:372
+projet sur l’ici et l’ailleurs, c’était de
+
+86
+00:03:45:372 --> 00:03:48:690
+faire redécouvrir l’ici, et de leur permettre
+
+87
+00:03:48:690 --> 00:03:52:008
+de s’approprier peut-être un peu plus un
+
+88
+00:03:52:010 --> 00:03:54:428
+Parce que je pense que c’est aussi une force
+
+89
+00:03:54:428 --> 00:03:56:846
+de pouvoir donner son point de vue par l’écriture,
+
+90
+00:03:56:846 --> 00:03:59:264
+par le dessin, de pouvoir s’approprier un
+
+91
+00:03:59:264 --> 00:04:01:682
+lieu dans lequel on vit tous les jours, de
+
+92
+00:04:01:682 --> 00:04:04:100
+pouvoir le voir autrement et de pouvoir aussi
+

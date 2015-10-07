@@ -1,0 +1,46 @@
+<div class="col-xs-6 column">
+<div class="column-header">
+	<h1>Welcome to Dicto</h1>
+</div>
+
+<div class="column-contents-wrapper" fit-header-height=".column-header">
+	<div 
+		class="column-contents"
+		ng-include="'assets/html/about.html'"
+	>
+	</div>
+</div>
+
+</div>
+<div class="col-xs-6 column main-column">
+
+<div class="centered-content-wrapper">
+	<form id="connect-form" name="userForm" ng-submit="submitLoginForm()" class="form-container" novalidate>
+
+	        <!-- EMAIL -->
+	        <div class="form-group" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
+	            <label class="glyphicon glyphicon-user"></label>
+	            <input type="email" name="email" class="form-control" ng-model="user.email" placeholder="type your account email here">
+	            <!--<p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Enter a valid email.</p>-->
+	        </div>
+
+	        <div class="form-group" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
+	            <label class="glyphicon glyphicon-eye-close"></label>
+	            <input type="password" name="password" class="form-control" ng-model="user.password" placeholder="type your password here">
+	            <p ng-show="userForm.password.$invalid" class="help-block">Enter a valid password.</p>
+	        </div>
+
+			<div class="btn-line">
+				<button type="submit" class="btn animate-medium" ng-disabled="userForm.$invalid">Connect</button>
+		        <button 
+		        	class="btn animate-medium" 
+		        	tooltip="Your work won't be automatically saved"
+		        >
+		        	Continue without connecting
+		        </button>
+			</div>
+	        
+	</form>
+</div>
+
+</div>

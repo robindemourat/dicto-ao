@@ -1,0 +1,62 @@
+  <div role="navigation"
+        class="
+        col-xs-6 col-xs-offset-7
+        col-sm-2 col-sm-offset-8
+        col-md-2 col-md-offset-5
+        gui-container
+        animate-medium
+        "
+        >
+        <div class="gui-subcontainer">
+          <div class="gui-background animate-fast"></div>
+
+          <div class="gui-time"
+            ng-if="$parent.currentTimeT"
+            ng-bind="$parent.currentTimeT"
+            ng-if="active"
+          >
+          </div>
+          <div
+            class="gui-items-container"
+          >
+
+              <div class="gui-vert"></div><!--vertical line-->
+
+              <div
+                  class="lift animate-fast"
+                  lift-dimensions=".left-column .column-contents"
+              ></div>
+
+              <div
+                    class="gui-item-container animate-medium"
+                    ng-repeat="item in active.data track by $index"
+                    target-in=".left-column .column-contents.ng-scope"
+                    id="gui-item-container-{{$index}}"
+                    title="{{item.content.split('.')[0] + '...'}}"
+                    ng-click="clickOnGuiItem(item, $event)"
+                    on-play-head-drag-end="clickOnGuiItem(item, $event, $data)"
+                    ng-class="{'active':item.status == 'active'}"
+                    play-item-played-at-p="{{item.playedAtP}}"
+              >
+              </div>
+
+              <div
+                class="grad-playing animate-fast"
+                play-item
+                play-item-container=".gui-items-container"
+                play-item-target=".gui-item-container.active"
+                play-item-drop-candidates=".gui-item-container"
+                play-item-play-input="play-item-played-at-p"
+                play-max = "$parent.activeMediaDuration"
+                play-interitems-allowed="$parent.$parent.viewSettings.showTime"
+                play-at="$parent.$parent.mediaSeekTo(time)"
+                play-active="$parent.$parent.currentTimeS"
+              >
+                 <div class="grad-playing-line animate-fast"></div>
+                 <div
+                  class="grad-playing-head animate-medium"
+                 ></div>
+              </div>
+            </div>
+  </div>
+</div>
