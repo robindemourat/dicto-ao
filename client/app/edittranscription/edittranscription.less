@@ -1,225 +1,280 @@
 
-.dicto-item-gui-wrapper{
+.dicto-item-gui-wrapper
+{
+    position: relative;
     /*margin-top : -2em;*/
-    margin-bottom : -2em;
-    position : relative;
-    padding-left : .5em;
-    padding-right : .5em;
+
+    margin-bottom: -2em;
+    padding-right: .5em;
+    padding-left: .5em;
 }
 
 
 
-.timecode-handler{
-    width : 100%;
-    margin : 0;
-    padding : 0;
-    cursor : ns-resize;
-    text-align : center;
-}
-
-.timecode-mode .timecode-in::before{
-    content:"";
-    position : absolute;
-    top : .7em;
-    left : 0;
-    width : 100%;
-    border-top : 1px solid black;
-    z-index : -1;
-}
-
-.timecode-mode .timecode-out::before{
-    content:"";
-    position : absolute;
-    bottom : .7em;
-    left : 0;
-    width : 100%;
-    border-top : 1px solid black;
-    z-index : -1;
-}
-
-
-.timecode-mode .dicto-item{
-    /*padding : 0 0 0 1em;*/
-    border : none;
-    padding: 0;
+.timecode-handler
+{
+    width: 100%;
     margin: 0;
+    padding: 0;
+
+    cursor: ns-resize;
+    text-align: center;
 }
 
+.timecode-mode .timecode-in::before
+{
+    position: absolute;
+    z-index: -1;
+    top: .7em;
+    left: 0;
+
+    width: 100%;
+
+    content: '';
+
+    border-top: 1px solid black;
+}
+
+.timecode-mode .timecode-out::before
+{
+    position: absolute;
+    z-index: -1;
+    bottom: .7em;
+    left: 0;
+
+    width: 100%;
+
+    content: '';
+
+    border-top: 1px solid black;
+}
+
+
+.timecode-mode .dicto-item
+{
+    margin: 0;
+    padding: 0;
+    /*padding : 0 0 0 1em;*/
+
+    border: none;
+}
+
+/*
 .timecode-mode .dicto-item-contents{
     cursor : text;
-}
+}*/
 
 
-.dicto-item-gui-wrapper .tags-container{
+.dicto-item-gui-wrapper .tags-container
+{
     /*border-top : 1px solid rgba(0,0,0,.8);*/
     /*padding : @itemPadding 0 @itemPadding 0;*/
 }
 
 
-.thin-header{
-    margin : 0;
+.thin-header
+{
+    margin: 0;
     /*padding : 0!important;*/
 }
 
-.thin-header .btn-line{
-    margin : 0 @columnLateralPadding 0 @columnLateralPadding;
+.thin-header .btn-line
+{
+    margin: 0 @columnLateralPadding 0 @columnLateralPadding;
 }
 
-.thin-header .btn{
-    margin-top : .5em;
-    margin-bottom : .5em;
+.thin-header .btn
+{
+    margin-top: .5em;
+    margin-bottom: .5em;
 }
 
-.time-grads-container{
-    width : 100%;
-    position : absolute;
-    left : 0;
-    font-family : "Inconsolata", "sans serif";
+.time-grads-container
+{
+    font-family: 'Inconsolata', 'sans serif';
+
+    position: absolute;
+    left: .5em;
+
+    width: 100%;
     /*top : -2em;*/
     /*overflow-y : hidden;
     overflow-x : visible;*/
 }
 
-.time-grad{
-    position : absolute;
-    border-top : 1px dashed @buttonMediumBackground;
-    width : 200%;
-    left : 10em;
-    font-size : .6em;
-    opacity : .7;
-    cursor : pointer;
+.time-grad
+{
+    font-size: .8em;
+
+    position: absolute;
+
+    width: 200%;
+
+    cursor: pointer;
+
+    opacity: .7;
+    border-top: 1px dashed @buttonMediumBackground;
 }
 
-.time-grad:hover{
-    font-size : 1em;
-    left : 6em;
-    z-index : 10;
+.time-grad:hover
+{
+    font-size: 1em;
+
+    z-index: 10;
 }
 
 /*
 Player line
 */
 
-.time-grads-container .main-player{
-    border-top : 1px solid brown;
-    position : absolute;
+.time-grads-container .main-player
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
     width: 95%;
-    left : 0;
-    text-align : right;
-    top : 0;
-    pointer-events : none;
+
+    text-align: right;
+    pointer-events: none;
+
+    border-top: 1px solid brown;
 }
 
-.time-grads-container  .time-placeholder{
-    color : brown;
-    text-align : left;
-    position : absolute;
-    left : 0;
-    top : -1.2em;
-    font-size : .6em;
+.time-grads-container  .time-placeholder
+{
+    font-size: .6em;
+
+    position: absolute;
+    top: -1.2em;
+    left: 0;
+
+    text-align: left;
+
+    color: brown;
 }
 
-.time-grads-container  .seeking-bar{
-    position : absolute;
-    border-top : 1px dashed brown;
-    width : 200%;
-    left : -8em;
+.time-grads-container  .seeking-bar
+{
+    position: absolute;
+    left: -8em;
+
+    width: 200%;
 
     -webkit-animation: blinkdashed 1s linear infinite;
        -moz-animation: blinkdashed 1s linear infinite;
             animation: blinkdashed 1s linear infinite;
+
+    border-top: 1px dashed brown;
 }
 
 @keyframes blinkdashed
 {
     0%
     {
-        border-top : 3px dashed brown;
+        border-top: 3px dashed brown;
     }
     100%
     {
-        border-top : 1px dashed transparent;
+        border-top: 1px dashed transparent;
     }
 }
 @-webkit-keyframes blinkdashed
 {
     0%
     {
-        border-top : 3px dashed brown;
-
+        border-top: 3px dashed brown;
     }
     100%
     {
-        border-top : 1px dashed transparent;
+        border-top: 1px dashed transparent;
     }
 }
 
 .time-grads-container .main-player .main-player-drag-bar:hover,
-.time-grads-container .main-player .main-player-buttons:hover{
-    z-index : 5;
+.time-grads-container .main-player .main-player-buttons:hover
+{
+    z-index: 5;
 }
 
-.main-player .main-player-drag-bar{
+.main-player .main-player-drag-bar
+{
     position: absolute;
-    top : 0;
-    left : 0;
-    width : 100%;
-    height : 1em;
-   /* cursor: ns-resize;*/
-    pointer-events : all;
+    top: 0;
+    left: 0;
 
+    width: 100%;
+    height: 1em;
+    /* cursor: ns-resize;*/
+
+    pointer-events: all;
 }
 
-.main-player .main-btn-line{
-    pointer-events : none;
-
+.main-player .main-btn-line
+{
+    pointer-events: none;
 }
 
-.main-player .main-player-buttons{
-    position : relative;
-    top : -6.5em;
-    pointer-events : none;
+.main-player .main-player-buttons
+{
+    position: relative;
+    top: -6.5em;
+
+    pointer-events: none;
 }
 
-.main-player .main-btn-line{
-    margin-bottom : .3em;
+.main-player .main-btn-line
+{
+    margin-bottom: .3em;
 }
 
-.time-grads-container .main-player .glyphicon{
-    border-radius : 50%;
-    font-size : 1.3em;
-    padding : .4em;
-    cursor : pointer;
-    color : brown;
-    pointer-events : all;
-    position : relative;
-    right : 0;
+.time-grads-container .main-player .glyphicon
+{
+    font-size: 1.3em;
+
+    position: relative;
+    right: 0;
+
+    padding: .4em;
+
+    cursor: pointer;
+    pointer-events: all;
+
+    color: brown;
+    border-radius: 50%;
 }
 
-.time-grads-container .main-player .play-btn .glyphicon{
-    color : white;
+.time-grads-container .main-player .play-btn .glyphicon
+{
+    color: white;
     background: brown;
 }
 
-.main-player .main-player-buttons:hover{
-    top : -7em;
+.main-player .main-player-buttons:hover
+{
+    top: -7em;
 }
 
 
-.main-player .main-btn-line:not(.play-btn) .glyphicon{
-    opacity : 0;
+.main-player .main-btn-line:not(.play-btn) .glyphicon
+{
+    opacity: 0;
 }
 
-.main-player .main-player-buttons:hover .glyphicon{
-    opacity : 1;
+.main-player .main-player-buttons:hover .glyphicon
+{
+    opacity: 1;
 }
-.main-player .main-player-buttons:hover .play-btn .glyphicon{
-    font-size : 2em;
-    right : -.35em;
+.main-player .main-player-buttons:hover .play-btn .glyphicon
+{
+    font-size: 2em;
+
+    right: -.35em;
 }
 
-.main-player .main-btn-line:not(.play-btn) .glyphicon:hover{
-    color : white;
+.main-player .main-btn-line:not(.play-btn) .glyphicon:hover
+{
+    color: white;
     background: brown;
 }
 
@@ -230,292 +285,381 @@ COMPONENTS
 */
 
 
-.tags-grid{
-    width : 100%;
+.tags-grid
+{
+    font-family: 'Inconsolata', 'Sans Serif';
+
+    width: 100%;
     height: auto;
-    font-family: "Inconsolata", "Sans Serif";
 }
 
 .tags-grid th,
-.tags-grid tr{
-    border : none;
+.tags-grid tr
+{
+    border: none;
 }
 
-.tags-grid tr:nth-child(odd){
-    background : @buttonMediumBackground;
+.tags-grid tr:nth-child(odd)
+{
+    background: @buttonMediumBackground;
 }
 
 .tags-grid .header,
-.tag-frequency-header{
-    text-transform : uppercase;
-    font-weight : 800;
-    color : white;
-    background : @buttonDarkBackground!important;
+.tag-frequency-header
+{
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    color: white;
+    background: @buttonDarkBackground!important;
 }
 
-.tags-grid td{
-    padding : @itemPadding;
+.tags-grid td
+{
+    padding: @itemPadding;
 }
 
-.tags-grid .color-placeholder{
-    border : 1px solid white!important;
-    width : 1.5em;
-    height : 1.5em;
-    color : transparent;
-    cursor : pointer;
-    display : block;
+.tags-grid .color-placeholder
+{
+    display: block;
+
+    width: 1.5em;
+    height: 1.5em;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 1px solid white!important;
 }
 
-.tags-grid .glyphicon-trash{
-    border-radius : 50%;
+.tags-grid .glyphicon-trash
+{
+    padding: .5em;
 
-    cursor : pointer;
-    padding : .5em;
+    cursor: pointer;
+
+    border-radius: 50%;
 }
 
-.tags-grid .glyphicon-trash:hover{
-    background : @buttonDarkBackground;
-    color : white;
+.tags-grid .glyphicon-trash:hover
+{
+    color: white;
+    background: @buttonDarkBackground;
 }
 
-.tags-grid input{
-    background : transparent;
+.tags-grid input
+{
+    background: transparent;
 }
 
 .tags-grid input:hover
 {
-    background : @buttonLightBackground;
+    background: @buttonLightBackground;
 }
 
 .tags-grid input:focus
 {
-    background : @buttonDarkBackground;
-    color : white;
+    color: white;
+    background: @buttonDarkBackground;
 }
 
 
-.tags-grid button{
-    padding : 0;
-    background : inherit;
+.tags-grid button
+{
     width: 100%;
+    padding: 0;
+
+    background: inherit;
 }
 
-.tags-grid .dropdown-menu{
-    border-radius : 0;
-    border : 0;
+.tags-grid .dropdown-menu
+{
+    text-transform: uppercase;
+
+    color: white;
+    border: 0;
+    border-radius: 0;
     background: @buttonDarkBackground;
-    color : white;
-    text-transform : uppercase;
 }
 
-.tags-grid .dropdown-menu li{
-    padding : .5em;
-    cursor : pointer;
-    opacity : .5;
+.tags-grid .dropdown-menu li
+{
+    padding: .5em;
+
+    cursor: pointer;
+
+    opacity: .5;
 }
 
-.tags-grid .dropdown-menu li:hover{
+.tags-grid .dropdown-menu li:hover
+{
+    opacity: 1;
     background: @buttonDarkBackground;
-    opacity : 1;
 }
 
-.tags-frequency-wrapper{
-    position : absolute;
-    width : 100%;
-    height : 100%;
-    left : 0;
-    top : 0;
-}
+.tags-frequency-wrapper
+{
+    position: absolute;
+    top: 0;
+    left: 0;
 
-
-.tag-frequency-headers{
-    display : flex;
-    width : 80%;
-    height : 9%;
-    bottom : 1%;
-    position : absolute;
-    left : 10%;
-}
-
-.tag-frequency-header{
-    padding : 1em;
-    font-family : "Inconsolata";
-    display : flex;
+    width: 100%;
+    height: 100%;
 }
 
 
-.tag-frequency-header:not(:last-child){
-    border-right : 2px white solid;
+.tag-frequency-headers
+{
+    position: absolute;
+    bottom: 1%;
+    left: 10%;
+
+    display: flex;
+
+    width: 80%;
+    height: 9%;
 }
 
-.tag-frequency-header .icons{
-    min-width : 1.3em;
-    position : relative;
-    height : 100%;
-}
-.tag-frequency-header .icons span{
-    position : absolute;
-    left : 0;
-}
+.tag-frequency-header
+{
+    font-family: 'Inconsolata';
 
-.tag-frequency-header .icons span:first-child{
-    top : 0;
-}
+    display: flex;
 
-
-.tag-frequency-header .icons span:last-child{
-    top : 1.5em;
-}
-
-
-
-.tags-frequency-container .tag-marker{
-    text-align : right;
-}
-
-.tags-frequency-container{
-    position : absolute;
-    top : 10%;
-    height : 80%;
-    left : 10%;
-    width : 80%;
+    padding: 1em;
 }
 
 
-.tags-frequency-container .gui-item-container{
-    border : none!important;
+.tag-frequency-header:not(:last-child)
+{
+    border-right: 2px white solid;
+}
+
+.tag-frequency-header .icons
+{
+    position: relative;
+
+    min-width: 1.3em;
+    height: 100%;
+}
+.tag-frequency-header .icons span
+{
+    position: absolute;
+    left: 0;
+}
+
+.tag-frequency-header .icons span:first-child
+{
+    top: 0;
+}
+
+
+.tag-frequency-header .icons span:last-child
+{
+    top: 1.5em;
 }
 
 
 
-.tags-frequency-container .glyphicon{
-    font-size : 1.2em;
-    opacity : 0;
-    cursor : pointer;
+.tags-frequency-container .tag-marker
+{
+    text-align: right;
 }
 
-.tags-frequency-container .tag-frequency-header .glyphicon{
-    font-size : 1em;
-    opacity : 1;
+.tags-frequency-container
+{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+
+    width: 80%;
+    height: 80%;
 }
 
-.tags-frequency-container .tag-marker:hover .glyphicon{
-    opacity : 1;
+
+.tags-frequency-container .gui-item-container
+{
+    border: none!important;
 }
 
 
-.tag{
-    background : rgba(0,0,0,.3);
-    margin-right : 1em;
-    padding : 0.5em;
-    border-radius : .3em;
-    color : white;
+
+.tags-frequency-container .glyphicon
+{
+    font-size: 1.2em;
+
+    cursor: pointer;
+
+    opacity: 0;
+}
+
+.tags-frequency-container .tag-frequency-header .glyphicon
+{
+    font-size: 1em;
+
+    opacity: 1;
+}
+
+.tags-frequency-container .tag-marker:hover .glyphicon
+{
+    opacity: 1;
+}
+
+
+.tag
+{
+    position: relative;
+
     display: inline-block;
-    margin-bottom : 1em;
-    height : 2.5em;
+
+    max-width: 100%;
+    height: 2.5em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    padding: .5em;
+
+    color: white;
+    border-radius: .3em;
+    background: rgba(0,0,0,.3);
+
+    overflow : hidden;
 }
 
 
-.tag form{
-    display : inline;
-    background : transparent;
-    position : relative;
-    top : -.3em;
-}
+.tag form
+{
+    position: absolute;
+    top: 0;
 
-.tag .angucomplete-holder{
-    display : inline;
-}
-
-.tag input{
-    width : auto!important;
     background: transparent;
-    display : inline;
-    color : inherit;
 }
 
-.tag:not(.focused){
-    cursor : pointer!important;
+.tag .angucomplete-holder
+{
+    display: inline;
+    width : 80%;
 }
 
-.tag.focused{
-    background : rgba(0,0,0,.6);
+.tag input
+{
+
+    color: inherit;
+    background: transparent;
 }
-.tag .placeholder{
-    position : absolute;
-    opacity : 0;
-    pointer-events : none;
+
+.tag .glyphicon-remove
+{
+    position: absolute;
+    top: .5em;
+    left: .5em;
+}
+
+.tag:not(.focused)
+{
+    cursor: pointer!important;
+}
+
+.tag.focused
+{
+    background: rgba(0,0,0,.6);
+}
+.tag .placeholder
+{
+    pointer-events: none;
+
+    opacity: 0;
 }
 
 
-.tags-category-container{
-    display : flex;
+.tags-category-container
+{
+    display: flex;
+    overflow: hidden;
 }
 
-.tags-category-container .tag-category-name{
-    padding-right : @itemPadding;
-    text-transform : uppercase;
-    font-weight : 800;
-    width : 15%;
-    text-align : right;
+.tags-category-container .tag-category-name
+{
+    font-weight: 800;
+
+    width: 15%;
+    padding-right: @itemPadding;
+
+    text-align: right;
+    text-transform: uppercase;
 }
 
-.tags-category-container .tag-subcontainer{
-    width : 85%;
-    padding-left : @itemPadding;
+.tags-category-container .tag-subcontainer
+{
+    width: 85%;
+    padding-left: @itemPadding;
 }
 
 .timecode-handler.timecode-in,
-.timecode-handler.timecode-out{
-    position : absolute;
-    width : 100%;
-    left : 0;
+.timecode-handler.timecode-out
+{
+    position: absolute;
+    left: 0;
+
+    width: 100%;
 }
 
-.timecode-in{
-    top : 0;
+.timecode-in
+{
+    top: 0;
 }
 
-.timecode-out{
-    bottom : 0;
+.timecode-out
+{
+    bottom: 0;
 }
 
 /* DICTO ITEMS SPECIFICS **/
 
-.dicto-item-gui-wrapper .timecode-handler input{
-    background : @backgroundLightColor;
-    text-align : center;
+.dicto-item-gui-wrapper .timecode-handler input
+{
+    text-align: center;
+
+    background: @backgroundLightColor;
 }
 
 .dicto-item-gui-wrapper:hover .timecode-handler input,
 .dicto-item-gui-wrapper.active .timecode-handler input
 {
-    background : @buttonMediumBackground;
+    background: @buttonMediumBackground;
 }
 
-.timecode-handler input:hover{
-    background : @buttonMediumBackground!important;
-    color : white;
+.timecode-handler input:hover
+{
+    color: white;
+    background: @buttonMediumBackground!important;
 }
 
-.dicto-item-gui-wrapper.active .timecode-handler input:hover{
-    background : @buttonDarkBackground!important;
+.dicto-item-gui-wrapper.active .timecode-handler input:hover
+{
+    background: @buttonDarkBackground!important;
 }
 
-.dicto-item-gui-wrapper .timecode-handler input:focus{
-    background : @buttonDarkBackground!important;
-    color : white;
-    text-align : center;
-    font-size : 2em!important;
+.dicto-item-gui-wrapper .timecode-handler input:focus
+{
+    font-size: 2em!important;
+
+    text-align: center;
+
+    color: white;
+    background: @buttonDarkBackground!important;
 }
 
-.drag-item-zone{
-    position : absolute;
-    top : 0;
-    right : 0;
-    cursor : all-scroll;
-    width : 3em;
-    height :100%;
+.drag-item-zone
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 3em;
+    height: 100%;
+
+    cursor: all-scroll;
 }
 
 .dicto-item-gui-wrapper .top-left-button,
@@ -523,16 +667,19 @@ COMPONENTS
 .dicto-item-gui-wrapper .bottom-right-button,
 .dicto-item-gui-wrapper .bottom-left-button
 {
-    position : absolute;
-    font-size : 1.5em;
-    cursor : pointer;
+    font-size: 1.5em;
+
+    position: absolute;
     /*height : 1.1em;
     width : 1.15em;
     padding-left : .05em;
     background : @backgroundLightColor;
     border-radius : 50%;*/
-    z-index : 7;
-    opacity : 0;
+    z-index: 7;
+
+    cursor: pointer;
+
+    opacity: 0;
 }
 
 .dicto-item-gui-wrapper:hover .top-left-button,
@@ -540,63 +687,74 @@ COMPONENTS
 .dicto-item-gui-wrapper:hover .bottom-right-button,
 .dicto-item-gui-wrapper:hover .bottom-left-button
 {
-    opacity : 1;
+    opacity: 1;
 }
 
 .dicto-item-gui-wrapper .top-left-button,
-.dicto-item-gui-wrapper .bottom-left-button{
-    left : 0;
+.dicto-item-gui-wrapper .bottom-left-button
+{
+    left: 0;
 }
 
 .dicto-item-gui-wrapper .top-right-button,
-.dicto-item-gui-wrapper .bottom-right-button{
-    right : 0;
+.dicto-item-gui-wrapper .bottom-right-button
+{
+    right: 0;
 }
 
 .dicto-item-gui-wrapper .top-left-button,
 .dicto-item-gui-wrapper .top-right-button
 {
-    top : -.25em;
+    top: -.25em;
 }
 
 .dicto-item-gui-wrapper .bottom-left-button,
 .dicto-item-gui-wrapper .bottom-right-button
 {
-    bottom : -.25em;
+    bottom: -.25em;
 }
 
 .dicto-item-gui-wrapper .top-left-button:hover,
 .dicto-item-gui-wrapper .top-right-button:hover,
 .dicto-item-gui-wrapper .bottom-right-button:hover,
-.dicto-item-gui-wrapper .bottom-left-button:hover{
-    font-size : 2em;
+.dicto-item-gui-wrapper .bottom-left-button:hover
+{
+    font-size: 2em;
 }
 
-.dicto-item-gui-wrapper .colors-inversed{
-    background : black;
-    color : @backgroundLightColor;
+.dicto-item-gui-wrapper .colors-inversed
+{
+    color: @backgroundLightColor;
+    background: black;
 }
 
 
 /* TAGS MODE */
-.tags-mode .dicto-item{
-    cursor : default;
+.tags-mode .dicto-item
+{
+    cursor: default;
 }
 
 
 /* CASE BEGINING */
-.first-transcript{
-    position : fixed;
-    left : 0;
-    top : 50%;
-    width : 50%;
-    pointer-events : none;
+.first-transcript
+{
+    position: fixed;
+    top: 50%;
+    left: 0;
+
+    width: 50%;
+
+    pointer-events: none;
 }
 
-.first-transcript-content{
-    background : @buttonLightBackground;
-    margin : 0 @columnLateralPadding 0 @columnLateralPadding;
-    padding : @itemPadding;
-    text-align : center;
-    opacity : .7;
+.first-transcript-content
+{
+    margin: 0 @columnLateralPadding 0 @columnLateralPadding;
+    padding: @itemPadding;
+
+    text-align: center;
+
+    opacity: .7;
+    background: @buttonLightBackground;
 }

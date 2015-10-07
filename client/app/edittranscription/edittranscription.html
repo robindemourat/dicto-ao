@@ -283,7 +283,7 @@
   id="right-column-toggle"
   ng-click="toggleAside()"
   style="z-index:10"
-  ng-if="!showMenu"
+  ng-if="!showMenu && !$parent.viewSettings.showTime"
   dicto-tooltip="Switch right column mode"
 >
     <span class="glyphicon" ng-class="$parent.viewSettings.viewAside == 'tags' ? 'glyphicon-facetime-video':'glyphicon-tags'"></span>

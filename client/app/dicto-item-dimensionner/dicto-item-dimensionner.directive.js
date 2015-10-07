@@ -39,7 +39,8 @@ angular.module('dictofullstackApp')
           dif,
           top,
           max,
-          contPad;
+          contPad,
+          paddingTop;
 
         scope.prevMult = scope.multiplier;
 
@@ -104,26 +105,7 @@ angular.module('dictofullstackApp')
           }
         }
 
-
-        var doUpdate = function(data, item){
-
-          if(!scope.condition)
-            return;
-
-          wrappers = angular.element(element).find('.dicto-item-gui-wrapper');
-
-          var prevRatio = currentRatio;
-          if(scope.multiplier){
-            wrappers.css({
-              fontSize : scope.multiplier + 'em'
-            })
-          }
-
-          displaceY = 0;
-          displaceH = 0;
-
-          //update elements ratio if allowed
-          if(scope.updateRatioCondition){
+        var calculateRatio = function(wrappers){
             var okToChange = true;
             maxRatio = -Infinity;
             maxRatioI = undefined;
@@ -168,28 +150,19 @@ angular.module('dictofullstackApp')
             console.log('updated ratio', currentRatio);
           }
 
-
-          if(data.length > 0){
-            max = (scope.maxTime)?scope.maxTime:data[data.length-1].end;
-          }else{
-            max = (scope.maxTime)?scope.maxTime:10;
-          }
-
-          scope.factorOutput = currentRatio * scope.multiplier;
-
-
-          data.forEach(function(item, i){
+        var updateItemSize = function(item, i){
             duration = item.end - item.begin;
             wrapper = angular.element(wrappers[i]);
             contentEl = wrapper.find('.dicto-item-contents');
+            var dictoItem = wrapper.find('.dicto-item');
             parent = contentEl.parent();
             parentHeight = parent.height();
             elHeight = contentEl.height();
-            wanted = currentRatio * scope.multiplier * duration;
+            wanted = scope.factorOutput * duration;
 
             dif = wanted - parentHeight;
 
-            if(!data[i].contentEdited){
+            if(!item.contentEdited){
               parent.css({
                 paddingTop : dif /2,
                 paddingBottom : dif /2
@@ -203,17 +176,18 @@ angular.module('dictofullstackApp')
               //console.log(parent);
             }
 
+
             //top = (data[i].begin * scope.multiplier * currentRatio) + parseInt(angular.element(element).css('paddingTop'));
-            top = (data[i].begin) * scope.factorOutput + parseInt(angular.element(element).css('paddingTop'));
+            top = (item.begin) * scope.factorOutput + paddingTop;
 
             //displace is content is edited
-            if(data[i].contentEdited){
+            /*if(data[i].contentEdited){
               var dif = wrapper.height() + 150 - wanted;
               if(dif > 0){
                 displaceH = dif;
                 displaceY = top;
               }
-            }
+            }*/
 
             //if content is edited, displace
             if(displaceY > 0 && top > displaceY){
@@ -223,17 +197,52 @@ angular.module('dictofullstackApp')
 
             wrapper.css({
               position : 'absolute',
-              top : top
+              top : top,
+              height : wanted
             });
 
+            dictoItem.css({
+              height : wanted
+            })
+        }
+        var doUpdate = function(data, item){
 
-            if(i == data.length - 1){
-              var end = (max - item.end) * scope.multiplier * currentRatio;
-              wrapper.css({
-                marginBottom : end
-              })
-            }
-          });
+          if(!scope.condition)
+            return;
+
+          wrappers = angular.element(element).find('.dicto-item-gui-wrapper');
+
+          paddingTop = parseInt(angular.element(element).css('paddingTop'));
+
+          var prevRatio = currentRatio;
+          if(scope.multiplier){
+            wrappers.css({
+              fontSize : scope.multiplier + 'em'
+            })
+          }
+
+          displaceY = 0;
+          displaceH = 0;
+
+
+
+          //update elements ratio if allowed
+          /*
+          if(scope.updateRatioCondition){
+            calculateRatio(wrappers);
+          }*/
+
+
+          if(data.length > 0){
+            max = (scope.maxTime)?scope.maxTime:data[data.length-1].end;
+          }else{
+            max = (scope.maxTime)?scope.maxTime:10;
+          }
+
+          //scope.factorOutput = currentRatio * scope.multiplier;
+          scope.factorOutput = 12 * scope.multiplier;
+
+          data.forEach(updateItemSize);
 
 
 
@@ -294,8 +303,81 @@ angular.module('dictofullstackApp')
            }, 1000);
         }
 
+        var onScroll = function(){
+
+          if(scope.condition){
+            wrappers = angular.element(element).find('.dicto-item-gui-wrapper');
+            var scrollTop = angular.element(element).scrollTop();
+            var height = angular.element(element).height();
+
+            wrappers.each(function(i, wrapper){
+              var wrapper = angular.element(wrapper);
+              var offsetTop = wrapper.offset().top;
+              var wrapperHeight = wrapper.innerHeight();
+              //var okToResize = scope.data[i] && !scope.data[i].contentEdited && offsetTop > -wrapperHeight && offsetTop < height && wrapperHeight > height;
+              var okToResize = scope.data[i] && !scope.data[i].contentEdited && offsetTop > -wrapperHeight && offsetTop < height && wrapperHeight > height;
+              if(okToResize){
+                var littleHeight = wrapper.find('.dicto-item-contents').outerHeight();
+                //position wanted : center on the screen
+                var posWanted = height/2 - offsetTop - littleHeight/2;
+                //console.log(posWanted);
+                if(posWanted < 0){
+                  posWanted = 0;
+                }else if(posWanted  + littleHeight * 1.5 > wrapperHeight - 40){
+                  posWanted = wrapperHeight - littleHeight - 40;
+                }
+                wrapper.find('.dicto-item-contents')
+                .css({
+                  position : 'absolute',
+                  left : 0,
+                  top : posWanted
+                });
+                var y = currentRatio * (scope.data[i].end - scope.data[i].begin);
+                //why resetting that ? > problems without (to test again)
+                wrapper.find('.dicto-item')
+                .css({
+                  paddingBottom : y/2,
+                  paddingTop : y/2
+                });
+
+                //console.log('on big', wrapperHeight, wrapper.innerHeight());
+                //console.log(y);
+              }else if(offsetTop + wrapperHeight > 0 && offsetTop + wrapperHeight < height){
+                //console.log('on small', wrapperHeight);
+
+                wrapper.find('.dicto-item').removeAttr('style');
+                  wrapper.find('.dicto-item-contents').removeAttr('style');
+
+
+                  var wanted = (scope.data[i].end - scope.data[i].begin) * scope.factorOutput;
+                  var actual = wrapper.find('.dicto-item').height();
+                  var dif = wanted - actual;
+                  wrapper.find('.dicto-item')
+                  .css({
+                    paddingBottom : dif/2,
+                    paddingTop : dif/2
+                  });
+
+
+                  // console.log(wanted, actual, wrapper.innerHeight())
+                 // console.log(actual, wanted, dif, wrapper.find('.dicto-item').height(), wrapper.innerHeight());
+              }
+            });
+          }
+
+        }
+
+        var onResize = function(){
+          if(scope.data && scope.condition){
+            update(scope.data);
+          }
+        }
+
+
         scope.$watch('data', function(nD, oD){
+          console.log("data update")
           //console.log(scope.updateRatioCondition);
+
           if(!scope.condition){
             return;
           }else if(!nD){
@@ -311,20 +393,23 @@ angular.module('dictofullstackApp')
                   nD[i].begin != oD[i].begin
                   || nD[i].end != oD[i].end
                 ){
+                  updateItemSize(nD[i], i);
                   //console.log('updated from timecodes');
-                  update(nD, nD[i]);
-                  /*setTimeout(function(){
-                    onScroll();
-                  }, 1000);*/
+                  //update(nD, nD[i]);
+                  // setTimeout(function(){
+                  //   onScroll();
+                  // }, 1000);
                   return;
               }else if(nD[i].contentEdited != oD[i].contentEdited){
                 console.log('update because of content edited');
-                update(nD);
+                //update(nD);
                 return;
               }
             }
           }
+
         }, true);
+
 
         scope.$watch('condition', function(c){
             if(c){
@@ -374,90 +459,8 @@ angular.module('dictofullstackApp')
           }
         });
 
-
-        var onScroll = function(){
-          if(scope.condition){
-            wrappers = angular.element(element).find('.dicto-item-gui-wrapper');
-            var scrollTop = angular.element(element).scrollTop();
-            var height = angular.element(element).height();
-
-            wrappers.each(function(i, wrapper){
-              var wrapper = angular.element(wrapper);
-              var offsetTop = wrapper.offset().top;
-              var wrapperHeight = wrapper.innerHeight();
-              //var okToResize = scope.data[i] && !scope.data[i].contentEdited && offsetTop > -wrapperHeight && offsetTop < height && wrapperHeight > height;
-              var okToResize = /*wrapperHeight >= height &&*/ scope.data[i] && !scope.data[i].contentEdited && offsetTop > -wrapperHeight && offsetTop < height && wrapperHeight > height;
-              if(okToResize){
-                var littleHeight = wrapper.find('.dicto-item-contents').outerHeight();
-                //position wanted : center on the screen
-                var posWanted = height/2 - offsetTop - littleHeight/2;
-                //console.log(posWanted);
-                if(posWanted < 0){
-                  posWanted = 0;
-                }else if(posWanted  + littleHeight * 1.5 > wrapperHeight - 40){
-                  posWanted = wrapperHeight - littleHeight - 40;
-                }
-                wrapper.find('.dicto-item-contents')
-                .css({
-                  position : 'absolute',
-                  left : 0,
-                  top : posWanted
-                });
-                var y = currentRatio * (scope.data[i].end - scope.data[i].begin);
-                //why resetting that ? > problems without (to test again)
-                wrapper.find('.dicto-item')
-                .css({
-                  paddingBottom : y/2,
-                  paddingTop : y/2
-                });
-
-                //console.log('on big', wrapperHeight, wrapper.innerHeight());
-                //console.log(y);
-              }else if(/*wrapperHeight < height &&*/ offsetTop + wrapperHeight > 0 && offsetTop + wrapperHeight < height){
-                //console.log('on small', wrapperHeight);
-
-                wrapper.find('.dicto-item').removeAttr('style');
-                  wrapper.find('.dicto-item-contents').removeAttr('style');
-
-
-                  var wanted = (scope.data[i].end - scope.data[i].begin) * scope.factorOutput;
-                  var actual = wrapper.find('.dicto-item').height();
-                  var dif = wanted - actual;
-                  wrapper.find('.dicto-item')
-                  .css({
-                    paddingBottom : dif/2,
-                    paddingTop : dif/2
-                  });
-
-                  /*wrapper.find('.dicto-item-contents')
-                  .css({
-                    position : 'relative',
-                    left : 0,
-                    top : 0
-                  });*/
-
-                  // console.log(wanted, actual, wrapper.innerHeight())
-                 // console.log(actual, wanted, dif, wrapper.find('.dicto-item').height(), wrapper.innerHeight());
-              }
-            });
-          }
-        }
-
-
-
         angular.element(element).on('scroll', onScroll);
-
-
-
-
-        var onResize = function(){
-          if(scope.data && scope.condition){
-            update(scope.data);
-          }
-        }
-
         angular.element($window).on('resize', onResize);
-
         scope.$on('$destroy', function(){
           angular.element($window).off('resize', onResize);
           angular.element($window).off('scroll', onScroll);

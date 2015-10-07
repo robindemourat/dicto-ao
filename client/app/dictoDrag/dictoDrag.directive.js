@@ -35,7 +35,7 @@ angular.module('dictofullstackApp')
           prevY = e.screenY;
 
 
-
+          console.log('drag started');
           scope.onStart();
           setTimeout(function(){
               scope.$apply();
@@ -44,7 +44,7 @@ angular.module('dictofullstackApp')
 
         var onMouseMove = function(e){
           if(onDrag){
-
+            console.log('drag is moving');
             y = e.screenY;
             var oldModel = scope.model;
             var wanted =  scope.model + (y - prevY) / scope.factor;
@@ -76,6 +76,7 @@ angular.module('dictofullstackApp')
 
         var onMouseUp = function(){
           if(onDrag){
+            console.log('drag ended');
             onDrag = false;
             scope.onEnd();
             if(scope.model2){
@@ -95,7 +96,6 @@ angular.module('dictofullstackApp')
 
 
         el.on('mousedown', onMouseDown);
-
         angular.element($window).on('mouseup', onMouseUp);
 
         scope.$on('$destroy', function(){

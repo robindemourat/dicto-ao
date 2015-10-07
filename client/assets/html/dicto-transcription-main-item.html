@@ -106,6 +106,7 @@
             dicto-drag-lower-limit="dragPrevLimit($index)"
           >
             <form
+                ng-click="$event.stopPropagation()"
                 ng-submit = "saveTimecodeOnBlur(item, $index, true, false);blurChildren($event)"
             >
               <input
@@ -113,6 +114,7 @@
                 class="animate-medium"
                 ng-model='item.beginSrtFormat'
                 ng-blur = "saveTimecodeOnBlur(item, $index, true, false)"
+                ng-click="$event.stopPropagation()"
               >
             </form>
           </div>
@@ -133,7 +135,6 @@
               <!-- case not edited -->
               <div
                 ng-if="!item.contentEdited"
-                ng-click="handleClickOnItemContents(item, $event)"
                 ng-bind-html="renderMarkdownItem(item.content, $parent.searchTerm)"
                 ng-dblclick="$event.stopPropagation();toggleEdited(item)"
               > </div>
@@ -161,22 +162,24 @@
                       ng-style="{'background': tag.color,
                                   'color' : getContrastYIQ(tag.color)
                                 }"
-                      ng-click="tag.focused = true;$event.stopPropagation();item.contentEdited = true"
+                      ng-click="tag.focused = true;$event.stopPropagation()"
                       ng-init="similarTags = similarTags(category)"
                     >
                       <span
                         class="glyphicon glyphicon-remove"
                         ng-click="userRemovesTag(item, tag, $parent.$index);$event.stopPropagation()"
-                        style="top:-.3em;"
-                        ng-if="item.contentEdited"
+                        ng-if="tag.focused"
                       ></span>
 
                       <span class="placeholder noselect" ng-bind="tag.name"></span>
+
                       <form
+                        ng-class="animate-medium"
                         ng-submit="blurChildren($event);addTag(item, category);"
                         focus-me="tag.focused"
                         focus-me-find-input="da"
                         change-input-on-model-change="{{tag.name}}"
+                        ng-style="{'left':(tag.focused)?'10%':'0','width':(tag.focused)?'90%':'100%'}"
                       >
                           <angucomplete-alt
                             id="{{$parent.$index}}{{category}}{{$index}}"
@@ -257,6 +260,7 @@
             dicto-drag-lower-limit="item.begin"
           >
             <form
+                ng-click="$event.stopPropagation()"
                 ng-submit = "saveTimecodeOnBlur(item, $index, false, true);blurChildren($event)"
             >
               <input
@@ -264,6 +268,7 @@
                 class="animate-medium"
                 ng-model="item.endSrtFormat"
                 ng-blur = "saveTimecodeOnBlur(item, $index, false, true)"
+                ng-click="$event.stopPropagation()"
               >
             </form>
           </div>
@@ -418,13 +423,12 @@
   ></div>
 
 
-  <!-- border buttons -->
+  <!-- border buttons (deleted half-hover property) -->
   <div
     class="top-left-button animate-medium"
     dicto-tooltip="add a new item here"
     dicto-tooltip-delay="500"
     dicto-tooltip-placement="right"
-    half-hover="top"
     ng-if="$parent.viewSettings.showTime == true"
     ng-click="addNewItemBefore(item, $index)"
   >
@@ -449,7 +453,6 @@
     dicto-tooltip="play from begining of transcript"
     dicto-tooltip-delay="500"
     dicto-tooltip-placement="right"
-    half-hover="top"
     ng-if="$parent.viewSettings.showTime == true"
     ng-click="setActiveItem(item, item.begin)"
   >
@@ -461,7 +464,6 @@
     dicto-tooltip="play from end of transcript"
     dicto-tooltip-delay="500"
     dicto-tooltip-placement="right"
-    half-hover="bottom"
     ng-if="$parent.viewSettings.showTime == true"
     ng-click="setActiveItem(item, item.end)"
   >

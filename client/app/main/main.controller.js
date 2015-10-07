@@ -314,7 +314,8 @@ angular.module('dictofullstackApp')
     };
     //I update active document, asking for a rename if needed
     $scope.updateActive = function(rename){
-      if(!$scope.active){
+      console.log('update active received');
+      /*if(!$scope.active){
         return;
       }else if(!$scope.activeResource){
         $scope.activeResource = fileFactory.create({type : $scope.active.metadata.type, slug : $scope.active.metadata.slug});
@@ -330,6 +331,8 @@ angular.module('dictofullstackApp')
         $scope.activeResource.slug = $scope.active.metadata.slug;
         $scope.activeResource.type = $scope.active.metadata.type;
       }
+
+      console.log('going to update');
 
       //var rename;
       if($scope.activeResource.slug !== $scope.active.metadata.slug){
@@ -355,7 +358,8 @@ angular.module('dictofullstackApp')
       if($scope.activeResource.slug && !$scope.serverWorking){
         $scope.serverWorking = true;
         //console.log($scope.activeResource.content.data);
-        //console.log('launching update');
+        console.log('launching update');
+
         $scope.activeResource.$update(function(d){
           console.info('active saved successfully', d);
           if(rename){
@@ -374,7 +378,8 @@ angular.module('dictofullstackApp')
           $scope.serverWorking = false;
           console.error('server could not save active');
         });
-      }
+
+      }*/
     }
     //I delete active document
     $scope.deleteActive = function(){
