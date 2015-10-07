@@ -448,13 +448,13 @@ angular.module('dictofullstackApp')
 
 
         scope.$watch('playAt', function(t){
-          if(t && scope.condition && currentRatio){
+          if(t && scope.condition && scope.factorOutput){
             updatePlayBar(t);
           }
         });
 
         scope.$watch('seekingAt', function(t){
-          if(t && scope.condition && currentRatio){
+          if(t && scope.condition && scope.factorOutput){
             updateSeekingAt(t);
           }
         });

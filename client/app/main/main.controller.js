@@ -315,7 +315,7 @@ angular.module('dictofullstackApp')
     //I update active document, asking for a rename if needed
     $scope.updateActive = function(rename){
       console.log('update active received');
-      /*if(!$scope.active){
+      if(!$scope.active){
         return;
       }else if(!$scope.activeResource){
         $scope.activeResource = fileFactory.create({type : $scope.active.metadata.type, slug : $scope.active.metadata.slug});
@@ -379,7 +379,7 @@ angular.module('dictofullstackApp')
           console.error('server could not save active');
         });
 
-      }*/
+      }
     }
     //I delete active document
     $scope.deleteActive = function(){

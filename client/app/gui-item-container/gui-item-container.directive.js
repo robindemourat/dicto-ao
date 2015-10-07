@@ -73,8 +73,8 @@ angular.module('dictofullstackApp')
           doUpdate();
           //temporarily commented
           setTimeout(doUpdate, 1000);
-          setTimeout(doUpdate, 3000);
-          //setTimeout(doUpdate, 5000);
+          //setTimeout(doUpdate, 3000);
+          setTimeout(doUpdate, 5000);
         }
 
         scope.$watch('item', update, true);
