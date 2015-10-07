@@ -31,7 +31,6 @@
         data-as-sortable-item
         class="dicto-item-edit-wrapper"
 >
-    <!-- extended version
     <div
         class="comment-proposal animate-medium"
         ng-click="addNewComment($index)"
@@ -39,14 +38,10 @@
         analytics-on="click"
         analytics-event="Comment used"
 
-    >Drag a paragraph from the right colimn or click to add a comment here</div>
-    -->
-    <div
-        class="comment-proposal animate-medium"
-        ng-show="$parent.searchTerm.length <= 2 && item.status != 'selected'"
     >
-      Drag a paragraph from the right column there to add it here
+      Drag a paragraph from the right column or click to add a comment here
     </div>
+
     <div
         class="dicto-item squeeze-height"
         ng-class="setDictoItemClass(item, $index, $parent.searchTerm)"
@@ -234,7 +229,7 @@
 
 
     </div>
-    <!--<div
+    <div
         class="comment-proposal animate-medium"
         ng-click="addNewComment($index+1)"
         ng-show="$parent.searchTerm.length <= 2 && item.status != 'selected'"
@@ -242,11 +237,5 @@
         analytics-event="Comment used"
     >
       Drag a paragraph from the right column or click to add a comment here
-    </div>-->
-    <div
-        class="comment-proposal animate-medium"
-        ng-show="$parent.searchTerm.length <= 2 && item.status != 'selected'"
-    >
-      Drag a paragraph from the right column to add it here
     </div>
 </div>

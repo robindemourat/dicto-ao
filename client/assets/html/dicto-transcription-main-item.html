@@ -147,7 +147,7 @@
               >
                 <div
                   class="tags-category-container"
-                  ng-repeat="category in categories track by $index"
+                  ng-repeat="category in item.tagCategories track by $index"
                 >
                   <div
                     class="tag-category-name"
@@ -165,10 +165,6 @@
                       ng-click="tag.focused = true;$event.stopPropagation()"
                       ng-init="similarTags = similarTags(category)"
                     >
-                      <!--<span
-                        class="glyphicon glyphicon-pencil animate"
-                        ng-click="tag.focused = true"
-                      ></span>-->
                       <span
                         class="glyphicon glyphicon-remove"
                         ng-click="userRemovesTag(item, tag, $parent.$index);$event.stopPropagation()"
@@ -208,26 +204,7 @@
                         />
                       </form>
 
-                          <!-- plain form for tag adding
-                          <form
-                            ng-submit="blurChildren($event);addTag(item, category);"
-                          >
-                            <input
-                              type="text"
-                              ng-model="tag.name"
-                              place-holder="new tag"
-                              ng-focus="tag.focused = true"
-                              ng-blur="blurTag(item, tag, $index, $parent.$index)"
-                              focus-me="tag.focused"
-                              ng-style="{'background': tag.color,
-                                  'color' : getContrastYIQ(tag.color)
-                                }"
-                            >
-                          </form>
-                      <span
-                        class="glyphicon glyphicon-remove"
-                        ng-click="userRemovesTag(item, tag, $parent.$index);$event.stopPropagation()"
-                      ></span>-->
+
                     </span>
 
                     <span class="tag animate-fast" ng-click="addTag(item, category);$event.stopPropagation()">

@@ -36,6 +36,13 @@
 @mediumDuration : .5s;
 @longDuration : 1s;
 
+.pull-left-in-column,
+.pull-right-in-column,
+.pull-top-in-column,
+.pull-bottom-in-column{
+    position : absolute;
+}
+
 .pull-left-in-column
 {
     left: @headerPadding;
@@ -44,6 +51,14 @@
 .pull-right-in-column
 {
     right: @headerPadding;
+}
+
+.pull-top-in-column{
+    top : @headerPadding;
+}
+
+.pull-bottom-in-column{
+    bottom : @headerPadding;
 }
 
 .position-fixed
@@ -380,6 +395,11 @@ COMPONENTS
 */
 
 /* generic */
+
+
+.circled{
+    border-radius : 50%!important;
+}
 
 .v-mirrored
 {
@@ -1142,8 +1162,8 @@ vary width
 {
     overflow-x: hidden;
 
-    -webkit-transition: all @longDuration ease;
-            transition: all @longDuration ease;
+    -webkit-transition: all @mediumDuration ease;
+            transition: all @mediumDuration ease;
 }
 
 .slide-width.ng-enter,
@@ -1335,7 +1355,6 @@ vary width
 }
 .slide-in-right.ng-animate
 {
-    position: absolute;
     z-index: 1;
     -webkit-transform: translate(200%, 0px);
        -moz-transform: translate(200%, 0px);
@@ -1397,11 +1416,11 @@ vary width
 
 .slide-out-right.ng-leave-active
 {
-    -webkit-transform: translate(100%, 0px);
-       -moz-transform: translate(100%, 0px);
-        -ms-transform: translate(100%, 0px);
-         -o-transform: translate(100%, 0px);
-            transform: translate(100%, 0px);
+    -webkit-transform: translate(200%, 0px);
+       -moz-transform: translate(200%, 0px);
+        -ms-transform: translate(200%, 0px);
+         -o-transform: translate(200%, 0px);
+            transform: translate(200%, 0px);
 
     opacity: 0;
 }

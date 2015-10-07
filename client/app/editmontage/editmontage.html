@@ -22,15 +22,20 @@
 >
 
   <!-- aside left menu -->
-  <aside
+  <!--<aside
     class="left-aside-menu"
     ng-include="'/assets/html/montage-edition-left-toolbar.html'"
   >
-  </aside>
+  </aside>-->
   <!-- END aside left menu -->
 
   <!-- left header -->
   <header class="full-header animate-medium">
+
+
+
+
+
     <div
       class="second-header-container animate-medium"
       ng-style="{'left':(exportMode)?0:'-100%'}"
@@ -64,6 +69,20 @@
       class="main-header-container animate-medium"
       ng-style="{'left':(!exportMode)?0:'100%'}"
     >
+      <div
+        class="btn animate-medium toggle pull-top-in-column pull-left-in-column"
+        ng-click="toggleAsideEditionMenu()"
+        ng-class="{'active' : showMenu}"
+        id="menu-btn"
+        style="top : 0;background:inherit"
+      ><span
+          class="glyphicon"
+          ng-class="{'glyphicon-arrow-left':!showMenu,
+          'glyphicon-arrow-right':showMenu}"
+          dicto-tooltip="toggle menu"
+          style="color:black!important;"
+        ></span>
+      </div>
 
      <!-- <div
         class="exportToggler pull-right-in-column"
@@ -173,6 +192,17 @@
         </form>
       </div>
 
+       <!-- intro toggle-->
+      <div
+        class="btn animate-medium pull-top-in-column pull-right-in-column circled" ng-click="introMethod(28)"
+        id="intro-toggle"
+        ng-style="{'top':mode=='preview'?'.2em':'1em','right':mode=='preview'?'4.5em':'1em'}"
+        style="background:inherit;"
+      >
+            <span class="glyphicon glyphicon-info-sign"></span>
+      </div>
+      <!-- end intro toggle -->
+
     </div>
 
     <div
@@ -196,6 +226,8 @@
           class="glyphicon glyphicon-plus"
         ></span>
     </div>
+
+
 
   </header>
   <!-- end left header -->
@@ -452,6 +484,19 @@
   ng-include="'/assets/html/central-player-gui.html'"
   ng-if="mode === 'preview' && !showMenu"
 ></div>
+
+<!-- aside mode switch -->
+<div
+  class="btn pull-right-in-column pull-top-in-column circled slide-in-right slide-out-right"
+  id="right-column-toggle"
+  ng-click="toggleMode()"
+  style="z-index:10"
+  ng-if="!showMenu && !fullMain"
+  dicto-tooltip="Switch right column mode"
+>
+    <span class="glyphicon" ng-class="mode == 'preview' ? 'glyphicon-pencil':'glyphicon-facetime-video'"></span>
+</div>
+<!-- end aside menu switch -->
 
 
 <!-- contextual menus -->

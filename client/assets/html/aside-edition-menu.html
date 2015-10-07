@@ -124,7 +124,46 @@
           ng-click="toggleAsideEditionMenu()"
         >
           <h4>
-            Come back to {{$parent.active.metadata.type}} edition
+            <span ng-if="$parent.active.metadata.type == 'montage'">
+              Come back to montage edition
+            </span>
+            <span
+              ng-if="$parent.active.metadata.type == 'transcription'"
+              class="glyphicon"
+              ng-class="{'glyphicon-film':$parent.viewSettings.showTime,'glyphicon-pencil':!$parent.viewSettings.showTime}"
+            >
+            </span>
+
+            <span
+              ng-if="$parent.active.metadata.type == 'transcription'"
+              ng-bind="' Come back to transcription' +($parent.viewSettings.showTime?' timecodes ':' content ')+ 'edition'"
+            >
+            </span>
+
+            <span class="glyphicon glyphicon-arrow-right" style="position:relative;float:right;margin-right:2em"></span>
+
+          </h4>
+        </a>
+
+        <a
+          class="btn important-btn animate-medium"
+            ng-if="$parent.active.metadata.type == 'transcription'"
+          ng-click="toggleAsideEditionMenu();$parent.viewSettings.showTime = !$parent.viewSettings.showTime;"
+        >
+          <h4>
+
+            <span
+              ng-if="$parent.active.metadata.type == 'transcription'"
+              class="glyphicon"
+              ng-class="{'glyphicon-pencil':$parent.viewSettings.showTime,'glyphicon-film':!$parent.viewSettings.showTime}"
+            >
+            </span>
+
+            <span
+              ng-bind="' Switch to transcription' +($parent.viewSettings.showTime?' content ':' timecodes ')+ 'edition'"
+            >
+            </span>
+
             <span class="glyphicon glyphicon-arrow-right" style="position:relative;float:right;margin-right:2em"></span>
 
           </h4>

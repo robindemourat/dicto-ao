@@ -6,7 +6,7 @@ angular.module('dictofullstackApp')
     var initScopeVariables = function(){
 
       $scope.$parent.viewSettings = {};
-      $scope.$parent.viewSettings.showTags = ($location.search().tags_visible)?true:false;
+      $scope.$parent.viewSettings.showTags = true;//($location.search().tags_visible)?true:false;
       $scope.$parent.viewSettings.showTime = ($location.search().time_visible)?true:false;
       $scope.$parent.viewSettings.viewAside = ($location.search().tags_view)?'tags':'media';
       $scope.$parent.viewSettings.tagsTable = true;
@@ -28,7 +28,7 @@ angular.module('dictofullstackApp')
 
 
     //URL view settings
-    $scope.$parent.$watch('viewSettings.showTags', function(v){
+    /*$scope.$parent.$watch('viewSettings.showTags', function(v){
       if($scope.$parent){
         if(v){
           $location.search('tags_visible', true);
@@ -38,7 +38,7 @@ angular.module('dictofullstackApp')
           $scope.$parent.showTags = false;
         }
       }
-    });
+    });*/
 
     $scope.$parent.$watch('viewSettings.showTime', function(v){
       if($scope.$parent){

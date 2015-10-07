@@ -1539,9 +1539,9 @@ angular.module('dictofullstackApp')
           },
           //transcription mode : 12
           {
-            element : '.left-aside-menu .glyphicon-info-sign',
+            element : '#intro-toggle',
             intro : '<h2>Welcome to Dicto transcription interface</h2><p>A transcription is a media document annoted with text and tags. Here is a walkthrough of how to make or edit one.</p>',
-            position : 'top'
+            position : 'left'
           },
           {
             element : '.media-container',
@@ -1584,14 +1584,14 @@ angular.module('dictofullstackApp')
             position : 'right'
           },
           {
-            element : '#mediamode-btn span',
+            element : '#right-column-toggle',
             intro : 'This button determines what is displayed on the right column. For now, it is the media we are working with ...',
-            position : 'right'
+            position : 'left'
           },
           {
-            element : '#tagmode-btn span',
-            intro : 'This button allows you to change the right column of the interface in order to focus on tagging activities and have an overview on them. Let\'s try',
-            position : 'right'
+            element : '#right-column-toggle',
+            intro : 'It also allows you to change the right column of the interface in order to focus on tagging activities and have an overview on them. Let\'s try',
+            position : 'left'
           },
           {
             element : '.right-column',
@@ -1609,15 +1609,15 @@ angular.module('dictofullstackApp')
             position : 'left'
           },
           {
-            element : '.left-aside-menu .glyphicon-info-sign',
+            element : '#intro-toggle',
             intro : 'That\'s it for the transcription edition basics ! You can leave this walkthrough if you want to play around with all these functionnalities, or we\'ll continue with a presentation of the montage edition interface.',
-            position : 'top'
+            position : 'left'
           },
           //montage title : 28
           {
-            element : '.left-aside-menu .glyphicon-info-sign',
+            element : '#intro-toggle',
             intro : '<h2>Welcome to Dicto montage interface</h2><p>A montage is a remix of several transcriptions chunks. Here is a walkthrough of how to make one.</p>',
-            position : 'top'
+            position : 'left'
           },
           {
             element : '.media-container',
@@ -1655,24 +1655,24 @@ angular.module('dictofullstackApp')
             position : 'right'
           },
           {
-            element : '#previewmode-btn',
-            intro : 'The preview button allows you to watch the media result of your montage on the right column.',
-            position : 'right'
+            element : '#right-column-toggle',
+            intro : 'The right column button allows you to switch between two modes of activities. For now, we are in previewing mode : we can watch the media result of your montage on the right column.',
+            position : 'left'
           },
           {
-            element : '#editmode-btn',
-            intro : 'The edit button allows you to edit and build your current montage. Let\'s switch to edit mode !',
-            position : 'right'
+            element : '#right-column-toggle',
+            intro : 'If you click on this button, you will switch to editing mode and be able to refine and build your current montage. Let\'s switch to edition mode',
+            position : 'left'
           },
           //montage edit mode
           {
             element : '.left-column .column-contents',
-            intro : 'You are now in the edit mode - this column features your montage in its current state. You will be able to change the order of chunks by drag-and-drop and to edit their content independently from their original transcriptions.',
+            intro : 'You are now in the edition mode - this column features your montage in its current state. You will be able to change the order of chunks by drag-and-drop and to edit their content independently from their original transcriptions.',
             position : 'right'
           },
           {
             element : '.right-column',
-            intro : 'In edit mode, the right column features the transcription chunks to pick in order to compose your montage. They come from your transcription documents.',
+            intro : 'In edition mode, the right column features the transcription chunks to pick in order to compose your montage. They come from your transcription documents.',
             position : 'left'
           },
           {

@@ -4,7 +4,7 @@
 	ng-style="{marginLeft : (optionsMode)?'-50%':'0'}"
 >
 	<div class="column-header brand flexed-item">
-		<a href="/dashboard">HKW exhibition - materials management tool
+		<a href="/dashboard">Interviews médialab - version test de Dicto
 		 </a>
 		<div class="btn animate-medium" ng-click="introMethod()" id="tour">
 				Tool walkthrough
@@ -279,12 +279,31 @@
 						<span
 							ng-if="activeMediaType || active.metadata.type == 'montage'"
 						>
-							{{'Edit this '+active.metadata.type}}
+							{{'Edit this '+active.metadata.type + ' content'}}
 						</span>
+
 						<span
 							ng-if="!activeMediaType && active.metadata.type != 'montage'"
 						>
 							{{'Please input a valid media URL'}}
+						</span>
+					</h4>
+				</a>
+
+				<a
+					class="btn important-btn animate-medium"
+					ng-href="{{'/edit/'+active.metadata.type+'/'+active.metadata.slug+'?time_visible'}}"
+					ng-if="!firstMedia && activeMediaType && active.metadata.type == 'transcription'"
+					id="edit-btn"
+				>
+					<h4>
+						<span
+							class="glyphicon glyphicon-film"
+							style="padding-right : 1em"
+						></span>
+						<span
+						>
+							{{'Edit this '+active.metadata.type + ' timecodes'}}
 						</span>
 					</h4>
 				</a>

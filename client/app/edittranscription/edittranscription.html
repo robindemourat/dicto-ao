@@ -22,11 +22,11 @@
 >
 
   <!-- aside left menu -->
-  <aside
+  <!--<aside
     class="left-aside-menu"
     ng-include="'/assets/html/transcription-edition-left-toolbar.html'"
   >
-  </aside>
+  </aside>-->
   <!-- END aside left menu -->
   <!-- left header -->
   <header class="full-header animate-medium">
@@ -64,6 +64,20 @@
       ng-style="{'left':(!exportMode)?0:'100%'}"
     >
 
+      <div
+        class="btn animate-medium toggle pull-top-in-column pull-left-in-column"
+        ng-click="toggleAsideEditionMenu()"
+        ng-class="{'active' : showMenu}"
+        id="menu-btn"
+        style="top : 0;background:inherit"
+      ><span
+          class="glyphicon"
+          ng-class="{'glyphicon-arrow-left':!showMenu,
+          'glyphicon-arrow-right':showMenu}"
+          dicto-tooltip="toggle menu"
+          style="color:black!important;"
+        ></span>
+      </div>
 
       <div class="item-detail">
         <form
@@ -170,6 +184,12 @@
         ></span>
     </div>
 
+    <!-- intro toggle-->
+    <div class="btn animate-medium pull-top-in-column pull-right-in-column circled" ng-click="introMethod(13)" id="intro-toggle" style="top:.2em;right:4.5em;background:inherit;">
+          <span class="glyphicon glyphicon-info-sign"></span>
+    </div>
+    <!-- end intro toggle -->
+
   </header>
   <!-- end left header -->
 
@@ -256,6 +276,19 @@
   >
   </div>
 </section>
+
+<!-- aside mode switch -->
+<div
+  class="btn pull-right-in-column pull-top-in-column circled slide-in-right slide-out-right"
+  id="right-column-toggle"
+  ng-click="toggleAside()"
+  style="z-index:10"
+  ng-if="!showMenu"
+  dicto-tooltip="Switch right column mode"
+>
+    <span class="glyphicon" ng-class="$parent.viewSettings.viewAside == 'tags' ? 'glyphicon-facetime-video':'glyphicon-tags'"></span>
+</div>
+<!-- end aside menu switch -->
 
 <!-- GUI bar -->
 <div

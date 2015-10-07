@@ -20,7 +20,6 @@ angular.module('dictofullstackApp')
       $scope.asideSearchMode = false;
       $scope.mode = $location.search().mode ? $location.search().mode : 'preview';
 
-
       $scope.$parent.viewSettings.searchOptionsVisible = false;
       $scope.$parent.viewSettings.showTags = true;
       $scope.$parent.viewSettings.searchTags = false;
@@ -231,7 +230,15 @@ angular.module('dictofullstackApp')
     }
 
     $scope.toggleMode = function(mode){
-      $scope.mode = mode;
+      if(mode){
+        $scope.mode = mode;
+      }else if($scope.mode == 'preview'){
+        $scope.mode = 'edit';
+      }else{
+        console.log('to preview');
+        $scope.mode = 'preview';
+      }
+      console.log($scope.mode);
       setTimeout(function(){
         $scope.$apply();
       })
