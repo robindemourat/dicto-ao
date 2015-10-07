@@ -1191,13 +1191,13 @@ angular.module('dictofullstackApp')
         _editor.on("cursorActivity", function(){
         });
         _editor.on('blur', function(){
-          console.log('blur received');
+          /*console.log('blur received');
           setTimeout(function(){
             console.log('blur applied');
-            if($scope.editedItem && !$scope.editedItem.contentModified){
+            if($scope.editedItem && !$scope.editedItem.contentModified && !$scope.editedItem.contentEdited){
               $scope.toggleEdited($scope.editedItem);
             }
-          }, 500)
+          }, 500);*/
 
         });
     };
@@ -1350,6 +1350,41 @@ angular.module('dictofullstackApp')
       })
     }
 
+
+    $scope.giveContentFocus = function(item, prevCursor, displaceCursor, newSelection){
+      if(!angular.isDefined(prevCursor)){
+        if(editedDoc){
+          prevCursor = editedDoc.getCursor();
+        }
+      }
+      if(!displaceCursor){
+        displaceCursor = 0;
+      }
+      setTimeout(function(){
+        item.contentModified = true;
+        $scope.$apply();
+
+        var newCh;
+
+        if(prevCursor){
+          editedEditor.focus();
+          newCh = prevCursor.ch + displaceCursor;
+        }
+        if(newSelection){
+          editedDoc.setSelection(newSelection.from, newSelection.to);
+        }else if(prevCursor){
+          editedDoc.setCursor(prevCursor.line, newCh);
+        }
+
+          setTimeout(function(){
+            $scope.$apply(function(){
+              item.contentModified = false;
+            });
+          }, 600);
+        });
+        item.contentEdited = true;
+    }
+
     //I add a markdown symbol to CodeMirror object, looking at the cursor position and current selectio
     $scope.markdownAddEl = function(el, item, $event){
 
@@ -1417,23 +1452,7 @@ angular.module('dictofullstackApp')
         }
       }
 
-      setTimeout(function(){
-        item.contentModified = true;
-        $scope.$apply();
-
-        editedEditor.focus();
-        var newCh = prevCursor.ch + displaceCursor;
-        if(newSelection){
-          editedDoc.setSelection(newSelection.from, newSelection.to);
-        }else
-          editedDoc.setCursor(prevCursor.line, newCh);
-
-        setTimeout(function(){
-          $scope.$apply(function(){
-            item.contentModified = false;
-          });
-        }, 600)
-      });
+      $scope.giveContentFocus(item, prevCursor, displaceCursor, newSelection);
      }
 
      //I evaluate the raw markdown content of an item and asks for its html formatting

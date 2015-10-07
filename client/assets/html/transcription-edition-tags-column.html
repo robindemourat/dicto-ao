@@ -38,7 +38,7 @@
   <div class="tag-frequency-headers">
     <div
       class="tag-frequency-header"
-      ng-repeat="tag in $parent.active.metadata.tags track by $index"
+      ng-repeat="tag in $parent.active.metadata.tags track by $index|orderBy:'name'"
       ng-style="{'width' : (100/$parent.active.metadata.tags.length) + '%'}"
     >
     <span class="icons">
@@ -67,6 +67,7 @@
     class="column-contents"
     fit-header-height=".main-column .main-header-container"
     fit-header-trigger=""
+    ng-init="tagsOrder = 'name'"
   >
     <table
       class="tags-grid table"
@@ -74,11 +75,33 @@
       <tr class="header">
         <td></td>
         <td></td>
-        <td>Tag categories</td>
-        <td>Tag names</td>
-        <td>Tag count</td>
+        <td>
+          Tag categories
+          <span
+            class="glyphicon glyphicon-sort-by-alphabet"
+            ng-style="{'opacity' : (tagsOrder == 'category')?1:.2}"
+            ng-click="tagsOrder = 'category'"
+          ></span>
+        </td>
+        <td>
+          Tag names
+          <span
+            class="glyphicon glyphicon-sort-by-alphabet"
+            ng-style="{'opacity' : (tagsOrder == 'name')?1:.2}"
+            ng-click="tagsOrder = 'name'"
+          ></span>
+        </td>
+        <td>
+          Tag count
+          <span
+            class="glyphicon glyphicon-sort-by-order"
+            ng-style="{'opacity' : (tagsOrder == 'count')?1:.2}"
+            ng-click="tagsOrder = 'count'"
+          ></span>
+        </td>
       </tr>
-      <tr class="squeeze-height" ng-repeat="tag in $parent.active.metadata.tags track by $index">
+      <tr class="squeeze-height"
+        ng-repeat="tag in $parent.active.metadata.tags|orderBy:tagsOrder track by $index">
         <td>
           <span
             class="glyphicon glyphicon-trash animate-medium"
@@ -88,7 +111,6 @@
         <td
         >
 
-          <!-- extended version
           <form ng-submit="blurColor(tag, $index)">
             <input
               colorpicker
@@ -100,14 +122,16 @@
               ng-style="{'background':tag.color}"
             ></input>
           </form>
-          -->
-          <span
+
+        <!-- fixed categories version-->
+          <!--<span
             ng-style="{'background':tag.color}"
             class="color-placeholder"
-          ></span>
+          ></span>-->
         </td>
         <td>
-          <span
+        <!-- fixed categories version-->
+          <!--<span
               class="btn-group big-growth"
               dropdown
               ng-init="asidemenuOpen = false"
@@ -127,15 +151,15 @@
                   ng-click="tag.category = category;globalTagUpdateCategory(tag, $index)"
                 ></li>
               </ul>
-            </span>
-          <!-- extended version - do not delete plz
+            </span>-->
+
           <form ng-submit="globalTagUpdateCategory(tag, $index)">
             <input
               type="text"
               ng-model="tag.category"
               ng-blur="globalTagUpdateCategory(tag, $index)"
             ></input>
-          </form>-->
+          </form>
         </td>
         <td>
           <form ng-submit="globalTagUpdateName(tag, $index);blurChildren($event)">

@@ -196,16 +196,16 @@
 						ng-if="active.metadata.tags && active.metadata.tags.length > 0"
 					>
 						<span class="value">Featured tags</span>
-						<span class="value"
+						<div class="value dashboard-tags"
 						>
 							<span
-								ng-repeat="tag in active.metadata.tags"
+								ng-repeat="tag in active.metadata.tags |limitTo:20"
 								ng-style="{'background' : tag.color}"
 								class="tag"
 							>
 								{{ tag.name }}
 							</span>
-						</span>
+						</div>
 			</div>
 
 			<div class="edition-footer">

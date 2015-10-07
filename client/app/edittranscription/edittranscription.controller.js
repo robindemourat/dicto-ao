@@ -222,15 +222,7 @@ angular.module('dictofullstackApp')
 
     $scope.globalTagUpdateCategory = function(tag, $index){
       if(tag.category.length == 0){
-        tag.category = "theme";
-      }
-      //color - for the hkw special version
-      if(tag.category == 'speaker'){
-        tag.color = '#556dd9';
-      }else if(tag.category == 'place'){
-        tag.color = '#889b1b';
-      }else if(tag.category == 'theme'){
-        tag.color = '#ccc36e';
+        tag.category = "No category";
       }
 
 
@@ -703,9 +695,9 @@ angular.module('dictofullstackApp')
 
       var t = {
               name : 'My new tag',
-              category : 'theme',
+              category : 'No category',
               previousName : 'My new tag',
-              previousCategory : 'theme',
+              previousCategory : 'No category',
               color : color,
               previousColor : color,
               focused : false,
@@ -743,9 +735,9 @@ angular.module('dictofullstackApp')
           var color = $scope.$parent.randomColor();
           tag = {
             name : matchingSearchName,
-            category : 'theme',
+            category : 'No category',
             previousName : matchingSearchName,
-            previousCategory : 'theme',
+            previousCategory : 'No category',
             color : color,
             previousColor : color,
             focused : false,
@@ -834,18 +826,12 @@ angular.module('dictofullstackApp')
     $scope.addTag = function(item, category, tag){
       var color;
 
-      if(category == 'speaker'){
-        color = '#556dd9';
-      }else if(category == 'place'){
-        color = '#889b1b';
-      }else if(category == 'theme'){
-        color = '#ccc36e';
-      }else color = $scope.$parent.randomColor();
+      color = $scope.$parent.randomColor();
       tag = (tag)?tag:{
         name : "",
-        category : (category)?category:"theme",
+        category : (category)?category:"No category",
         previousName : "",
-        previousCategory : (category)?category:"theme",
+        previousCategory : (category)?category:"No category",
         color : color,
         previousColor : color,
         focused : true,

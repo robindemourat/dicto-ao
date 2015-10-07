@@ -135,6 +135,7 @@
                 ng-if="!item.contentEdited"
                 ng-click="handleClickOnItemContents(item, $event)"
                 ng-bind-html="renderMarkdownItem(item.content, $parent.searchTerm)"
+                ng-dblclick="$event.stopPropagation();toggleEdited(item)"
               > </div>
 
               <!-- case tags -->
@@ -142,8 +143,6 @@
               <div
                 class="tags-container"
                 ng-if="$parent.viewSettings.showTags === true"
-                ng-init="categories=['speaker', 'theme', 'place']"
-
               >
                 <div
                   class="tags-category-container"
@@ -151,7 +150,7 @@
                 >
                   <div
                     class="tag-category-name"
-                    ng-bind="category + 's'"
+                    ng-bind="category"
                   ></div>
                   <div class="tag-subcontainer">
                     <span
@@ -162,13 +161,14 @@
                       ng-style="{'background': tag.color,
                                   'color' : getContrastYIQ(tag.color)
                                 }"
-                      ng-click="tag.focused = true;$event.stopPropagation()"
+                      ng-click="tag.focused = true;$event.stopPropagation();item.contentEdited = true"
                       ng-init="similarTags = similarTags(category)"
                     >
                       <span
                         class="glyphicon glyphicon-remove"
                         ng-click="userRemovesTag(item, tag, $parent.$index);$event.stopPropagation()"
                         style="top:-.3em;"
+                        ng-if="item.contentEdited"
                       ></span>
 
                       <span class="placeholder noselect" ng-bind="tag.name"></span>
@@ -184,7 +184,7 @@
                             selected-object="tagSelected"
 
                             focus-out="focusOutTag(item, tag, $index, $parent.$index)"
-                            focus-in="focusInTag()"
+                            focus-in="focusInTag();"
 
 
                             pause="100"
@@ -207,81 +207,39 @@
 
                     </span>
 
-                    <span class="tag animate-fast" ng-click="addTag(item, category);$event.stopPropagation()">
+                    <span
+                      class="tag animate-fast"
+                      ng-click="addTag(item, category);$event.stopPropagation();giveContentFocus(item);"
+                        ng-if="item.contentEdited"
+                    >
                         <span class="glyphicon glyphicon-plus"></span>
                     </span>
                   </div>
 
                 </div>
-                <!-- DO NOT DELETE - extended version with dynamic categories
+                <!-- "virgin" placeholder -->
                 <div
                   class="tags-category-container"
-                  ng-repeat="category in item.tagCategories"
                 >
-                  <div
-                    class="tag-category-name"
-                    ng-bind="category"
-                    dicto-tooltip="Specify a category with the ':' sign (e.g.:'{{category}} : alpha')"
-                    dicto-tooltip-placement="right"
-                  ></div>
-                  <div class="tag-subcontainer">
-                    <span
-                      class="tag animate-fast flexed-items"
-                      ng-repeat="tag in item.tags|filter:{'category':category} track by $index"
-                      edit-inline="{{tag.name}}"
-                      ng-class="{'focused' : tag.focused}"
-                      ng-style="{'background': tag.color,
-                                  'color' : getContrastYIQ(tag.color)
-                                }"
-                      ng-click="tag.focused = true;$event.stopPropagation()"
-                    >
+                    <div
+                      class="tag-category-name"
+                    ></div>
+                    <div class="tag-subcontainer">
+
                       <span
-                        class="glyphicon glyphicon-pencil animate"
-                        ng-click="tag.focused = true"
-                      ></span>
-                          <span class="placeholder noselect" ng-bind="tag.name"></span>
-                          <form
-                            ng-submit="blurChildren($event);"
+                        class="tag animate-fast"
+                        ng-click="addTag(item);$event.stopPropagation();giveContentFocus(item);"
+                        ng-if="item.contentEdited"
+                      >
+                          <span
+                            class="glyphicon glyphicon-plus"
+                            dicto-tooltip="To specify a category type category:label (example : 'speaker:tom')"
                           >
-                            <input
-                              type="text"
-                              ng-model="tag.name"
-                              place-holder="new tag"
-                              ng-focus="tag.focused = true"
-                              ng-blur="blurTag(item, tag, $index, $parent.$index)"
-                              focus-me="tag.focused"
-                              ng-style="{'background': tag.color,
-                                  'color' : getContrastYIQ(tag.color)
-                                }"
-                            >
-                          </form>
-                        <span
-                          class="glyphicon glyphicon-remove"
-                          ng-click="userRemovesTag(item, tag, $parent.$index);$event.stopPropagation()"
-                        ></span>
-                    </span>
-
-                    <span class="tag animate-fast" ng-click="addTag(item, category);$event.stopPropagation()">
-                        <span class="glyphicon glyphicon-plus"></span>
-                    </span>
+                            Add new tag
+                          </span>
+                      </span>
                   </div>
-                  </div>-->
-
-                  <!-- "virgin" placeholder -->
-                  <!--<div
-                    class="tags-category-container"
-                  >
-                      <div
-                        class="tag-category-name"
-                      ></div>
-                      <div class="tag-subcontainer">
-
-                        <span class="tag animate-fast" ng-click="addTag(item, category);$event.stopPropagation()">
-                            <span class="glyphicon glyphicon-plus">Add new tag</span>
-                        </span>
-                    </div>
-                  </div>-->
-
+                </div>
               </div>
               <!-- end tags -->
           </div>
