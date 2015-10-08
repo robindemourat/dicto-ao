@@ -80,6 +80,9 @@ angular.module('dictofullstackApp')
       //mApproximation is an arbitrary threshold set for evaluating current time in media (for now, vimeo player seems to be the less accurate and this figure is based on experiments with the latter)
       $scope.mApproximation = .4;
 
+      $scope.mediaIsSeekingAt = 0;
+
+        $scope.currentTimeS = 0;
 
     }
 
@@ -510,7 +513,7 @@ angular.module('dictofullstackApp')
         $scope.currentTimeT = timeUtils.secToSrt(d.seconds);
         $scope.currentTimeP = d.percent;
         if($scope.mediaIsSeekingAt){
-          $scope.mediaIsSeekingAt = undefined;
+          $scope.mediaIsSeekingAt = undefined;//$scope.currentTimeS;
         }
         //$scope.mediaIsSeekingAt = d.seconds;
         if($scope.mediaWorking){
@@ -689,9 +692,13 @@ angular.module('dictofullstackApp')
     }
 
     //I toggle mediaplayer state
-    $scope.mediaPlayToggle = function(){
+    $scope.mediaPlayToggle = function(play){
       console.log('pause order', $scope.mediaPlaying);
-      if($scope.mediaPlaying){
+      if(play === true){
+        $scope.$broadcast('media:playOrder');
+      }else if(play === false){
+        $scope.$broadcast('media:pauseOrder');
+      }else if($scope.mediaPlaying){
         $scope.$broadcast('media:pauseOrder');
       }else{
         $scope.$broadcast('media:playOrder');
@@ -997,8 +1004,11 @@ angular.module('dictofullstackApp')
           if(matching){
             item.matchingSearch = true;
             classe += " matching-search";
-          }else{
+          }else if(!$scope.viewSettings.showTime){
             classe += " background-item";
+            item.matchingSearch = false;
+          }else{
+            classe += " background-item-opacity-only";
             item.matchingSearch = false;
           }
         }
@@ -1187,7 +1197,7 @@ angular.module('dictofullstackApp')
         editedDoc = _doc;
         editedEditor = _editor;
 
-       _editor.focus();
+       //_editor.focus();
 
        var cursor;
 

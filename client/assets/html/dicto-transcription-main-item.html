@@ -25,6 +25,13 @@
     ></div>
     <div
       class="main-player-drag-bar"
+      dicto-drag="tempSeek"
+      dicto-drag-factor="$parent.viewSettings.computedZoom"
+      dicto-drag-start="seekDragStart()"
+      dicto-drag-end="seekDragEnd(tempSeek)"
+      dicto-drag-dragging="seekDragDragging(tempSeek)"
+      dicto-drag-upper-limit="$parent.activeMediaDuration || $parent.active && $parent.active.data && $parent.active.data[$parent.active.data.length-1].end"
+      dicto-drag-lower-limit="0"
     ></div>
     <div class="main-player-buttons animate-medium">
       <div class="main-btn-line">
@@ -162,13 +169,13 @@
                       ng-style="{'background': tag.color,
                                   'color' : getContrastYIQ(tag.color)
                                 }"
-                      ng-click="tag.focused = true;$event.stopPropagation()"
+                      ng-click="tag.focused = true;item.contentEdited = true;$event.stopPropagation()"
                       ng-init="similarTags = similarTags(category)"
                     >
                       <span
                         class="glyphicon glyphicon-remove"
                         ng-click="userRemovesTag(item, tag, $parent.$index);$event.stopPropagation()"
-                        ng-if="tag.focused"
+                        ng-if="item.contentEdited"
                       ></span>
 
                       <span class="placeholder noselect" ng-bind="tag.name"></span>
@@ -179,7 +186,7 @@
                         focus-me="tag.focused"
                         focus-me-find-input="da"
                         change-input-on-model-change="{{tag.name}}"
-                        ng-style="{'left':(tag.focused)?'10%':'0','width':(tag.focused)?'90%':'100%'}"
+                        ng-style="{'left':(item.contentEdited)?'10%':'0','width':(item.contentEdited)?'90%':'100%'}"
                       >
                           <angucomplete-alt
                             id="{{$parent.$index}}{{category}}{{$index}}"

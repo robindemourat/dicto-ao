@@ -2,32 +2,18 @@
      "metadata": {
           "title": "test",
           "slug": "test",
-          "mediaUrl": "https://vimeo.com/141479485",
+          "mediaUrl": "https://vimeo.com/141544990",
           "type": "transcription",
           "tags": [],
           "tagCategories": []
      },
      "data": [
           {
-               "content": "test qui va bien",
-               "begin": 12.916666666666666,
-               "end": 36.249,
-               "beginSrtFormat": "00:00:12,916",
-               "endSrtFormat": "00:00:36,249"
-          },
-          {
                "content": "",
-               "begin": 137.91666666666666,
-               "end": 197.91666666666666,
-               "beginSrtFormat": "00:02:17,916",
-               "endSrtFormat": "00:03:17,916"
-          },
-          {
-               "content": "",
-               "begin": 197.91666666666666,
-               "end": 257.91666666666663,
-               "beginSrtFormat": "00:03:17,916",
-               "endSrtFormat": "00:04:17,916"
+               "begin": 1.75,
+               "end": 6.75,
+               "beginSrtFormat": "00:00:01,750",
+               "endSrtFormat": "00:00:06,750"
           }
      ]
 }

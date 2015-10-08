@@ -15,6 +15,8 @@ angular.module('dictofullstackApp')
 
         onStart : "&dictoDragStart",
 
+        onDrag : "&dictoDragDragging",
+
         onEnd : "&dictoDragEnd",
         onEnd2 : "&dictoDragEndBis",
 
@@ -26,7 +28,8 @@ angular.module('dictofullstackApp')
         var el = angular.element(element),
             onDrag,
             prevY,
-            y;
+            y,
+            applying = false;
 
         var onMouseDown = function(e){
           angular.element($window).on('mousemove', onMouseMove);
@@ -35,26 +38,36 @@ angular.module('dictofullstackApp')
           prevY = e.screenY;
 
 
-          console.log('drag started');
+          //console.log('drag started');
           scope.onStart();
           setTimeout(function(){
               scope.$apply();
           });
         }
 
+
+
         var onMouseMove = function(e){
           if(onDrag){
-            console.log('drag is moving');
+            //console.log('drag is moving', scope.model);
             y = e.screenY;
             var oldModel = scope.model;
             var wanted =  scope.model + (y - prevY) / scope.factor;
             if(wanted > scope.upperLimit){
               wanted = scope.upperLimit;
+              console.log('out of drag limit : too high');
             }else if(wanted < scope.lowerLimit){
               wanted = scope.lowerLimit;
+              console.log('out of drag limit : too low');
             }
             scope.model = wanted;
-            scope.modelDisplay = timeUtils.secToSrt(scope.model);
+            if(scope.modelDisplay){
+              scope.modelDisplay = timeUtils.secToSrt(scope.model);
+            }
+
+            if(scope.onDrag){
+              scope.onDrag();
+            }
 
 
             if(scope.model2){
@@ -65,18 +78,24 @@ angular.module('dictofullstackApp')
                 wanted = scope.lowerLimit;
               }
               scope.model2 = wanted;
-              scope.modelDisplay2 = timeUtils.secToSrt(scope.model2);
+              if(scope.modelDisplay2)
+                scope.modelDisplay2 = timeUtils.secToSrt(scope.model2);
             }
             prevY = y;
-            setTimeout(function(){
-              scope.$apply();
-            });
+            // if(!applying){
+            //   applying = true;
+              setTimeout(function(){
+                scope.$apply();
+                // applying = false;
+              });
+            // }
+
           }
         }
 
         var onMouseUp = function(){
           if(onDrag){
-            console.log('drag ended');
+            //console.log('drag ended');
             onDrag = false;
             scope.onEnd();
             if(scope.model2){

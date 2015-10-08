@@ -41,7 +41,7 @@
 				<div
 					class="big-list-item animate-fast btn"
 					ng-repeat="transcription in filesList.transcriptions track by $index | orderBy:'metadata.title'"
-					ng-class="{'active' : active.metadata.slug == transcription.slug}"
+					ng-class="{'active' : active.metadata.slug == transcription.slug && active.metadata.type == 'transcription'}"
 					ng-click="setActive(transcription)"
 				>
 					<span
@@ -75,7 +75,7 @@
 					class="big-list-item animate-fast btn"
 					ng-repeat="montage in filesList.montages track by $index  | orderBy:'metadata.title'"
 					ng-bind="montage.title"
-					ng-class="{'active' : active.metadata.slug == montage.slug}"
+					ng-class="{'active' : active.metadata.slug == montage.slug && active.metadata.type == 'montage'}"
 					ng-click="setActive(montage)"
 				>
 				</div>

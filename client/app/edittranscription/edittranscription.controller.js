@@ -24,6 +24,7 @@ angular.module('dictofullstackApp')
         $scope.$parent.viewSettings.showTime = true;
       }
       $scope.mediaWorking = false;
+      $scope.tempSeek = 0;
     }
 
 
@@ -125,6 +126,23 @@ angular.module('dictofullstackApp')
       }else if($scope.$parent.viewSettings.viewAside == 'media'){
         $scope.$parent.setActiveItem(item);
       }
+    }
+
+
+    $scope.seekDragStart = function(){
+      $scope.tempSeek = $scope.$parent.currentTimeS;//$scope.$parent.mediaIsSeekingAt || $scope.$parent.currentTimeS || 0;
+      $scope.$parent.mediaIsSeekingAt = $scope.tempSeek;
+      $scope.$parent.mediaPlayToggle(false);
+    }
+    $scope.seekDragDragging = function(tempSeek){
+       $scope.$parent.mediaIsSeekingAt = tempSeek;
+
+    }
+
+
+    $scope.seekDragEnd = function(tempSeek){
+      $scope.$parent.mediaIsSeekingAt = tempSeek;
+      $scope.$parent.mediaSeekTo(tempSeek);
     }
 
     /*

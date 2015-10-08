@@ -190,9 +190,9 @@ angular.module('dictofullstackApp')
             }*/
 
             //if content is edited, displace
-            if(displaceY > 0 && top > displaceY){
+            /*if(displaceY > 0 && top > displaceY){
               top += displaceH;
-            }
+            }*/
 
 
             wrapper.css({
@@ -203,8 +203,9 @@ angular.module('dictofullstackApp')
 
             dictoItem.css({
               height : wanted
-            })
+            });
         }
+
         var doUpdate = function(data, item){
 
           if(!scope.condition)
@@ -345,8 +346,8 @@ angular.module('dictofullstackApp')
               }else if(offsetTop + wrapperHeight > 0 && offsetTop + wrapperHeight < height){
                 //console.log('on small', wrapperHeight);
 
-                wrapper.find('.dicto-item').removeAttr('style');
-                  wrapper.find('.dicto-item-contents').removeAttr('style');
+                //wrapper.find('.dicto-item').removeAttr('style');
+                wrapper.find('.dicto-item-contents').removeAttr('style');
 
 
                   var wanted = (scope.data[i].end - scope.data[i].begin) * scope.factorOutput;
@@ -375,7 +376,7 @@ angular.module('dictofullstackApp')
 
 
         scope.$watch('data', function(nD, oD){
-          console.log("data update")
+          //console.log("data update")
           //console.log(scope.updateRatioCondition);
 
           if(!scope.condition){
@@ -454,6 +455,7 @@ angular.module('dictofullstackApp')
         });
 
         scope.$watch('seekingAt', function(t){
+          console.log('received seeking at', t, scope.condition)
           if(t && scope.condition && scope.factorOutput){
             updateSeekingAt(t);
           }

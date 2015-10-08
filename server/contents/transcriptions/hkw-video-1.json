@@ -32,21 +32,6 @@
                     "color": "#889b1b"
                },
                {
-                    "name": "South Sudan",
-                    "category": "place",
-                    "color": "#889b1b"
-               },
-               {
-                    "name": "Sudan",
-                    "category": "place",
-                    "color": "#889b1b"
-               },
-               {
-                    "name": "Mali",
-                    "category": "place",
-                    "color": "#889b1b"
-               },
-               {
                     "name": "East Africa",
                     "category": "place",
                     "color": "#889b1b"
@@ -168,11 +153,11 @@
      },
      "data": [
           {
-               "begin": 301,
-               "end": 432,
+               "begin": 308.333,
+               "end": 423.75,
                "content": "In a funny way, yes and no. I mean traditionally, the three elements that you need to be a sovereign state is territory, people and power over the territory. So it is deeply, deeply territorial. I think it’s very human to think territorially. And if you look at the implementation of everything that is being decided in the framework of the United Nations, it all goes down to national legislation. You need to have a territory on which you can actually implement what you discussed internationally. So yes, it is territorial. But at the same time, people lose this sort of traditional relationship to the territory. They don’t grow up in one place and stay there all their lives anymore. They are highly mobile. They are requested to be highly mobile. They are living in the cyberspace. They have friends all over the world. They spend their holidays here and there. And they are, in a strange way, disconnected to their territory. So our relationship also to the territory, which is an integral part also of identity, is rapidly changing..",
-               "beginSrtFormat": "00:05:01,000",
-               "endSrtFormat": "00:07:12,000",
+               "beginSrtFormat": "00:05:08,333",
+               "endSrtFormat": "00:07:03,166",
                "tags": [
                     {
                          "name": "Martin",
@@ -185,10 +170,43 @@
                ]
           },
           {
-               "begin": 432,
+               "begin": 428.583,
+               "end": 448.477,
+               "content": "I think a colonial mindset is basically, grossly simplified, that you can extract richness and resources in one part of the world and enjoy the profit on another side of the world and getting unpunished. ",
+               "beginSrtFormat": "00:07:08,250",
+               "endSrtFormat": "00:07:28,144",
+               "tags": [
+                    {
+                         "name": "Dr Martin Frick",
+                         "category": "speaker",
+                         "color": "#d95585"
+                    },
+                    {
+                         "name": "Bonn, Germany",
+                         "category": "place",
+                         "color": "#889b1b"
+                    },
+                    {
+                         "name": "Africa",
+                         "category": "place",
+                         "color": "#889b1b"
+                    },
+                    {
+                         "name": "Middle East",
+                         "category": "place",
+                         "color": "#889b1b"
+                    }
+               ],
+               "tagCategories": [
+                    "speaker",
+                    "place"
+               ]
+          },
+          {
+               "begin": 452.978,
                "end": 509,
-               "content": "I think a colonial mindset is basically, grossly simplified, that you can extract richness and resources in one part of the world and enjoy the profit on another side of the world and getting unpunished. I think that’s the essence of colonialism. People do understand now about the interdependencies of this world. People see refugees from Africa coming over the Mediterranean. They see how tensions in the Middle East affect them. They see how this is interconnected. Interesting enough, the natural reaction is not always “We need to think global and we have to open up.” The natural reaction of people is quite often “We need to close down. We have extremists, nationalistic parties on the rise,” and that sort of reflection. I don’t know, and it’s also interesting whether the higher degree of mobility is really opening up the minds and really is creating more global citizens, or whether it can also be a form of spending holidays in other people’s misery..",
-               "beginSrtFormat": "00:07:12,000",
+               "content": "I think that’s the essence of colonialism. People do understand now about the interdependencies of this world. People see refugees from Africa coming over the Mediterranean. They see how tensions in the Middle East affect them. They see how this is interconnected. Interesting enough, the natural reaction is not always “We need to think global and we have to open up.” The natural reaction of people is quite often “We need to close down. We have extremists, nationalistic parties on the rise,” and that sort of reflection. I don’t know, and it’s also interesting whether the higher degree of mobility is really opening up the minds and really is creating more global citizens, or whether it can also be a form of spending holidays in other people’s misery..",
+               "beginSrtFormat": "00:07:32,978",
                "endSrtFormat": "00:08:29,000",
                "tags": [
                     {
@@ -218,21 +236,48 @@
                ]
           },
           {
-               "begin": 511,
+               "begin": 511.249,
+               "end": 674.0069994450611,
+               "content": "At the same time, we are not going to abolish nation states anytime soon. Just take the experience of the European Union. What a difficult and long process it is to go for further integration and people giving up a bit of their sovereignty. So they need a bit of both. They need to understand how the toolbox works and how national states work and how you get something to become a piece of legislation, and at the same time, I very much hope that they have in their minds the necessity of international cooperation and the sheer imperative of certain problems that simply cannot be solved on a national level. And how that is going together is, I think, the big challenge. There is a relationship between common good and poverty. The poorer you are, the more you depend on natural shared commodities. If you have clean water running from tap, you don’t need to drink the water out of the river. If you’re a slum dweller and you have no running water, you are drinking the water from the river, and if it’s infested and polluted, you’re going to become ill or even die. It’s the same thing with land. Fifty percent of people living in extreme poverty are actually living somewhere on the countryside. So they live directly from the land. What many people don’t understand is we have a soil, a land crisis which is maybe as big as the climate crisis. We are losing arable land the size of Switzerland every single year. It’s billions of tons of soil going, ultimately being washed out to the ocean. They pollute the oceans, and at the same time, it takes a very, very long time to grow soils. It takes a hundred years to grow 10 centimeters of topsoil. And then again, soil for us is, if you take the English word, it’s dirt. It’s worthless. It’s just what you have on your shoes and what needs to be cleaned. But it’s really the hand span of earth that is between the rock and what we see that keeps all of humanity living. And it’s only 1/32 part of the world’s surface is actually fit for agriculture. And on this little piece of land, we need to live and we are losing soil at a massive scale. So in a strange way, land represents the point of convergence for many of the things that the international community is looking into but not connecting to land. Climate change. Land loss actually results in CO2 emissions massively. ",
+               "beginSrtFormat": "00:08:31,249",
+               "endSrtFormat": "00:11:14,006",
+               "tags": [
+                    {
+                         "name": "Dr Martin Frick",
+                         "category": "speaker",
+                         "color": "#d95585",
+                         "count": null
+                    },
+                    {
+                         "name": "Bonn, Germany",
+                         "category": "place",
+                         "color": "#889b1b",
+                         "count": null
+                    }
+               ],
+               "tagCategories": [
+                    "speaker",
+                    "place"
+               ]
+          },
+          {
+               "begin": 674.0069994450611,
                "end": 763,
-               "content": "At the same time, we are not going to abolish nation states anytime soon. Just take the experience of the European Union. What a difficult and long process it is to go for further integration and people giving up a bit of their sovereignty. So they need a bit of both. They need to understand how the toolbox works and how national states work and how you get something to become a piece of legislation, and at the same time, I very much hope that they have in their minds the necessity of international cooperation and the sheer imperative of certain problems that simply cannot be solved on a national level. And how that is going together is, I think, the big challenge. There is a relationship between common good and poverty. The poorer you are, the more you depend on natural shared commodities. If you have clean water running from tap, you don’t need to drink the water out of the river. If you’re a slum dweller and you have no running water, you are drinking the water from the river, and if it’s infested and polluted, you’re going to become ill or even die. It’s the same thing with land. Fifty percent of people living in extreme poverty are actually living somewhere on the countryside. So they live directly from the land. What many people don’t understand is we have a soil, a land crisis which is maybe as big as the climate crisis. We are losing arable land the size of Switzerland every single year. It’s billions of tons of soil going, ultimately being washed out to the ocean. They pollute the oceans, and at the same time, it takes a very, very long time to grow soils. It takes a hundred years to grow 10 centimeters of topsoil. And then again, soil for us is, if you take the English word, it’s dirt. It’s worthless. It’s just what you have on your shoes and what needs to be cleaned. But it’s really the hand span of earth that is between the rock and what we see that keeps all of humanity living. And it’s only 1/32 part of the world’s surface is actually fit for agriculture. And on this little piece of land, we need to live and we are losing soil at a massive scale. So in a strange way, land represents the point of convergence for many of the things that the international community is looking into but not connecting to land. Climate change. Land loss actually results in CO2 emissions massively. Adaptation. If you want to work for water and food security, there is no better way than cultivating land and doing it right, fighting poverty, empowering communities, empowering women. All of that has to do with small farmers and land.  So in the climate negotiations, the big dialogue that we are seeing is actually not so much the question of “Should we do something against climate change or not?” I think everybody agrees that we need to do something against climate change and we need to act. The question is between development and fighting poverty in developed countries, where you have one part of the world that does brilliantly on the basis of fossil fuels and is very rich, and another part of the planet, actually the majority of the planet with an aspiration of becoming the middle class that we are and they see the way we became rich in their eyes based on fossil fuels, and they don’t want to have us dictating. Now that basically we know about the problem of climate change, you are not supposed to develop in the same way. So we desperately need something in which the fight against poverty connects with the fight against climate change. And land is something that can be restored, and that is exactly where I believe the true agendas can come together..",
-               "beginSrtFormat": "00:08:31,000",
+               "content": "Adaptation. If you want to work for water and food security, there is no better way than cultivating land and doing it right, fighting poverty, empowering communities, empowering women. All of that has to do with small farmers and land.  So in the climate negotiations, the big dialogue that we are seeing is actually not so much the question of “Should we do something against climate change or not?” I think everybody agrees that we need to do something against climate change and we need to act. The question is between development and fighting poverty in developed countries, where you have one part of the world that does brilliantly on the basis of fossil fuels and is very rich, and another part of the planet, actually the majority of the planet with an aspiration of becoming the middle class that we are and they see the way we became rich in their eyes based on fossil fuels, and they don’t want to have us dictating. Now that basically we know about the problem of climate change, you are not supposed to develop in the same way. So we desperately need something in which the fight against poverty connects with the fight against climate change. And land is something that can be restored, and that is exactly where I believe the true agendas can come together..",
+               "beginSrtFormat": "00:11:14,006",
                "endSrtFormat": "00:12:43,000",
                "tags": [
                     {
                          "name": "Dr Martin Frick",
                          "category": "speaker",
-                         "color": "#d95585"
+                         "color": "#d95585",
+                         "count": null
                     },
                     {
                          "name": "Bonn, Germany",
                          "category": "place",
-                         "color": "#889b1b"
+                         "color": "#889b1b",
+                         "count": null
                     }
                ],
                "tagCategories": [
@@ -258,17 +303,17 @@
                          "color": "#889b1b"
                     },
                     {
-                         "name": "South Sudan",
+                         "name": "Africa",
                          "category": "place",
                          "color": "#889b1b"
                     },
                     {
-                         "name": "Sudan",
+                         "name": "East Africa",
                          "category": "place",
                          "color": "#889b1b"
                     },
                     {
-                         "name": "Mali",
+                         "name": "Central Asia",
                          "category": "place",
                          "color": "#889b1b"
                     }
@@ -526,10 +571,10 @@
                ]
           },
           {
-               "begin": 1845,
+               "begin": 1843.832,
                "end": 1964,
                "content": "Don't pay your money. Don't allow your tax payers money to be used for the so called climate change thing. Because it has no utility. Here we are in a village is a next to a river which is drying it out. And the farmers in here you know who are adapting to the climatic variability all the time. All your money is going to be used by the companies to develop the genetically modified varieties to dump on the far old country, number one. Number 2, they are going to fund essentially those scientists who has no relation and has no connection at the grass root level with the community, with the farming communities or the other communities. And these elites, they are in the north and they are in the south. These elites also in our countries in the south. So they always shout about the climate change and don't do anything with the communities rightly here. Don't know nothing about how this agriculture practice is really going on. So they essentially your funding these elites and these corporations. Now, I would say it would be very stupid for any taxpayer in the Germany to actually allow the taxpayers money to be spent on the so called climate change. If you really wanted to deal with the climate change, you let's have a community to community interaction. I would rather appeal to them that German people, in a community simple farmer should come and sit with the farmers in Bangladesh. Sit down with them, learn with them, exchange information’s and we should develop a global strategy through which we can address that if there is any problems. Our problem is again I say I would repeat is not the climate per say, but actually the way you are withdrawing the water from the rivers, the way you are destroying the ecosystem, the way you are using the wrong technology, in agriculture and others these are far more important problem for us. Far more dangerous issues which we have to solve and which we need you know some strategy from irrigation..",
-               "beginSrtFormat": "00:30:45,000",
+               "beginSrtFormat": "00:30:43,832",
                "endSrtFormat": "00:32:44,000",
                "tags": [
                     {
@@ -549,10 +594,10 @@
                ]
           },
           {
-               "begin": 1970,
+               "begin": 1971.75,
                "end": 2209,
                "content": "So in this project, just from these whole observations of brown clouds, to me there appeared a new idea (1:52) on climate change. Right now, the focus is on cutting down fossil fuel consumption, carbon dioxide. But it turns out about 40% of global warming is caused by pollutants other than carbon dioxide. That has been my work in the last 25 years. So I proposed a solution that the nations focus on carbon dioxide. From (2:23), there could be a new movement where we focus on cutting down these other pollutants. It turns out that they will slow down global warming by 50% quickly within the next 30 years. This idea has now been accepted by the United Nations. There is a coalition for it, Climate and Clean Air Coalition. One of the major sources of this other pollution is soot coming from cooking with firewood coal. So I decided that I was doing this project for four to five years, but sitting in San Diego in my computer (3:04). So then I decided early this year I should go spend 10 weeks living in villages. I spent a number of days talking to women and children and men. I talked about it yesterday. What I did then was… There was no electricity. It’s very hard. Every week or 10 days, I would go to the nearby city to live in an air-conditioned room for one day and some cold beer, and go back. That’s when I discovered that there are really two planets. I call the top four billion --> that’s us --> and then the bottom three billion who have no access to energy. We are codependent. Without the bottom three billion, there won’t be any cheap labor. I can’t buy my shirt for $40. This shirt would cost me $200. But at the same time, the top four billion is what is consuming the fossil fuel. I’m now thinking that the problem with the top four billion is consumption. That’s the anthropocene. The anthropocene, remind you, is because long ago, technology was critical in meeting our basic needs --> transportation. But now we’ve gone far beyond basic needs. Whereas for the bottom three billion, their problem is population. But for them, they need clean energy access. Now I’m taking my climate mitigation idea. I’m calling it two-world hypothesis. Reducing the carbon footprint, bringing down, decarbonizing the economy is for the top four billion. For the bottom three billion, for them we have to give energy access. Otherwise, they will follow us. If the bottom three billion go do the consumption like ours, there is no hope for that matter. The global warming will be five degrees to ten degrees. In building a case, purely for selfish reasons, for our survival, we have to help themm",
-               "beginSrtFormat": "00:32:50,000",
+               "beginSrtFormat": "00:32:51,750",
                "endSrtFormat": "00:36:49,000",
                "tags": [
                     {
@@ -774,10 +819,10 @@
           },
           {
                "begin": 2683,
-               "end": 2865,
+               "end": 2866.5,
                "content": "I’m a lot more optimistic than many of my colleagues. I know they’re going to solve this problem. I don’t think they’re going to let it go out of control. For example, my own projection is --> I made this forecast five years ago --> that we are going to surpass two-degree warming Celsius by mid-century and about four degrees by end of 2100. That is beyond anything two-degree warming from this current warm epoch. It’s anything beyond we have experienced in the last several million years. None of the ecosystems has faced it. If you just look at this year and last year, you had Hurricane Sandy, Haiyan, severe floods in India, Himalayas --> the weather extremes. Let’s even forget about Greenland glaciers and Antarctic glaciers --> the weather extreme. And fires in California. I had to cancel my vacation to Yosemite due to a huge fire. This only gets worse. As a human, we react more to catastrophes, tragedies. Then, we wake up. If my predictions come true, we are going to see severe changes and catastrophes over the next 10 to 20 years. Fortunately, there is still time for us to fix the problem. This short-lived (30:55) this 40% of the pollution will give us some time because you take the soot which is the second largest contributor to global warming. It’s a major part of the brown cloud. Half the source of soot is in the cooking. The other half is transportation. If we wave a magic wand and give everyone (31:23), that soot is gone in two weeks and its effects disappear in 10 years. We’ll be able to do something not too expensive to slow down, and then decarbonize the economy. That is where the outer world and inner world have to work together. If we don’t do that, then there’s no hope.",
                "beginSrtFormat": "00:44:43,000",
-               "endSrtFormat": "00:47:45,000",
+               "endSrtFormat": "00:47:46,500",
                "tags": [
                     {
                          "name": "Veerabhadran Ramanathan, Scripps Institutions of Oceanography, University of California at San Diego, Usa",
