@@ -1,0 +1,39 @@
+{
+     "metadata": {
+          "title": "entretien avec Benoît Verjat",
+          "slug": "entretien-avec-benot-verjat",
+          "mediaUrl": "https://vimeo.com/141544990",
+          "type": "transcription",
+          "tags": [
+               {
+                    "name": "Benoît Verjat",
+                    "category": "personne",
+                    "color": "#496f5a"
+               }
+          ],
+          "tagCategories": [
+               {
+                    "name": "personne"
+               }
+          ]
+     },
+     "data": [
+          {
+               "content": "test de transcription",
+               "begin": 27.916666666666668,
+               "end": 66.999,
+               "beginSrtFormat": "00:00:27,916",
+               "endSrtFormat": "00:01:06,999",
+               "tags": [
+                    {
+                         "name": "Benoît Verjat",
+                         "category": "personne",
+                         "color": "#496f5a"
+                    }
+               ],
+               "tagCategories": [
+                    "personne"
+               ]
+          }
+     ]
+}

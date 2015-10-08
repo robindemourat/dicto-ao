@@ -9,6 +9,37 @@
     padding-left: .5em;
 }
 
+/*.dicto-item-gui-wrapper:hover,
+.dicto-item-gui-wrapper:hover .dicto-item,*/
+
+.dicto-item-gui-wrapper.content-edited,
+.dicto-item-gui-wrapper.content-edited .dicto-item
+{
+    overflow-y : visible;
+    z-index : 3;
+}
+
+
+.dicto-item-gui-wrapper.content-edited .dicto-item{
+    padding-top : .5em!important;
+}
+
+
+
+/*
+.dicto-item-gui-wrapper:hover + .dicto-item-gui-wrapper,
+.dicto-item-gui-wrapper:hover + .dicto-item-gui-wrapper .dicto-item
+{
+    opacity : .8;
+}
+.dicto-item-gui-wrapper.content-edited + .dicto-item-gui-wrapper,
+.dicto-item-gui-wrapper.content-edited + .dicto-item-gui-wrapper .dicto-item
+{
+    opacity : .4;
+}*/
+
+
+
 
 
 .timecode-handler
@@ -669,6 +700,7 @@ COMPONENTS
     height: 100%;
 
     cursor: all-scroll;
+    z-index : 20;
 }
 
 .dicto-item-gui-wrapper .top-left-button,
@@ -684,7 +716,7 @@ COMPONENTS
     padding-left : .05em;
     background : @backgroundLightColor;
     border-radius : 50%;*/
-    z-index: 7;
+    z-index: 15;
 
     cursor: pointer;
 

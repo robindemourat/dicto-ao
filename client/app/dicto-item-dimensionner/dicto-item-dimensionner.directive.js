@@ -325,14 +325,27 @@ angular.module('dictofullstackApp')
                 wrapper.find('.dicto-item-contents').removeAttr('style');
 
 
-                  var wanted = (scope.data[i].end - scope.data[i].begin) * scope.factorOutput;
-                  var actual = wrapper.find('.dicto-item').height();
-                  var dif = wanted - actual;
-                  wrapper.find('.dicto-item')
+                // var wanted = (scope.data[i].end - scope.data[i].begin) * scope.factorOutput;
+                // var actual = wrapper.find('.dicto-item').height();
+                // var dif = wanted - actual;
+                // wrapper.find('.dicto-item')
+                // .css({
+                //   paddingBottom : dif/2,
+                //   paddingTop : dif/2
+                // });
+                  var dif = wrapper.find('.dicto-item').height() - wrapper.find('.dicto-item-contents').height();
+                  /*wrapper.find('.dicto-item')
                   .css({
                     paddingBottom : dif/2,
                     paddingTop : dif/2
-                  });
+                  });*/
+                wrapper.find('.dicto-item')
+                  .css({
+                    paddingBottom : 0,
+                    paddingTop : dif
+                });
+
+
 
 
                   // console.log(wanted, actual, wrapper.innerHeight())

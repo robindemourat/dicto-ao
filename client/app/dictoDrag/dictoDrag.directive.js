@@ -39,7 +39,9 @@ angular.module('dictofullstackApp')
 
 
           //console.log('drag started');
-          scope.onStart();
+          scope.onStart({
+            $event : e
+          });
           setTimeout(function(){
               scope.$apply();
           });
@@ -66,7 +68,9 @@ angular.module('dictofullstackApp')
             }
 
             if(scope.onDrag){
-              scope.onDrag();
+              scope.onDrag({
+                $event : e
+              });
             }
 
 
@@ -93,13 +97,17 @@ angular.module('dictofullstackApp')
           }
         }
 
-        var onMouseUp = function(){
+        var onMouseUp = function(e){
           if(onDrag){
             //console.log('drag ended');
             onDrag = false;
-            scope.onEnd();
-            if(scope.model2){
-              scope.onEnd2();
+            scope.onEnd({
+              $event : e
+            });
+            if(scope.onEnd2){
+              scope.onEnd2({
+                $event : e
+              });
             }
             angular.element($window).off('mousemove', onMouseMove);
 
@@ -108,9 +116,6 @@ angular.module('dictofullstackApp')
             })
           }
         }
-
-        scope.$watch('factor', function(f){
-        });
 
 
 

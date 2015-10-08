@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('dictofullstackApp')
-  .controller('EdittranscriptionCtrl', function ($scope, $location, timeUtils, $rootScope) {
+  .controller('EdittranscriptionCtrl', function ($scope, $location, timeUtils, $rootScope, $timeout) {
 
     var initScopeVariables = function(){
 
@@ -25,6 +25,8 @@ angular.module('dictofullstackApp')
       }
       $scope.mediaWorking = false;
       $scope.tempSeek = 0;
+
+      $scope.tempDraggedNewItemEnd = 0;
     }
 
 
@@ -99,7 +101,8 @@ angular.module('dictofullstackApp')
       }
     }
 
-    $scope.handleClickOnWrapper = function($event){
+    $scope.handleDoubleClickOnWrapper = function($event){
+      console.log('double click on wrapper');
       var length = $scope.$parent && $scope.$parent.active && $scope.$parent.active.data && $scope.$parent.active.data.length;
       if(length === 0){
         $scope.addNewItemAtMousePosition($event);
@@ -139,11 +142,52 @@ angular.module('dictofullstackApp')
 
     }
 
-
     $scope.seekDragEnd = function(tempSeek){
       $scope.$parent.mediaIsSeekingAt = tempSeek;
       $scope.$parent.mediaSeekTo(tempSeek);
     }
+
+    $scope.newByDragStart = function(e){
+
+      console.log('new by drag start', e);
+      //var newItemData = $scope.addNewItemAtMousePosition(event, 10);
+      var y = e.offsetY + angular.element(e.currentTarget).offset().top + angular.element('.left-column .column-contents').scrollTop();
+      $scope.tempDraggedNewItemY = y / $scope.$parent.viewSettings.computedZoom;
+
+    }
+    $scope.newByDragDragging = function(tempDraggedEnd, e){
+      if(!angular.isDefined($scope.createdByDragIndex)){
+        $timeout(function(){
+          if(!angular.isDefined($scope.createdByDragIndex)){
+            var newItem = $scope.addNewItemAtMousePosition(e, $scope.tempDraggedNewItemY, 5);
+            $scope.createdByDragIndex = newItem.index;
+            $scope.tempDraggedNewY = newItem.begin;
+            $scope.tempDraggedNewItemEnd = newItem.end;
+            $scope.$parent.active.data[$scope.createdByDragIndex].contentEdited = false;
+            console.log('new item timecodes', newItem.begin, newItem.end);
+            $scope.$apply();
+          }
+        });
+      }else{
+        $scope.tempDraggedNewItemEnd = tempDraggedEnd;
+        var item = $scope.$parent.active.data[$scope.createdByDragIndex];
+        if($scope.tempDraggedNewItemEnd > item.begin+ 2){
+            item.end = $scope.tempDraggedNewItemEnd;
+          item.endSrtFormat = timeUtils.secToSrt($scope.tempDraggedNewItemEnd);
+        }
+      }
+      // console.log('new by drag dragging', tempDraggedEnd);
+    }
+
+    $scope.newByDragEnd = function(tempDraggedEnd){
+      $scope.saveTimecodeOnBlur($scope.$parent.active.data[$scope.createdByDragIndex], $scope.createdByDragIndex, false, true);
+      $scope.$parent.active.data[$scope.createdByDragIndex].contentEdited = true;
+      $scope.tempDraggedNewItemY = undefined;
+      $scope.createdByDragIndex = undefined;
+      console.log('new by drag end', tempDraggedEnd);
+    }
+
+
 
     /*
     grid
@@ -447,13 +491,19 @@ angular.module('dictofullstackApp')
 
     $scope.clickOnMainColumn = function(e){
       e.stopPropagation();
-      //console.log('dbl click')
-      var target = angular.element('.left-column .column-contents');
-      //console.log(target);
-      if(target.hasClass('column-contents') && $scope.activeMediaDuration){
-        var y = (e.clientY + target.scrollTop() - target.offset().top );
-        var seektoS = (y / $scope.$parent.viewSettings.computedZoom);
-        $scope.$parent.mediaSeekTo(seektoS);
+      console.log('dbl click');
+
+      var length = $scope.$parent && $scope.$parent.active && $scope.$parent.active.data && $scope.$parent.active.data.length;
+      if(length === 0){
+        $scope.addNewItemAtMousePosition(e);
+      }else{
+        var target = angular.element('.left-column .column-contents');
+        //console.log(target);
+        if(target.hasClass('column-contents') && $scope.activeMediaDuration){
+          var y = (e.clientY + target.scrollTop() - target.offset().top );
+          var seektoS = (y / $scope.$parent.viewSettings.computedZoom);
+          $scope.$parent.mediaSeekTo(seektoS);
+        }
       }
     }
 
@@ -633,15 +683,25 @@ angular.module('dictofullstackApp')
       });
     }
 
-    $scope.addNewItemAtMousePosition = function(e){
+    $scope.addNewItemAtMousePosition = function(e, computedY, length){
       console.log(e.clientY, e.offsetY);
-      var y = e.offsetY/* - angular.element('.left-column .column-contents').offset().top*/ + angular.element('.left-column .column-contents').scrollTop();
-      var computedY = y / $scope.$parent.viewSettings.computedZoom;
+      var y;
+      if(!length){
+        length = 30;
+      }
+      if(!computedY){
+        y = e.offsetY - angular.element(e.currentTarget).offset().top + angular.element('.left-column .column-contents').scrollTop();
+        computedY = y / $scope.$parent.viewSettings.computedZoom;
+      }
+      // var y = e.offsetY/* - angular.element('.left-column .column-contents').offset().top*/ + angular.element('.left-column .column-contents').scrollTop();
       var closerDist = Infinity, closer, dist, closerEl;
-      //get index of the item to add
+      //get index of the item to add and prevent overlay
       $scope.$parent.active.data.forEach(function(item, i){
         dist = item.begin - computedY;
-        if(dist > 0 && dist < closerDist){
+        if(computedY >= item.begin && computedY <= item.end){
+          console.log('overlay');
+          computedY = item.end;
+        }else if(dist > 0 && dist < closerDist){
           closerDist = dist;
           closer = i;
           closerEl = item;
@@ -652,14 +712,19 @@ angular.module('dictofullstackApp')
       }
       var end;
       if(closerEl){
-        end = (computedY + 5 < closerEl.begin)?computedY+5:closerEl.begin - .1;
+        end = (computedY + length < closerEl.begin)?computedY+length:closerEl.begin - .1;
       }else{
-        end = computedY + 5;
+        end = computedY + length;
       }
       if(end > $scope.$parent.activeMediaDuration){
         end = $scope.$parent.activeMediaDuration;
       }
       $scope.addNewTranscript(closer, computedY, end);
+      return {
+        index : closer,
+        begin : computedY,
+        end : end
+      }
     }
 
     $scope.addNewItemBefore = function(item, index){

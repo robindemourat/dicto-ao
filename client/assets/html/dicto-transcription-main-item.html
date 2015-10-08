@@ -1,6 +1,14 @@
 <div
   class="time-grads-container"
   ng-if="$parent.viewSettings.showTime"
+
+  dicto-drag="tempDraggedNewItemEnd"
+  dicto-drag-factor="$parent.viewSettings.computedZoom"
+  dicto-drag-start="newByDragStart($event)"
+  dicto-drag-dragging="newByDragDragging(tempDraggedNewItemEnd, $event)"
+  dicto-drag-end="newByDragEnd(tempDraggedNewItemEnd)"
+  dicto-drag-upper-limit="$parent.activeMediaDuration || $parent.active && $parent.active.data && $parent.active.data[$parent.active.data.length-1].end"
+  dicto-drag-lower-limit="0"
 >
   <div
     class="time-grad animate-medium"
@@ -72,7 +80,7 @@
 
 
 <!-- case begining of transcription -->
-<div
+<!--<div
         class="dicto-item-edit-wrapper first-item"
         ng-if="active.data.length == 0"
 >
@@ -85,11 +93,11 @@
     >
         Click here to start your transcription
     </div>
-</div>
+</div>-->
 
 <!-- case existing transcription-->
 <div
-  class="dicto-item-gui-wrapper slide-height"
+  class="dicto-item-gui-wrapper animate-medium slide-height"
   ng-repeat="item in active.data track by $index"
    ng-class="setDictoItemClass(item, $index, $parent.searchTerm)"
 >
@@ -132,6 +140,7 @@
                <!--case edited -->
               <div
                 ng-if="item.contentEdited"
+                class="content-input-container animate-fast"
               >
                 <textarea
                   ng-model="item.content"
@@ -381,7 +390,7 @@
         <!-- move item -->
         <div
               class="middle-right-items animate-fast visible-on-hover"
-              ng-if="$parent.viewSettings.showTime == true"
+              ng-if="$parent.viewSettings.showTime == true && !item.contentEdited"
         >
               <span
                   class="glyphicon glyphicon-move animate-medium middled-items"
@@ -484,7 +493,10 @@
   class="first-transcript"
 >
   <div class="first-transcript-content">
-  Click on this space to add a first transcript
+  <span class="glyphicon glyphicon-film"></span>
+  Double-click or drag your mouse/finger in this space-time to add a first chunk of transcription
+  <span class="glyphicon glyphicon-film"></span>
+
   </div>
 </div>
 <!-- END case begining of transcription -->
