@@ -217,7 +217,7 @@ angular.module('dictofullstackApp')
           }
 
           //scope.factorOutput = currentRatio * scope.multiplier;
-          scope.factorOutput = 12 * scope.multiplier;
+          scope.factorOutput = 15 * scope.multiplier;
 
           data.forEach(updateItemSize);
 

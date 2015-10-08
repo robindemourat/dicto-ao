@@ -556,22 +556,27 @@ COMPONENTS
     border-radius: .3em;
     background: rgba(0,0,0,.3);
 
-    overflow : hidden;
+    float : left;
 }
 
 
 .tag form
 {
-    position: absolute;
-    top: 0;
+    /*position: absolute;
+    top: 0;*/
 
     background: transparent;
+    min-width : 2em;
+    position : relative;
+    top : -2.5em;
+
 }
 
 .tag .angucomplete-holder
 {
     display: inline;
     width : 80%;
+    background : transparent;
 }
 
 .tag input
@@ -584,7 +589,7 @@ COMPONENTS
 .tag .glyphicon-remove
 {
     position: absolute;
-    top: .5em;
+    top: .7em;
     left: .5em;
 }
 

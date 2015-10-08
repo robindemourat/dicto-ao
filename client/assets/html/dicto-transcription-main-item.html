@@ -141,6 +141,7 @@
               <div
                 ng-if="item.contentEdited"
                 class="content-input-container animate-fast"
+                ng-dblclick="$event.stopPropagation()"
               >
                 <textarea
                   ng-model="item.content"
@@ -180,6 +181,7 @@
                                 }"
                       ng-click="tag.focused = true;item.contentEdited = true;$event.stopPropagation()"
                       ng-init="similarTags = similarTags(category)"
+                      ng-dblclick="$event.stopPropagation()"
                     >
                       <span
                         class="glyphicon glyphicon-remove"
@@ -195,7 +197,7 @@
                         focus-me="tag.focused"
                         focus-me-find-input="da"
                         change-input-on-model-change="{{tag.name}}"
-                        ng-style="{'left':(item.contentEdited)?'10%':'0','width':(item.contentEdited)?'90%':'100%'}"
+                        ng-style="{'left':(item.contentEdited)?'1em':'0'}"
                       >
                           <angucomplete-alt
                             id="{{$parent.$index}}{{category}}{{$index}}"

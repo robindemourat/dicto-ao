@@ -9,11 +9,39 @@
                     "name": "Benoît Verjat",
                     "category": "personne",
                     "color": "#496f5a"
+               },
+               {
+                    "name": "le temps qui passe",
+                    "category": "No category",
+                    "color": "#b875a3"
+               },
+               {
+                    "name": "un autre tag",
+                    "category": "No category",
+                    "color": "#b1edf2"
+               },
+               {
+                    "name": "test qui va bien",
+                    "category": "No category",
+                    "color": "#f568ea"
+               },
+               {
+                    "name": "test",
+                    "category": "No category",
+                    "color": "#f0e081"
+               },
+               {
+                    "name": "test qui marche bien",
+                    "category": "No category",
+                    "color": "#7a5065"
                }
           ],
           "tagCategories": [
                {
                     "name": "personne"
+               },
+               {
+                    "name": "No category"
                }
           ]
      },
@@ -29,10 +57,36 @@
                          "name": "Benoît Verjat",
                          "category": "personne",
                          "color": "#496f5a"
+                    },
+                    {
+                         "name": "le temps qui passe",
+                         "category": "No category",
+                         "color": "#b875a3"
+                    },
+                    {
+                         "name": "un autre tag",
+                         "category": "No category",
+                         "color": "#b1edf2"
+                    },
+                    {
+                         "name": "test qui va bien",
+                         "category": "No category",
+                         "color": "#f568ea"
+                    },
+                    {
+                         "name": "test",
+                         "category": "No category",
+                         "color": "#f0e081"
+                    },
+                    {
+                         "name": "test qui marche bien",
+                         "category": "No category",
+                         "color": "#7a5065"
                     }
                ],
                "tagCategories": [
-                    "personne"
+                    "personne",
+                    "No category"
                ]
           }
      ]
