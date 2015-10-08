@@ -28,6 +28,8 @@ Dicto is the outcome of a design research process, and is being developed in a d
 
 * deployment as a SaaS - with user system and drive-like documents permissions
 * advanced metadata handling for academic use and referencing
+* tablet-friendly version
+* transcription pretty printing
 * "multi-faceted" chunks and multi-threaded transcriptions, to allow several layers of transcription, inspred by [Lignes de temps](http://www.iri.centrepompidou.fr/outils/lignes-de-temps/)-like software
 * chunks commenting functionnalities
 * advanced sharing options (video transitions, css styling) and diversifed modes (as visualization, as tag-base threads, ...)

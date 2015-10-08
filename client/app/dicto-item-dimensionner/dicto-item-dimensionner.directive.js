@@ -46,30 +46,6 @@ angular.module('dictofullstackApp')
 
 
 
-        var resizeW = function(){
-          if(scope.condition){
-            doResize();
-            $timeout(function(){
-              if(scope.condition)
-                doResize();
-            }, 3000);
-          }
-        }
-
-        var doResize = function(){
-          wrappers = angular.element(element).find('.dicto-item-gui-wrapper');
-            playbar = angular.element(element).find('.main-player');
-            contWidth = angular.element(element).width();
-            contPad = parseInt(angular.element(element).css('paddingLeft'));
-
-
-            wrappers.css({
-              left : contPad,
-              width : contWidth
-            });
-        }
-
-
         var reset = function(){
           wrappers = angular.element(element).find('.dicto-item-gui-wrapper');
 
@@ -262,7 +238,6 @@ angular.module('dictofullstackApp')
               val : i
             });
 
-            resizeW();
           }
 
           gradsContainer = angular.element(element).find('.time-grads-container');
