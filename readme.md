@@ -26,12 +26,14 @@ Dicto is the outcome of a design research process, and is being developed in a d
 
 ## Roadmap
 
-* advanced metadata handling for academic use and referencing
-* "multi-threaded" transcription, to allow several layers of transcription, inspred by [Lignes de temps](http://www.iri.centrepompidou.fr/outils/lignes-de-temps/)-like software
 * deployment as a SaaS - with user system and drive-like documents permissions
+* advanced metadata handling for academic use and referencing
+* "multi-faceted" chunks and multi-threaded transcriptions, to allow several layers of transcription, inspred by [Lignes de temps](http://www.iri.centrepompidou.fr/outils/lignes-de-temps/)-like software
+* chunks commenting functionnalities
+* advanced sharing options (video transitions, css styling) and diversifed modes (as visualization, as tag-base threads, ...)
 * keyboard shortcuts handling
 * integration of new media sources (youtube, soundcloud, ...)
-* complete and documented API for third-party use
+* documented public API for third-party use
 
 ### Wishlist (collaborations wanted!)
 

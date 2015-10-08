@@ -4,82 +4,83 @@
 	ng-style="{marginLeft : (optionsMode)?'-50%':'0'}"
 >
 	<div class="column-header brand flexed-item">
-		<a href="/dashboard">Interviews médialab - version test de Dicto
-		 </a>
+		<a href="/dashboard">
+			Interviews médialab - version test de Dicto
+		</a>
 		<div class="btn animate-medium" ng-click="introMethod()" id="tour">
 				Tool walkthrough
 				<span class="glyphicon glyphicon-info-sign" ></span>
-			</div>
-
-		<!--<a href="/home" class="brand">Dicto - the transcription curation companion</a>
-
-		<div class="btn-line">
-			<div class="btn glyphicon glyphicon-user">You are connected as kikou@gmail.com</div>
-			<button class="btn">Disconnect</button>
-		</div>-->
+		</div>
 	</div>
 
 	<div class="column-contents-wrapper"  fit-header-height=".column-header">
 		<div class="column-contents">
 
-
-			<div class="btn important-btn animate-medium" id="downloadall">
-				<span class="glyphicon glyphicon-download"></span>
-				<a  href="api/files/downloadall" target="_blank">Download all your data</a>
+			<div class="row">
+				<div class="btn important-btn animate-medium" id="downloadall">
+					<span class="glyphicon glyphicon-download"></span>
+					<a  href="api/files/downloadall" target="_blank">Download all your data</a>
+				</div>
 			</div>
 
-			<div class="big-list col-xs-6" id="transcriptions-container">
-				<h3 class="list-header secondary-list-header" id="transcriptions-header">
-					Your transcriptions
-				</h3>
+			<div class="row">
+				<div class="big-list col-md-5 col-sm-6" id="transcriptions-container">
+					<h3 class="list-header secondary-list-header" id="transcriptions-header">
+						Your transcriptions
+					</h3>
 
-				<div
-					class="big-list-item animate-fast btn"
-					ng-click="newItem('transcription')"
-				><span class="glyphicon glyphicon-plus-sign"></span>Create a new transcription</div>
+					<div
+						class="big-list-item animate-fast btn"
+						ng-click="newItem('transcription')"
+					><span class="glyphicon glyphicon-plus-sign"></span>Create a new transcription</div>
 
-				<div
-					class="big-list-item animate-fast btn"
-					ng-repeat="transcription in filesList.transcriptions track by $index | orderBy:'metadata.title'"
-					ng-class="{'active' : active.metadata.slug == transcription.slug && active.metadata.type == 'transcription'}"
-					ng-click="setActive(transcription)"
-				>
-					<span
-						ng-bind="transcription.title"
-					></span>
-
-					<!--<span
-						class="glyphicon glyphicon-cog"
-						style="float:right;"
+					<div
+						class="big-list-item animate-fast btn"
+						ng-repeat="transcription in filesList.transcriptions track by $index | orderBy:'metadata.title'"
+						ng-class="{'active' : active.metadata.slug == transcription.slug && active.metadata.type == 'transcription'}"
 						ng-click="setActive(transcription)"
-					></span>
+					>
+						<span
+							ng-bind="transcription.title"
+						></span>
 
-					<a
-						class="glyphicon glyphicon-pencil"
-						style="float:right; margin-right : 1em;"
-						href="edit/{{transcription.type}}/{{transcription.slug}}"
-					></a>-->
+						<!--<span
+							class="glyphicon glyphicon-cog"
+							style="float:right;"
+							ng-click="setActive(transcription)"
+						></span>
+
+						<a
+							class="glyphicon glyphicon-pencil"
+							style="float:right; margin-right : 1em;"
+							href="edit/{{transcription.type}}/{{transcription.slug}}"
+						></a>-->
+					</div>
+				</div>
+
+				<div class="big-list col-sm-2 col-sm-0"></div>
+
+				<div class="big-list col-md-5 col-sm-6" id="montages-container">
+					<h3 class="list-header secondary-list-header" id="montages-header">
+						Your montages
+					</h3>
+
+					<div
+						class="big-list-item animate-fast btn"
+						ng-click="newItem('montage')"
+					><span class="glyphicon glyphicon-plus-sign"></span>Create a new montage</div>
+
+					<div
+						class="big-list-item animate-fast btn"
+						ng-repeat="montage in filesList.montages track by $index  | orderBy:'metadata.title'"
+						ng-bind="montage.title"
+						ng-class="{'active' : active.metadata.slug == montage.slug && active.metadata.type == 'montage'}"
+						ng-click="setActive(montage)"
+					>
+					</div>
 				</div>
 			</div>
-			<div class="big-list col-xs-6" id="montages-container">
-				<h3 class="list-header secondary-list-header" id="montages-header">
-					Your montages
-				</h3>
 
-				<div
-					class="big-list-item animate-fast btn"
-					ng-click="newItem('montage')"
-				><span class="glyphicon glyphicon-plus-sign"></span>Create a new montage</div>
-
-				<div
-					class="big-list-item animate-fast btn"
-					ng-repeat="montage in filesList.montages track by $index  | orderBy:'metadata.title'"
-					ng-bind="montage.title"
-					ng-class="{'active' : active.metadata.slug == montage.slug && active.metadata.type == 'montage'}"
-					ng-click="setActive(montage)"
-				>
-				</div>
-			</div>
 		</div>
 	</div>
 </div>
@@ -108,10 +109,9 @@
 	>
 		<div
 			class="column-contents"
-
 		>
 			<form
-				class="big-list-item flexed-item"
+				class="big-list-item flexed-item row"
 				ng-submit="updateActive(true)"
 				id="edit-title-form"
 			>
@@ -130,7 +130,7 @@
 
 
 			<div
-				class="flexed-item big-list-item"
+				class="flexed-item big-list-item row"
 				style="padding-top:0;padding-bottom:0;padding-right:0;overflow:hidden;"
 				ng-if="active.metadata.type == 'transcription'"
 			>
@@ -161,13 +161,14 @@
 			</div>
 
 			<div
-				class="media-container slide-height"
+				class="slide-height row"
 				ng-if="$parent.viewSettings.showMetaMedia && active.metadata.mediaUrl && active.metadata.mediaUrl.length > 0"
+				style="width : 100%;overflow:hidden;"
 			>
 				<vimeo-embed-mini
 					player-id="vimeoMini"
 					video-url="active.metadata.mediaUrl"
-					style="width : 100%;height : 50%;"
+					style="width : 100%;height : 200%;"
 					ng-if="activeMediaType == 'vimeo'"
 				></vimeo-embed-mini>
 
@@ -180,22 +181,34 @@
 				></iframe>
 			</div>
 
-			<div class="content-preview-wrapper" ng-if="active.data.length > 0">
-					<div class="content-preview-container">
-						<p
-							ng-repeat="transcript in active.data track by $index"
-							marked="transcript.content"
-						>
-
-						</p>
-					</div>
+			<div class="flexed-item big-list-item row">
+				coucou
 			</div>
 
 			<div
-						class="big-list-item flexed-item"
+				class="content-preview-wrapper"
+				style="padding-top:0;padding-bottom:0;padding-right:0;overflow:hidden;"
+				ng-if="active.metadata.type == 'transcription'"
+			>
+				<div class="content-preview-container">
+						<p
+							ng-repeat="transcript in active.data track by $index"
+							marked="transcript.content"
+						></p>
+						<p
+							ng-if="active.data.length == 0"
+						>
+							No content yet for this {{active.metadata.type}}
+						</p>
+				</div>
+			</div>
+
+
+
+			<div
+						class="big-list-item row"
 						ng-if="active.metadata.tags && active.metadata.tags.length > 0"
 					>
-						<span class="value">Featured tags</span>
 						<div class="value dashboard-tags"
 						>
 							<span
@@ -208,57 +221,61 @@
 						</div>
 			</div>
 
-			<div class="edition-footer">
-					<div
-						class="btn-line"
 
+
+
+			<div class="">
+				<div
+					class="btn-line"
+				>
+					<button
+						class="btn"
+						ng-click="toggleOptions('export')"
+						ng-class="{'active':optionsMode=='export'}"
+						id="export-btn"
 					>
-						<button
-							class="btn"
-							ng-click="toggleOptions('export')"
-							ng-class="{'active':optionsMode=='export'}"
-							id="export-btn"
-						>
-							<span class="glyphicon glyphicon-download" style="padding-right:1em"></span>Export/share
-						</button>
-						<button
-							class="btn"
-							ng-click="deleteActiveQuestion = !deleteActiveQuestion"
-							ng-class="{'active':deleteActiveQuestion}"
-						>
-							<span class="glyphicon glyphicon-trash" style="padding-right:1em"></span>
-							Delete this {{active.metadata.type}}
-						</button>
-
-						<button
-							class="btn"
-							ng-click="toggleOptions('import')"
-							ng-class="{'active':optionsMode=='import'}"
-							id="import-btn"
-						>
-							<span class="glyphicon glyphicon-upload" style="padding-right:1em"></span>Import
-						</button>
-					</div>
-
-					<div
-						class="btn-line slide-height"
-						ng-show="deleteActiveQuestion"
+						<span class="glyphicon glyphicon-download" style="padding-right:1em"></span>Export/share
+					</button>
+					<button
+						class="btn"
+						ng-click="deleteActiveQuestion = !deleteActiveQuestion"
+						ng-class="{'active':deleteActiveQuestion}"
 					>
-						<input focus-me="deleteActiveQuestion" focus-me-delay="500" style="opacity : 0;width:0;height:0;">
-						<button
-							class="btn"
-							ng-click="deleteActive()"
-							style="background : #911937; color : white"
-						>
-							Delete the {{active.metadata.type}} "{{active.metadata.title}}" ?
-						</button>
-						<button
-							class="btn"
-							ng-click="deleteActiveQuestion = !deleteActiveQuestion"
-						>
-							Don't
-						</button>
-					</div>
+						<span class="glyphicon glyphicon-trash" style="padding-right:1em"></span>
+						Delete this {{active.metadata.type}}
+					</button>
+
+					<button
+						class="btn"
+						ng-click="toggleOptions('import')"
+						ng-class="{'active':optionsMode=='import'}"
+						id="import-btn"
+					>
+						<span class="glyphicon glyphicon-upload" style="padding-right:1em"></span>Import
+					</button>
+				</div>
+
+
+				<div
+					class="btn-line slide-height"
+					ng-show="deleteActiveQuestion"
+				>
+					<input focus-me="deleteActiveQuestion" focus-me-delay="500" style="opacity : 0;width:0;height:0;">
+					<button
+						class="btn"
+						ng-click="deleteActive()"
+						style="background : #911937; color : white"
+					>
+						Delete the {{active.metadata.type}} "{{active.metadata.title}}" ?
+					</button>
+					<button
+						class="btn"
+						ng-click="deleteActiveQuestion = !deleteActiveQuestion"
+					>
+						Don't
+					</button>
+				</div>
+
 
 
 
@@ -309,19 +326,19 @@
 				</a>
 
 
-
 				<a
-          class="btn important-btn animate-medium"
-          ng-click="toggleOptions()"
-          ng-if="optionsMode"
-        >
-          <h4>
-            <span class="glyphicon glyphicon-arrow-left" style="float:left;margin-left:2em"></span>
-            Go back to dashboard
-          </h4>
-        </a>
-			</div>
+		      class="btn important-btn animate-medium"
+		      ng-click="toggleOptions()"
+		      ng-if="optionsMode"
+		    >
+		      <h4>
+		        <span class="glyphicon glyphicon-arrow-left" style="float:left;margin-left:2em"></span>
+		        Go back to dashboard
+		      </h4>
+		    </a>
+		   </div>
 		</div>
+
 	</div>
 	</div>
 

@@ -35,11 +35,15 @@ GENERAL
 .brand a{
     background : @buttonDarkBackground;
     color: white;
-    flex-grow : 1;
+    flex-grow : 3;
     /*width : 100%;*/
     padding : 1em 0 1em 0;
     /*display : block;*/
     /*font-size : 1.4em;*/
+}
+
+.brand .btn{
+    flex-grow : 1;
 }
 
 .brand:hover,
@@ -91,7 +95,7 @@ GENERAL
 }
 
 .media-container{
-    margin-bottom : 1em;
+   /* margin-bottom : 1em;*/
 }
 
 
@@ -99,13 +103,15 @@ vimeo-embed-mini iframe
 {
     width: 100%!important;
     height: 100%!important;
+    position : relative;
+    float : left;
 }
 
 .content-preview-wrapper
 {
     overflow: hidden;
 
-    width: 100%;
+    /*width: 100%;*/
     height: 200px;
 
     background: @backgroundMediumColor;
@@ -113,11 +119,11 @@ vimeo-embed-mini iframe
 
 .content-preview-container
 {
-    overflow: auto;
+    overflow: hidden;
 
-    width: 120%;
+    /*width: 120%;*/
     height: 200px;
-    padding-right: 18%;
+    /*padding-right: 18%;*/
 }
 
 .content-preview-container p
@@ -145,6 +151,7 @@ tags
 */
 .dashboard-tags{
     text-align : left;
+    display : inherit;
 }
 
 .dashboard-tags .tag{
