@@ -90,7 +90,7 @@ angular.module('dictofullstackApp')
           targetPos = getTargetPos(e);
 
           tooltip.find('.dicto-tooltip-content').html(scope.content).css('width', 'auto');
-          tooltip.width(tooltip.find('.dicto-tooltip-content').outerWidth());
+          //tooltip.width(tooltip.find('.dicto-tooltip-content').outerWidth());
           tooltipWidth = tooltip.outerWidth();
           tooltipHeight = tooltip.outerHeight();
           //determine placement
@@ -106,8 +106,8 @@ angular.module('dictofullstackApp')
             content.css('width', '80%');
             cote = hypotenuse(arrow.width(), 15);
             tooltip.css({
-              top : targetPos.y + (h - tooltipHeight)/2,
-              left : targetPos.x - tooltipWidth
+               top : targetPos.y + (h - tooltipHeight),
+               left : targetPos.x - tooltipWidth - margin
             });
 
 

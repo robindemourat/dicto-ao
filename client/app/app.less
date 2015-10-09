@@ -509,11 +509,15 @@ COMPONENTS
     position: fixed;
     z-index: 20000;
 
+    display : block;
+
     min-height: 15px;
 
     pointer-events: none;
 
     opacity: 0;
+
+    overflow : visible;
 }
 
 .dicto-tooltip-content
@@ -522,7 +526,6 @@ COMPONENTS
     /*max-width: 15em;*/
 
     padding: .5em;
-    width : 500px;
 
     color: white;
     background: @buttonDarkBackground;
@@ -537,13 +540,11 @@ COMPONENTS
 
 
 
-
-
 .dicto-tooltip-right .dicto-tooltip-content
 {
     left: 20%;
 
-    width: 80%;
+    // width: 80%;
     height: 100%;
 }
 
@@ -552,7 +553,7 @@ COMPONENTS
     top: 0;
     left: 0;
 
-    width: 20%;
+    // width: 20%;
     height: 15px;
 
     border-top: 50px solid transparent;
@@ -567,7 +568,7 @@ COMPONENTS
 
 .dicto-tooltip-left .dicto-tooltip-content
 {
-    width: 80%;
+    // width: 80%;
     height: 100%;
 
     text-align: right;
@@ -578,7 +579,7 @@ COMPONENTS
     top: 0;
     right: 0;
 
-    width: 20%;
+    // width: 20%;
     height: 15px;
 
     border-top: 50px solid transparent;
