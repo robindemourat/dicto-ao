@@ -14,13 +14,15 @@
 .dicto-item-gui-wrapper.content-edited,
 .dicto-item-gui-wrapper.content-edited .dicto-item
 {
-    overflow-y : visible;
-    z-index : 3;
+    z-index: 3;
+
+    overflow-y: visible;
 }
 
 
-.dicto-item-gui-wrapper.content-edited .dicto-item{
-    padding-top : .5em!important;
+.dicto-item-gui-wrapper.content-edited .dicto-item
+{
+    padding-top: .5em!important;
 }
 
 
@@ -237,8 +239,8 @@ Player line
 
     width: 100%;
     height: 3em;
-    cursor: ns-resize;
 
+    cursor: ns-resize;
     pointer-events: all;
 }
 
@@ -544,6 +546,7 @@ COMPONENTS
     position: relative;
 
     display: inline-block;
+    float: left;
 
     max-width: 100%;
     height: 2.5em;
@@ -554,33 +557,32 @@ COMPONENTS
     color: white;
     border-radius: .3em;
     background: rgba(0,0,0,.3);
-
-    float : left;
 }
 
 
 .tag form
 {
-    /*position: absolute;
-    top: 0;*/
+    /*position: relative;
+    top: -2.5em;*/
+
+    min-width: 2em;
+    position: absolute;
+    top: 0;
 
     background: transparent;
-    min-width : 2em;
-    position : relative;
-    top : -2.5em;
-
 }
 
 .tag .angucomplete-holder
 {
     display: inline;
-    width : 80%;
-    background : transparent;
+
+    width: 80%;
+
+    background: transparent;
 }
 
 .tag input
 {
-
     color: inherit;
     background: transparent;
 }
@@ -603,11 +605,15 @@ COMPONENTS
 }
 .tag .placeholder
 {
+    /*font-size: 1.5em;*/
+
     pointer-events: none;
 
     opacity: 0;
 
-    font-size : 1.5em;
+    padding-right : 2em;
+
+    min-width : 2em;
 }
 
 
@@ -668,9 +674,11 @@ COMPONENTS
     background: @buttonMediumBackground;
 }
 
-.dicto-item-gui-wrapper.timecode-mode{
-    left : 10%;
-    width : 80%;
+.dicto-item-gui-wrapper.timecode-mode
+{
+    left: 10%;
+
+    width: 80%;
 }
 
 .timecode-handler input:hover
@@ -697,6 +705,7 @@ COMPONENTS
 .drag-item-zone
 {
     position: absolute;
+    z-index: 5;
     top: 0;
     right: 0;
 
@@ -704,7 +713,6 @@ COMPONENTS
     height: 100%;
 
     cursor: all-scroll;
-    z-index : 5;
 }
 
 .dicto-item-gui-wrapper .top-left-button,

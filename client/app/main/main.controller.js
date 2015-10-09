@@ -331,6 +331,19 @@ angular.module('dictofullstackApp')
       $scope.activeResource.content = $scope.active;
 
       if($scope.active.newItem){
+        console.log('new item', $scope.active.newItem);
+        var ok;
+        while(!ok){
+          ok = true;
+          $scope.filesList[$scope.active.metadata.type+'s'].forEach(function(item){
+            if(item.slug == $scope.active.metadata.slug){
+              ok = false;
+              $scope.active.metadata.slug += '-copy';
+              $scope.active.metadata.title += ' copy';
+            }
+          });
+        }
+
         $scope.activeResource.slug = $scope.active.metadata.slug;
         $scope.activeResource.type = $scope.active.metadata.type;
       }
@@ -1553,7 +1566,7 @@ angular.module('dictofullstackApp')
           },
           {
             element : '.content-preview-container',
-            intro : 'If your document is not brand new, you\'ll see a preview of its textual content here.',
+            intro : 'If your document features existing transcription chunks, you\'ll see a preview of it here.',
             position : 'left'
           },
           {
@@ -1594,12 +1607,17 @@ angular.module('dictofullstackApp')
           },
           {
             element : '.gui-background',
-            intro : 'Here is the railway. It is the visualization of your transcription. You\'ll be able to navigate into it by clicking at the time position wanted.',
+            intro : 'Here is the railway. It is the visualization of your transcription featuring both your transcription chunks, your scroll position, and the time media is playing at.',
+            position : 'left'
+          },
+          {
+            element : '.grad-playing-head',
+            intro : 'Your position in the media is represented by this little dot, that you can drag and move.',
             position : 'left'
           },
           {
             element : '#menu-btn',
-            intro : 'Through this button, you\'ll access transcription metadata edition, import and export functions, and the dashboard featuring all your documents. You will also be able to edit your transcription timecodes by switching to timecode mode. Try it after this walkthrough !',
+            intro : 'Through this button, you\'ll access transcription metadata edition, import and export functions, and the dashboard featuring all your documents. You will also be able to edit your transcription timecodes by switching to timecode mode. We are going to come back to this latter point afterwards.',
             position : 'right'
           },
           {
@@ -1614,12 +1632,7 @@ angular.module('dictofullstackApp')
           },
           {
             element : '#right-column-toggle',
-            intro : 'This button determines what is displayed on the right column. For now, it is the media we are working with ...',
-            position : 'left'
-          },
-          {
-            element : '#right-column-toggle',
-            intro : 'It also allows you to change the right column of the interface in order to focus on tagging activities and have an overview on them. Let\'s try',
+            intro : 'This button determines what is displayed on the right column. By default, it is the media we are working with. If we click on it, we will switch to tagging utilities. Let\'s try !',
             position : 'left'
           },
           {
@@ -1628,8 +1641,8 @@ angular.module('dictofullstackApp')
             position : 'left'
           },
           {
-            element : '.dicto-item .tags-container',
-            intro : 'You can add a tag to one single chunk by clicking on the "plus" button of the category you are willing to add a tag in.',
+            element : '.dicto-item',
+            intro : 'You can add a tag to one single chunk by editing it. To specify categories for your tags, separate category and tag with a coma (example : "person:Jean")',
             position : 'right'
           },
           {
@@ -1642,6 +1655,10 @@ angular.module('dictofullstackApp')
             intro : 'That\'s it for the transcription edition basics ! You can leave this walkthrough if you want to play around with all these functionnalities, or we\'ll continue with a presentation of the montage edition interface.',
             position : 'left'
           },
+
+
+
+
           //montage title : 28
           {
             element : '#intro-toggle',
@@ -1771,10 +1788,10 @@ angular.module('dictofullstackApp')
                   if(!activeOk){
                     $scope.setActive($scope.filesList.transcriptions[0]);
                     setTimeout(function(){
-                      $location.path('/edit/transcription/'+$scope.active.slug + '#');
+                      $location.path('/edit/transcription/'+$scope.active.metadata.slug + '#');
                     }, 3000);
                   }else
-                    $location.path('/edit/transcription/'+$scope.active.slug + '#');
+                    $location.path('/edit/transcription/'+$scope.active.metadata.slug + '#');
                 }
               }]
             };
@@ -1804,10 +1821,10 @@ angular.module('dictofullstackApp')
                   if(!activeOk){
                     $scope.setActive($scope.filesList.montages[0])
                     setTimeout(function(){
-                      $location.path('/edit/montage/'+$scope.active.slug + '#');
+                      $location.path('/edit/montage/'+$scope.active.metadata.slug + '#');
                     }, 3000);
                   }else
-                    $location.path('/edit/montage/'+$scope.active.slug + '#');
+                    $location.path('/edit/montage/'+$scope.active.metadata.slug + '#');
                 }
               }]
             };
@@ -1937,15 +1954,15 @@ angular.module('dictofullstackApp')
             stopAfter : true
           },
           {
-            steps : '12-22',
+            steps : '12-21',
             apply : [inTranscriptionEdition, inMediaMode]
           },
           {
-            steps : '23-26',
+            steps : '22-26',
             apply : [inTranscriptionEdition, inTagMode],
             stopAfter : true
           },
-          {
+          /*{
             steps : '27-36',
             apply : [inMontageEdition, inMontagePreviewMode]
           },
@@ -1956,7 +1973,7 @@ angular.module('dictofullstackApp')
           {
             steps : '43',
             apply : [inMontageEdition, menuOpened]
-          },
+          },*/
         ];
 
         //var step = this().currentStep();

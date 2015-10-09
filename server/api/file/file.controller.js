@@ -234,30 +234,39 @@ exports.update = function(req, res){
     contents = cleanMeta(contents);
     if(contents != undefined){
       //if slug differs from the actual slug, rename
+      console.log('request slug', req.params.slug, 'contents slug', contents.metadata.slug);
       if(req.params.slug != contents.metadata.slug){
         var newPath = baseDir +  decodeURIComponent(req.params.type) + 's/' + req.body.content.metadata.slug + '.json';
         var pathDetail, sign = '_copy';
         console.log('new', filepath, 'old', newPath);
         try{
           while(fs.existsSync(newPath)){
+            console.log('found existing at ', newPath);
             pathDetail = newPath.split('.');
             pathDetail[0] += sign;
             req.body.slug = pathDetail[0].split('/')[pathDetail[0].split('/').length - 1];;
-            req.body.content.metadata.slug = pathDetail[0].split('/')[pathDetail[0].split('/').length - 1];
+            req.body.content.metadata.slug = req.body.slug;//pathDetail[0].split('/')[pathDetail[0].split('/').length - 1];
 
             //console.log(req.body);
             newPath = pathDetail.join('.');
           }
+          console.log(filepath, ' renamed to ', newPath);
+
           fs.rename(filepath, newPath);
+
+
+          //rename in montages featuring the document
           updateMontagesAfterRename(req.params.slug, req.body.content.metadata.slug, req.body.content.metadata.title, req.body.content.metadata.mediaUrl);
           filepath = newPath;
-          console.log(filepath, ' renamed to ', newPath);
+          console.log('metadata', contents.metadata);
         }catch(e){
           console.log('fs error, not renaming, ', e);
         }
       }else if(contents.metadata.newItem){
         console.log('new item');
       }
+
+
 
       if(contents != undefined){
         var contentsJSON = JSON.stringify(contents, null, 5);
