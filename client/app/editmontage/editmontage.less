@@ -149,6 +149,47 @@ sort options
   display : none;
 }
 
+/*
+vary height
+*/
+.aside-edit .as-sortable-placeholder
+{
+    overflow-y: hidden;
+
+    max-height: 5000px;
+
+    -webkit-transition: all .5s ease;
+       -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+         -o-transition: all .5s ease;
+}
+
+.aside-edit .as-sortable-placeholder.ng-enter,
+.aside-edit .as-sortable-placeholder.ng-show
+{
+    max-height: 0;
+}
+
+.aside-edit .as-sortable-placeholder.ng-enter-active,
+.aside-edit .as-sortable-placeholder.ng-show-add
+{
+    max-height: 5000px;
+}
+
+.aside-edit .as-sortable-placeholder.ng-leave,
+.aside-edit .as-sortable-placeholder.ng-hide
+{
+    max-height: 5000px;
+}
+
+.aside-edit .as-sortable-placeholder.ng-leave-active,
+.aside-edit .as-sortable-placeholder.ng-hide-add
+{
+    max-height: 0px;
+}
+
+
+
 .preview-mode .as-sortable-item-handle{
   cursor : pointer!important;
 }

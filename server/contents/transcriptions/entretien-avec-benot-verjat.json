@@ -47,11 +47,11 @@
      },
      "data": [
           {
-               "content": "test de transcription",
-               "begin": 27.916666666666668,
-               "end": 66.999,
-               "beginSrtFormat": "00:00:27,916",
-               "endSrtFormat": "00:01:06,999",
+               "content": "J'ai fait de la recherche aux arts décoratifs de Paris. J'ai plutôt travaillé sur des dispositifs intéractifs et aussi sur des questions de documentation, et un petit peu de robotique aussi.",
+               "begin": 6.983,
+               "end": 20.731,
+               "beginSrtFormat": "00:00:06,983",
+               "endSrtFormat": "00:00:20,731",
                "tags": [
                     {
                          "name": "Benoît Verjat",

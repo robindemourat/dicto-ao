@@ -1513,7 +1513,7 @@ angular.module('dictofullstackApp')
         steps : [
           {
             element : '#tour',
-            intro : '<h1>Welcome to dicto special HKW version</h1><h2>The transcription editing, tagging and remixing companion</h2><p>This is a walthrough through the tool - if you want to try it by yourself, click in the dark area of this screen !</p>',
+            intro : '<h1>Welcome to dicto special Gabriel version</h1><h2>The transcription editing, tagging and remixing companion</h2><p>This is a walthrough through the tool - if you want to try it by yourself, click in the dark area of this screen !</p>',
             position : 'bottom'
           },
           {
@@ -1598,23 +1598,18 @@ angular.module('dictofullstackApp')
             position : 'left'
           },
           {
-            element : '.left-aside-menu',
-            intro : 'Here is the toolbar - it allows you to switch between different activities and visual modes.',
-            position : 'right'
-          },
-          {
             element : '#menu-btn',
-            intro : 'Through this button, you\'ll access transcription metadata edition, import and export functions, and the dashboard featuring all your documents.',
+            intro : 'Through this button, you\'ll access transcription metadata edition, import and export functions, and the dashboard featuring all your documents. You will also be able to edit your transcription timecodes by switching to timecode mode. Try it after this walkthrough !',
             position : 'right'
           },
           {
-            element : '#timecode-btn',
-            intro : 'This button allows you to display chunks timecodes, and then edit them through a visual dimensionning interface. Once you are done with this walkthrough, just give it a try, it is supposed to be intuitive !',
+            element : '.searchToggler',
+            intro : 'Here is the search button - you will be able to find specific chunk - and possibly annotate them with tags',
             position : 'right'
           },
           {
-            element : '#tagging-btn',
-            intro : 'This button alllows you to display and edit tags on your chunks. Tags have categories and are usefull for specifying the contents and parts of your transcription.',
+            element : '.item-title',
+            intro : 'You will be able to change the name of your transcription here.',
             position : 'right'
           },
           {
@@ -1768,9 +1763,10 @@ angular.module('dictofullstackApp')
               state : [{
                 expression : function(){
                   var activeOk = $scope.active && $scope.active.metadata.type == 'transcription';
-                  return activeOk && $location.path().indexOf('edit/transcription') > 0
+                  return activeOk && $location.path().indexOf('edit/transcription') > 0 && $scope.viewSettings.showTime == false;
                 },
                 operation : function(){
+                  $scope.viewSettings.showTime = false;
                   var activeOk = $scope.active && $scope.active.metadata.type == 'transcription';
                   if(!activeOk){
                     $scope.setActive($scope.filesList.transcriptions[0]);

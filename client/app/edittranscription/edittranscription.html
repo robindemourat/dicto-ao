@@ -291,6 +291,37 @@
 </div>
 <!-- end aside menu switch -->
 
+
+<!-- zoom in and out -->
+<div
+  class="pull-left-in-column pull-bottom-in-column btn-column"
+  ng-if="$parent.viewSettings.showTime"
+>
+  <div
+    class="btn slide-height toggle circled"
+    ng-hold="zoomIn()"
+    ng-hold-interval="100"
+    ng-hold-done="resetZoomDelta()"
+    ng-if="$parent.viewSettings.showTime && $parent.viewSettings.viewAside == 'media'"
+  ><span
+      class="glyphicon glyphicon-zoom-in"
+      dicto-tooltip="zoom in (current level : {{roundFloat($parent.viewSettings.zoomLevel)}})"
+    ></span>
+  </div>
+  <div
+    class="btn slide-height toggle circled"
+    ng-hold="zoomOut()"
+    ng-hold-done="resetZoomDelta()"
+    ng-hold-interval="100"
+    ng-if="$parent.viewSettings.showTime && $parent.viewSettings.viewAside == 'media'"
+  ><span
+      class="glyphicon glyphicon-zoom-out"
+      dicto-tooltip="zoom out (current level : {{roundFloat($parent.viewSettings.zoomLevel)}})"
+    ></span>
+  </div>
+</div>
+
+
 <!-- GUI bar -->
 <div
   class="gui-wrapper slide-in-right slide-out-right"

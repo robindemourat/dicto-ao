@@ -85,7 +85,7 @@ angular.module('dictofullstackApp')
             var okToChange = true;
             maxRatio = -Infinity;
             maxRatioI = undefined;
-            data.forEach(function(item, i){
+            scope.data.forEach(function(item, i){
               duration = item.end - item.begin;
               contentEl = angular.element(wrappers[i]).find('.dicto-item-contents');
               parent = contentEl.parent();
@@ -95,10 +95,10 @@ angular.module('dictofullstackApp')
 
 
 
-              if(ratio > maxRatio && elHeight > 0 && !data[i].contentEdited){
+              if(ratio > maxRatio && elHeight > 0 && !item.contentEdited){
                 maxRatio = ratio;
                 maxRatioI = i;
-              }else if(data[i].contentEdited){
+              }else if(item.contentEdited){
                 okToChange = false;
               }
 
@@ -112,7 +112,7 @@ angular.module('dictofullstackApp')
               var itemD = angular.element(wrappers[maxRatioI]).find('.dicto-item');
               var itemHeight = itemD.outerHeight() + 40 - parseInt(itemD.css('paddingTop')) - parseInt(itemD.css('paddingBottom'));
               if(itemHeight && maxRatioI){
-                currentRatio = itemHeight/(data[maxRatioI].end - data[maxRatioI].begin);
+                currentRatio = itemHeight/(scope.data[maxRatioI].end - scope.data[maxRatioI].begin);
               }else{
                 //case no items
                 currentRatio = 10;
@@ -192,11 +192,11 @@ angular.module('dictofullstackApp')
           paddingTop = parseInt(angular.element(element).css('paddingTop'));
 
           var prevRatio = currentRatio;
-          if(scope.multiplier){
+          /*if(scope.multiplier){
             wrappers.css({
               fontSize : scope.multiplier + 'em'
             })
-          }
+          }*/
 
           displaceY = 0;
           displaceH = 0;
@@ -204,10 +204,10 @@ angular.module('dictofullstackApp')
 
 
           //update elements ratio if allowed
-          /*
-          if(scope.updateRatioCondition){
+
+          if(scope.updateRatioCondition && !currentRatio){
             calculateRatio(wrappers);
-          }*/
+          }
 
 
           if(data.length > 0){
@@ -217,7 +217,7 @@ angular.module('dictofullstackApp')
           }
 
           //scope.factorOutput = currentRatio * scope.multiplier;
-          scope.factorOutput = 15 * scope.multiplier;
+          scope.factorOutput = currentRatio * scope.multiplier;
 
           data.forEach(updateItemSize);
 
@@ -341,8 +341,8 @@ angular.module('dictofullstackApp')
                   });*/
                 wrapper.find('.dicto-item')
                   .css({
-                    paddingBottom : 0,
-                    paddingTop : dif
+                    paddingBottom : dif/2,
+                    paddingTop : dif/2
                 });
 
 

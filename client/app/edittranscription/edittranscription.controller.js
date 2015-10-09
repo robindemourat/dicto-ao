@@ -11,6 +11,7 @@ angular.module('dictofullstackApp')
       $scope.$parent.viewSettings.viewAside = ($location.search().tags_view)?'tags':'media';
       $scope.$parent.viewSettings.tagsTable = true;
       $scope.$parent.viewSettings.zoomLevel = 1;
+      $scope.$parent.viewSettings.zoomDelta = .1;
       $scope.$parent.viewSettings.searchOptionsVisible = false;
       $scope.$parent.viewSettings.searchTags = true;
       $scope.$parent.viewSettings.searchContent = true;
@@ -1053,18 +1054,24 @@ angular.module('dictofullstackApp')
     ZOOM CONTROL
     */
     $scope.zoomIn = function(){
-      if($scope.$parent.viewSettings.zoomLevel +.1 <= 4){
-        $scope.$parent.viewSettings.zoomLevel += .1;
+      $scope.$parent.viewSettings.zoomDelta *= 1.1;
+      if($scope.$parent.viewSettings.zoomLevel + $scope.$parent.viewSettings.zoomDelta <= 6){
+        $scope.$parent.viewSettings.zoomLevel += $scope.$parent.viewSettings.zoomDelta;
         $rootScope.$broadcast('redimension');
       }
 
     }
     $scope.zoomOut = function(){
-      if($scope.$parent.viewSettings.zoomLevel - .1 >= .5){
-        $scope.$parent.viewSettings.zoomLevel -= .1;
+      $scope.$parent.viewSettings.zoomDelta *= 1.1;
+      if($scope.$parent.viewSettings.zoomLevel - $scope.$parent.viewSettings.zoomDelta >= .2){
+        $scope.$parent.viewSettings.zoomLevel -= $scope.$parent.viewSettings.zoomDelta;
         $rootScope.$broadcast('redimension');
 
       }
+    }
+
+    $scope.resetZoomDelta = function(){
+      $scope.$parent.viewSettings.zoomDelta = .1;
     }
 
 
