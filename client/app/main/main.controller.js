@@ -1591,6 +1591,8 @@ angular.module('dictofullstackApp')
             position : 'top',
             intro : 'To finish with, you can edit your document ... that\'s it for the dashboard ! click on next to continue the walkthrough to transcription edition tool'
           },
+
+
           //transcription mode : 12
           {
             element : '#intro-toggle',
@@ -1609,7 +1611,7 @@ angular.module('dictofullstackApp')
           },
           {
             element : '.dicto-item-gui-wrapper',
-            intro : 'Here is a transcription chunk. It corresponds to a certain portion of the media (timecode in and out), some text, and possibly some tags.',
+            intro : 'Here is a transcription chunk. It corresponds to a certain portion of the media (timecode in and out), some text, and possibly some tags. <br><br>You can edit a chunk by double-clicking on it or clicking on the little pencil that appears when it is hovered.<br><br>In order to provide you with maximum flexibility, content is formatted thanks to the awesome <strong>**markdown**</strong> syntax - so that you can simply structure it and possibly add images, blockquotes and hyperlinks if needed (<a href="https://daringfireball.net/projects/markdown/" target="blank">more about markdown syntax</a>).',
             position : 'right'
           },
           {
@@ -1619,7 +1621,7 @@ angular.module('dictofullstackApp')
           },
           {
             element : '.grad-playing-head',
-            intro : 'Your position in the media is represented by this little dot, that you can drag and move.',
+            intro : 'Your position in the media is represented by this little dot, that you can move at a certain time position by dragging it in the railway.',
             position : 'left'
           },
           {
@@ -1629,7 +1631,7 @@ angular.module('dictofullstackApp')
           },
           {
             element : '.searchToggler',
-            intro : 'Here is the search button - you will be able to find specific chunk - and possibly annotate them with tags',
+            intro : 'Here is the search button - you will be able to find specific chunks (with the possibility to choose whether to look into content, tags, or both) - and possibly annotate them with tags',
             position : 'right'
           },
           {
@@ -1654,14 +1656,78 @@ angular.module('dictofullstackApp')
           },
           {
             element : '.right-column .big-item.btn',
-            intro : 'You can also add a tag globally through the tag column. It will add the specified tag to every chunks of your transcription.',
+            intro : 'You can also add a tag globally through the tag column. It will add the specified tag to each chunks of your transcription.',
             position : 'left'
           },
           {
-            element : '#intro-toggle',
-            intro : 'That\'s it for the transcription edition basics ! You can leave this walkthrough if you want to play around with all these functionnalities, or we\'ll continue with a presentation of the montage edition interface.',
-            position : 'left'
+            element : '#timecodemode-button',
+            intro : 'Let\'s now have a closer look at the timecode making business. To switch to timecoding mode, you will click on this button or access it through the menu or dashboard.',
+            position : 'right'
           },
+
+          //timecodes : 27
+          {
+            element : '.left-column .column-contents',
+            intro : 'In timecoding mode, transcription chunks are spatialized relatively to their time positioning and corresponding duration in the media.',
+            position : 'right'
+          },
+          {
+            element : '.time-grad',
+            intro : 'Time is represented by these horizontal marks.',
+            position : 'bottom'
+          },
+          {
+            element : '#zoom-in',
+            intro : 'You can modify time spatialization through the zoom in and zoom out buttons.',
+            position : 'right'
+          },
+          {
+            element : '.main-player-drag-bar',
+            intro : 'This red bar represents your media player. You can navigate in the media by dragging it or double-click in the column space.',
+            position : 'right'
+          },
+          {
+            element : '.main-btn-line.play-btn span',
+            intro : 'Your media player also allows to seek a few seconds backward or forward in the media, or between chunks. Try it out after this walkthrough!',
+            position : 'right'
+          },
+          {
+            element : '.dicto-item',
+            intro : 'This is a spatialized transcription chunk.',
+            position : 'right'
+          },
+          {
+            element : '.timecode-in',
+            intro : 'In order to modify its time attachment, simply drag its upper extremity to the wanted position',
+            position : 'right'
+          },
+          {
+            element : '.timecode-out',
+            intro : 'In order to modify its duration, simply drag its lower extremity to the wanted position',
+            position : 'right'
+          },
+          {
+            element : '.timecode-in input',
+            intro : 'You can also input timecode in and out manually ...',
+            position : 'right'
+          },
+          {
+            element : '.drag-item-zone',
+            intro : '... and drag a whole item (timecodes in and out at the same time) by grabbing it here.',
+            position : 'right'
+          },
+          {
+            element : '.left-column .column-contents',
+            intro : 'To finish with, please note that you can add new chunks by dragging it at the wanted position on the screen or by using the right click.',
+            position : 'right'
+          },
+
+          {
+            element : '#intro-toggle',
+            intro : 'That\'s it for the transcription edition interface ! try it out or continue to montage edition walkthrough.',
+            position : 'right'
+          },
+
 
 
 
@@ -1759,7 +1825,8 @@ angular.module('dictofullstackApp')
         ],
         showStepNumbers: false,
         disableInteraction : true,
-        showBullets : false
+        showBullets : false,
+        scrollToElement : true
       }
 
       $scope.introChange = function(targetElement, scope){
@@ -1791,6 +1858,27 @@ angular.module('dictofullstackApp')
                 },
                 operation : function(){
                   $scope.viewSettings.showTime = false;
+                  var activeOk = $scope.active && $scope.active.metadata.type == 'transcription';
+                  if(!activeOk){
+                    $scope.setActive($scope.filesList.transcriptions[0]);
+                    setTimeout(function(){
+                      $location.path('/edit/transcription/'+$scope.active.metadata.slug + '#');
+                    }, 3000);
+                  }else
+                    $location.path('/edit/transcription/'+$scope.active.metadata.slug + '#');
+                }
+              }]
+            };
+
+        var timecodeEdition = {
+              state : [{
+                expression : function(){
+                  var activeOk = $scope.active && $scope.active.metadata.type == 'transcription';
+                  return activeOk && $location.path().indexOf('edit/transcription') > 0 && $scope.viewSettings.showTime == true;
+                },
+                operation : function(){
+                  $scope.viewSettings.showTime = true;
+                  $scope.viewSettings.viewAside = 'media';
                   var activeOk = $scope.active && $scope.active.metadata.type == 'transcription';
                   if(!activeOk){
                     $scope.setActive($scope.filesList.transcriptions[0]);
@@ -1912,6 +2000,11 @@ angular.module('dictofullstackApp')
           prepareIntroView(requirements, 1000);
         }
 
+        var inTimecodeEdition = function(){
+          var requirements = timecodeEdition;
+          prepareIntroView(requirements, 1000);
+        }
+
         var inMontageEdition = function(){
           var requirements = montageEdition;
           prepareIntroView(requirements, 1000);
@@ -1965,22 +2058,26 @@ angular.module('dictofullstackApp')
             apply : [inTranscriptionEdition, inMediaMode]
           },
           {
-            steps : '22-26',
+            steps : '22-25',
             apply : [inTranscriptionEdition, inTagMode],
             stopAfter : true
           },
-          /*{
-            steps : '27-36',
+          {
+            steps : '26-37',
+            apply :[inTimecodeEdition]
+          },
+          {
+            steps : '38-50',
             apply : [inMontageEdition, inMontagePreviewMode]
           },
           {
-            steps : '37-42',
+            steps : '51-56',
             apply : [inMontageEdition, inMontageEditMode]
           },
           {
-            steps : '43',
+            steps : '57',
             apply : [inMontageEdition, menuOpened]
-          },*/
+          },
         ];
 
         //var step = this().currentStep();

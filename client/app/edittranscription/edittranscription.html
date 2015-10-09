@@ -185,7 +185,7 @@
     </div>
 
     <!-- intro toggle-->
-    <div class="btn animate-medium pull-top-in-column pull-right-in-column circled" ng-click="introMethod(23)" id="intro-toggle" style="top:.2em;right:4.5em;background:inherit;">
+    <div class="btn animate-medium pull-top-in-column pull-right-in-column circled" ng-click="introMethod(13)" id="intro-toggle" style="top:.2em;right:4.5em;background:inherit;">
           <span class="glyphicon glyphicon-info-sign"></span>
     </div>
     <!-- <div class="btn animate-medium pull-top-in-column pull-right-in-column circled" ng-click="introMethod(13)" id="intro-toggle" style="top:.2em;right:4.5em;background:inherit;">
@@ -305,6 +305,7 @@
     ng-hold-interval="100"
     ng-hold-done="resetZoomDelta()"
     ng-if="$parent.viewSettings.showTime && $parent.viewSettings.viewAside == 'media'"
+    id="zoom-in"
   ><span
       class="glyphicon glyphicon-zoom-in"
       dicto-tooltip="zoom in (current level : {{roundFloat($parent.viewSettings.zoomLevel)}})"
@@ -322,11 +323,12 @@
     ></span>
   </div>
   <div
-    class="btn slide-height toggle circled active"
+    class="btn slide-height toggle circled"
+    id="timecodemode-button"
     ng-click="toggleMode()"
     dicto-tooltip="{{($parent.viewSettings.showTime)?'Quit timecode edition':'Edit timecodes'}}"
     dicto-tooltip-placement="right"
-    ng-class="{'active':$parent.viewSettings.showTime}"
+    ng-class="{'active':$parent.viewSettings.showTime === true}"
   ><span
       class="glyphicon glyphicon-film"
     ></span>
