@@ -159,6 +159,7 @@ angular.module('dictofullstackApp')
       if(!angular.isDefined($scope.createdByDragIndex)){
         $timeout(function(){
           if(!angular.isDefined($scope.createdByDragIndex)){
+            console.log('trying to create new item');
             var newItem = $scope.addNewItemAtMousePosition(e, $scope.tempDraggedNewItemY, 5);
             $scope.createdByDragIndex = newItem.index;
             $scope.tempDraggedNewY = newItem.begin;
@@ -469,6 +470,15 @@ angular.module('dictofullstackApp')
     /*
     UI & Toggles
     */
+
+    $scope.toggleMode = function(){
+      if($scope.$parent.viewSettings.showTime){
+        $scope.$parent.viewSettings.showTime = false;
+      }else{
+        $scope.$parent.viewSettings.showTime = true;
+        $scope.$parent.viewSettings.viewAside = 'media';
+      }
+    }
 
     $scope.toggleSearchSettings = function(content, tags){
 

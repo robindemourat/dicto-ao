@@ -1189,11 +1189,18 @@ angular.module('dictofullstackApp')
     $scope.similarTags = function(category){
       var array = [];
       $scope.active.metadata.tags.forEach(function(tag){
-        if(tag.category == category){
-          array.push(tag);
-        }
+        //if(tag.category == category){
+        array.push($scope.cloneObject(tag));
+        var alt = $scope.cloneObject(tag);
+        alt.name = alt.category + ':' + alt.name;
+        array.push(alt);
+        //}
       });
       return array;
+    }
+
+    $scope.categoryPopulated = function(item, category){
+      return item.tags.filter(function(t){return t.category == category.name}).length > 0;
     }
 
 

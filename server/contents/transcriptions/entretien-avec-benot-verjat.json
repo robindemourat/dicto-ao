@@ -11,34 +11,14 @@
                     "color": "#496f5a"
                },
                {
-                    "name": "le temps qui passe",
-                    "category": "No category",
-                    "color": "#b875a3"
-               },
-               {
-                    "name": "un autre tag",
-                    "category": "No category",
-                    "color": "#b1edf2"
-               },
-               {
-                    "name": "test qui va bien",
-                    "category": "No category",
-                    "color": "#f568ea"
-               },
-               {
-                    "name": "test",
-                    "category": "No category",
-                    "color": "#f0e081"
-               },
-               {
-                    "name": "test qui marche bien",
-                    "category": "No category",
-                    "color": "#7a5065"
-               },
-               {
                     "name": "prototype",
                     "category": "theme",
                     "color": "#6b044b"
+               },
+               {
+                    "name": "test Je fais un test",
+                    "category": "No category",
+                    "color": "#f0e081"
                }
           ],
           "tagCategories": [
@@ -46,10 +26,10 @@
                     "name": "personne"
                },
                {
-                    "name": "No category"
+                    "name": "theme"
                },
                {
-                    "name": "theme"
+                    "name": "No category"
                }
           ]
      },
@@ -65,44 +45,11 @@
                          "name": "Benoît Verjat",
                          "category": "personne",
                          "color": "#496f5a"
-                    },
-                    {
-                         "name": "le temps qui passe",
-                         "category": "No category",
-                         "color": "#b875a3"
-                    },
-                    {
-                         "name": "un autre tag",
-                         "category": "No category",
-                         "color": "#b1edf2"
-                    },
-                    {
-                         "name": "test qui va bien",
-                         "category": "No category",
-                         "color": "#f568ea"
-                    },
-                    {
-                         "name": "test",
-                         "category": "No category",
-                         "color": "#f0e081"
-                    },
-                    {
-                         "name": "test qui marche bien",
-                         "category": "No category",
-                         "color": "#7a5065"
                     }
                ],
                "tagCategories": [
-                    "personne",
-                    "No category"
+                    "personne"
                ]
-          },
-          {
-               "content": "test test qui va bien",
-               "begin": 61.4,
-               "end": 89.799,
-               "beginSrtFormat": "00:01:01,400",
-               "endSrtFormat": "00:01:29,799"
           },
           {
                "content": "Le fait de les mettre assez vite sur des prototypes, je pense que c'est un truc vraiment très important.",
@@ -115,10 +62,39 @@
                          "name": "prototype",
                          "category": "theme",
                          "color": "#6b044b"
+                    },
+                    {
+                         "name": "Benoît Verjat",
+                         "category": "personne",
+                         "color": "#496f5a"
                     }
                ],
                "tagCategories": [
-                    "theme"
+                    "theme",
+                    "personne"
+               ]
+          },
+          {
+               "content": "mon nouveau test",
+               "begin": 139.3,
+               "end": 184.2,
+               "beginSrtFormat": "00:02:19,300",
+               "endSrtFormat": "00:03:04,200",
+               "tags": [
+                    {
+                         "name": "test Je fais un test",
+                         "category": "No category",
+                         "color": "#f0e081"
+                    },
+                    {
+                         "name": "Benoît Verjat",
+                         "category": "personne",
+                         "color": "#496f5a"
+                    }
+               ],
+               "tagCategories": [
+                    "No category",
+                    "personne"
                ]
           }
      ]

@@ -77,31 +77,31 @@
         <td></td>
         <td>
           Tag categories
-          <span
+          <!-- <span
             class="glyphicon glyphicon-sort-by-alphabet"
             ng-style="{'opacity' : (tagsOrder == 'category')?1:.2}"
             ng-click="tagsOrder = 'category'"
-          ></span>
+          ></span> -->
         </td>
         <td>
           Tag names
-          <span
+          <!-- <span
             class="glyphicon glyphicon-sort-by-alphabet"
             ng-style="{'opacity' : (tagsOrder == 'name')?1:.2}"
             ng-click="tagsOrder = 'name'"
-          ></span>
+          ></span> -->
         </td>
         <td>
           Tag count
-          <span
+          <!-- <span
             class="glyphicon glyphicon-sort-by-order"
             ng-style="{'opacity' : (tagsOrder == 'count')?1:.2}"
             ng-click="tagsOrder = 'count'"
-          ></span>
+          ></span> -->
         </td>
       </tr>
       <tr class="squeeze-height"
-        ng-repeat="tag in $parent.active.metadata.tags|orderBy:tagsOrder track by $index">
+        ng-repeat="tag in $parent.active.metadata.tags|orderBy:'count':reverse track by $index">
         <td>
           <span
             class="glyphicon glyphicon-trash animate-medium"
@@ -167,6 +167,7 @@
               type="text"
               ng-model="tag.name"
               ng-blur="globalTagUpdateName(tag, $index)"
+              ng-focus="tagsOrder = 'category'"
             ></input>
           </form>
         </td>

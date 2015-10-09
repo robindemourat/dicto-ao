@@ -15,7 +15,7 @@
     ng-repeat="grad in grads track by $index"
     ng-style="{'top' : grad.top}"
     ng-bind="grad.text"
-    ng-click="$parent.mediaSeekTo(grad.val)"
+    ng-dblclick="$parent.mediaSeekTo(grad.val)"
   ></div>
 
   <div
@@ -164,23 +164,24 @@
               >
                 <div
                   class="tags-category-container"
-                  ng-repeat="category in item.tagCategories track by $index"
+                  ng-repeat="category in $parent.active.metadata.tagCategories track by $index"
+                  ng-if="item.contentEdited || categoryPopulated(item, category)"
                 >
                   <div
                     class="tag-category-name"
-                    ng-bind="category"
+                    ng-bind="category.name"
                   ></div>
                   <div class="tag-subcontainer">
                     <span
                       class="tag animate-fast flexed-items"
-                      ng-repeat="tag in item.tags|filter:{'category':category} track by $index"
+                      ng-repeat="tag in item.tags|filter:{'category':category.name} track by $index"
                       edit-inline="{{tag.name}}"
                       ng-class="{'focused' : tag.focused}"
                       ng-style="{'background': tag.color,
                                   'color' : getContrastYIQ(tag.color)
                                 }"
                       ng-click="tag.focused = true;item.contentEdited = true;$event.stopPropagation()"
-                      ng-init="similarTags = similarTags(category)"
+                      ng-init="similarTags = similarTags(category.name)"
                       ng-dblclick="$event.stopPropagation()"
                     >
                       <span
@@ -193,14 +194,14 @@
 
                       <form
                         ng-class="animate-medium"
-                        ng-submit="blurChildren($event);addTag(item, category);"
+                        ng-submit="blurChildren($event);addTag(item, category.name);"
                         focus-me="tag.focused"
                         focus-me-find-input="da"
                         change-input-on-model-change="{{tag.name}}"
                         ng-style="{'left':(item.contentEdited)?'1em':'0'}"
                       >
                           <angucomplete-alt
-                            id="{{$parent.$index}}{{category}}{{$index}}"
+                            id="{{$parent.$index}}{{category.name}}{{$index}}"
                             placeholder="Tag name"
                             selected-object="tagSelected"
 
@@ -210,15 +211,21 @@
 
                             pause="100"
                             local-data="similarTags"
+
                             search-fields="name"
                             title-field="name"
                             minlength="1"
+
                             input-class="form-control form-control-small"
-                            text-no-results="No existing tag matching in {{category}}s category"
-                            text-searching="Searching for existing tags in {{category}}s category"
+
+                            text-no-results="No existing tag matching in {{category.name}}s category"
+
+                            text-searching="Searching for existing tags in {{category.name}}s category"
 
                             initial-value="tag.name"
+
                             override-suggestion="true"
+
                             ng-style="{'background': tag.color,
                                 'color' : getContrastYIQ(tag.color)
                               }"
@@ -231,7 +238,8 @@
                     <span
                       class="tag animate-fast"
                       ng-click="addTag(item, category);$event.stopPropagation();giveContentFocus(item);"
-                        ng-if="item.contentEdited"
+                      ng-if="item.contentEdited"
+                      dicto-tooltip="add a '{{category}}'' tag"
                     >
                         <span class="glyphicon glyphicon-plus"></span>
                     </span>

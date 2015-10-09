@@ -298,7 +298,6 @@
 <!-- zoom in and out -->
 <div
   class="pull-left-in-column pull-bottom-in-column btn-column"
-  ng-if="$parent.viewSettings.showTime"
 >
   <div
     class="btn slide-height toggle circled"
@@ -320,6 +319,16 @@
   ><span
       class="glyphicon glyphicon-zoom-out"
       dicto-tooltip="zoom out (current level : {{roundFloat($parent.viewSettings.zoomLevel)}})"
+    ></span>
+  </div>
+  <div
+    class="btn slide-height toggle circled active"
+    ng-click="toggleMode()"
+    dicto-tooltip="{{($parent.viewSettings.showTime)?'Quit timecode edition':'Edit timecodes'}}"
+    dicto-tooltip-placement="right"
+    ng-class="{'active':$parent.viewSettings.showTime}"
+  ><span
+      class="glyphicon glyphicon-film"
     ></span>
   </div>
 </div>
