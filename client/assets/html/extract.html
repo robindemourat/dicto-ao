@@ -1,0 +1,82 @@
+<div
+  class="column-contents"
+  fit-to-header-height=".options-header"
+>
+  <div
+    ng-if="extractor && extractor.extractorStatus"
+    ng-bind="'Youtube extractor '+ extractor.extractorStatus"
+    class="glyphicon big-list-item"
+    ng-class="{
+      'glyphicon-ok': extractor.extractorStatus == 'done',
+      'glyphicon-remove': extractor.extractorStatus == 'error',
+      'glyphicon-download' : extractor.extractorStatus == 'working',
+      'blink' : extractor.extractorStatus == 'working'
+    }"
+  >
+  </div>
+
+  <div
+    class="big-item-list"
+    ng-if="extractor.availableSubtitles && extractor.availableSubtitles.length > 0"
+    ng-init="previewLang==extractor.availableSubtitles[0]"
+  >
+    Choose a language to preview
+    <span
+      class="btn-group"
+      dropdown
+      ng-init="extractLangOpen = false;togglePreviewLang(extractor.availableSubtitles[0])"
+      on-toggle="extractLangOpen = !extractLangOpen"
+    >
+      <button id="single-button" type="button" class="btn btn-primary" dropdown-toggle ng-disabled="disabled">
+        <span  ng-bind="previewLang.lang"></span>
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="single-button">
+
+        <li class="flexed-item">
+          <span class="glyphicon glyphicon-search"></span>
+          <input
+            style="width:auto;margin-left:1em;flex-grow:2"
+            type="text"
+            ng-model="extractLang"
+            focus-me="extractLangOpen"
+          >
+        </li>
+
+        <li
+          ng-repeat="lang in extractor.availableSubtitles|filter:{'lang' : extractLang} track by $index"
+          role="menuitem"
+          ng-bind="lang.lang"
+          ng-class="{'active' : previewLang === lang}"
+          ng-click="togglePreviewLang(lang)"
+        ></li>
+      </ul>
+    </span>
+
+  </div>
+
+  <div
+        class="content-preview-wrapper"
+        style="padding-top:0;padding-bottom:0;padding-right:0;overflow:hidden;"
+        ng-if="extractor.content && extractor.content.length > 0"
+      >
+        <p
+          class="content-preview-container"
+          marked="extractor.content"
+        >
+        </p>
+  </div>
+
+  <div
+    class="btn-line"
+    ng-if="extractor.content"
+  >
+    <div
+      class="btn"
+      ng-click="importExtractedTranscript(extractor.content)"
+    >
+      <span class="glyphicon glyphicon-arrow-left"></span>
+      Import this content into transcription
+    </div>
+  </div>
+</div>

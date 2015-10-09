@@ -794,17 +794,13 @@ angular.module('dictofullstackApp')
       }
     }
 
-    //After uploading a file has been successfull, I notify the user and ask for active document update
-    $scope.uploader.onAfterAddingFile = function(file){
-      dictoImporter.importFile(file, $scope.active.metadata.type, function(data, err){
-
-        if(!data){
+    $scope.dataImported = function(data){
+      if(!data){
           $scope.importFailMsg = err || 'There has been a problem with parsing your file';
         $timeout(function(){
           $scope.importFailMsg = undefined;
         }, 2000);
-        if(!$scope.$$phase)
-          $scope.$apply();
+
         }else{
           if(data.metadata){
             $scope.active.metadata = data.metadata;
@@ -820,8 +816,15 @@ angular.module('dictofullstackApp')
         }, 2000);
         setTimeout(function(){
           $scope.$apply();
-        })
+        });
         }
+    }
+
+    //After uploading a file has been successfull, I notify the user and ask for active document update
+    $scope.uploader.onAfterAddingFile = function(file){
+      dictoImporter.importFile(file, $scope.active.metadata.type, function(data, err){
+
+        $scope.dataImported(data);
       });
       $scope.uploader.clearQueue();
     }

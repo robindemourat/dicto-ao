@@ -223,5 +223,7 @@ angular.module('dictofullstackApp')
 
     }
 
+    factory.parseSrtTranscription = parseSrtTranscription;
+
     return factory;
   });

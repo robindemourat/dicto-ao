@@ -40,7 +40,6 @@ angular.module('dictofullstackApp')
 
         var doUpdate = function(){
 
-          console.log(angular.isDefined(item));
           if(angular.isDefined(item)){
 
             if(!parent){

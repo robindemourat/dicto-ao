@@ -12,6 +12,8 @@ module.exports = function(app) {
   // This role points to complex queries and elements lists API
   app.use('/api/files', require('./api/files'));
 
+  app.use('/api/extractsrt', require('./api/extractsrt'));
+
   // All undefined asset or api routes should return a 404
   /*app.route('/:url(api|auth|app|bower_components|assets)/*')
    .get(errors[404]);*/
@@ -22,3 +24,4 @@ module.exports = function(app) {
       res.sendfile(app.get('appPath') + '/index.html');
     });
 };
+
