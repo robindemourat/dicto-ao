@@ -255,6 +255,7 @@ angular.module('dictofullstackApp')
 
             if((newactive.metadata.type == "transcription" && newactive.metadata.mediaUrl != oldactive.metadata.mediaUrl)
               ||(newactive.metadata.type == "transcription" && !$scope.activeMediaType)){
+              console.info('updating system media info');
               $scope.activeMediaType = $scope.getMediaFromUrl(newactive.metadata.mediaUrl);
               $scope.activeMediaUrl = newactive.metadata.mediaUrl;
               $scope.activeMediaId = $scope.getActiveMediaId($scope.activeMediaUrl, $scope.activeMediaType);
@@ -1119,7 +1120,7 @@ angular.module('dictofullstackApp')
     }
 
     //I clean and update the document-level account of tags and categories
-    $scope.updateTagsInActive = function(tag){
+    $scope.updateTagsInActive = function(){
 
       var tags = [], categories = [];
       $scope.active.data.forEach(function(item){
@@ -1208,7 +1209,9 @@ angular.module('dictofullstackApp')
 
     $scope.categoryPopulated = function(item, category){
       var ok = item && item.tags;
-      if(ok){
+      if(!category.name || category.name == 'No category'){
+        return true;
+      }else if(ok){
         return item.tags.filter(function(t){return t.category == category.name}).length > 0;
       }else{
         return undefined;

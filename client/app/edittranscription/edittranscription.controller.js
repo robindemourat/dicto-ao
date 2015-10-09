@@ -188,7 +188,6 @@ angular.module('dictofullstackApp')
         $scope.createdByDragIndex = undefined;
         console.log('new by drag end', tempDraggedEnd);
       }
-
     }
 
 
@@ -494,6 +493,10 @@ angular.module('dictofullstackApp')
       setTimeout(function(){
         $scope.$apply();
       })
+    }
+
+    $scope.test = function(){
+      console.log('ok');
     }
 
     $scope.searchSettingsClass = function(content,tags){
@@ -933,15 +936,14 @@ angular.module('dictofullstackApp')
       color = $scope.$parent.randomColor();
       tag = (tag)?tag:{
         name : "",
-        category : (category)?category:"No category",
+        category : (category)?category.name:"No category",
         previousName : "",
-        previousCategory : (category)?category:"No category",
+        previousCategory : (category)?category.name:"No category",
         color : color,
         previousColor : color,
         focused : true,
         toSave : true
       };
-
 
       if(item.tags){
         item.tags.push(tag);
@@ -949,7 +951,14 @@ angular.module('dictofullstackApp')
         item.tags = [tag];
       }
 
+
       updateTagCategories(item);
+
+      $scope.$parent.updateTagsInActive();
+
+      setTimeout(function(){
+        $scope.$apply();
+      })
     }
 
     $scope.blurTag = function(item, tag, index, itemIndex){

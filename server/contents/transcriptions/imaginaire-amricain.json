@@ -4,273 +4,381 @@
           "title": "Imaginaire américain",
           "slug": "imaginaire-amricain",
           "mediaUrl": "https://vimeo.com/122518217",
-          "sharable": "true"
+          "sharable": "true",
+          "tags": [],
+          "tagCategories": []
      },
      "data": [
           {
                "begin": 3.22,
                "end": 8.06,
-               "content": "La bande dessinée jouait un rôle formateur"
+               "content": "La bande dessinée jouait un rôle formateur",
+               "beginSrtFormat": "00:00:03,220",
+               "endSrtFormat": "00:00:08,060"
           },
           {
                "begin": 8.06,
                "end": 13.736,
-               "content": "dans le journal de Mickey on avait le paysage"
+               "content": "dans le journal de Mickey on avait le paysage",
+               "beginSrtFormat": "00:00:08,060",
+               "endSrtFormat": "00:00:13,736"
           },
           {
                "begin": 13.736,
                "end": 19.412,
-               "content": "urbain où vivait Donald ou Mickey, c’étaient des"
+               "content": "urbain où vivait Donald ou Mickey, c’étaient des",
+               "beginSrtFormat": "00:00:13,736",
+               "endSrtFormat": "00:00:19,412"
           },
           {
                "begin": 19.412,
                "end": 25.088,
-               "content": "maisons, c’était une maison au milieu d’une"
+               "content": "maisons, c’était une maison au milieu d’une",
+               "beginSrtFormat": "00:00:19,412",
+               "endSrtFormat": "00:00:25,088"
           },
           {
                "begin": 25.09,
                "end": 29.352,
-               "content": "Si bien que j’ai, j’ai vraiment l’impression"
+               "content": "Si bien que j’ai, j’ai vraiment l’impression",
+               "beginSrtFormat": "00:00:25,090",
+               "endSrtFormat": "00:00:29,352"
           },
           {
                "begin": 29.352,
                "end": 33.614,
-               "content": "que ce paysage c’est un paysage typiquement anglo-saxon"
+               "content": "que ce paysage c’est un paysage typiquement anglo-saxon",
+               "beginSrtFormat": "00:00:29,352",
+               "endSrtFormat": "00:00:33,614"
           },
           {
                "begin": 33.614,
                "end": 37.876,
-               "content": "implanté dans un monde étranger. Autre chose"
+               "content": "implanté dans un monde étranger. Autre chose",
+               "beginSrtFormat": "00:00:33,614",
+               "endSrtFormat": "00:00:37,876"
           },
           {
                "begin": 37.876,
                "end": 42.138,
-               "content": "qui explique pour moi le caractère tellement"
+               "content": "qui explique pour moi le caractère tellement",
+               "beginSrtFormat": "00:00:37,876",
+               "endSrtFormat": "00:00:42,138"
           },
           {
                "begin": 43.18,
                "end": 47.133,
-               "content": "Alors pour revenir à Donald et à Mickey."
+               "content": "Alors pour revenir à Donald et à Mickey.",
+               "beginSrtFormat": "00:00:43,180",
+               "endSrtFormat": "00:00:47,133"
           },
           {
                "begin": 47.133,
                "end": 51.086,
-               "content": "Une de leurs occupations à ces personnages"
+               "content": "Une de leurs occupations à ces personnages",
+               "beginSrtFormat": "00:00:47,133",
+               "endSrtFormat": "00:00:51,086"
           },
           {
                "begin": 51.086,
                "end": 55.039,
-               "content": "c’était de tailler leurs haies, et de se"
+               "content": "c’était de tailler leurs haies, et de se",
+               "beginSrtFormat": "00:00:51,086",
+               "endSrtFormat": "00:00:55,039"
           },
           {
                "begin": 55.1,
                "end": 57.076,
-               "content": "Et c’était qu’ils apercevaient de l’autre"
+               "content": "Et c’était qu’ils apercevaient de l’autre",
+               "beginSrtFormat": "00:00:55,100",
+               "endSrtFormat": "00:00:57,076"
           },
           {
                "begin": 57.076,
                "end": 59.052,
-               "content": "côté de la haie, qui des fois balançaient"
+               "content": "côté de la haie, qui des fois balançaient",
+               "beginSrtFormat": "00:00:57,076",
+               "endSrtFormat": "00:00:59,052"
           },
           {
                "begin": 59.052,
                "end": 61.028,
-               "content": "quelques choses de l’autre côté de la haie"
+               "content": "quelques choses de l’autre côté de la haie",
+               "beginSrtFormat": "00:00:59,052",
+               "endSrtFormat": "00:01:01,028"
           },
           {
                "begin": 61.12,
                "end": 64.318,
-               "content": "Ça ce modèle de Tintin … , de Mickey et de"
+               "content": "Ça ce modèle de Tintin … , de Mickey et de",
+               "beginSrtFormat": "00:01:01,120",
+               "endSrtFormat": "00:01:04,318"
           },
           {
                "begin": 64.318,
                "end": 67.516,
-               "content": "Donald je l’ai retrouvé dans Tintin, chez Modeste"
+               "content": "Donald je l’ai retrouvé dans Tintin, chez Modeste",
+               "beginSrtFormat": "00:01:04,318",
+               "endSrtFormat": "00:01:07,516"
           },
           {
                "begin": 67.516,
                "end": 70.714,
-               "content": "et Pompon. Modeste et Pompon habitent aussi"
+               "content": "et Pompon. Modeste et Pompon habitent aussi",
+               "beginSrtFormat": "00:01:07,516",
+               "endSrtFormat": "00:01:10,714"
           },
           {
                "begin": 70.714,
                "end": 73.912,
-               "content": "dans une maison, ça c’est Franquin et puis"
+               "content": "dans une maison, ça c’est Franquin et puis",
+               "beginSrtFormat": "00:01:10,714",
+               "endSrtFormat": "00:01:13,912"
           },
           {
                "begin": 73.912,
                "end": 77.11,
-               "content": "des tas d’autres collaborateurs, dans une"
+               "content": "des tas d’autres collaborateurs, dans une",
+               "beginSrtFormat": "00:01:13,912",
+               "endSrtFormat": "00:01:17,110"
           },
           {
                "begin": 77.11,
                "end": 80.81,
-               "content": "Et pareil dans pilote avec Achille Talon."
+               "content": "Et pareil dans pilote avec Achille Talon.",
+               "beginSrtFormat": "00:01:17,110",
+               "endSrtFormat": "00:01:20,810"
           },
           {
                "begin": 80.81,
                "end": 84.51,
-               "content": "Achille Talon, il se dispute aussi avec son"
+               "content": "Achille Talon, il se dispute aussi avec son",
+               "beginSrtFormat": "00:01:20,810",
+               "endSrtFormat": "00:01:24,510"
           },
           {
                "begin": 84.51,
                "end": 88.21,
-               "content": "voisin, et ils passent leur temps à tailler"
+               "content": "voisin, et ils passent leur temps à tailler",
+               "beginSrtFormat": "00:01:24,510",
+               "endSrtFormat": "00:01:28,210"
           },
           {
                "begin": 89.05,
                "end": 93.065,
-               "content": "Et donc pour moi, en quelque sorte venir"
+               "content": "Et donc pour moi, en quelque sorte venir",
+               "beginSrtFormat": "00:01:29,050",
+               "endSrtFormat": "00:01:33,065"
           },
           {
                "begin": 93.065,
                "end": 97.08,
-               "content": "ici c’était comme venir en Amérique chez"
+               "content": "ici c’était comme venir en Amérique chez",
+               "beginSrtFormat": "00:01:33,065",
+               "endSrtFormat": "00:01:37,080"
           },
           {
                "begin": 97.08,
                "end": 99.73,
-               "content": "Et c’était évidemment puisque c’était comme"
+               "content": "Et c’était évidemment puisque c’était comme",
+               "beginSrtFormat": "00:01:37,080",
+               "endSrtFormat": "00:01:39,730"
           },
           {
                "begin": 99.73,
                "end": 102.38,
-               "content": "en Amérique un endroit idéal pour jouer au cowboy"
+               "content": "en Amérique un endroit idéal pour jouer au cowboy",
+               "beginSrtFormat": "00:01:39,730",
+               "endSrtFormat": "00:01:42,380"
           },
           {
                "begin": 102.38,
                "end": 105.03,
-               "content": "et aux indiens avec les copains dans ce petit"
+               "content": "et aux indiens avec les copains dans ce petit",
+               "beginSrtFormat": "00:01:42,380",
+               "endSrtFormat": "00:01:45,030"
           },
           {
                "begin": 106,
                "end": 109.132,
-               "content": "C’est qu’il y avait quelque chose d’original"
+               "content": "C’est qu’il y avait quelque chose d’original",
+               "beginSrtFormat": "00:01:46,000",
+               "endSrtFormat": "00:01:49,132"
           },
           {
                "begin": 109.132,
                "end": 112.264,
-               "content": "dans cette avenue, les trottoirs étaient"
+               "content": "dans cette avenue, les trottoirs étaient",
+               "beginSrtFormat": "00:01:49,132",
+               "endSrtFormat": "00:01:52,264"
           },
           {
                "begin": 112.264,
                "end": 115.396,
-               "content": "herbus et avec un lieu de passage au milieu"
+               "content": "herbus et avec un lieu de passage au milieu",
+               "beginSrtFormat": "00:01:52,264",
+               "endSrtFormat": "00:01:55,396"
           },
           {
                "begin": 115.396,
                "end": 118.528,
-               "content": "composé de plaques de ciment qui étaient"
+               "content": "composé de plaques de ciment qui étaient",
+               "beginSrtFormat": "00:01:55,396",
+               "endSrtFormat": "00:01:58,528"
           },
           {
                "begin": 118.528,
                "end": 121.66,
-               "content": "en fait des plaques de ciment récupérées"
+               "content": "en fait des plaques de ciment récupérées",
+               "beginSrtFormat": "00:01:58,528",
+               "endSrtFormat": "00:02:01,660"
           },
           {
                "begin": 121.66,
                "end": 124.792,
-               "content": "sur les aéroports qu’avaient installés les"
+               "content": "sur les aéroports qu’avaient installés les",
+               "beginSrtFormat": "00:02:01,660",
+               "endSrtFormat": "00:02:04,792"
           },
           {
                "begin": 124.792,
                "end": 127.924,
-               "content": "américains, les aéroports provisoires qu’avaient"
+               "content": "américains, les aéroports provisoires qu’avaient",
+               "beginSrtFormat": "00:02:04,792",
+               "endSrtFormat": "00:02:07,924"
           },
           {
                "begin": 127.924,
                "end": 131.056,
-               "content": "installé les américains en 45 pas très loin"
+               "content": "installé les américains en 45 pas très loin",
+               "beginSrtFormat": "00:02:07,924",
+               "endSrtFormat": "00:02:11,056"
           },
           {
                "begin": 131.06,
                "end": 133.8,
-               "content": "Donc il y avait une grande originalité dans"
+               "content": "Donc il y avait une grande originalité dans",
+               "beginSrtFormat": "00:02:11,060",
+               "endSrtFormat": "00:02:13,800"
           },
           {
                "begin": 133.8,
                "end": 136.54,
-               "content": "la rue, puisque en dehors de ce que j’ai"
+               "content": "la rue, puisque en dehors de ce que j’ai",
+               "beginSrtFormat": "00:02:13,800",
+               "endSrtFormat": "00:02:16,540"
           },
           {
                "begin": 136.54,
                "end": 139.28,
-               "content": "raconté sur les portails, c’était que le"
+               "content": "raconté sur les portails, c’était que le",
+               "beginSrtFormat": "00:02:16,540",
+               "endSrtFormat": "00:02:19,280"
           },
           {
                "begin": 139.28,
                "end": 142.02,
-               "content": "trottoir était herbeux, herbu, je sais pas"
+               "content": "trottoir était herbeux, herbu, je sais pas",
+               "beginSrtFormat": "00:02:19,280",
+               "endSrtFormat": "00:02:22,020"
           },
           {
                "begin": 142.02,
                "end": 144.76,
-               "content": "comment on dit, et il y avait au milieu donc"
+               "content": "comment on dit, et il y avait au milieu donc",
+               "beginSrtFormat": "00:02:22,020",
+               "endSrtFormat": "00:02:24,760"
           },
           {
                "begin": 144.76,
                "end": 147.5,
-               "content": "cet alignement, cette sorte de passerelle,"
+               "content": "cet alignement, cette sorte de passerelle,",
+               "beginSrtFormat": "00:02:24,760",
+               "endSrtFormat": "00:02:27,500"
           },
           {
                "begin": 147.5,
                "end": 150.24,
-               "content": "avec des dalles qui étaient vraiment très"
+               "content": "avec des dalles qui étaient vraiment très",
+               "beginSrtFormat": "00:02:27,500",
+               "endSrtFormat": "00:02:30,240"
           },
           {
                "begin": 151,
                "end": 154.602,
-               "content": "Donc il y a vraiment cette dimension, comme"
+               "content": "Donc il y a vraiment cette dimension, comme",
+               "beginSrtFormat": "00:02:31,000",
+               "endSrtFormat": "00:02:34,602"
           },
           {
                "begin": 154.602,
                "end": 158.204,
-               "content": "ça, presque de décor qui rejoint aussi une certaine"
+               "content": "ça, presque de décor qui rejoint aussi une certaine",
+               "beginSrtFormat": "00:02:34,602",
+               "endSrtFormat": "00:02:38,204"
           },
           {
                "begin": 158.204,
                "end": 161.806,
-               "content": "idée de l’Amérique, qu’on a beaucoup en Europe"
+               "content": "idée de l’Amérique, qu’on a beaucoup en Europe",
+               "beginSrtFormat": "00:02:38,204",
+               "endSrtFormat": "00:02:41,806"
           },
           {
                "begin": 161.806,
                "end": 165.408,
-               "content": "qui est en tout cas un des clichés de l’Amérique"
+               "content": "qui est en tout cas un des clichés de l’Amérique",
+               "beginSrtFormat": "00:02:41,806",
+               "endSrtFormat": "00:02:45,408"
           },
           {
                "begin": 165.408,
                "end": 169.01,
-               "content": "qui est cette idée du décor, du provisoire"
+               "content": "qui est cette idée du décor, du provisoire",
+               "beginSrtFormat": "00:02:45,408",
+               "endSrtFormat": "00:02:49,010"
           },
           {
                "begin": 169.01,
                "end": 172.028,
-               "content": "C’est aussi un moment où on est passé d’une"
+               "content": "C’est aussi un moment où on est passé d’une",
+               "beginSrtFormat": "00:02:49,010",
+               "endSrtFormat": "00:02:52,028"
           },
           {
                "begin": 172.028,
                "end": 175.046,
-               "content": "construction de bâtiments artisanale à quelque"
+               "content": "construction de bâtiments artisanale à quelque",
+               "beginSrtFormat": "00:02:52,028",
+               "endSrtFormat": "00:02:55,046"
           },
           {
                "begin": 175.046,
                "end": 178.064,
-               "content": "chose de beaucoup plus standardisé, beaucoup"
+               "content": "chose de beaucoup plus standardisé, beaucoup",
+               "beginSrtFormat": "00:02:55,046",
+               "endSrtFormat": "00:02:58,064"
           },
           {
                "begin": 178.064,
                "end": 181.082,
-               "content": "plus industrialisé et ces maisons pour moi"
+               "content": "plus industrialisé et ces maisons pour moi",
+               "beginSrtFormat": "00:02:58,064",
+               "endSrtFormat": "00:03:01,082"
           },
           {
                "begin": 181.082,
                "end": 184.1,
-               "content": "elles symbolisent un peu tout ça, toute l’image"
+               "content": "elles symbolisent un peu tout ça, toute l’image",
+               "beginSrtFormat": "00:03:01,082",
+               "endSrtFormat": "00:03:04,100"
           },
           {
                "begin": 184.1,
                "end": 188.02,
-               "content": "C’était vraiment des morceaux comme ça de"
+               "content": "C’était vraiment des morceaux comme ça de",
+               "beginSrtFormat": "00:03:04,100",
+               "endSrtFormat": "00:03:08,020"
           }
      ]
 }

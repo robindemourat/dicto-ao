@@ -100,6 +100,8 @@
   class="dicto-item-gui-wrapper animate-medium slide-height"
   ng-repeat="item in active.data"
    ng-class="setDictoItemClass(item, $index, $parent.searchTerm)"
+    ng-click="test()"
+
 >
   <div
           class="dicto-item slide-height"
@@ -121,7 +123,7 @@
             dicto-drag-lower-limit="dragPrevLimit($index)"
           >
             <form
-                ng-click="$event.stopPropagation()"
+                ng-click="$event.stopPropagation();"
                 ng-submit = "saveTimecodeOnBlur(item, $index, true, false);blurChildren($event)"
             >
               <input
@@ -153,7 +155,7 @@
               <div
                 ng-if="!item.contentEdited"
                 ng-bind-html="renderMarkdownItem(item.content, $parent.searchTerm)"
-                ng-dblclick="$event.stopPropagation();toggleEdited(item);$parent.mediaPlayToggle(false)"
+                ng-dblclick="$event.stopPropagation();toggleEdited(item);$parent.mediaPlayToggle(false);"
               > </div>
 
               <!-- case tags -->
@@ -165,7 +167,7 @@
                 <div
                   class="tags-category-container"
                   ng-repeat="category in $parent.active.metadata.tagCategories track by $index"
-                  ng-if="item.contentEdited || categoryPopulated(item, category)"
+                  ng-if="item.contentEdited || categoryPopulated(item, category) || category == 'No category'"
                 >
                   <div
                     class="tag-category-name"
@@ -180,9 +182,9 @@
                       ng-style="{'background': tag.color,
                                   'color' : getContrastYIQ(tag.color)
                                 }"
-                      ng-click="tag.focused = true;item.contentEdited = true;$event.stopPropagation()"
+                      ng-click="tag.focused = true;item.contentEdited = true;$event.stopPropagation();"
                       ng-init="similarTags = similarTags(category.name)"
-                      ng-dblclick="$event.stopPropagation()"
+                      ng-dblclick="$event.stopPropagation();"
                     >
                       <span
                         class="glyphicon glyphicon-remove"
@@ -237,7 +239,7 @@
 
                     <span
                       class="tag animate-fast"
-                      ng-click="addTag(item, category);$event.stopPropagation();giveContentFocus(item);"
+                      ng-click="addTag(item, category);$event.stopPropagation();"
                       ng-if="item.contentEdited"
                       dicto-tooltip="add a '{{category}}'' tag"
                     >
@@ -257,7 +259,7 @@
 
                       <span
                         class="tag animate-fast"
-                        ng-click="addTag(item);$event.stopPropagation();giveContentFocus(item);"
+                        ng-click="addTag(item);$event.stopPropagation();"
                         ng-if="item.contentEdited"
                       >
                           <span
