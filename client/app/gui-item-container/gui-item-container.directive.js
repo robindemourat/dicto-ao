@@ -40,7 +40,7 @@ angular.module('dictofullstackApp')
 
         var doUpdate = function(){
 
-
+          console.log(angular.isDefined(item));
           if(angular.isDefined(item)){
 
             if(!parent){
@@ -52,7 +52,6 @@ angular.module('dictofullstackApp')
             itemOuterHeight = (itemType === 'item')? item.outerHeight() : item.parent().outerHeight();
             //console.log(item.parent().attr('class'),item.outerHeight(), item.parent().outerHeight());
             itemOffsetTop = item.parent().offset().top - paddingTop + parent.scrollTop();
-
             parentScrollHeight = parent.prop('scrollHeight') + paddingTop;
 
             itemPercentY = Math.abs(itemOffsetTop / parentScrollHeight) * 100;

@@ -32,7 +32,7 @@
 
                     ng-repeat="item in active.data"
 
-                    target-in=".left-column .column-contents.ng-scope"
+                    target-in=".left-column .column-contents"
                     id="gui-item-container-{{$index}}"
                     title="{{item.content.split('.')[0] + '...'}}"
                     ng-click="clickOnGuiItem(item, $event)"
