@@ -35,9 +35,9 @@
       class="main-player-drag-bar"
       dicto-drag="tempSeek"
       dicto-drag-factor="$parent.viewSettings.computedZoom"
-      dicto-drag-start="seekDragStart()"
-      dicto-drag-end="seekDragEnd(tempSeek)"
-      dicto-drag-dragging="seekDragDragging(tempSeek)"
+      dicto-drag-start="seekDragStart();$event.stopPropagation()"
+      dicto-drag-end="seekDragEnd(tempSeek);$event.stopPropagation()"
+      dicto-drag-dragging="seekDragDragging(tempSeek);$event.stopPropagation()"
       dicto-drag-upper-limit="$parent.activeMediaDuration || $parent.active && $parent.active.data && $parent.active.data[$parent.active.data.length-1].end"
       dicto-drag-lower-limit="0"
     ></div>
@@ -98,7 +98,7 @@
 <!-- case existing transcription-->
 <div
   class="dicto-item-gui-wrapper animate-medium slide-height"
-  ng-repeat="item in active.data track by $index"
+  ng-repeat="item in active.data"
    ng-class="setDictoItemClass(item, $index, $parent.searchTerm)"
 >
   <div

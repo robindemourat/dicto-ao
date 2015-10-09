@@ -83,14 +83,13 @@ angular.module('dictofullstackApp')
             scrollTop : scrollTop,
             maxScrollTop : maxScrollTop,
             scrollTopPercent : (scrollTop/maxScrollTop)*100
-          })
+          });
         };
 
         //I stop every scroll animations when user scrolls
         var onUserScroll = function(){
           angular.element(element).stop();
         }
-
 
         //EVENTS EMITTER
         angular.element(element).on('scroll', onScroll);

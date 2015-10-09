@@ -1,0 +1,182 @@
+{
+      "metadata": {
+            "title": "exemple  de montage",
+            "slug": "exemple-de-montage",
+            "mediaUrl": "",
+            "type": "montage",
+            "tags": [
+                  {
+                        "name": "Benoît Verjat",
+                        "category": "personne",
+                        "color": "#496f5a"
+                  },
+                  {
+                        "name": "le temps qui passe",
+                        "category": "No category",
+                        "color": "#b875a3"
+                  },
+                  {
+                        "name": "un autre tag",
+                        "category": "No category",
+                        "color": "#b1edf2"
+                  },
+                  {
+                        "name": "test qui va bien",
+                        "category": "No category",
+                        "color": "#f568ea"
+                  },
+                  {
+                        "name": "test",
+                        "category": "No category",
+                        "color": "#f0e081"
+                  },
+                  {
+                        "name": "test qui marche bien",
+                        "category": "No category",
+                        "color": "#7a5065"
+                  }
+            ],
+            "tagCategories": [
+                  {
+                        "name": "personne"
+                  },
+                  {
+                        "name": "No category"
+                  }
+            ]
+      },
+      "data": [
+            {
+                  "type": "free",
+                  "content": "# C'est un titre !"
+            },
+            {
+                  "begin": 3.22,
+                  "end": 8.06,
+                  "content": "La bande dessinée jouait un rôle formateur",
+                  "type": "transcript",
+                  "slug": "imaginaire-amricain",
+                  "title": "Imaginaire américain",
+                  "mediaUrl": "https://vimeo.com/122518217"
+            },
+            {
+                  "begin": 8.06,
+                  "end": 13.736,
+                  "content": "dans le journal de Mickey on avait le paysage",
+                  "type": "transcript",
+                  "slug": "imaginaire-amricain",
+                  "title": "Imaginaire américain",
+                  "mediaUrl": "https://vimeo.com/122518217"
+            },
+            {
+                  "begin": 13.736,
+                  "end": 19.412,
+                  "content": "urbain où vivait Donald ou Mickey, c’étaient des",
+                  "type": "transcript",
+                  "slug": "imaginaire-amricain",
+                  "title": "Imaginaire américain",
+                  "mediaUrl": "https://vimeo.com/122518217"
+            },
+            {
+                  "begin": 19.412,
+                  "end": 25.088,
+                  "content": "maisons, c’était une maison au milieu d’une",
+                  "type": "transcript",
+                  "slug": "imaginaire-amricain",
+                  "title": "Imaginaire américain",
+                  "mediaUrl": "https://vimeo.com/122518217"
+            },
+            {
+                  "begin": 3.22,
+                  "end": 5.21,
+                  "content": "moi ce que je trouve vraiment intéressant,",
+                  "type": "transcript",
+                  "slug": "quel-avenir",
+                  "title": "Quel avenir ?",
+                  "mediaUrl": "https://vimeo.com/122518219"
+            },
+            {
+                  "begin": 5.21,
+                  "end": 7.2,
+                  "content": "justement, dans ce quartier c’est que ce",
+                  "type": "transcript",
+                  "slug": "quel-avenir",
+                  "title": "Quel avenir ?",
+                  "mediaUrl": "https://vimeo.com/122518219"
+            },
+            {
+                  "begin": 7.2,
+                  "end": 9.19,
+                  "content": "soit à la fois à lieu de patrimoine et un",
+                  "type": "transcript",
+                  "slug": "quel-avenir",
+                  "title": "Quel avenir ?",
+                  "mediaUrl": "https://vimeo.com/122518219"
+            },
+            {
+                  "begin": 9.19,
+                  "end": 11.18,
+                  "content": "lieu de vie. C’est-à-dire que ces maisons",
+                  "type": "transcript",
+                  "slug": "quel-avenir",
+                  "title": "Quel avenir ?",
+                  "mediaUrl": "https://vimeo.com/122518219"
+            },
+            {
+                  "begin": 11.18,
+                  "end": 13.17,
+                  "content": "soient toujours habitées, bon qu’elles soient",
+                  "type": "transcript",
+                  "slug": "quel-avenir",
+                  "title": "Quel avenir ?",
+                  "mediaUrl": "https://vimeo.com/122518219"
+            },
+            {
+                  "content": "J'ai fait de la recherche aux arts décoratifs de Paris. J'ai plutôt travaillé sur des dispositifs intéractifs et aussi sur des questions de documentation, et un petit peu de robotique aussi.",
+                  "begin": 6.983,
+                  "end": 20.731,
+                  "beginSrtFormat": "00:00:06,983",
+                  "endSrtFormat": "00:00:20,731",
+                  "tags": [
+                        {
+                              "name": "Benoît Verjat",
+                              "category": "personne",
+                              "color": "#496f5a"
+                        },
+                        {
+                              "name": "le temps qui passe",
+                              "category": "No category",
+                              "color": "#b875a3"
+                        },
+                        {
+                              "name": "un autre tag",
+                              "category": "No category",
+                              "color": "#b1edf2"
+                        },
+                        {
+                              "name": "test qui va bien",
+                              "category": "No category",
+                              "color": "#f568ea"
+                        },
+                        {
+                              "name": "test",
+                              "category": "No category",
+                              "color": "#f0e081"
+                        },
+                        {
+                              "name": "test qui marche bien",
+                              "category": "No category",
+                              "color": "#7a5065"
+                        }
+                  ],
+                  "tagCategories": [
+                        "personne",
+                        "No category"
+                  ],
+                  "type": "transcript",
+                  "slug": "entretien-avec-benot-verjat",
+                  "title": "entretien avec Benoît Verjat",
+                  "mediaUrl": "https://vimeo.com/141544990"
+            }
+      ]
+}

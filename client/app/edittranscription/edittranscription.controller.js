@@ -149,13 +149,12 @@ angular.module('dictofullstackApp')
     }
 
     $scope.newByDragStart = function(e){
-
       console.log('new by drag start', e);
       //var newItemData = $scope.addNewItemAtMousePosition(event, 10);
-      var y = e.offsetY + angular.element(e.currentTarget).offset().top + angular.element('.left-column .column-contents').scrollTop();
+      var y = e.offsetY + angular.element('.time-grads-container').offset().top + angular.element('.left-column .column-contents').scrollTop() - angular.element('.left-column .column-contents').offset().top;
       $scope.tempDraggedNewItemY = y / $scope.$parent.viewSettings.computedZoom;
-
     }
+
     $scope.newByDragDragging = function(tempDraggedEnd, e){
       if(!angular.isDefined($scope.createdByDragIndex)){
         $timeout(function(){
@@ -174,7 +173,7 @@ angular.module('dictofullstackApp')
         var item = $scope.$parent.active.data[$scope.createdByDragIndex];
         if($scope.tempDraggedNewItemEnd > item.begin+ 2){
             item.end = $scope.tempDraggedNewItemEnd;
-          item.endSrtFormat = timeUtils.secToSrt($scope.tempDraggedNewItemEnd);
+            item.endSrtFormat = timeUtils.secToSrt($scope.tempDraggedNewItemEnd);
         }
       }
       // console.log('new by drag dragging', tempDraggedEnd);
@@ -562,6 +561,10 @@ angular.module('dictofullstackApp')
     */
 
     $scope.saveTimecodeOnBlur = function(transcript, id, inTimecodein, inTimecodeout){
+        if(!transcript){
+          console.log('no transcript to update', transcript, id, inTimecodein, inTimecodeout);
+          return;
+        }
         var operations = [], prevValue, newValue;
         if(inTimecodein){//save begin
 
@@ -604,6 +607,10 @@ angular.module('dictofullstackApp')
 
         }
         if(inTimecodeout){//save end
+
+          if(!transcript.endSrtFormat){
+            transcript.endSrtFormat = timeUtils.secToSrt(transcript.end);
+          }
 
           newValue = timeUtils.srtTimeToSec(transcript.endSrtFormat);
 
