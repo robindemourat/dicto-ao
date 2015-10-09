@@ -6,51 +6,26 @@
           "type": "transcription",
           "tags": [
                {
-                    "name": "Benoît Verjat",
-                    "category": "personne",
-                    "color": "#496f5a"
-               },
-               {
                     "name": "prototype",
                     "category": "theme",
                     "color": "#6b044b"
                },
                {
-                    "name": "test Je fais un test",
-                    "category": "No category",
-                    "color": "#f0e081"
+                    "name": "Benoît Verjat",
+                    "category": "personne",
+                    "color": "#496f5a"
                }
           ],
           "tagCategories": [
                {
-                    "name": "personne"
-               },
-               {
                     "name": "theme"
                },
                {
-                    "name": "No category"
+                    "name": "personne"
                }
           ]
      },
      "data": [
-          {
-               "content": "J'ai fait de la recherche aux arts décoratifs de Paris. J'ai plutôt travaillé sur des dispositifs intéractifs et aussi sur des questions de documentation, et un petit peu de robotique aussi.",
-               "begin": 6.983,
-               "end": 20.731,
-               "beginSrtFormat": "00:00:06,983",
-               "endSrtFormat": "00:00:20,731",
-               "tags": [
-                    {
-                         "name": "Benoît Verjat",
-                         "category": "personne",
-                         "color": "#496f5a"
-                    }
-               ],
-               "tagCategories": [
-                    "personne"
-               ]
-          },
           {
                "content": "Le fait de les mettre assez vite sur des prototypes, je pense que c'est un truc vraiment très important.",
                "begin": 100.068,
@@ -71,29 +46,6 @@
                ],
                "tagCategories": [
                     "theme",
-                    "personne"
-               ]
-          },
-          {
-               "content": "mon nouveau test",
-               "begin": 139.3,
-               "end": 184.2,
-               "beginSrtFormat": "00:02:19,300",
-               "endSrtFormat": "00:03:04,200",
-               "tags": [
-                    {
-                         "name": "test Je fais un test",
-                         "category": "No category",
-                         "color": "#f0e081"
-                    },
-                    {
-                         "name": "Benoît Verjat",
-                         "category": "personne",
-                         "color": "#496f5a"
-                    }
-               ],
-               "tagCategories": [
-                    "No category",
                     "personne"
                ]
           }

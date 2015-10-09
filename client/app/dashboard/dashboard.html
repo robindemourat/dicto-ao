@@ -208,9 +208,10 @@
 						<div class="value dashboard-tags"
 						>
 							<span
-								ng-repeat="tag in active.metadata.tags |limitTo:20"
+								ng-repeat="tag in active.metadata.tags |orderBy:'name'"
 								ng-style="{'background' : tag.color}"
 								class="tag"
+								title="{{tag.name}} ({{tag.category}})"
 							>
 								{{ tag.name }}
 							</span>

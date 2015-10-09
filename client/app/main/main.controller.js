@@ -379,8 +379,9 @@ angular.module('dictofullstackApp')
         $scope.activeResource.$update(function(d){
           console.info('active saved successfully', d);
           if(rename){
-
-            $scope.updateFilesList();
+            setTimeout(function(){
+              $scope.updateFilesList();
+            }, 500)
             $scope.activeResource.slug = $scope.active.metadata.slug;
             //console.log($location.search().active);
             if(angular.isDefined($location.search().active)){
@@ -402,10 +403,11 @@ angular.module('dictofullstackApp')
       $scope.activeToSave = fileFactory.get({type : $scope.active.metadata.type, slug : $scope.active.metadata.slug}, function(d, err){
 
           console.info('deleting the ', $scope.active.metadata.type, $scope.active.metadata.title)
-          $scope.activeToSave.$delete();
+          $scope.activeToSave.$delete(function(){
+              $scope.updateFilesList();
+          });
           console.info($scope.active.metadata.title, ' was deleted');
           $scope.active = undefined;
-          $scope.updateFilesList();
           $scope.optionsMode = undefined;
       });
     };
@@ -504,9 +506,14 @@ angular.module('dictofullstackApp')
       var id;
       if(url && mediaType){
         if(mediaType == 'vimeo'){
-          id = url.match(getVimeoId)[0];
+          var vimeo = url.match(getVimeoId);
+          if(vimeo != null)
+            id = vimeo[0];
         }else if(mediaType == 'youtube'){
-          id = url.match(getYoutubeId)[1];
+          var youtube = url.match(getYoutubeId);
+          if(youtube != null){
+            id = youtube[1];
+          }
         }
       }
       return id;
@@ -1200,7 +1207,12 @@ angular.module('dictofullstackApp')
     }
 
     $scope.categoryPopulated = function(item, category){
-      return item.tags.filter(function(t){return t.category == category.name}).length > 0;
+      var ok = item && item.tags;
+      if(ok){
+        return item.tags.filter(function(t){return t.category == category.name}).length > 0;
+      }else{
+        return undefined;
+      }
     }
 
 
@@ -1271,10 +1283,13 @@ angular.module('dictofullstackApp')
 
       item.status = '';
 
-      for(var i in item){
+      item1 = $scope.cloneObject(item1);
+      item2 = $scope.cloneObject(item2);
+
+      /*for(var i in item){
         item1[i] = item[i];
         item2[i] = item[i];
-      }
+      }*/
 
       for(var i = 0 ; i < cursor.line ; i++){
         before += (editedEditor.getLine(i).length)+1;
@@ -1293,7 +1308,7 @@ angular.module('dictofullstackApp')
         var secondDuration = length - firstDuration;
 
         item1.contentEdited = false;
-        item2.contentEdited = false;
+        item2.contentEdited = true;
 
         item1.begin = +item.begin;
         item1.end = +item.begin + firstDuration;
@@ -1375,10 +1390,11 @@ angular.module('dictofullstackApp')
 
       $scope.addToHistory(historyOperations);
 
-      $scope.active.data.splice(index, 1, item1);
-      $scope.active.data.splice(index+1, 0, item2);
-
+      $scope.active.data.splice(index, 1);
+      $scope.active.data.splice(index, 0, item2);
+      $scope.active.data.splice(index, 0, item1);
       $scope.updateTagsInActive();
+
 
       setTimeout(function(){
         $scope.$apply();
@@ -1740,7 +1756,7 @@ angular.module('dictofullstackApp')
           },
           {
             element : '.media-container',
-            intro : 'The right column usually features the current media played in your montage.',
+            intro : 'By default, the right column features the current media played in your montage.',
             position : 'left'
           },
           {
@@ -1758,37 +1774,28 @@ angular.module('dictofullstackApp')
             intro : 'You can have an overview of all your montage chunks in the central railway. You can seek into your montage by clicking at the position wanted.',
             position : 'left'
           },
-          {
-            element : '.left-aside-menu',
-            intro : 'Here is the toolbar of the montage. It allows you to switch between different activities.',
-            position : 'right'
-          },
+
           {
             element : '#menu-btn',
             intro : 'Through this button, you\'ll access montage metadata edition, import and export functions, and the dashboard featuring all your documents.',
             position : 'right'
           },
           {
-            element : '#tags-btn',
-            intro : 'The tag button enables the display of tags inside your montage chunks. If you have previously tagged the transcriptions you are working with, they\'ll help you to visualize and organize your content.',
+            element : '.searchToggler',
+            intro : 'This button will allow you to search inside your montage and play it accordingly to search-matching chunks.',
+            position : 'right'
+          },
+          {
+            element : '.item-title',
+            intro : 'You can change your montage title here',
             position : 'right'
           },
           {
             element : '#right-column-toggle',
-            intro : 'The right column button allows you to switch between two modes of activities. For now, we are in previewing mode : we can watch the media result of your montage on the right column.',
-            position : 'left'
-          },
-          {
-            element : '#right-column-toggle',
-            intro : 'If you click on this button, you will switch to editing mode and be able to refine and build your current montage. Let\'s switch to edition mode',
+            intro : 'The right column button allows you to switch between two modes of activities. For now, we are in previewing mode : we can watch the media result of your montage on the right column.<br><br>If you click on this button, you will switch to editing mode and be able to refine and build your current montage. Let\'s switch to edition mode!',
             position : 'left'
           },
           //montage edit mode
-          {
-            element : '.left-column .column-contents',
-            intro : 'You are now in the edition mode - this column features your montage in its current state. You will be able to change the order of chunks by drag-and-drop and to edit their content independently from their original transcriptions.',
-            position : 'right'
-          },
           {
             element : '.right-column',
             intro : 'In edition mode, the right column features the transcription chunks to pick in order to compose your montage. They come from your transcription documents.',
@@ -1858,6 +1865,7 @@ angular.module('dictofullstackApp')
                 },
                 operation : function(){
                   $scope.viewSettings.showTime = false;
+                  $scope.viewSettings.showMenu = false;
                   var activeOk = $scope.active && $scope.active.metadata.type == 'transcription';
                   if(!activeOk){
                     $scope.setActive($scope.filesList.transcriptions[0]);
@@ -1877,6 +1885,7 @@ angular.module('dictofullstackApp')
                   return activeOk && $location.path().indexOf('edit/transcription') > 0 && $scope.viewSettings.showTime == true;
                 },
                 operation : function(){
+                  $scope.viewSettings.showMenu = false;
                   $scope.viewSettings.showTime = true;
                   $scope.viewSettings.viewAside = 'media';
                   var activeOk = $scope.active && $scope.active.metadata.type == 'transcription';
@@ -1912,6 +1921,7 @@ angular.module('dictofullstackApp')
                   return activeOk && $location.path().indexOf('edit/montage') > 0
                 },
                 operation : function(){
+                  $scope.viewSettings.showMenu = false;
                   var activeOk = $scope.active && $scope.active.metadata.type == 'montage';
                   if(!activeOk){
                     $scope.setActive($scope.filesList.montages[0])
@@ -1930,6 +1940,7 @@ angular.module('dictofullstackApp')
                   return $scope.viewSettings.viewAside == 'media';
                 },
                 operation : function(){
+                  $scope.viewSettings.showMenu = false;
                   $scope.viewSettings.viewAside = 'media';
                 }
               }]
@@ -1941,6 +1952,7 @@ angular.module('dictofullstackApp')
                   return $scope.viewSettings.viewAside == 'tags';
                 },
                 operation : function(){
+                  $scope.viewSettings.showMenu = false;
                   $scope.viewSettings.viewAside = 'tags';
                   $scope.viewSettings.showTags = true;
                 }
@@ -1953,6 +1965,7 @@ angular.module('dictofullstackApp')
               return $location.search().mode == 'edit';
             },
             operation : function(){
+              $scope.viewSettings.showMenu = false;
               $location.search('mode', 'edit');
             }
           }]
@@ -1964,6 +1977,7 @@ angular.module('dictofullstackApp')
               return $location.search().mode == 'preview';
             },
             operation : function(){
+              $scope.viewSettings.showMenu = false;
               $location.search('mode', 'preview');
             }
           }]
@@ -2067,15 +2081,15 @@ angular.module('dictofullstackApp')
             apply :[inTimecodeEdition]
           },
           {
-            steps : '38-50',
+            steps : '38-46',
             apply : [inMontageEdition, inMontagePreviewMode]
           },
           {
-            steps : '51-56',
+            steps : '47-51',
             apply : [inMontageEdition, inMontageEditMode]
           },
           {
-            steps : '57',
+            steps : '52',
             apply : [inMontageEdition, menuOpened]
           },
         ];

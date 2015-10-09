@@ -141,7 +141,7 @@
               <div
                 ng-if="item.contentEdited"
                 class="content-input-container animate-fast"
-                ng-dblclick="$event.stopPropagation()"
+                ng-dblclick="$event.stopPropagation();"
               >
                 <textarea
                   ng-model="item.content"
@@ -153,7 +153,7 @@
               <div
                 ng-if="!item.contentEdited"
                 ng-bind-html="renderMarkdownItem(item.content, $parent.searchTerm)"
-                ng-dblclick="$event.stopPropagation();toggleEdited(item)"
+                ng-dblclick="$event.stopPropagation();toggleEdited(item);$parent.mediaPlayToggle(false)"
               > </div>
 
               <!-- case tags -->

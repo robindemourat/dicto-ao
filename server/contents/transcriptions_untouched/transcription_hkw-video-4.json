@@ -17,6 +17,16 @@
                         "color": "#556dd9"
                   },
                   {
+                        "name": "Complex systems",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Climate change",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
                         "name": "Dick Forrister, President and CEO Internation Emission Trading Association, IETA",
                         "category": "speaker",
                         "color": "#556dd9"
@@ -32,9 +42,29 @@
                         "color": "#889b1b"
                   },
                   {
+                        "name": "Carbon mitigation",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
                         "name": "Barna Baràth, Vertis",
                         "category": "speaker",
                         "color": "#556dd9"
+                  },
+                  {
+                        "name": "Carbon market",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Political ambitions",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Leakage",
+                        "category": "theme",
+                        "color": "#ccc36e"
                   },
                   {
                         "name": "George Waldung-Wolfegg, Director Emissions Market, ICE Futures Europe",
@@ -57,9 +87,34 @@
                         "color": "#889b1b"
                   },
                   {
+                        "name": "Important meeting",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "IPCC",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Communications strategy",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
                         "name": "Achim Steiner, Executive Director UNEP United Nations Environment Programme",
                         "category": "speaker",
                         "color": "#556dd9"
+                  },
+                  {
+                        "name": "Financial economic crisis",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "United Nations",
+                        "category": "theme",
+                        "color": "#ccc36e"
                   },
                   {
                         "name": "Hamburg, Germany",
@@ -70,6 +125,31 @@
                         "name": "Thomas Ludwig, Managing Director DKRZ Deutsches Klimarechenzentrum",
                         "category": "speaker",
                         "color": "#556dd9"
+                  },
+                  {
+                        "name": "Computer processing components",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Climate simulation",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Computation and communication",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Scientifically mean",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Committee",
+                        "category": "theme",
+                        "color": "#ccc36e"
                   }
             ],
             "tagCategories": [
@@ -78,6 +158,9 @@
                   },
                   {
                         "name": "speaker"
+                  },
+                  {
+                        "name": "theme"
                   }
             ]
       },
@@ -85,7 +168,7 @@
             {
                   "begin": 128,
                   "end": 258,
-                  "content": "I was trying to show the complex system science and say that’s not actually not how complex systems operate. You don’t get anything in between. You either stay below a tipping point, at which point the system may be pushed but if you don’t push it any further, it will eventually relax down to the state that you knew, or if you go across that point, feedback mechanisms kick in that push it all the way up to another state and it splits. The technical term is that it bifurcates. You simply don’t see a spectrum in between. You see relaxing back down to the state it was in or you see it going up. Think of it this way. Here’s a simple analogy. If I draw out on the river here, the spring, and I’m in a kayak, kayaking down the spring. And I tip it a bit. It comes back. It doesn’t stay tipped because it has a mechanism to resettle itself. If I tip it a bit more, it comes back. If I tip it just a little bit more, I go completely under. So that’s a system. That kayak and myself form a system that has two stable states --> operate paddling and upside down with my head in water --> nothing in between. Going halfway down and lying on the water is not a stable state. It will either pop up or it will go down. That’s typical of a complex system. So the point I was trying to make is the climate may very well act like that. Right now we’re tipping it. This two degree guard rail you hear people talking about --> that could be like your canoe going over but still it comes back. So we stop. We get two degrees by 2100. By 2300 it’s dropping back down toward the Holocene. I think if you go four degrees or more, you’re under- water. The canoe is not going to come back up. Where that point is between the canoe popping up and the canoe going underwater, I think, is somewhere between two and four but I don’t know where it is between that. That’s going to require some more work. And we may never know precisely.",
+                  "content": "I was trying to show the complex system science and say that’s not actually not how complex systems operate. You don’t get anything in between. You either stay below a tipping point, at which point the system may be pushed but if you don’t push it any further, it will eventually relax down to the state that you knew, or if you go across that point, feedback mechanisms kick in that push it all the way up to another state and it splits. The technical term is that it bifurcates. You simply don’t see a spectrum in between. You see relaxing back down to the state it was in or you see it going up. Think of it this way. Here’s a simple analogy. If I draw out on the river here, the spring, and I’m in a kayak, kayaking down the spring. And I tip it a bit. It comes back. It doesn’t stay tipped because it has a mechanism to resettle itself. If I tip it a bit more, it comes back. If I tip it just a little bit more, I go completely under. So that’s a system. That kayak and myself form a system that has two stable states - operate paddling and upside down with my head in water - nothing in between. Going halfway down and lying on the water is not a stable state. It will either pop up or it will go down. That’s typical of a complex system. So the point I was trying to make is the climate may very well act like that. Right now we’re tipping it. This two degree guard rail you hear people talking about - that could be like your canoe going over but still it comes back. So we stop. We get two degrees by 2100. By 2300 it’s dropping back down toward the Holocene. I think if you go four degrees or more, you’re under- water. The canoe is not going to come back up. Where that point is between the canoe popping up and the canoe going underwater, I think, is somewhere between two and four but I don’t know where it is between that. That’s going to require some more work. And we may never know precisely.",
                   "beginSrtFormat": "00:02:08,000",
                   "endSrtFormat": "00:04:18,000",
                   "tags": [
@@ -98,11 +181,22 @@
                               "name": "Will Steffen, Australian National University Climate Change Institute, Member of the Anthropocene Working Group",
                               "category": "speaker",
                               "color": "#556dd9"
+                        },
+                        {
+                              "name": "Complex systems",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate change",
+                              "category": "theme",
+                              "color": "#ccc36e"
                         }
                   ],
                   "tagCategories": [
                         "place",
-                        "speaker"
+                        "speaker",
+                        "theme"
                   ]
             },
             {
@@ -126,11 +220,17 @@
                               "name": "Carbon Expo, Global Carbon Market Fair and Conference",
                               "category": "place",
                               "color": "#889b1b"
+                        },
+                        {
+                              "name": "Carbon mitigation",
+                              "category": "theme",
+                              "color": "#ccc36e"
                         }
                   ],
                   "tagCategories": [
                         "speaker",
-                        "place"
+                        "place",
+                        "theme"
                   ]
             },
             {
@@ -154,11 +254,17 @@
                               "name": "Carbon Expo, Global Carbon Market Fair and Conference",
                               "category": "place",
                               "color": "#889b1b"
+                        },
+                        {
+                              "name": "Carbon market",
+                              "category": "theme",
+                              "color": "#ccc36e"
                         }
                   ],
                   "tagCategories": [
                         "speaker",
-                        "place"
+                        "place",
+                        "theme"
                   ]
             },
             {
@@ -182,17 +288,23 @@
                               "name": "Carbon Expo, Global Carbon Market Fair and Conference",
                               "category": "place",
                               "color": "#889b1b"
+                        },
+                        {
+                              "name": "Carbon market",
+                              "category": "theme",
+                              "color": "#ccc36e"
                         }
                   ],
                   "tagCategories": [
                         "speaker",
-                        "place"
+                        "place",
+                        "theme"
                   ]
             },
             {
                   "begin": 609,
                   "end": 783,
-                  "content": "The industry and the power companies that are also part of this market want to have very clear goals. They want to know exactly what the political ambitions are because once they know what the political ambition is, then they can adjust their investment and their plans accordingly. The problem at the moment is nobody dares to say anything because everybody is very worried about their jobs. There are three fundamental issues at the moment in the carbon markets. The number one issue is the value for jobs. If you have a very high carbon price, that means you have higher electricity price for consumers and for industry, and you also have higher production costs for industry. When you’re producing, say, cement or steel or anything else, then if you have high carbon price, then the end products will be more. Some of the industry are saying that short term it will result in job losses.\nThe second issue is that when you are very ambitious about the environment, and hence you have very high carbon price, then (13:49) from the old industry will move into new industries, from old power into renewable, from inefficient production facilities into state of the art production facilities. That’s the second issue. This transfer of (14:03) from old to new is a very sensitive topic because the incumbent industries actually are very strong in lobbying in most cases. It’s not the case obviously for all cases but there’s a lot of lobbying going on by old industry of not to be too ambitious for the environment. The third issue is that this is great. This is our little cap for the EU, right? But we don’t live in the world of the EU. The boundaries don’t stop. We want to have cap but climate change and, more importantly, industry is global today. The third question that is on politicians’ agenda is: How do actually create ambitious environmental goals without risking that actually our factories are simply taken and moved somewhere else into China or other parts of Asia or basically from out of the EU, even to the East Ukraine or Russia, who don’t have the same ambitious goals? In terms of the emission trading system, the way this is solved is that companies that are very susceptible to competition from outside get a lot of free allowances where you could just import the end product from neighboring countries or from overseas. Those companies get free allowances. It’s called leakage. That’s one of the solutions for keeping high environmental goals and yet protecting interest..",
+                  "content": "The industry and the power companies that are also part of this market want to have very clear goals. They want to know exactly what the political ambitions are because once they know what the political ambition is, then they can adjust their investment and their plans accordingly. The problem at the moment is nobody dares to say anything because everybody is very worried about their jobs. There are three fundamental issues at the moment in the carbon markets. The number one issue is the value for jobs. If you have a very high carbon price, that means you have higher electricity price for consumers and for industry, and you also have higher production costs for industry. When you’re producing, say, cement or steel or anything else, then if you have high carbon price, then the end products will be more. Some of the industry are saying that short term it will result in job losses.\nThe second issue is that when you are very ambitious about the environment, and hence you have very high carbon price, then from the old industry will move into new industries, from old power into renewable, from inefficient production facilities into state of the art production facilities. That’s the second issue. This transfer from old to new is a very sensitive topic because the incumbent industries actually are very strong in lobbying in most cases. It’s not the case obviously for all cases but there’s a lot of lobbying going on by old industry of not to be too ambitious for the environment. The third issue is that this is great. This is our little cap for the EU, right? But we don’t live in the world of the EU. The boundaries don’t stop. We want to have cap but climate change and, more importantly, industry is global today. The third question that is on politicians’ agenda is: How do actually create ambitious environmental goals without risking that actually our factories are simply taken and moved somewhere else into China or other parts of Asia or basically from out of the EU, even to the East Ukraine or Russia, who don’t have the same ambitious goals? In terms of the emission trading system, the way this is solved is that companies that are very susceptible to competition from outside get a lot of free allowances where you could just import the end product from neighboring countries or from overseas. Those companies get free allowances. It’s called leakage. That’s one of the solutions for keeping high environmental goals and yet protecting interest..",
                   "beginSrtFormat": "00:10:09,000",
                   "endSrtFormat": "00:13:03,000",
                   "tags": [
@@ -210,11 +322,27 @@
                               "name": "Carbon Expo, Global Carbon Market Fair and Conference",
                               "category": "place",
                               "color": "#889b1b"
+                        },
+                        {
+                              "name": "Political ambitions",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Carbon market",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Leakage",
+                              "category": "theme",
+                              "color": "#ccc36e"
                         }
                   ],
                   "tagCategories": [
                         "speaker",
-                        "place"
+                        "place",
+                        "theme"
                   ]
             },
             {
@@ -238,11 +366,17 @@
                               "name": "Carbon Expo, Global Carbon Market Fair and Conference",
                               "category": "place",
                               "color": "#889b1b"
+                        },
+                        {
+                              "name": "Carbon market",
+                              "category": "theme",
+                              "color": "#ccc36e"
                         }
                   ],
                   "tagCategories": [
                         "speaker",
-                        "place"
+                        "place",
+                        "theme"
                   ]
             },
             {
@@ -266,11 +400,17 @@
                               "name": "Carbon Expo, Global Carbon Market Fair and Conference",
                               "category": "place",
                               "color": "#889b1b"
+                        },
+                        {
+                              "name": "Carbon market",
+                              "category": "theme",
+                              "color": "#ccc36e"
                         }
                   ],
                   "tagCategories": [
                         "speaker",
-                        "place"
+                        "place",
+                        "theme"
                   ]
             },
             {
@@ -294,17 +434,23 @@
                               "name": "Carbon Expo, Global Carbon Market Fair and Conference",
                               "category": "place",
                               "color": "#889b1b"
+                        },
+                        {
+                              "name": "Carbon market",
+                              "category": "theme",
+                              "color": "#ccc36e"
                         }
                   ],
                   "tagCategories": [
                         "speaker",
-                        "place"
+                        "place",
+                        "theme"
                   ]
             },
             {
                   "begin": 1018,
                   "end": 1173,
-                  "content": "46th Opening Session of the Intergovernmental Panel on Climate Change, WMO World Meteorological Organisation, Geneva, Switzerland\n\nGood morning. It’s my pleasure to open this session, and I’m particularly happy to have Mr. Achim Steiner, the Executive Director of UNEP with us, also Mr. Jerry Lengoasa, WMO Deputy Secretary General; Mr. Florin Vladu from the UNFCCC Secretariat. And I’m very happy to welcome you all colleagues, distinguished delegates to this IPCC 46th session of the bureau meeting.\n\nI do believe this is an extremely important meeting because it’s taking place at a stage when we are reaching the finalization and completion of the fifth assessment report. We also know that this particular bureau meeting has been mandated by the panel to deal with a number of topics that clearly are going to be important and which would be fed into the next panel meeting at the end of this year. I believe that there are several subjects that we’re going to discuss today that have great significance for the IPCC communications strategy that certainly will come up for discussion. And this is something that the panel as a whole has mandated the bureau should deal with so that the executive committee of the IPCC can implement our communications strategy. I think communications are going to play an extremely important role, a growing role in the future. I still believe that the efforts and the resources that are being devoted to communications in the IPCC are not quite adequate. We have to find ways by which we can increase them. There are many other organizations that are in the business of getting out some form of assessment or the other. They clearly devote a much larger percentage of their resources to communications. I can give you the example of what happened with the millennium assessment report. And there are many other such efforts that I could also quote for your reference.",
+                  "content": "Good morning. It’s my pleasure to open this session, and I’m particularly happy to have Mr. Achim Steiner, the Executive Director of UNEP with us, also Mr. Jerry Lengoasa, WMO Deputy Secretary General; Mr. Florin Vladu from the UNFCCC Secretariat. And I’m very happy to welcome you all colleagues, distinguished delegates to this IPCC 46th session of the bureau meeting.\n\nI do believe this is an extremely important meeting because it’s taking place at a stage when we are reaching the finalization and completion of the fifth assessment report. We also know that this particular bureau meeting has been mandated by the panel to deal with a number of topics that clearly are going to be important and which would be fed into the next panel meeting at the end of this year. I believe that there are several subjects that we’re going to discuss today that have great significance for the IPCC communications strategy that certainly will come up for discussion. And this is something that the panel as a whole has mandated the bureau should deal with so that the executive committee of the IPCC can implement our communications strategy. I think communications are going to play an extremely important role, a growing role in the future. I still believe that the efforts and the resources that are being devoted to communications in the IPCC are not quite adequate. We have to find ways by which we can increase them. There are many other organizations that are in the business of getting out some form of assessment or the other. They clearly devote a much larger percentage of their resources to communications. I can give you the example of what happened with the millennium assessment report. And there are many other such efforts that I could also quote for your reference.",
                   "beginSrtFormat": "00:16:58,000",
                   "endSrtFormat": "00:19:33,000",
                   "tags": [
@@ -322,17 +468,33 @@
                               "name": "46th Opening Session of the Intergovernmental Panel on Climate Change, WMO World Meteorological Organisation",
                               "category": "place",
                               "color": "#889b1b"
+                        },
+                        {
+                              "name": "Important meeting",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "IPCC",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Communications strategy",
+                              "category": "theme",
+                              "color": "#ccc36e"
                         }
                   ],
                   "tagCategories": [
                         "speaker",
-                        "place"
+                        "place",
+                        "theme"
                   ]
             },
             {
                   "begin": 1182,
                   "end": 1253,
-                  "content": "46th Opening Session of the\nIntergovernmental Panel on Climate Change\nWMO World Meteorological Organisation, Geneva, Switzerland\n\nIn the context of the United Nations, clearly we also have the challenge that following the release of AR4 and some of the debates around some elements of the report but also the broader political setting. It was not only characterized by the financial economic crisis that has, in a sense, preoccupied so many countries in the last few years, but also by the question of how will further science further accelerate the confidence, the momentum and the willingness of countries to step beyond the current comfort zone of agreeing internationally on actions to respond to that scientific evidence. Florin, to my right, is representing the process within which governments are negotiating that. We in the WMO and in UNEP, I think, represent within the United Nations system two very important platforms on which the continuous assessment not only of the emerging science but also of the policy responses, and not only in an idealized state but in the context of the real world, of the geopolitical reality, of the geo-economic realities, and also of the legacy realities which continue to hamper our negotiations internationally, need to be brought forward.",
+                  "content": "In the context of the United Nations, clearly we also have the challenge that following the release of AR4 and some of the debates around some elements of the report but also the broader political setting. It was not only characterized by the financial economic crisis that has, in a sense, preoccupied so many countries in the last few years, but also by the question of how will further science further accelerate the confidence, the momentum and the willingness of countries to step beyond the current comfort zone of agreeing internationally on actions to respond to that scientific evidence. Florin, to my right, is representing the process within which governments are negotiating that. We in the WMO and in UNEP, I think, represent within the United Nations system two very important platforms on which the continuous assessment not only of the emerging science but also of the policy responses, and not only in an idealized state but in the context of the real world, of the geopolitical reality, of the geo-economic realities, and also of the legacy realities which continue to hamper our negotiations internationally, need to be brought forward.",
                   "beginSrtFormat": "00:19:42,000",
                   "endSrtFormat": "00:20:53,000",
                   "tags": [
@@ -350,17 +512,28 @@
                               "name": "46th Opening Session of the Intergovernmental Panel on Climate Change, WMO World Meteorological Organisation",
                               "category": "place",
                               "color": "#889b1b"
+                        },
+                        {
+                              "name": "Financial economic crisis",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "United Nations",
+                              "category": "theme",
+                              "color": "#ccc36e"
                         }
                   ],
                   "tagCategories": [
                         "speaker",
-                        "place"
+                        "place",
+                        "theme"
                   ]
             },
             {
                   "begin": 1259,
                   "end": 1486,
-                  "content": "So the structure of the parallel computer is basically not much different to the structure of the regular computer except that we have thousand of components which are identical. So you have a processor, you have a main memory, then of course we also have disks. In the case of the cassette, the structure of the processor is that we have more than 8,000 so called processor cores, 8,000 acting components in the end. Where you and your computer have one or two and the biggest computer at the moment already have more than 1,000,000 processor cores and by the end of the decade we expect to see computers with this so called ex-flops performance. Which will have in the range of 1 billion of processing components. When it comes to the programs, the procedures are as it follows, you have a program that works on a set of data and does some computation. For example if you look at the climate simulation, you usually have to globe, you make a grip around the globe that has several levels and that gives you several tens of thousands, a hundred of thousands of points. And for you to get points, you compute what's going on there climate wise. Now when you bring this on a regular computer, then you have one processor to earn the computer for all the points. When you bring it on a parallel computer, what you do is, that you subdivide this whole amount, this whole set of points that you have on your grid then subdivide it for the individual processors. So, imagine that you have, for example, 1 million points in your environment there as a globe, and you have 1 thousand processors, then this means that each processor usually gets in a range of 1 thousand of these points. (04:48.4) and of course you have one processor computing this part of the globe and the other one computing that part. So, these parts, there will be parts which are neighboring and when you compute the 1 thousand points, there will always be points directly at the boundary of the region that belongs to that individual processor. That means for the boundary points, it will be necessary that in order to compute the new value, this is a step wise discreet time step simulation, what we do for a computation of a new value of an individual point. You have to see what the points of the neighbors are. Sometimes, one of the neighbor or several neighbors will not be in the region that you handle but it will be in a neighboring region. So this processor has to ask its neighboring processor to send him the value of these individual points. Basically that means that this takes time to do that. You're in this time, there's no computation going on that its communication. And the ratio between computation and communication defines the efficiency of your whole program. So it would be that best to have computation only and no communication at all. In really for this type of application, this is not possible. And when it comes to using ever more powerful computers, we are facing the problem that the computing elements get more and more but the grid size of your globe might stay more else constant for a while at least. So for example if you have the one million points of the one thousand processors, they have one thousand points per processor, that's easy. That's a lot of computation that you do and some communication. But if you have a bigger computer with one hundred thousand processing elements, one hundred thousand cores, then you have only 10 points per core.  Which means that the amount of computation that you have to do is very, very small but the communication that you have to do in order to get this job done is big. Your foremost each point you have to ask your neighboring processors, \"Hey, what's the value of your points?\" And that means computation drops to zero, communication is extremely high. This is just like in a badly organized bureaucracy, I would say. And that means the overall efficiency is low. You invest more, more money. You have more; more processing elements but the computation time, the completion time of your program will not go down anymore. So it will not speed up anymore. (07:35.2) at some point in time it reaches the limit where further paralyzation would not bring anymore benefit.",
+                  "content": "So the structure of the parallel computer is basically not much different to the structure of the regular computer except that we have thousand of components which are identical. So you have a processor, you have a main memory, then of course we also have disks. In the case of the cassette, the structure of the processor is that we have more than 8,000 so called processor cores, 8,000 acting components in the end. Where you and your computer have one or two and the biggest computer at the moment already have more than 1,000,000 processor cores and by the end of the decade we expect to see computers with this so called ex-flops performance. Which will have in the range of 1 billion of processing components. When it comes to the programs, the procedures are as it follows, you have a program that works on a set of data and does some computation. For example if you look at the climate simulation, you usually have to globe, you make a grip around the globe that has several levels and that gives you several tens of thousands, a hundred of thousands of points. And for you to get points, you compute what's going on there climate wise. Now when you bring this on a regular computer, then you have one processor to earn the computer for all the points. When you bring it on a parallel computer, what you do is, that you subdivide this whole amount, this whole set of points that you have on your grid then subdivide it for the individual processors. So, imagine that you have, for example, 1 million points in your environment there as a globe, and you have 1 thousand processors, then this means that each processor usually gets in a range of 1 thousand of these points. And of course you have one processor computing this part of the globe and the other one computing that part. So, these parts, there will be parts which are neighboring and when you compute the 1 thousand points, there will always be points directly at the boundary of the region that belongs to that individual processor. That means for the boundary points, it will be necessary that in order to compute the new value, this is a step wise discreet time step simulation, what we do for a computation of a new value of an individual point. You have to see what the points of the neighbors are. Sometimes, one of the neighbor or several neighbors will not be in the region that you handle but it will be in a neighboring region. So this processor has to ask its neighboring processor to send him the value of these individual points. Basically that means that this takes time to do that. You're in this time, there's no computation going on that its communication. And the ratio between computation and communication defines the efficiency of your whole program. So it would be that best to have computation only and no communication at all. In really for this type of application, this is not possible. And when it comes to using ever more powerful computers, we are facing the problem that the computing elements get more and more but the grid size of your globe might stay more else constant for a while at least. So for example if you have the one million points of the one thousand processors, they have one thousand points per processor, that's easy. That's a lot of computation that you do and some communication. But if you have a bigger computer with one hundred thousand processing elements, one hundred thousand cores, then you have only 10 points per core.  Which means that the amount of computation that you have to do is very, very small but the communication that you have to do in order to get this job done is big. Your foremost each point you have to ask your neighboring processors, \"Hey, what's the value of your points?\" And that means computation drops to zero, communication is extremely high. This is just like in a badly organized bureaucracy, I would say. And that means the overall efficiency is low. You invest more, more money. You have more; more processing elements but the computation time, the completion time of your program will not go down anymore. So it will not speed up anymore. At some point in time it reaches the limit where further paralyzation would not bring anymore benefit.",
                   "beginSrtFormat": "00:20:59,000",
                   "endSrtFormat": "00:24:46,000",
                   "tags": [
@@ -373,11 +546,27 @@
                               "name": "Thomas Ludwig, Managing Director DKRZ Deutsches Klimarechenzentrum",
                               "category": "speaker",
                               "color": "#556dd9"
+                        },
+                        {
+                              "name": "Computer processing components",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate simulation",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Computation and communication",
+                              "category": "theme",
+                              "color": "#ccc36e"
                         }
                   ],
                   "tagCategories": [
                         "place",
-                        "speaker"
+                        "speaker",
+                        "theme"
                   ]
             },
             {
@@ -396,11 +585,22 @@
                               "name": "Hamburg, Germany",
                               "category": "place",
                               "color": "#889b1b"
+                        },
+                        {
+                              "name": "Scientifically mean",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Committee",
+                              "category": "theme",
+                              "color": "#ccc36e"
                         }
                   ],
                   "tagCategories": [
                         "speaker",
-                        "place"
+                        "place",
+                        "theme"
                   ]
             }
       ]

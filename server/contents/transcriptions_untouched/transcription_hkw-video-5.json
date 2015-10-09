@@ -1,0 +1,1186 @@
+{
+      "metadata": {
+            "title": "HKW - video 5",
+            "slug": "hkw-video-5",
+            "mediaUrl": "https://vimeo.com/133782084",
+            "type": "transcription",
+            "tags": [
+                  {
+                        "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                        "category": "speaker",
+                        "color": "#556dd9"
+                  },
+                  {
+                        "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                        "category": "speaker",
+                        "color": "#556dd9"
+                  },
+                  {
+                        "name": "Simulation of Copenhagen meeting",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Group Climate",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Negotiation simulation",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "United Nations",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Issue-based negotiation",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Anthropocene",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Public",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Critical zone",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Halldór Thorgeirsson, Director for Implementation Strategy, United Nations Framework Convention on Climate Change",
+                        "category": "speaker",
+                        "color": "#556dd9"
+                  },
+                  {
+                        "name": "Next simulation",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Governance boundaries",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Social contract",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Individual level",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Adaptation Committee",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Global level",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Smart data",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Statistics",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Google Maps",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Screen",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Disenfrachised",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Visual of climate",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Bangladesh",
+                        "category": "place",
+                        "color": "#889b1b"
+                  },
+                  {
+                        "name": "Geographical distance",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Illusory space and time distance",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Bolivia",
+                        "category": "place",
+                        "color": "#889b1b"
+                  },
+                  {
+                        "name": "Sense of immediacy",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Cold War",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Human war",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Gaia",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Postpone",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Responsability",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Industralized countries",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Anglocene",
+                        "category": "speaker",
+                        "color": "#556dd9"
+                  },
+                  {
+                        "name": "Pachamama",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Governance",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Calamity",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Climate Convention",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Climate disasters",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Paris, France",
+                        "category": "place",
+                        "color": "#889b1b"
+                  },
+                  {
+                        "name": "Lack of awareness",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Holocene",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "War",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Negotiations",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Diplomacy",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Conflicts",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Policy",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Transition",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Historical responsability",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "National boundaries",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Developing countries",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Reconciliation",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Future",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Nuremberg solution",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Planetary solutions",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  }
+            ],
+            "tagCategories": [
+                  {
+                        "name": "speaker"
+                  },
+                  {
+                        "name": "theme"
+                  },
+                  {
+                        "name": "place"
+                  }
+            ]
+      },
+      "data": [
+            {
+                  "content": "Christiana Figueres: \nSo Professor, are you going to explain to us? I’m here in total ignorance. I’m here on this gentleman’s recommendation, but in total ignorance. So are you going to explain to us your view here about the anthropocene and what we should be doing and how we should be doing it?\n\nBruno Latour: \nNo. I’m here to learn from you.\n\nChristiana Figueres: \nNo, no, no. That’s the wrong interpretation. [laughs]\n\nBruno Latour: \nFirst, you are here in the school which is also the school of Laurence Tubiana, who is the ambassador for the French climate. So you are in the school where the sort of thing you do is well known and where we are actually working a lot. We did in 2011 a simulation of the Copenhagen meeting, where we did it with 300 students.\nChristiana Figueres:\nIn 2011?\n\nBruno Latour: \nYeah, two years later. We did the Copenhagen meeting in a better shape, so to speak.\n\nChristiana Figueres: \nYeah, but that’s not fair because then you had two years to learn all the mistakes.\n\nBruno Latour: \nBut we wanted to test...\n\nChristiana Figueres: \nWith hindsight, one is always so much wiser.\n\nBruno Latour: \nBut it was very moving to the students to be able to be play. And we played absolutely marvelously. There was a beautiful film which was done about this simulation, which was in fact... We called it a simulation and not...\n\nChristiana Figueres: \nThat’s perfect.",
+                  "begin": 151,
+                  "end": 241.6,
+                  "beginSrtFormat": "00:02:31,000",
+                  "endSrtFormat": "00:04:01,600",
+                  "tags": [
+                        {
+                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Simulation of Copenhagen meeting",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "theme"
+                  ]
+            },
+            {
+                  "content": "Bruno Latour: It was a simulation and not just a role playing film and the audience were so moved by the experience that they created a group called Climate, which is a group of young experts throughout the world. I think they have now 100 countries in it, which was sort of an amazing event. So because of my work and because of that event, we decided to do in 2015 another simulation, this time in May before the big meeting, and this is where we should learn from you. I don’t think it can go in the opposite direction, but we are interested in simulating alternative ways of negotiating on two dimensions. That is one where we try to be who is representing the issues, that is, the stakeholders, not necessarily nation states, the one that you encounter constantly. And how do you represent the issue itself?\n\nChristiana Figueres: You are then... I’m assuming you are relieving yourselves of the constraints of the United Nations. Right? You’re saying, “Okay, what could this negotiation look like if it weren’t held by the United Nations?” because as long as it’s held by the United Nations, it has to be within the nations’ boundaries.\n\nBruno Latour: Right.\n\nChristiana Figueres: So you’re saying, “Okay, now let’s do a thought experiment. What would this negotiation look like if it were actually issue-based as opposed to nation-based?”\nBruno Latour: That’s exactly right.\n\nChristiana Figueres: Can we do the Paris agreement according to your model? Because I think it would be easier. [laughs]\n\nBruno Latour: Personally, I think we don’t know that because the whole thing starts from the realization that people, the general public is quietist. They are concerned but not that much.",
+                  "begin": 249.124,
+                  "end": 370.441,
+                  "beginSrtFormat": "00:04:09,124",
+                  "endSrtFormat": "00:06:10,441",
+                  "tags": [
+                        {
+                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Group Climate",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Negotiation simulation",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "United Nations",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Issue-based negotiation",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "theme"
+                  ]
+            },
+            {
+                  "content": "Christiana Figueres: Oh, yes.\n\nBruno Latour: So the big problem is how do you make people interested in all these issues and of course the anthropocene? We are excited about the anthropocene, but every time I meet someone, I still redefine what the anthropocene is because people don’t know what it is. So there is a gap between the urgency which is felt by diplomats and by scientists and the public. So we think that in order to bridge that gap, you have to disaggregate the aggregation of issues. Of course, when you arrive at two degrees, when you arrive at this big decision which is highly technical that you have to deal with and that you run in the framework of the UN, it has all these advantages but it has also the disadvantage that people don’t necessarily follow that. So you need to disaggregate.\nChristiana Figueres: So when are you going to do this?\nBruno Latour: In the last week of May 2015, before the big meeting in Paris, the scientific meeting in July. I think it is in July. We think that by disaggregating the issue and decomposing the issue, you also interest most people. The geophysicists have this very nice concept of critical zones, which is a way of talking about sort of the vertical thing from climate to rocks and water catchment, which is a very nice way for people to... It’s easy to understand critical zone because it’s more practical than the whole earth and the whole climate. So they are very excited by that and the international network of critical zone studies, which is another one for ecosystem. And we want to see what it is when you negotiate critical zone by critical zone instead of immediately taking the whole planet on your shoulder, because when you take the whole planet on your shoulder, you’re crushed.",
+                  "begin": 370.441,
+                  "end": 487,
+                  "beginSrtFormat": "00:06:10,441",
+                  "endSrtFormat": "00:08:07,000",
+                  "tags": [
+                        {
+                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Anthropocene",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Public",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Critical zone",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "theme"
+                  ]
+            },
+            {
+                  "content": "Christiana Figueres: No, I’m still standing.\n\nBruno Latour: [laughs] Mrs. Global Climate, right?\n\nChristiana Figueres: [laughs]\n\nBruno Latour: It’s probably because you’re an architect, so you diffuse the forces.\n\nChristiana Figueres: So I’m asking when this is because I’m actually quite intrigued. I think Halder and I should come for a date. [laughs] To make us very jealous and see how our negotiations couldn’t be if we didn’t have the United Nations in between.\n\nBruno Latour: Well, that’s fabulous. We will have a big event if you come to Paris for...\n\nChristiana Figueres: That would be a very interesting little experience.\n\nBruno Latour: We just have the Pentecost, so you could come like the spirit itself, because the Holy Spirit arrives on Sunday. Monday is [0:06:46] and Tuesday is the beginning of a simulation. So if you are introducing or concluding the simulation, it would just be fabulous.\n\nChristiana Figueres: Depends on how we’re doing in May, right?\n\nBruno Latour: I’m sure you have a quiet year.\n\nChristiana Figueres: Yeah, very quiet.\n\nBruno Latour: So it’s the last week of May.\n\nHalldór Thorgeirsson: Actually, this climate issue is really pushing against the nation state concept as much as anything else.\n\nChristiana Figueres: Exactly.\n\nHalldór Thorgeirsson: And so even though the nation state, of course, is the foundation of the United Nations because that’s what they had, the climate problem is really moving them out of that. And so even though we need to negotiate within those constraints, the problem itself doesn’t fit. And that’s something that people are realizing a bit, step by step.\n\nBruno Latour: So how much of this shifting to the notion of commons? Because they become very popular.\n\nChristiana Figueres: It doesn’t really prevail. It’s not something that is discussed. It’s very much subterranean, I think.",
+                  "begin": 487,
+                  "end": 601.499,
+                  "beginSrtFormat": "00:08:07,000",
+                  "endSrtFormat": "00:10:01,499",
+                  "tags": [
+                        {
+                              "name": "Halldór Thorgeirsson, Director for Implementation Strategy, United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Next simulation",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "United Nations",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "theme"
+                  ]
+            },
+            {
+                  "content": "Christiana Figueres: I think there is those who stand away from the issues that are being discussed and look at it systemically can understand that my famous little concentric circle thing that we have moved completely away from the family unit beyond the tribe, beyond the city state. We’re now within the boundary of the nation state and pushing beyond that boundary to the planet as the boundary of many issues that have to do with governance, which doesn’t mean that we will exempt all of the other areas, all of the other levels that are within from decision making responsibility. But it does mean that we are, and I’ve long thought that actually climate change is only an exercise in beginning to build the muscle that humanity has to go beyond the nation state to the global level of decision making and of governance.\nAnd it’s actually very good news that we’re in 2014 only and we’re already pushing beyond the nation state, because I think in terms of the social contract that we’re going to build this century, the social contract needs to be at that level. And interestingly enough, when you look at it through the climate which is not only the only lens, because I think we will have in this century many other issues that need to be decided and governed at that level. But interestingly enough, what I think you can also see is that by the time you get to the global level of governance, there is almost a push back that you begin to see how you have to integrate harmoniously all of the other levels that are inside.",
+                  "begin": 603.399,
+                  "end": 728.81,
+                  "beginSrtFormat": "00:10:03,399",
+                  "endSrtFormat": "00:12:08,810",
+                  "tags": [
+                        {
+                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Governance boundaries",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Social contract",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "theme"
+                  ]
+            },
+            {
+                  "content": "Christiana Figueres: So climate is a very, very good example about how decisions that are made at the global level need to be tested for their impact at the individual level. How well are we actually guaranteeing the survival of individuals, of families, of communities? Because if we’re not doing that at the very, very smallest level, then whatever decisions we’re making at the global level are of no consequence or are earned.\nBruno Latour: Specifically because it’s zoomed from the individual. The earth as a whole is a bit bigger than the individual sensitivity. And that’s one that the nation state sort of accumulated locally. That is very difficult to expand fast. And I think we should also disaggregate. So that’s the sort of thing we’re interested in, because when you shift too fast to the global, the globe is still very much an abstraction as long as you have not made it sensitive. It’s so similar.\n\nChristiana Figueres: To the individual.\n\nBruno Latour: To the individual.\n\nChristiana Figueres: Right.\n\nBruno Latour: So this is why the anthropocene project in Berlin is so important. This is why you need theatre. I myself did a play which is going to be played in New York, I think in September. And that sort of thing and the whole set and of course films, so that you can do this...\n\nChristiana Figueres: The integration.\n\nBruno Latour: But so far, it’s a huge gap between...\n\nChristiana Figueres: There is a huge gap.\n\nBruno Latour: And that’s where the anthropocene is a disputed thing because the anthropocene is simultaneously the whole active as a geological force but also you risk of losing your own individual feeling because the anthropos is everybody.\nChristiana Figueres: I know. You can’t lose it, right? I mean the challenge. It’s a double challenge in the sense that we have to go beyond the nation to the globe, but inasmuch as we do that, you have to be able to constantly check back to the individual level, right?",
+                  "begin": 728.81,
+                  "end": 858.645,
+                  "beginSrtFormat": "00:12:08,810",
+                  "endSrtFormat": "00:14:18,645",
+                  "tags": [
+                        {
+                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Individual level",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Anthropocene",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "theme"
+                  ]
+            },
+            {
+                  "content": "Bruno Latour: You have to bring the globe back in.\n\nChristiana Figueres: You have to bring the global decisions back in.\n\nBruno Latour: That’s difficult.\n\nChristiana Figueres: But it’s unavoidable. Right? It’s completely unavoidable. So I remember when the Climate Convention created something that is called the Adaptation Committee, which is integrated by representatives of governments, of evenly distributed geographically, etc. And the mandate for the Adaptation Committee is to function as sort of the control tower of the airport, control tower for everything that is going on, supporting adaptive capacity. And I remember that at the opening of Adaptation Committee, when I was asked to address them, I said, “Okay, here’s your challenge.” They are there, sitting there at that highest level, looking at everything that is going on just on adaptation, not on mitigation. And I said, “Here’s your challenge.” All they will do. They will do policy. They will do monitoring. They will be monitoring both policies at national and international level. They will be monitoring finance flows to adaptation. They will be holding their finger on the poles of how well we are doing. But my challenge to them was “As you do all of this at a global level, you have to ensure that the woman who climbed a tree to give birth, because the ground was flooded under her feet, that she is benefited by everything that you’re doing.”",
+                  "begin": 858.645,
+                  "end": 963.238,
+                  "beginSrtFormat": "00:14:18,645",
+                  "endSrtFormat": "00:16:03,238",
+                  "tags": [
+                        {
+                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Adaptation Committee",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Global level",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "theme"
+                  ]
+            },
+            {
+                  "content": "Christiana Figueres: And it’s a real story of this woman who had to climb a tree. You were there when the minister talked about it. Then the minister from Africa said, “I witnessed a woman having to climb a tree to give birth because the ground was flooded.” Now, whatever the Adaptation Committee is doing at this big picture level, they have to ensure that this woman standing there, a placeholder and a symbol for the individual, is actually going to be benefited because if we’re not doing that, then there’s no point to everything we do. So it really is that challenge of how do we go to the global but how do we ensure and test ourselves for the impact of what we’re doing at the individual level? It’s no different than saying we have to keep our feet on the ground and our eyes on the stars. And we are able to do that as human beings. So now we have to do that also in policy and in decision making and in governance.\nBruno Latour: Right. We are slightly helped by the advent of the type of data, the smart data, which allows in a way... which are one of the things we are very interested in here, to look simultaneously at the individual and at the aggregate as one, which was impossible before.\n\nChristiana Figueres: How do you do that?\n\nBruno Latour: Well, because now if you look around, if you follow the blogs, you can simultaneously have this blog, which is one individual blog, but also simultaneously the aggregate blogs. There are lots of companies who are doing this. And before, you had to choose. Either you had statistics or you had stories, individual stories of the woman on the tree or aggregated. And it was much more difficult before to mix the two. So it’s one of the things we are interested in for this simulation but also for research. And of course that’s one of the big things in territorial agencies for these people there is that smart data allow to simultaneously have synoptically a view which is of the individual and of the aggregate, which was impossible before, because when you have statistics, you lose...",
+                  "begin": 963.238,
+                  "end": 1091.87,
+                  "beginSrtFormat": "00:16:03,238",
+                  "endSrtFormat": "00:18:11,870",
+                  "tags": [
+                        {
+                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Adaptation Committee",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Individual level",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Smart data",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "theme"
+                  ]
+            },
+            {
+                  "content": "Christiana Figueres: You lose the granularity.\n\nBruno Latour: Yeah. You could possibly trace back to the original interview but you will never have the practice to do it. Now it’s very easy to do. So one of the bigger challenges for all these mappings and cartography and issue scenarization is to render that easy, including for the African women with the telephone. But now you only have to do that, which is simultaneously to... This is also what we want to do with the music event simultaneously to hear the complete sound and also to zoom in one individual sound, because that’s the novelty which the nation state never actually well did because the nation states are all sort of not exactly dinosaurs but they are old animals from the time of statistics.\nChristiana Figueres: We have a few new states that are not dinosaurs.\n\nBruno Latour: But the one you have it’s a multinational, which are states in a way.\n\nChristiana Figueres: So why does the nation state not do that?\n\nBruno Latour: Because the states are built around the notion of statistics. And maybe I’m talking as a French here. The French state has a statistical view of things. So it is geographically delineated and statistical. But in a way, technically this is our data because we can have a completely non-bounded connected network basically. But you can also zoom in and out of individual blogs or even under individual contribution and simultaneously have the aggregate. Before, you had to choose. Are you an anthropologist studying one village in Africa or are you a statistician studying the economy of Africa? Now you don’t have to choose. And that will be an enormous challenge in the composition of this question that you said. Actually, it is crucial in that.",
+                  "begin": 1091.87,
+                  "end": 1212.799,
+                  "beginSrtFormat": "00:18:11,870",
+                  "endSrtFormat": "00:20:12,799",
+                  "tags": [
+                        {
+                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Individual level",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Statistics",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "theme"
+                  ]
+            },
+            {
+                  "content": "Christiana Figueres: I’m trying to figure out how this looks. Will you be able to... Is this visual?\n\nBruno Latour: It is very visual.\n\nChristiana Figueres: It’s very visual. So on a screen, you will be able to see the aggregate level, and then I’m assuming that you can... sort of like Google Maps. It’s the same principle as Google Maps that you can have a complete picture and then you can click and zoom in until you see the person walking down the street.\n\nBruno Latour: You can only do that in some way with Google, but what would be interesting in my opinion is that you can already do that in many companies, do that while scanning the web, and you can have the individual component of an aggregate on the same screen.\n\nChristiana Figueres: Oh, on the same screen.\n\nBruno Latour: Yeah. It is synoptically visible.\n\nChristiana Figueres: But can I choose the individual that I want?\n\nBruno Latour: Yeah.\n\nChristiana Figueres: Out of this aggregate?\n\nBruno Latour: If I have my computer, I will show you so that you navigate for the aggregate blogospheres of climate sceptics and to take a good example.\n\nChristiana Figueres: Yeah. They’re in extinction but that’s all right.\n\nBruno Latour: And then you see them and you click one. Here you have an individual blog and then you can on the blog do all sorts of things which says that this guy is saying this. So the thing which was difficult before to have a semantic of an individual intervention blog or tweet and the aggregate, which is always a problem that people feel...\n\nChristiana Figueres: Disenfrachised. Which has nothing to do with French.\n\nBruno Latour: Because they say it’s too far. It’s too far away. But of course it’s what’s called the representation gap. Of course it’s a very tentative set of tools, but some of the tools are accessible for smart data that are there. And the thing is that when you can feed the data...\n\nChristiana Figueres: What are these tools called?\n\nBruno Latour: Sorry?\n\nChristiana Figueres: What are these tools called? These tools that you’re talking about, what are they called?",
+                  "begin": 1212.799,
+                  "end": 1330,
+                  "beginSrtFormat": "00:20:12,799",
+                  "endSrtFormat": "00:22:10,000",
+                  "tags": [
+                        {
+                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Google Maps",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Screen",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Disenfrachised",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "theme"
+                  ]
+            },
+            {
+                  "content": "Bruno Latour: They are smart data. For the study of science, it’s very powerful. It has always been. I mean actually the Google patent of the Google founders use scientometrics as their example of what we want to do. There’s the possibility of doing this individual paper citing these individual papers, and you can map out. And of course it’s now very easy to do. Our first year students do it here. So that’s important because it allows to visually give a feel that you are simultaneously an individual here in an aggregate, but you can represent and then you can ask to see if I shift my position here, will it change something there?\n\nChristiana Figueres: Fascinating.\n\nBruno Latour: And that is what’s interesting because people then get a feel of space in opinions which is very visible. So those are the sorts of tools we want to test.\n\nChristiana Figueres: This sense of distance in climate is very, very difficult because first there is the illusion, the myth that the negative effects... if there is a visual of climate, it’s the negative effects, right? The natural disasters that are affected or magnified by climate change. So you always have the impression, the false impression that climate change is only going to affect Bangladesh. And I don’t live close to Bangladesh. Or it’s only going to affect the Pacific Islands or whatever. So there’s always the impression of a geographical distance, which is completely erroneous since frankly there is no country that has not been affected already by climate change. But there’s always this psychological temptation to put the negative effects somewhere far away.",
+                  "begin": 1330,
+                  "end": 1448.373,
+                  "beginSrtFormat": "00:22:10,000",
+                  "endSrtFormat": "00:24:08,373",
+                  "tags": [
+                        {
+                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Smart data",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Visual of climate",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Bangladesh",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Geographical distance",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "theme",
+                        "place"
+                  ]
+            },
+            {
+                  "content": "Christiana Figueres: And then there is a psychological temptation to put it far away in time as well. It’s not happening now. It will happen a hundred years from now. And I’m not responsible for that anyway. Particularly if you’re a politician and you’ve only been elected for four years or five or six, then it certainly is not within your political term. So there’s always that temptation to put it away. So both the geography and the time are illusory because the fact is that we are having the impacts. Everybody is already, but perhaps the impact, unless you are living in one of the Pacific Islands or some of those areas, or in Bolivia with glaciers disappearing… but even there, the onslaught of the impact is a slow-moving onslaught. Therefore, you delude yourself, or we all delude ourselves, into thinking “Even if I’m right in the middle of it, it’s going to take time.” That’s what makes it so difficult because there’s no sense of immediacy – either geographical or time immediacy. There’s no sense of immediacy. That is in stark contrast to the urgency of the matter. So without a deep sense of immediacy, how do you bring the urgency of the matter into people’s action and into people’s decision making? Because the science is telling us we’re running out of time. If we want to stay under two degrees, anywhere between 1.5 and 2, we have to get to global peaking in the next six to ten years. That requires a huge shift in capital, certainly in policy, and in technology. How do you precipitate that in view of the lack of perceived immediacy?",
+                  "begin": 1448.373,
+                  "end": 1568,
+                  "beginSrtFormat": "00:24:08,373",
+                  "endSrtFormat": "00:26:08,000",
+                  "tags": [
+                        {
+                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Illusory space and time distance",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Bolivia",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Sense of immediacy",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "theme",
+                        "place"
+                  ]
+            },
+            {
+                  "content": "Bruno Latour: What is paradoxical is that it was the opposite from the Cold War, because the Cold War was, in fact, objectively not that urgent. The Russians were not going to invade that fast. All of it actually was based on a very small intelligence report. The famous report was more like a literary piece. It was a very tiny expertise but with huge mobilization for something which was not objectively urgent. So there is no direct connection between the urgency and the capacity of people to be worried, anxious. In the case of the U.S. and Europe certainly terrorized by a non-existing fact – a fact which was there but which was amazingly hyped and which was, of course, reciprocal. But the difference is that it was a human war machine. People have a whole series of attitudes and sort of predetermined – probably not put in the DNA but sort of a makeup. I’m not saying a genetic makeup but a makeup for war.\n\nChristiana Figueres: For human war.\n\nBruno Latour: For human war. Here it’s a war of which you are simultaneously the enemy and you are not too sure…\n\nChristiana Figueres: You yourself are the enemy.\n\nBruno Latour: And you’re divided. This is why I’m very interested in the work of theologians and all of these people who are working on this line, because it’s a completely different take. We interviewed with a guy with the whole domain of theology of ecology, which is extremely interesting because the theologians have a long experience of what it is to be divided and to be at the end of the world. So all these questions of urgency I would love to find because we don’t know what it is to be the enemy of Gaia.",
+                  "begin": 1568,
+                  "end": 1685.252,
+                  "beginSrtFormat": "00:26:08,000",
+                  "endSrtFormat": "00:28:05,252",
+                  "tags": [
+                        {
+                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Cold War",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Human war",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "theme"
+                  ]
+            },
+            {
+                  "content": "That’s why I’m very interested in the figure of Gaia, because Gaia is a character which we do a big meeting in two weeks here on Gaia and the arrival of Gaia on the scene, what sort of being it is. Lots of things have to be done at the intermediary between… of course, we cannot divide the UN, but we can do it between philosophy, anthropology, art, theology and science, because Gaia is a mixture of all of those. It is a new age divinity. It’s a scientific concept. Disputed, but a scientific concept. It’s also politically very interesting because of what sort of sovereignty Gaia has over us.\nBut when you add these sorts of characters, immediately the position of people change because urgency is felt when you meet these characters like Gaia. It’s not just about nature, I think, which are very far away, because you capture a whole set of attitudes which have always been connected to what it is to be a citizen in the state, except you are facing Gaia, which is a very different take. So our interest is in multiplying those sorts of takes so that the repertoire, which is of course certainly viewed from people like you, albeit worrying that people don’t pay attention to the urgency, delegate to others, or do...\n\nChristiana Figueres: Postpone.\n\nBruno Latour: Many people delay. That’s what I call quietist because people aren’t necessarily skeptic, but I think they are quietist, especially the French.\n\nChristiana Figueres: I don’t think the French are unique.\n\nBruno Latour: They’re intellectual quietists. That’s where I’m from.\n\nChristiana Figueres: What were you going to say? Back at the Cold War.",
+                  "begin": 1685.252,
+                  "end": 1804.028,
+                  "beginSrtFormat": "00:28:05,252",
+                  "endSrtFormat": "00:30:04,028",
+                  "tags": [
+                        {
+                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Gaia",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Postpone",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "theme"
+                  ]
+            },
+            {
+                  "content": "Halldór Thorgeirsson: Maybe we need another telegram. No. What I wanted to add to your concern over the distance and time is that we also have a distance into the past. What has really bedeviled the solution on climate change is that people say “Somebody else did it. I’m not responsible.”\n\nBruno Latour: We did it.\n\nHalldór Thorgeirsson: Yeah. So there is…\n\nBruno Latour: People say it’s the anglocene, not the anthropocene.\n\nHalldór Thorgeirsson: That’s right. So at the moment, if we think of mankind as a human family, the family is divided over history. I don’t think it’s ever going to be possible to come to a common understanding of history. That would take forever. But at the same time, there are different responsibilities. This is, I think, one of the challenges that we have – is to translate to really move forward, understanding that there are different responsibilities. Industrialized countries do have the means basically because they emitted in the past. They have the means of actually then helping create that new future. But at the same time, they can’t do it alone. So it’s really difficult in these negotiations to bypass that historical divide.\n\nBruno Latour: Yeah. That’s a big difficulty we… it’s very interesting. That’s why theology, again, is very useful because it has something like the end of the apartheid field of it that is inventing a ritual of saying “Yes, we the English people and Americans did the anglocene.” We are ready not to repair because it’s beyond repair, but actually to do something which has the level of ceremonial. Not exactly apologies because it’s not a good repertoire, but something of the sort.\n\nHalldór Thorgeirsson: But Gaia has actually surfaced also the negotiations.\n\nBruno Latour: Really? Are there other characters?\n\nHalldór Thorgeirsson: Yeah. It’s called Mother Earth.\n\nChristiana Figueres: Mother Earth. Yeah. Pachamama.\n",
+                  "begin": 1804.028,
+                  "end": 1928.3,
+                  "beginSrtFormat": "00:30:04,028",
+                  "endSrtFormat": "00:32:08,300",
+                  "tags": [
+                        {
+                              "name": "Halldór Thorgeirsson, Director for Implementation Strategy, United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Responsability",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Industralized countries",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Anglocene",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "theme"
+                  ]
+            },
+            {
+                  "content": "Halldór Thorgeirsson: Actually, Pachamama has an ambassador on…\n\nBruno Latour: From Bolivia.\n\nHalldór Thorgeirsson: It was a bigger issue a couple of years back, but I’m sure Pachamama will also surface. We are now going in her neighborhood and the next cup will be in…\n\nChristiana Figueres: Yes. It’s interesting. Bolivia is right now chairing the G77.\n\nBruno Latour: Yes, of course.\n\nChristiana Figueres: So it has also been very interesting. The very first meeting that they did, in New York in fact, was around the concept of Pachamama and the whole relationship of the UN to Pachamama.\n\nBruno Latour: They had a ritual for that?\n\nChristiana Figueres: They had a political ritual, yes. But that was definitely the first meeting that they called as G77 to mark their philosophy.\n\nBruno Latour: But did they invoke that?\n\nChristiana Figueres: No, unfortunately. That would have been even better. That would have been wonderful.\n\nBruno Latour: It’s fabulous. You need to do a ritual in Paris.\n\nChristiana Figueres: Oh, yes. I’ll be there. [laughs]\n\nHalldór Thorgeirsson: But there’s another observation I wanted to make, if I may. It really connects a bit to Europe’s expression of concern versus the power of politicians to act, because if you really look at the major decisions that have been made on governance, they’ve always been based on some calamity, or preceded by some calamity. Maybe the Second World War is one example of such calamities that allowed…\n\nBruno Latour: Alert. Yeah. There’s a signal.\n\nHalldór Thorgeirsson: It allowed also politicians to take action. It is quite clear that most of the important decisions have been on the back of a major concern that has really raised the concern basically to another level.",
+                  "begin": 1928.3,
+                  "end": 2045.488,
+                  "beginSrtFormat": "00:32:08,300",
+                  "endSrtFormat": "00:34:05,488",
+                  "tags": [
+                        {
+                              "name": "Halldór Thorgeirsson, Director for Implementation Strategy, United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Bolivia",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Pachamama",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Governance",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Calamity",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "place",
+                        "theme"
+                  ]
+            },
+            {
+                  "content": "Halldór Thorgeirsson: What we in the Climate Convention are hoping is that we can actually turn the page on climate without having to go through a major climate disaster. These are basically the two choices that mankind has – is to do it before the major disaster, because we really… as they say, “You ain’t seen anything yet.” The things that have been happening – Hurricane Sandy or any of those things – some of the things that are going to be happening in the future, or the heat wave here in 2003. Unfortunately, Paris is coming only a year from now and it sets an important point in all of this.\nBruno Latour: What do you mean by unfortunately? Is there a big catastrophe waiting for us? [laughs]\n\nHalldór Thorgeirsson: No. When I say unfortunately, it is because of our concern over the lack of awareness, of real seriousness in terms of… So there is no problem coming to an agreement in Paris. What the challenge is is to come to a meaningful agreement in Paris. You only come to a meaningful agreement by basically having the level of concern strong enough to push it over that limit to actually becoming. Therefore, I think anything that aggregates the concerns, like you were trying to do, could make it heard.\n\nBruno Latour: We are the creatures of the Holocene. During the Holocene, not much happened in terms of climate change. We have been civilized in a time where we have no precedent but we have lots of precedent for wars, if I followed your argument. When you read it, you’ll understand that.",
+                  "begin": 2045.488,
+                  "end": 2168,
+                  "beginSrtFormat": "00:34:05,488",
+                  "endSrtFormat": "00:36:08,000",
+                  "tags": [
+                        {
+                              "name": "Halldór Thorgeirsson, Director for Implementation Strategy, United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Climate Convention",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate disasters",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Paris, France",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Lack of awareness",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Holocene",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "theme",
+                        "place"
+                  ]
+            },
+            {
+                  "content": "Bruno Latour: We have a fabulous long experience of wars, so you get alerted to its dangers. But we have no experience because we are creatures of the Holocene. We have no experience of radical change in… maybe in the long, long past, but certainly not in the time of civilization, if we follow this argument on the anthropocene.\n\nHalldór Thorgeirsson: I don’t think war is a good metaphor for what are faced with on climate change, because it’s… even the notion of negotiations, it doesn’t really describe what we are doing, because I think when people hear about negotiations, they think of some kind of a zero sum game that you’re splitting a pie. People have heard about the negotiations, for example, where you have fixed amount and you tend to argue how much the Spanish get and how much…\nBruno Latour: What about diplomacy?\n\nHalldór Thorgeirsson: It’s something about diplomacy, but it’s very much about forward planning. So it’s very much about both what action is to be taken but also what are the means to do that.  So it’s very much about means of implementation and about how to incorporate.\n\nBruno Latour: But don’t you think war is important, that the notion of conflict is important? Because harmony is another point, but there are lots of harmony in all of this. You alluded to harmony yourself. But isn’t that important to say there are conflicts? There are different views of what there is to be done. So forward planning seems to be a governance argument, not a political argument.\n\nHalldór Thorgeirsson: There are ways of doing it that are completely untenable. For example, you could say that we have a certain amount of emissions that we can emit the rest of…\n\nChristiana Figueres: Humanity.\n\nHalldór Thorgeirsson: Yeah. You can start then taking that up and start arguing over who gets what. That is not what is being done now. So in the sense, it’s not a zero sum game.",
+                  "begin": 2168,
+                  "end": 2295,
+                  "beginSrtFormat": "00:36:08,000",
+                  "endSrtFormat": "00:38:15,000",
+                  "tags": [
+                        {
+                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Halldór Thorgeirsson, Director for Implementation Strategy, United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "War",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Negotiations",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Diplomacy",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Conflicts",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "theme"
+                  ]
+            },
+            {
+                  "content": "Bruno Latour: You want a different take.\n\nChristiana Figueres: One way of looking at these two options that Halder is talking about is we either have to solve this through policy or through physics. What we are trying to avoid is the physics. We don’t want to hit that wall where it would be such a calamity. It would be for humanity very painful, but also for the economic system because the economic system would have to swivel very quickly. So what we’re trying to do here through policy is to build a gradual but urgent, if I can put those two things together, transition. But it has to be like that, right? A gradual but urgent transition that needs to have two measuring points. One is the global peaking within the next six to ten years, and then certainly to get to the point where we’re no longer emitting more than what we are absorbing, whether you want to call that net zero or carbon neutrality. But we have to get there.\nGetting there in the paradigm that we’ve had over the past 150 years is impossible. The difficulty is that we have to let go of that paradigm and we have to do it without blaming those who benefited from that paradigm. That’s really difficult. That’s where your African apartheid image comes in because this really is a truth in reconciliation process, right? You cannot deny that industrialized countries have the historical responsibility. You cannot deny it. They will always have that historical responsibility. They need to assume that responsibility.",
+                  "begin": 2295,
+                  "end": 2404.49,
+                  "beginSrtFormat": "00:38:15,000",
+                  "endSrtFormat": "00:40:04,490",
+                  "tags": [
+                        {
+                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Policy",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Transition",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Historical responsability",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "theme"
+                  ]
+            },
+            {
+                  "content": "Christiana Figueres: But you also can’t blame them forever and ever and ever, and expect them therefore to take full responsibility for all the action that needs to occur, because if you go back to the nation states, within their national boundaries, they cannot solve this problem. We need the full territory of the whole globe to actually be able to solve this problem. So that’s where the reconciliation comes from, right? The truth is that they do have the historical responsibility. The reconciliation is that we recognize that responsibility but we’re not enslaved to history. We’re actually forward looking. What developing countries really need more than to blame industrialized countries – what they really need is a guarantee that their growth is not going to be stunted, that they will be able to come out of poverty, that they will be able to provide welfare for all of their population without having the carbon footprint of the global north. That is the reconciliation. The industrialized countries need to assume their responsibility in supporting developing countries to do that, in addition to decarbonizing themselves. But they do have a responsibility in helping developing countries decarbonize so that they can grow.\nThat’s the part of the reconciliation. And that is the piece that is emotionally very difficult to get to, because it’s much easier for us as human beings to turn to… For me, it’s much easier to turn to my parents and say “I am impatient because you made me impatient, because that’s the way that you educated me,” or “I am this.” It’s much easier to always turn to someone else and blame someone else and put the responsibility on somebody else’s shoulders.",
+                  "begin": 2404.49,
+                  "end": 2526.099,
+                  "beginSrtFormat": "00:40:04,490",
+                  "endSrtFormat": "00:42:06,099",
+                  "tags": [
+                        {
+                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Historical responsability",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "National boundaries",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Developing countries",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Reconciliation",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "theme"
+                  ]
+            },
+            {
+                  "content": "Christiana Figueres: We do that as humans at the individual level and we do it at the planetary level. So we need to get beyond that and say “Okay. Yes, yes, yes. Fine. Yes, that is the past, but now how are we going to construct the future?” because the future is much more urgent than the past. The past has its place, but the future is really urgent. Whatever we do in the next six to ten years is really going to determine the future. So it has to be a gradual but urgent transition, and one that requires a generosity of spirit.\n\nBruno Latour: Truth and reconciliation came after a long bitter struggle. The bitterness of the struggle has to be recognized at some point. That’s what I mean by conflict. There’s a total harmony in all of these questions. We should be harmoniously considering the planet, which is also demobilized. A dimension of conflict has to be…\n\nHalldór Thorgeirsson: But it’s important that the ones that build the truth and reconciliation solution – they were also looking at a Nuremberg solution and they decided not…\n\nChristiana Figueres: Not to do that.\n\nHalldór Thorgeirsson: Not to do the Nuremberg solution. So I think it is hugely important. Why did they go down this road? They went on this road because they realized that they could only build future South Africa with [0:41:14] there. I think that’s also what the situation is with climate – is that everybody has more… really, if you seriously think about it, they have much more at stake in the solution than they have in the current state of affairs.\n\nBruno Latour: But with the added difficulty that even for peace and war with humans, we have [0:41:40] of attitude and feeling, but we don’t have any one of those for meeting with Gaia and knowing what to do with it. There’s a sort of uncertainty.\n\nHalldór Thorgeirsson: But what you’re really saying, Christiana, is it’s so much easier to assign responsibility than to assume responsibility.\n\nChristiana Figueres: Yeah. It’s much easier to…",
+                  "begin": 2526.099,
+                  "end": 2649.223,
+                  "beginSrtFormat": "00:42:06,099",
+                  "endSrtFormat": "00:44:09,223",
+                  "tags": [
+                        {
+                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Halldór Thorgeirsson, Director for Implementation Strategy, United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Future",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Reconciliation",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Nuremberg solution",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Responsability",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "theme"
+                  ]
+            },
+            {
+                  "content": "Halldór Thorgeirsson: Yeah. I think that’s part of coming back to this question that we’re not going into a zero sum game. We’re not partitioning out the atmosphere. That will be assigning responsibility. But what really needs to happen now is that you want us to assume responsibility and that this is not just some Pollyannic view of the world. It is quite possible. There is much more understanding now that there is no way out of this without working together.\n\nChristiana Figueres: Slowly we’re getting there. There’s copious science data. It’s not a lack of data. That will be one more level of data, but it’s not a lack of data. Look at the Fifth Assessment Report. It is thousands of pages of data. It’s not about the data. It’s about how are we as a planet reacting to that data? How do we apply it? How do we look into the future and create a different future? It’s not about the data. It’s about the capacity to imagine a very different future that we, by definition, have never seen because it’s not part of our past.\n\nHalldór Thorgeirsson: Then in relation to what you just said about Nuremberg, that plus the meeting of the Coast of Canada formed the United Nations, do you think that the United Nations needs radical transformation in view of the negotiation of this new world you are describing?\n\nChristiana Figueres: There is a project. [laughs]\n\nBruno Latour: Of the United Nations of the earth basically, for which Gaia will be the…\n\nChristiana Figueres: I wouldn’t doubt that the United Nations will evolve over the next 20 to 25 years because it will need to do so to be able to still shepherd these new levels of responsibilities that are coming on our plate now. Having said that, I firmly believe that because of the urgency of climate change, it has to be addressed by the institution that we have right now, which is the institution of the United Nations, imperfect as it is and complicated and insufficient solutions as have come out of it.",
+                  "begin": 2649.223,
+                  "end": 2787.3,
+                  "beginSrtFormat": "00:44:09,223",
+                  "endSrtFormat": "00:46:27,300",
+                  "tags": [
+                        {
+                              "name": "Halldór Thorgeirsson, Director for Implementation Strategy, United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Responsability",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "United Nations",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "theme"
+                  ]
+            },
+            {
+                  "content": "Christiana Figueres: But we actually do not have the luxury of time to wait for the evolution of the United Nations which would take 20, 25, 30 years, and then to be able to use a stronger, more planetary-focused institution for a planetary problem, because 20 to 30 years from now, it will be too late. I actually think it’s the other way around. I actually think because we’re using this institution as it is now, created for something completely different. It was not created for planetary solutions. It was not created for that, but we’re using that because that is the best that we have right now. By using that for these planetary solutions, that will be one of the motors of the evolution of the United Nations. It may become something else or be called something else, but I do think that climate is one of the areas in which the United Nations itself as an institution is learning to absorb a higher level of responsibility and it will have to evolve as an institution.\n\nBruno Latour: I think no one had a job like her. No historical… It’s probably a very interesting event. It’s very moving to see Mrs. Global Climate in this small room. It was an enormous pleasure to meet you.\n\nChristiana Figueres: Nice to meet you. Very nice to meet you. Thank you.\n\nBruno Latour: It was great that John and Lydia have organized it.\n\nHalldór Thorgeirsson: Thank you very much.\n\nChristiana Figueres: Yeah. Thank you very much. I’m delighted Halder was able to come.\n\nBruno Latour: Let’s have a drink.\n",
+                  "begin": 2787.3,
+                  "end": 2890.221,
+                  "beginSrtFormat": "00:46:27,300",
+                  "endSrtFormat": "00:48:10,221",
+                  "tags": [
+                        {
+                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Halldór Thorgeirsson, Director for Implementation Strategy, United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "United Nations",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Planetary solutions",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Responsability",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "theme"
+                  ]
+            }
+      ]
+}

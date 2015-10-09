@@ -181,11 +181,14 @@ angular.module('dictofullstackApp')
     }
 
     $scope.newByDragEnd = function(tempDraggedEnd){
-      $scope.saveTimecodeOnBlur($scope.$parent.active.data[$scope.createdByDragIndex], $scope.createdByDragIndex, false, true);
-      $scope.$parent.active.data[$scope.createdByDragIndex].contentEdited = true;
-      $scope.tempDraggedNewItemY = undefined;
-      $scope.createdByDragIndex = undefined;
-      console.log('new by drag end', tempDraggedEnd);
+      if($scope.$parent.active.data[$scope.createdByDragIndex]){
+        $scope.saveTimecodeOnBlur($scope.$parent.active.data[$scope.createdByDragIndex], $scope.createdByDragIndex, false, true);
+        $scope.$parent.active.data[$scope.createdByDragIndex].contentEdited = true;
+        $scope.tempDraggedNewItemY = undefined;
+        $scope.createdByDragIndex = undefined;
+        console.log('new by drag end', tempDraggedEnd);
+      }
+
     }
 
 

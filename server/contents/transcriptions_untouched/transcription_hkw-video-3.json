@@ -1,0 +1,1196 @@
+{
+      "metadata": {
+            "type": "transcription",
+            "title": "HKW - video 3",
+            "slug": "hkw-video-3",
+            "mediaUrl": "https://vimeo.com/133774026",
+            "sharable": "true",
+            "tags": [
+                  {
+                        "name": "Pavel Kabat, IIASA International Institute for Advanced Systems Analysis",
+                        "category": "speaker",
+                        "color": "#556dd9"
+                  },
+                  {
+                        "name": "Laxenburg, Austria",
+                        "category": "place",
+                        "color": "#889b1b"
+                  },
+                  {
+                        "name": "Satellites data",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Political intentions",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Sustainability",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Governance",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "System analysis",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Hans Joachim John Schellnhuber, Director PIK Potsdam Institute for Climate Impact Research",
+                        "category": "speaker",
+                        "color": "#556dd9"
+                  },
+                  {
+                        "name": "Potsdam, Germany",
+                        "category": "place",
+                        "color": "#889b1b"
+                  },
+                  {
+                        "name": "Global environment",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Climate modeling",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "His Royal Highness The Prince of Wales",
+                        "category": "speaker",
+                        "color": "#556dd9"
+                  },
+                  {
+                        "name": "Potsdam Institute for Climate Impact Research",
+                        "category": "place",
+                        "color": "#889b1b"
+                  },
+                  {
+                        "name": "Decisive actions",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Climate change",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Risk",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "New platform",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                        "category": "speaker",
+                        "color": "#556dd9"
+                  },
+                  {
+                        "name": "Bonn, Germany",
+                        "category": "place",
+                        "color": "#889b1b"
+                  },
+                  {
+                        "name": "IPCC",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Temperature increase",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Global emissions",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Urbanization",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Gas emission",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Climate change laws",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Industrialized countries",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Developing countries",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Population",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Sybil Seitzingerr",
+                        "category": "speaker",
+                        "color": "#556dd9"
+                  },
+                  {
+                        "name": "Stockholm, Sweden",
+                        "category": "place",
+                        "color": "#889b1b"
+                  },
+                  {
+                        "name": "Anthropocene",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "IGBP",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Global change program",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Human dimensions",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Earth system",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Exploration",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Developing models",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Africa",
+                        "category": "place",
+                        "color": "#889b1b"
+                  },
+                  {
+                        "name": "Different perspectives",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Network theory",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Prodipto Ghosh",
+                        "category": "speaker",
+                        "color": "#556dd9"
+                  },
+                  {
+                        "name": "New Delhi, India",
+                        "category": "place",
+                        "color": "#889b1b"
+                  },
+                  {
+                        "name": "Fossil fuels",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Historical responsibility",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Colonialism",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Efficient technologies",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Asymmetric situation",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Political will",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Global agreement",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "China",
+                        "category": "place",
+                        "color": "#889b1b"
+                  },
+                  {
+                        "name": "India",
+                        "category": "place",
+                        "color": "#889b1b"
+                  },
+                  {
+                        "name": "Global constituents",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  }
+            ],
+            "tagCategories": [
+                  {
+                        "name": "speaker"
+                  },
+                  {
+                        "name": "place"
+                  },
+                  {
+                        "name": "theme"
+                  }
+            ]
+      },
+      "data": [
+            {
+                  "begin": 128,
+                  "end": 165,
+                  "content": "In 1955, even before sputnik went up, 1957, and before Apollo went up, we had no clue about the data. We had no clue about the geography of the earth. There were no satellites up to give us any single data. As we speak today, we talk about billions of terabytes coming down from the satellites to give us new information. We have data. We could see now. We could process the data. It’s all based on a very young science, isn’t it? 60 years, 50 years, 40 years even right now",
+                  "beginSrtFormat": "00:02:08,000",
+                  "endSrtFormat": "00:02:45,000",
+                  "tags": [
+                        {
+                              "name": "Pavel Kabat, IIASA International Institute for Advanced Systems Analysis",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Laxenburg, Austria",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Satellites data",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "place",
+                        "theme"
+                  ]
+            },
+            {
+                  "begin": 168,
+                  "end": 200,
+                  "content": "We are not moving ahead in terms of following the political intentions, political decisions by direction. I can talk about it days and days. Look at the climate convention. Look very beyond. Look at the reality of every day in terms of the energy sector. Look very beyond in the practical terms. Look at what may happen with the energy system when a new resource like shale gas and shale oil will be used as it may change completely the overall discussion about sustainability..",
+                  "beginSrtFormat": "00:02:48,000",
+                  "endSrtFormat": "00:03:20,000",
+                  "tags": [
+                        {
+                              "name": "Pavel Kabat, IIASA International Institute for Advanced Systems Analysis",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Laxenburg, Austria",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Political intentions",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Sustainability",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "place",
+                        "theme"
+                  ]
+            },
+            {
+                  "begin": 203,
+                  "end": 236,
+                  "content": "I think the next step really is on the governance, on the government side of the problem. We need a system where the political and governmental actions will be able to release themselves for what I call governance. We need to adopt the concepts which are cross cutting across the sectors..",
+                  "beginSrtFormat": "00:03:23,000",
+                  "endSrtFormat": "00:03:56,000",
+                  "tags": [
+                        {
+                              "name": "Pavel Kabat, IIASA International Institute for Advanced Systems Analysis",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Laxenburg, Austria",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Governance",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "place",
+                        "theme"
+                  ]
+            },
+            {
+                  "begin": 238,
+                  "end": 261,
+                  "content": "Actually, system analysis started as an engineering discipline at a land corporation after the second war. System analysis was used to design the capitalist world as we know it. It is based on the western economies. But system thinking is developing into more disciplines. It’s developing also into the way human behavior looks like..",
+                  "beginSrtFormat": "00:03:58,000",
+                  "endSrtFormat": "00:04:21,000",
+                  "tags": [
+                        {
+                              "name": "Pavel Kabat, IIASA International Institute for Advanced Systems Analysis",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Laxenburg, Austria",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "System analysis",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "place",
+                        "theme"
+                  ]
+            },
+            {
+                  "begin": 268,
+                  "end": 314,
+                  "content": "And how should we deal with the self-inflicted risks of destabilization of the global environment? Now these are even harder questions, actually. And you cannot expect them to be solved just by the powerful instruments of, say, mathematical physics. Clearly, you have to involve the humanities, all types of social sciences, economics and so on. And you have to be fully interdisciplinary, not just saying it’s a necessity. And you have to be even more sophisticated than you are in climate modeling..",
+                  "beginSrtFormat": "00:04:28,000",
+                  "endSrtFormat": "00:05:14,000",
+                  "tags": [
+                        {
+                              "name": "Hans Joachim John Schellnhuber, Director PIK Potsdam Institute for Climate Impact Research",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Potsdam, Germany",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Global environment",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate modeling",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "place",
+                        "theme"
+                  ]
+            },
+            {
+                  "begin": 320,
+                  "end": 480,
+                  "content": "Well, you all know far better than I do that as every day passes, a two-degree target becomes increasingly difficult to meet. You also know that the longer we leave decisive action, the more of the risk we run of unavoidable feedbacks in the climate system. It seems as if each incremental rise in greenhouse gas laws closes the door of another possible and better future for ourselves and for our descendants. Long ago, I realized that we are now facing a crisis that will be the defining moment for humanity. Why we have not responded with any urgency in the face of such visible warnings, and instead of cutting emissions have actually increased them each year, is utterly incomprehensible to many informed people. I fear that our failure to respond will hold future generations. At the moment, our rate of consumption of the planet’s natural resources, our seeming inability to alter our model’s economic growth, and our determination to more or less carry on as usual seems set to ensure that we will knowingly destroy their tomorrows, all for the short term gains of our today. And that, ladies and gentlemen, is an act of betrayal. It is also, of course, a huge risk. Think for a moment of the impact of climate change, not in scientific terms but as a doctor would view the problem. Whereas in science a hypothesis is tested until absolute proof is secured, in medicine there is no time to be absolutely certain. If a child is presented to a doctor with a fever, the doctor cannot wait until results of tests come back from the lab. The doctor must act on what evidence is already there. There is an urgency and it depends upon the risk involved. And given that this is the greatest risk we have ever faced, surely as the doctor we can’t wait to act. The symptoms are very clear. The models have become ever more precise. If we see the planet as our patient, the risk of delay is so enormous we cannot wait until we’re absolutely sure the patient is dying. That is a monumental risk no doctor would ever take.\n",
+                  "beginSrtFormat": "00:05:20,000",
+                  "endSrtFormat": "00:08:00,000",
+                  "tags": [
+                        {
+                              "name": "His Royal Highness The Prince of Wales",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Potsdam, Germany",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Potsdam Institute for Climate Impact Research",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Decisive actions",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate change",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Risk",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "place",
+                        "theme"
+                  ]
+            },
+            {
+                  "begin": 482,
+                  "end": 516,
+                  "content": "So understanding how to do this and bridging the growing chasm that has emerged between science and policy is a vital and urgent task. From what I have seen so far, if there is a determined collaborative attempt, a new platform for action could be established by 2015, it will not come without effort. But the stakes could not be much higher, nor the time for effective action more slight..",
+                  "beginSrtFormat": "00:08:02,000",
+                  "endSrtFormat": "00:08:36,000",
+                  "tags": [
+                        {
+                              "name": "His Royal Highness The Prince of Wales",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Potsdam, Germany",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Potsdam Institute for Climate Impact Research",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "New platform",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "place",
+                        "theme"
+                  ]
+            },
+            {
+                  "begin": 712,
+                  "end": 769,
+                  "content": "The fifth assessment report of the IPCC is quite clear with respect to the future. They do not make a decision for policymakers. They only chart out the possible pathways. And in this very, very clear graph of the IPCC, they have four different pathways of emissions. The extreme one is the business as usual, where no policy would happen. Then they have two intermediate. And then they have the one and only path that would keep the world from increasing the temperature to above two degrees over pre-industrial levels. And the governments have already decided that they will not allow a temperature increase that would go above two degrees. In fact, they have committed themselves to keep it below two degrees Celsius..",
+                  "beginSrtFormat": "00:11:52,000",
+                  "endSrtFormat": "00:12:49,000",
+                  "tags": [
+                        {
+                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Bonn, Germany",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "IPCC",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Temperature increase",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "place",
+                        "theme"
+                  ]
+            },
+            {
+                  "begin": 771,
+                  "end": 823,
+                  "content": "So the IPCC has charted the pathway of emissions that needs to accompany that commitment of governments, and that pathway is pretty clear. It means if you just look at the graph, it means that we would have to reach global emissions peaking. That means the maximum amount of emissions over the next six to ten years that we would then have to decrease sharply and get to carbon neutrality in the second half of the century, which means we would have to get to the point where we are absorbing as many emissions as we are emitting. And it is that balance between the two capacities of the planet that would then define carbon neutrality. That is the goal toward which we have to work..",
+                  "beginSrtFormat": "00:12:51,000",
+                  "endSrtFormat": "00:13:43,000",
+                  "tags": [
+                        {
+                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Bonn, Germany",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "IPCC",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Global emissions",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "place",
+                        "theme"
+                  ]
+            },
+            {
+                  "begin": 825,
+                  "end": 872,
+                  "content": "Well, there are some facts that are incontrovertible. The fact that we are in a period of very, very rapid urbanization is a fact. The fact that cities concentrate the majority of greenhouse gas emissions is a fact. The fact that most of the future population are going to be living in cities is a fact. So there doesn’t need to be any discussion about that. What is currently on the table is given that those are the facts, then what are we going to do about that? What opportunities can cities afford to help their citizens to live quality lives without having a huge carbon footprint??",
+                  "beginSrtFormat": "00:13:45,000",
+                  "endSrtFormat": "00:14:32,000",
+                  "tags": [
+                        {
+                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Bonn, Germany",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Urbanization",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Gas emission",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "place",
+                        "theme"
+                  ]
+            },
+            {
+                  "begin": 875,
+                  "end": 931,
+                  "content": "I think we have potentially all the tools that we need, but they may not be at the level that we need. So just for finance, we have already cumulatively one trillion dollars that have gone into renewable energy. That’s a good first step. But we need to go to a trillion not cumulative. We need to go to a trillion per year. We have an increasing number of legislations. We have 500 climate change laws covering 60 countries 80% of emissions. A very good step. We need more. So it’s not we have hundreds of cities that are engaged. Is that enough? No. We need every single city. So we’re on the right path. We’re moving in the right direction. We’re just not at the level that we need to be in order for it to have a timely solution to climate change..",
+                  "beginSrtFormat": "00:14:35,000",
+                  "endSrtFormat": "00:15:31,000",
+                  "tags": [
+                        {
+                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Bonn, Germany",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Climate change laws",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "place",
+                        "theme"
+                  ]
+            },
+            {
+                  "begin": 933,
+                  "end": 1025,
+                  "content": "It is a well-known fact that in particular, in industrialized countries, the population is aging. But it is also a well-known fact that in most industrialized countries, the greenhouse gas emissions curve is coming down because they have invested for a longer period of time in energy efficiency and in renewable energy. And they have reached a certain plateau, if you will, in their economic growth. That is remarkably different to the reality in developing countries because developing countries, that is where we’re getting all the new population. That is where we’re getting the young population coming on board. That is where we’re going to get the emissions because that is the new population and because developing countries are still on their upward growth curve on economic development.  So there is a very, very different reality in industrialized countries and in developing countries, and that is exactly why the convention is so, so clear that industrialized countries must support the future economic growth of developing countries so that developing countries can continue their economic growth, bring their population and all of their new population that is coming to join us on this planet, bring them out of poverty, provide them with the wellbeing that they need and that they deserve, but without having the carbon footprint that was attended to the economic wellbeing that the industrialized countries have had..",
+                  "beginSrtFormat": "00:15:33,000",
+                  "endSrtFormat": "00:17:05,000",
+                  "tags": [
+                        {
+                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Bonn, Germany",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Industrialized countries",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Developing countries",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Population",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "place",
+                        "theme"
+                  ]
+            },
+            {
+                  "begin": 1032,
+                  "end": 1083,
+                  "content": "So the anthropocene, as you’re well aware and your project is well aware, is that it has been evolving. The anthropocene has been evolving since humankind. It has been changing the earth from the very beginnings until we’re now up to a scale at which humans are a major driver, the major driver of change in the earth system. So I think that the concept of the anthropocene very naturally came through engagement in IGBP because of the scale at which scientists involved in IGBP were looking at changes in the earth system.",
+                  "beginSrtFormat": "00:17:12,000",
+                  "endSrtFormat": "00:18:03,000",
+                  "tags": [
+                        {
+                              "name": "Sybil Seitzingerr",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Stockholm, Sweden",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Anthropocene",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "IGBP",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "place",
+                        "theme"
+                  ]
+            },
+            {
+                  "begin": 1085,
+                  "end": 1145,
+                  "content": "Within the context of a global change program, as a program with scientists involved around the world with connections to many people in their societies around the world, studying the change at the global scale, it was a natural place for the concept of the anthropocene to develop even further. And I think the anthropocene is about the earth system. And when I say the earth system, I don’t just mean the biogeophysical components. Of course it’s the human dimensions of it as well. It’s not only the effect that humans are having on the system but then how the changes in the system are affecting humans and how the whole societal structure, the whole political structure, the infrastructure as well, the international dimensions of agreements are affecting the direction that the earth’s whole system is going right now..",
+                  "beginSrtFormat": "00:18:05,000",
+                  "endSrtFormat": "00:19:05,000",
+                  "tags": [
+                        {
+                              "name": "Sybil Seitzingerr",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Stockholm, Sweden",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Global change program",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Human dimensions",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "place",
+                        "theme"
+                  ]
+            },
+            {
+                  "begin": 1146,
+                  "end": 1260,
+                  "content": "In some ways, by talking about the earth system, we constrain our ideas. And I think that earlier on, and maybe even today, some people think that when we talk about the earth system, we’re only talking about the natural system, the biology, the chemistry, the physics, the geology going on, and that we’re not talking about really the changes being brought on by humans or the effect of that in the whole multiple dimensions of society that are really involved in the planet that we live on. So maybe in some ways, the term earth system has constrained some people’s thoughts, first of all, to the biogeophysical system and then maybe also to being outside of it instead of a part of it. I think one of the things that the anthropocene as a word and as a concept does is it doesn’t constrain us maybe mentally quite so much of thinking about the planet per se as a biogeophsyical system, but really brings very much center stage people in that. So I think the anthropocene has a very big role to play in moving beyond that idea of it’s the planet and then there’s us to thinking about it as we really are a system, the anthropocene system. And if we could come up with a word maybe that would incorporate anthro for humans and the planet would be great, too, so that we really bring together those two concepts as opposed to the earth system, humans, but bring it together into one word..",
+                  "beginSrtFormat": "00:19:06,000",
+                  "endSrtFormat": "00:21:00,000",
+                  "tags": [
+                        {
+                              "name": "Sybil Seitzingerr",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Stockholm, Sweden",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Earth system",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Anthropocene",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "place",
+                        "theme"
+                  ]
+            },
+            {
+                  "begin": 1261,
+                  "end": 1301,
+                  "content": "But I also think that… We’re talking about how back in the ’60s we were looking at the moon and putting the person on the moon, and thinking about exploration out into beyond our planet. And of course, astronomy is still doing that. There’s many areas of science that are looking way beyond the earth. Personally, I think we’re just talking about a very small slice of time right now that at some point, again we’ll be looking out more outward beyond our own planet..",
+                  "beginSrtFormat": "00:21:01,000",
+                  "endSrtFormat": "00:21:41,000",
+                  "tags": [
+                        {
+                              "name": "Sybil Seitzingerr",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Stockholm, Sweden",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Exploration",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "place",
+                        "theme"
+                  ]
+            },
+            {
+                  "begin": 1303,
+                  "end": 1367,
+                  "content": "So if we look at the evolution of the concept of the anthropocene in some way and what it means and its use, maybe we could say even, that if we go back to the beginnings of IGBP, IGBP was formed in the late 1980s. And right in the original documents, it was that IGBP should be looking at the earth system and the natural processes in the earth system and the changes going on because of human pressures on the earth system. But the concept of the earth system goes way back, way before IGBP, and it was a developing concept of understanding the earth. And maybe it even started to come about because of the satellites and because of the exploration of space, looking back on the earth as the blue planet and as a planet itself that looked like it had clouds and weather moving around, etc..",
+                  "beginSrtFormat": "00:21:43,000",
+                  "endSrtFormat": "00:22:47,000",
+                  "tags": [
+                        {
+                              "name": "Sybil Seitzingerr",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Stockholm, Sweden",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "IGBP",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "place",
+                        "theme"
+                  ]
+            },
+            {
+                  "begin": 1371,
+                  "end": 1439,
+                  "content": "I think you go back and forth in many different ways. One is you read the literature and you read the scientific literature that isn’t at the scale that you maybe are working at. A lot of ways that we scale up or that people look at things at larger scales is by using models. So that’s one way to do it, to look at what those models might be saying. The other thing, though, is it’s equally important that people who are developing models are looking at the data, too, which is more local, which is more regional, and seeing if in fact they’re correctly putting those processes into their model as well. So I guess you also have to say it goes both ways. When you’re studying things at a large scale, you probably should go down and down going up, working back and forth both through literature and discussions. I mean a lot of it also is through talking with people at workshops, at conferences, and putting it in perspective that way as well..",
+                  "beginSrtFormat": "00:22:51,000",
+                  "endSrtFormat": "00:23:59,000",
+                  "tags": [
+                        {
+                              "name": "Sybil Seitzingerr",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Stockholm, Sweden",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Developing models",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "place",
+                        "theme"
+                  ]
+            },
+            {
+                  "begin": 1441,
+                  "end": 1471,
+                  "content": "But it’s when we go and when we have the involvement of people from Africa in our projects and they go, “Wait a minute. We don’t have too much nitrogen. We don’t have enough. We can’t even get good production because we have so little fertilizer to use.” And so then you start to look at things from a different perspective. You get out of your box and you look at things from another person’s perspective and start to understand, and then that opens up new research areas..",
+                  "beginSrtFormat": "00:24:01,000",
+                  "endSrtFormat": "00:24:31,000",
+                  "tags": [
+                        {
+                              "name": "Sybil Seitzingerr",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Stockholm, Sweden",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Africa",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Different perspectives",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "place",
+                        "theme"
+                  ]
+            },
+            {
+                  "begin": 1474,
+                  "end": 1531,
+                  "content": "I think there are many things that come together that bring in the concept, whether it’s of the earth system or whether it’s moving on to the anthropocene. And when you say cybernetics, the other thing that comes to my mind is network theory. It’s also something that has been emerging and it used to be kind of outside the mainstream because it was too complex for people to kind of grasp and understand. And now it’s much more involved in understanding complex processes. I think that there are many things that come into play. Maybe one word latches on for a time. Like I said, the anthropocene is sort of the word of the day, the concept of the day. But 50 years or 100 years from now, who knows what the concept would be? Or even a few decades from now. I think anthropocene will be around for a while in terms of a term that’s used and help people to think of many dimensions. I think it’s a very useful concept..",
+                  "beginSrtFormat": "00:24:34,000",
+                  "endSrtFormat": "00:25:31,000",
+                  "tags": [
+                        {
+                              "name": "Sybil Seitzingerr",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "Stockholm, Sweden",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Network theory",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Anthropocene",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "place",
+                        "theme"
+                  ]
+            },
+            {
+                  "begin": 1533,
+                  "end": 1606,
+                  "content": "Well, of course we will be the largest contributors. We are the two largest countries in the world. And if we, given the present global dependence on fossil fuels, given the fact that renewable energy technologies still are some way off before they can replace fossil fuels on a large enough scale --> unless we condemn our people to poverty we are not going to be able to meet that development aspirations. But our historical responsibility and our per capita responsibility will remain below that of the West for many decades into the future. Alright..",
+                  "beginSrtFormat": "00:25:33,000",
+                  "endSrtFormat": "00:26:46,000",
+                  "tags": [
+                        {
+                              "name": "Prodipto Ghosh",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "New Delhi, India",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Fossil fuels",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Historical responsibility",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "place",
+                        "theme"
+                  ]
+            },
+            {
+                  "begin": 1609,
+                  "end": 1667,
+                  "content": "Well, the principle impact of colonialism was that it killed India’s traditional industries and the Indian textile industry which had global renowned, even in Roman times. This was effectively curtailed very severely that the modern industrial sector was not allowed to grow and that Indian natural resources were appropriated without reference to the global competitive market and that India was a captive market for the West..",
+                  "beginSrtFormat": "00:26:49,000",
+                  "endSrtFormat": "00:27:47,000",
+                  "tags": [
+                        {
+                              "name": "Prodipto Ghosh",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "New Delhi, India",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Colonialism",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "place",
+                        "theme"
+                  ]
+            },
+            {
+                  "begin": 1670,
+                  "end": 1721,
+                  "content": "Now the infrastructure that was put in place by Britain was very largely related to maintaining imperial control, for example, the railways. But the point is that after independence when we needed to develop and grow, this infrastructure also became essential for growth. Of course India has had to invest in the modern industrial sector as well and that includes the modern power sector, the modern steel sector, the cement sector and so on..",
+                  "beginSrtFormat": "00:27:50,000",
+                  "endSrtFormat": "00:28:41,000",
+                  "tags": [
+                        {
+                              "name": "Prodipto Ghosh",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "New Delhi, India",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Colonialism",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "place",
+                        "theme"
+                  ]
+            },
+            {
+                  "begin": 1723,
+                  "end": 1769,
+                  "content": "And there was a period of technology denial, for example, the Bukhari Steel Plant is a case in point by the west - which meant that we could not import the most efficient technologies, develop the most of efficient technologies. We had to go to former Soviet Union for these technologies. And there was a certain locking period for that. However, what has happened after the 1990s reform of the Indian economy is that India became free to import these technologies from the global market, and also to develop the manufacturing capability for these technologies..",
+                  "beginSrtFormat": "00:28:43,000",
+                  "endSrtFormat": "00:29:29,000",
+                  "tags": [
+                        {
+                              "name": "Prodipto Ghosh",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "New Delhi, India",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Efficient technologies",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "place",
+                        "theme"
+                  ]
+            },
+            {
+                  "begin": 1771,
+                  "end": 1793,
+                  "content": "So we do see that there are two issues: one is to freeze in an asymmetric situation for the long-term, and secondly to use Anthropocene-related global treaties as a means of getting economic advantage..",
+                  "beginSrtFormat": "00:29:31,000",
+                  "endSrtFormat": "00:29:53,000",
+                  "tags": [
+                        {
+                              "name": "Prodipto Ghosh",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "New Delhi, India",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Asymmetric situation",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "place",
+                        "theme"
+                  ]
+            },
+            {
+                  "begin": 1794,
+                  "end": 1868,
+                  "content": "Well, my experience really is that though the governments of the West are aware of the implications of human interference with the climate system and they are concerned about it. But that they do not have the political will to move forward on a basis that would be universally acceptable and which corresponds to widely share human beliefs in what would constitute for fair outcome. And we find that attempts have been there right from the beginning to obscure this issue. I believe that as long as this approach continues it will be very difficult to reach a global agreement to protect the planet..",
+                  "beginSrtFormat": "00:29:54,000",
+                  "endSrtFormat": "00:31:08,000",
+                  "tags": [
+                        {
+                              "name": "Prodipto Ghosh",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "New Delhi, India",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Political will",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Global agreement",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "place",
+                        "theme"
+                  ]
+            },
+            {
+                  "begin": 1871,
+                  "end": 1907,
+                  "content": "It is only when the goal of zero emissions by all were agreed upon in the London amendment with a grace period for developing countries to make the switch that China and India could accept that treaty. And I think that this historical lesson needs to be kept in mind that if China and India, at a stage of their development, when they had less economic and strategic space to maneuver on a treaty of lessened import done that heals in; that we can be quite sure that they would dig that faith heals in even more strongly with the state of climate change in the present day age. So the key is fairness; we can debate what fairness is. We cannot ignore it..",
+                  "beginSrtFormat": "00:31:11,000",
+                  "endSrtFormat": "00:31:47,000",
+                  "tags": [
+                        {
+                              "name": "Prodipto Ghosh",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "New Delhi, India",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "China",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "India",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Developing countries",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "place",
+                        "theme"
+                  ]
+            },
+            {
+                  "begin": 1910,
+                  "end": 1965,
+                  "content": "Well, that can be double-edged because arguments have been made that we should get away from the system of sovereign governments negotiating and I think that that is not the way to go. I do not think that it’s feasible or appropriate for the international system to directly seek, to regulate or make policies for the internal constituents of countries. But we need certainly better ways of ensuring that the concerns that are debated internationally are reflective of a wider set of global constituents than they are currently.",
+                  "beginSrtFormat": "00:31:50,000",
+                  "endSrtFormat": "00:32:45,000",
+                  "tags": [
+                        {
+                              "name": "Prodipto Ghosh",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "New Delhi, India",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Global constituents",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "place",
+                        "theme"
+                  ]
+            }
+      ]
+}
