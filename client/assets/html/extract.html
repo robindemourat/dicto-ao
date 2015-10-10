@@ -66,6 +66,7 @@
                 type="text"
                 ng-model="extractSearch"
                 focus-me="extractListOpen.status"
+                focus-one-way
                 ng-focus="extractListOpen.status = true"
               >
             </li>
@@ -74,7 +75,7 @@
               ng-repeat="sub in extractInfo.subs|filter:{'tag':extractSearch} track by $index"
               role="menuitem"
               ng-bind="sub.tag + ' (' + sub.type + ')'"
-              ng-click="autoExtract($parent.activeMediaId, sub.tag)"
+              ng-click="autoExtract($parent.activeMediaId, sub.tag+sub.type)"
             ></li>
       </ul>
     </span>

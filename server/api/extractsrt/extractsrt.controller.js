@@ -93,7 +93,7 @@ exports.index = function(req, res) {
 
         if(lang && outSubs.length > 0){
           outSubs.forEach(function(sub){
-            if(sub.tag == lang){
+            if(sub.tag +sub.type== lang){
               mainSub = sub;
             }
           })

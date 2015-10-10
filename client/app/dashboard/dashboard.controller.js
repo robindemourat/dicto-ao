@@ -50,6 +50,7 @@ angular.module('dictofullstackApp')
     */
 
     $scope.autoExtract = function(id, lang){
+        console.log('autoExtract')
        var req = 'api/extractsrt/'+id+'/';
        if(angular.isDefined(lang)){
         req += lang;

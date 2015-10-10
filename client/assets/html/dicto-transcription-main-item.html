@@ -98,7 +98,7 @@
 <!-- case existing transcription-->
 <div
   class="dicto-item-gui-wrapper animate-medium slide-height"
-  ng-repeat="item in active.data"
+  ng-repeat="item in active.data track by $index"
    ng-class="setDictoItemClass(item, $index, $parent.searchTerm)"
     ng-click="test()"
 
