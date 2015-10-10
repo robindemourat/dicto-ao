@@ -6,7 +6,7 @@ var controller = require('./extractsrt.controller');
 
 var router = express.Router();
 
-router.get('/:transcriptionSlug/:videoId/:lang?', controller.index);
+router.get('/:videoId/:lang?', controller.index);
 
 module.exports = router;
 

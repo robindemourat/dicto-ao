@@ -280,11 +280,12 @@ angular.module('dictofullstackApp')
         }
 
         var onScroll = function(){
+          wrappers = angular.element(element).find('.dicto-item-gui-wrapper');
+          var scrollTop = angular.element(element).scrollTop();
+          var height = angular.element(element).height();
 
           if(scope.condition){
-            wrappers = angular.element(element).find('.dicto-item-gui-wrapper');
-            var scrollTop = angular.element(element).scrollTop();
-            var height = angular.element(element).height();
+
 
             wrappers.each(function(i, wrapper){
               var wrapper = angular.element(wrapper);
@@ -353,6 +354,18 @@ angular.module('dictofullstackApp')
               }
             });
           }
+          /*console.log('scroll');
+          wrappers.each(function(i, wrapper){
+            var wrapper = angular.element(wrapper);
+            var offsetTop = wrapper.offset().top;
+            var wrapperHeight = wrapper.innerHeight();
+            var onScreen = offsetTop > -height && offsetTop + wrapperHeight < height * 2;
+            if(!onScreen){
+              wrapper.css('display', 'none');
+            }else{
+              //wrapper.find('.dicto-item').css('display', 'block');
+            }
+          })*/
 
         }
 

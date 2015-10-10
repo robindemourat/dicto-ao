@@ -5,20 +5,21 @@
 
 var _ = require('lodash');
 
-var youtubedl = require('youtube-dl');
-
 var path = require('path');
 var fs = require('fs'),
-    _ = require('lodash'),
-    path = require('path'),
-    walk    = require('walk'),
-    async = require('async');
+    request = require('request');
 
 var baseDir = 'server/contents/youtube-srt/';
 
-var urlBase = 'https://youtu.be/';
+var apiBase= 'http://dicto-youtubedl.herokuapp.com/api/info?url=';
+var apiParams = '&allsubtitles=true&listsubtitles=true&writesubtitles=true&writeautomaticsub=true';
+
+var urlBase = 'https://www.youtube.com/watch?v=';
+
+// var apiClient = request.createClient('http://dicto-youtubedl.herokuapp.com/');
 
 
+/*
 var extractorOptions = {
   // Write automatic subtitle file (youtube only)
   auto: true,
@@ -27,6 +28,7 @@ var extractorOptions = {
 
   cwd: path.resolve(__dirname, 'contents/youtube-srt/')
 };
+*/
 
 var workers = {};
 
@@ -34,142 +36,95 @@ var workers = {};
 
 // Get list of extractsrts
 exports.index = function(req, res) {
-  var files = [];
-  var response = {};
-  var params = req.params;
+  var url = apiBase + req.params.videoId + apiParams;
+  var lang = req.params.lang;
+  console.log(url, lang);
 
-  response.request = params;
-
-  var dir = baseDir + params.videoId;
-  console.log('dir', dir);
-  extractorOptions.cwd = dir;
-  try{
-    if (!fs.existsSync(dir)){
-        fs.mkdirSync(dir);
-    }
-  }catch(e){
-    console.log('subtitle extractor: error while trying to create folder ', dir);
-    res.status(500).send({ error: 'subtitle extractor: error while trying to create folder !'+ dir });
-  }
-
-  console.log('params : ', params);
-
-
-  if(params.lang === undefined){
-    console.log('going through lookup function');
-    try{
-        console.log('begining to walk');
-        var walker  = walk.walk(dir, { followLinks: false }), files=[];
-        walker.on('file', function(root, stat, next) {
-            // Add this file to the list of files
-            var langSplit = stat.name.split('.');
-            var lang = langSplit[langSplit.length - 2];
-
-            files.push({
-              path : root + '/' + stat.name,
-              lang : lang
-            });
-            next();
-        });
-
-        //when every file has been processed, return callback function
-        walker.on('end', function() {
-          console.log('walker finished, workers : ', workers);
-            response.availableSubtitles = files;
-
-            if(!workers[params.videoId]){
-              workers[params.videoId] = {
-                status : 'virgin'
-              }
-            }
-
-            console.log(params.videoId, 'worker', workers[params.videoId])
-
-            if(workers[params.videoId].status == 'virgin' && files.length === 0){
-                workers[params.videoId].status = 'working';
-                console.log('params id', params.videoId);
-                if(params.videoId){
-                  var url = urlBase + params.videoId;
-                  console.log('starting to query youtube ', url);
-
-                  youtubedl.getSubs(url, extractorOptions, function(err, files) {
-                    workers[params.videoId].status = 'done';
-                    if (err){
-                      console.log('error with youtubedl :', err);
-                      throw err;
-                    }
-
-                    console.log('all subtitle files downloaded for'+params.transcriptionSlug+ ':', files);
-                  });
-                }
-
-            }
-            console.log('will serve now');
-            response.extractorStatus = workers[params.videoId].status;
-            res.json(response);
-        });
-    }catch(e){
-      var msg = 'Error while walking through possible subtitles';
-      console.log(msg);
+  request.get(url, function(err, r, body){
+    if(err){
+      var msg = 'error while querying youtube-dl api at '+url;
+      console.log(msg, err2);
       res.status(500).send({error : msg});
-    }
+      //res.json({error : err});
+    }else{
+      try{
+        var data = JSON.parse(body);
+        var outSubs = [];
 
-  }else{
-    console.log('getting a specific lang');
-    try{
-        if(!workers[params.videoId]){
-              workers[params.videoId] = {
-                status : 'virgin'
+        var automaticCaptions = data && data.info && data.info.automatic_captions;
+        var subtitles = data && data.info && data.info.subtitles;
+        for(var i in automaticCaptions){
+          if(i){
+            var cap = {
+              type : 'automatic',
+              tag : i,
+            }
+            automaticCaptions[i].forEach(function(version){
+              if(version.ext == 'srt'){
+                cap.url = version.url
               }
+            });
+            outSubs.push(cap);
+          }
         }
 
-        var found = false;
-        console.log('begining to walk');
-        var walker  = walk.walk(dir, { followLinks: false }), files=[];
-        walker.on('file', function(root, stat, next) {
-            // Add this file to the list of files
-            var langSplit = stat.name.split('.');
-            var lang = langSplit[langSplit.length - 2];
-
-            files.push({
-              path : root + '/' + stat.name,
-              lang : lang
+        for(var i in subtitles){
+          if(i){
+            var cap = {
+              type : 'manual',
+              tag : i,
+            }
+            subtitles[i].forEach(function(version){
+              if(version.ext == 'srt'){
+                cap.url = version.url
+              }
             });
-            next();
-        });
+            outSubs.push(cap);
+          }
+        }
 
-        //when every file has been processed, return callback function
-        walker.on('end', function() {
-          console.log('walker finished');
-          response.extractorStatus = workers[params.videoId].status;
-          response.availableSubtitles = files;
-          files.forEach(function(langFile){
+        var mainSub;
 
-            if(langFile.lang == params.lang){
-              found = true;
-              fs.readFile(langFile.path, 'utf-8', function(err, data){
-                if(err){
-                  var msg = 'Error while trying to serve subtitles file';
-                  res.status(500).send({error : msg});
-                }else{
-                  response.content = data;
-                  res.json(response);
-                }
-              })
+        console.log(lang, outSubs.length);
+
+
+        if(lang && outSubs.length > 0){
+          outSubs.forEach(function(sub){
+            if(sub.tag == lang){
+              mainSub = sub;
+            }
+          })
+        }
+
+        if((!lang || !mainSub) && outSubs.length > 0){
+          mainSub = outSubs[0];
+        }
+        if(mainSub){
+          request.get(mainSub.url, function(err2, r2, body2){
+            if(err2){
+              var msg = 'error while querying youtube for specific subtitles';
+              console.log(msg, err2);
+              res.status(500).send({error : msg});
+            }else{
+              mainSub.content = body2;
+              res.json({
+                subs : outSubs,
+                visitedSub : mainSub
+              });
             }
           });
+        }else{
+          res.json({})
+        }
 
-          if(!found){
-            response.content = "";
-            var msg = 'No srt file available for now about this language';
-            res.status(500).send({error : msg});
-          }
-        });
-    }catch(e){
-      var msg = 'Error while walking through possible subtitles';
-      console.log(msg);
-      res.status(500).send({error : msg});
+
+
+
+      }catch(e){
+        var msg = 'error while deserializing response';
+        console.log(msg, e);
+        res.status(500).send({error : msg});
+      }
     }
-  }
-
+  })
 };

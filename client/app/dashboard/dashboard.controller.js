@@ -48,7 +48,38 @@ angular.module('dictofullstackApp')
     /*
     youtube extraction
     */
-    $scope.$watch('optionsMode', function(mode, prevMode){
+
+    $scope.autoExtract = function(id, lang){
+       var req = 'api/extractsrt/'+id+'/';
+       if(angular.isDefined(lang)){
+        req += lang;
+       }
+       $scope.extractorStatus = 'working';
+       $http.get(req)
+        .success(function(d){
+            $scope.extractorStatus = 'done';
+            $scope.extractInfo = d;
+            setTimeout(function(){
+                $scope.$apply();
+            });
+        })
+        .error(function(e){
+            $scope.extractorStatus = 'error';
+        })
+    }
+
+    $scope.importExtractedTranscript = function(content){
+        console.log('killing extractor watch');
+        if(content && content.length > 0){
+            var newContent = dictoImporter.parseSrtTranscription(content);
+            if(newContent){
+                $scope.$parent.active.data = newContent.data.data;
+                //$scope.$parent.updateActive();
+            }
+        }
+    }
+
+    /*$scope.$watch('optionsMode', function(mode, prevMode){
         if(prevMode == 'extract'){
             killRefreshExtractor();
         }
@@ -119,7 +150,7 @@ angular.module('dictofullstackApp')
                 //$scope.$parent.updateActive();
             }
         }
-    }
+    }*/
 
 
 
