@@ -20,9 +20,10 @@ angular.module('dictofullstackApp', [
   'angulartics.google.analytics.cordova',
   'colorpicker.module',
   'angucomplete-alt',
-  'angular-intro'
+  'angular-intro',
+  'plangular'
 ])
-  .config(function ($routeProvider, $locationProvider, ngClipProvider, markedProvider) {
+  .config(function ($routeProvider, $locationProvider, ngClipProvider, markedProvider, plangularConfigProvider) {
     $routeProvider
       .otherwise({
         redirectTo: '/dashboard'
@@ -32,4 +33,6 @@ angular.module('dictofullstackApp', [
 
     $locationProvider.html5Mode(true);
     ngClipProvider.setPath("bower_components/zeroclipboard/dist/ZeroClipboard.swf");
+
+    plangularConfigProvider.clientId = 'b32d8f29020ef7c3f1ae171d0eb433d1';
   });

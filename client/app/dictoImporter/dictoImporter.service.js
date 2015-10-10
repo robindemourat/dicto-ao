@@ -64,7 +64,7 @@ angular.module('dictofullstackApp')
       //1.isolate blocks through double-breaks
       blocks = str.split(/\n\s*\n/g);
 
-      console.log(blocks);
+      //console.log(blocks);
 
       for(var i in blocks){
         var sub = {};
@@ -81,9 +81,10 @@ angular.module('dictofullstackApp')
           var minOut = +match[7];
           var secOut = +match[8];
           var miliSecOut = +match[9];
-
           while(match[j]){
-            data += match[j];
+            if(match[j].trim().length > 1){
+              data += match[j];
+            }
             j++;
           }
           sub.begin = hoursIn * 3600 + minIn * 60 + secIn + miliSecIn/1000;
@@ -100,15 +101,16 @@ angular.module('dictofullstackApp')
             }else{
               sub[match2[1]] = match2[2];
             }
-
-            data = data.replace(match2[0], '');//erase xpression from contents field
+            data = data.replace(match2[0], '');//erase expression from contents field
           }
           sub.content = data.trim();
         }
         //3.validate if subtitle : then add to list
-        if(sub.begin && sub.end && sub.content)
+        if(sub.begin && sub.end && sub.content){
           output.push(sub);
+        }
       }
+      console.log(output);
       return output;
     }
 

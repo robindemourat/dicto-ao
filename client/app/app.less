@@ -36,6 +36,62 @@
 @mediumDuration : .5s;
 @longDuration : 1s;
 
+
+::-webkit-scrollbar
+{
+    width: 1em;
+}
+::-webkit-scrollbar-button
+{
+    /* 2 */
+}
+::-webkit-scrollbar-track
+{
+    border-top: 1px solid @buttonMediumBackground!important;
+    border-bottom: 1px solid @buttonMediumBackground!important;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: @buttonMediumBackground!important;
+}
+::-webkit-scrollbar-corner
+{
+    /* 6 */
+}
+::-webkit-resizer
+{
+    /* 7 */
+}
+
+scrollbar
+{
+    /*  clear useragent default style*/
+    -moz-appearance: none !important;
+}
+/* buttons at two ends */
+scrollbarbutton
+{
+    -moz-appearance: none !important;
+}
+/* the sliding part*/
+thumb
+{
+    -moz-appearance: none !important;
+}
+scrollcorner
+{
+    resize: both;
+
+    -moz-appearance: none !important;
+}
+/* vertical or horizontal */
+scrollbar[orient='vertical']
+{
+    color: s@buttonMediumBackground!important;
+}
+
+
 .pull-left-in-column,
 .pull-right-in-column,
 .pull-top-in-column,

@@ -33,7 +33,16 @@
       ng-init="extractLangOpen = false;"
       on-toggle="extractLangOpen = !extractLangOpen"
     >
-      <button id="single-button" type="button" class="btn btn-primary" dropdown-toggle ng-disabled="disabled">
+      <button
+        id="single-button"
+        type="button"
+        class="btn btn-primary"
+        dropdown-toggle
+        ng-disabled="disabled"
+        ng-class="{
+          'blink' : extractorStatus == 'working'
+        }"
+      >
         <span  ng-bind="extractInfo.visitedSub.tag + '(' + extractInfo.visitedSub.type + ')'"></span>
         <span class="caret"></span>
       </button>
@@ -52,7 +61,7 @@
         <li
           ng-repeat="sub in extractInfo.subs track by $index"
           role="menuitem"
-          ng-bind="sub.tag + '(' + sub.type + ')'"
+          ng-bind="sub.tag + ' (' + sub.type + ')'"
           ng-click="autoExtract($parent.activeMediaId, sub.tag)"
         ></li>
       </ul>
@@ -64,10 +73,13 @@
         class="content-preview-wrapper"
         style="padding-top:0;padding-bottom:0;padding-right:0;overflow:hidden;"
         ng-if="extractInfo.visitedSub"
+        ng-class="{
+          'blink' : extractorStatus == 'working'
+        }"
       >
         <p
           class="content-preview-container"
-          marked="extractInfo.visitedSub.content"
+          ng-bind-html="prepareSrt(extractInfo.visitedSub.content)"
         >
         </p>
   </div>
@@ -75,6 +87,9 @@
   <div
     class="btn-line"
     ng-if="extractInfo.visitedSub"
+    ng-class="{
+      'blink' : extractorStatus == 'working'
+    }"
   >
     <div
       class="btn"

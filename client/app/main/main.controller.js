@@ -496,6 +496,8 @@ angular.module('dictofullstackApp')
         media = 'vimeo';
       }else if(url.indexOf('youtube') > -1){
         media = 'youtube';
+      }else if(url.indexOf('soundcloud') > -1){
+        media = 'soundcloud';
       }
       return media;
     }
@@ -515,6 +517,9 @@ angular.module('dictofullstackApp')
           if(youtube != null){
             id = youtube[1];
           }
+        }else if(mediaType == 'soundcloud'){
+          var splitted = url.split('/');
+          id = splitted[splitted.length - 2] + '/' + splitted[splitted.length - 1];
         }
       }
       return id;

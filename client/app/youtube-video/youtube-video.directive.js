@@ -258,14 +258,15 @@ angular.module('dictofullstackApp')
                 scope.player && scope.player.destroy();
             });
 
-            //API events
+            //API events summary
             /*youtube.player.ready
             youtube.player.ended
             youtube.player.playing
             youtube.player.paused
             youtube.player.buffering
             youtube.player.queued
-            youtube.player.error*/
+            youtube.player.error
+            */
 
             var intervalle, currentTime, percent;
             var updateTime = function(){

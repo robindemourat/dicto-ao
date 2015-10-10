@@ -267,6 +267,14 @@
             player="player"
           ></youtube-video>
     </div>
+
+    <div
+      class="soundcloud-wrapper"
+      ng-switch-when="soundcloud"
+      soundcloud-embed="{{$parent.active.metadata.url}}"
+    >
+    </div>
+
     <h3 class="media-loader animate-medium"
       ng-if="(!mediaReady && activeMediaUrl)||$parent.$parent.$parent.mediaWorking"
     >Loading media, please wait ...</h3>

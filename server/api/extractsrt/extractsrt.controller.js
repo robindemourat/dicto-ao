@@ -53,20 +53,7 @@ exports.index = function(req, res) {
 
         var automaticCaptions = data && data.info && data.info.automatic_captions;
         var subtitles = data && data.info && data.info.subtitles;
-        for(var i in automaticCaptions){
-          if(i){
-            var cap = {
-              type : 'automatic',
-              tag : i,
-            }
-            automaticCaptions[i].forEach(function(version){
-              if(version.ext == 'srt'){
-                cap.url = version.url
-              }
-            });
-            outSubs.push(cap);
-          }
-        }
+
 
         for(var i in subtitles){
           if(i){
@@ -82,6 +69,22 @@ exports.index = function(req, res) {
             outSubs.push(cap);
           }
         }
+
+        for(var i in automaticCaptions){
+          if(i){
+            var cap = {
+              type : 'automatic',
+              tag : i,
+            }
+            automaticCaptions[i].forEach(function(version){
+              if(version.ext == 'srt'){
+                cap.url = version.url
+              }
+            });
+            outSubs.push(cap);
+          }
+        }
+
 
         var mainSub;
 

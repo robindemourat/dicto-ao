@@ -6,7 +6,8 @@ angular.module('dictofullstackApp')
     //see angular-youtube-embed directive
     $scope.youtubePlayerVars = {
           controls: 0,
-          autoplay: 0
+          autoplay: 0,
+          cc_load_policy : 1
       };
 
     //init on media change
