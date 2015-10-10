@@ -23,47 +23,59 @@
 
 
   <div
-    class="big-item-list"
+    class="big-item-list flexed-item"
     ng-if="extractInfo && extractInfo.subs.length > 0"
   >
-    Choose a language to preview
+    <div
+      style="flex-grow : 1"
+      class="btn"
+      ng-click="toggleextractDropdown($event)"
+    >Choose a language to preview</div>
     <span
       class="btn-group"
       dropdown
-      ng-init="extractLangOpen = false;"
-      on-toggle="extractLangOpen = !extractLangOpen"
+      style="flex-grow:5"
+
+      dropdown-toggle
+      ng-disabled="disabled"
+      is-open="extractListOpen.status"
     >
       <button
         id="single-button"
         type="button"
         class="btn btn-primary"
-        dropdown-toggle
-        ng-disabled="disabled"
+
         ng-class="{
           'blink' : extractorStatus == 'working'
         }"
+        style="width : 100%"
       >
         <span  ng-bind="extractInfo.visitedSub.tag + '(' + extractInfo.visitedSub.type + ')'"></span>
         <span class="caret"></span>
       </button>
-      <ul class="dropdown-menu" role="menu" aria-labelledby="single-button">
+      <ul
+        class="dropdown-menu slide-height"
+        role="menu"
+        aria-labelledby="single-button"
+      >
 
-       <!-- <li class="flexed-item">
-          <span class="glyphicon glyphicon-search"></span>
-          <input
-            style="width:auto;margin-left:1em;flex-grow:2"
-            type="text"
-            ng-model="extractLang"
-            focus-me="extractLangOpen"
-          >
-        </li>-->
+          <li class="flexed-item">
+              <span class="glyphicon glyphicon-search"></span>
+              <input
+                style="width:auto;margin-left:1em;flex-grow:2"
+                type="text"
+                ng-model="extractSearch"
+                focus-me="extractListOpen.status"
+                ng-focus="extractListOpen.status = true"
+              >
+            </li>
 
-        <li
-          ng-repeat="sub in extractInfo.subs track by $index"
-          role="menuitem"
-          ng-bind="sub.tag + ' (' + sub.type + ')'"
-          ng-click="autoExtract($parent.activeMediaId, sub.tag)"
-        ></li>
+            <li
+              ng-repeat="sub in extractInfo.subs|filter:{'tag':extractSearch} track by $index"
+              role="menuitem"
+              ng-bind="sub.tag + ' (' + sub.type + ')'"
+              ng-click="autoExtract($parent.activeMediaId, sub.tag)"
+            ></li>
       </ul>
     </span>
 
@@ -71,7 +83,7 @@
 
   <div
         class="content-preview-wrapper"
-        style="padding-top:0;padding-bottom:0;padding-right:0;overflow:hidden;"
+        style="padding-top:0;padding-bottom:0;padding-right:0;overflow:hidden;margin-top:1em"
         ng-if="extractInfo.visitedSub"
         ng-class="{
           'blink' : extractorStatus == 'working'

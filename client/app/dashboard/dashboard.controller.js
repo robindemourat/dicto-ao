@@ -79,6 +79,16 @@ angular.module('dictofullstackApp')
         }
     }
 
+    $scope.$watch('extractListOpen', function(d){
+        console.log(d)
+    })
+
+    $scope.toggleextractDropdown = function($event) {
+        $event.preventDefault();
+        $event.stopPropagation();
+        $scope.extractListOpen.status = !$scope.extractListOpen.status;
+      };
+
     $scope.$watch('optionsMode', function(mode, prevMode){
         //$scope.extractorStatus = undefined;
         //$scope.extractInfo = undefined;
@@ -93,6 +103,7 @@ angular.module('dictofullstackApp')
 
     var initVariables = function(){
         $scope.$parent.viewSettings.showMetaMedia = false;
+        $scope.extractListOpen = {status:false};
     }
 
     initVariables();
