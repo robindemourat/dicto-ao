@@ -19,6 +19,7 @@
 <section
   class="column animate-medium left-column"
   ng-class="{'col-xs-10 col-sm-9 col-md-6' : !fullMain, 'col-xs-12' : fullMain, 'left-column':!showMenu,'right-column':showMenu}"
+  ng-style="{'width' : (mode == 'preview')?leftColumnPrct + '%':'50%'}"
 >
 
   <!-- aside left menu -->
@@ -217,7 +218,7 @@
     </div>
 
 
-    <div
+    <!--<div
         class="side-item pull-right animate"
         ng-click="toggleFullMain(false)"
         ng-if="fullMain && mode == 'edit'"
@@ -225,7 +226,7 @@
         <span
           class="glyphicon glyphicon-plus"
         ></span>
-    </div>
+    </div>-->
 
 
 
@@ -263,7 +264,7 @@
   rectangle-selection
   rectangle-selection-if="mode == 'edit' && !onItemDrag"
   rectangle-selection-abort-hover=".CodeMirror-lines"
-
+  ng-style="{'width' : (mode == 'preview')? 100 - leftColumnPrct + '%':'50%'}"
 >
 
   <!-- preview mode column -->
@@ -445,6 +446,7 @@
         </div>
       </div>
 
+      <!--
       <div
         class="side-item pull-left animate"
         ng-click="toggleFullMain(true)"
@@ -454,6 +456,7 @@
           class="glyphicon glyphicon-minus"
         ></span>
     </div>
+    -->
 
     </header>
 

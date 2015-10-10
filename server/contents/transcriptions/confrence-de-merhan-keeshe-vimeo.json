@@ -231,6 +231,13 @@
                "end": 1710,
                "beginSrtFormat": "00:28:25,000",
                "endSrtFormat": "00:28:30,000"
+          },
+          {
+               "content": "",
+               "begin": 1710,
+               "end": 1715,
+               "beginSrtFormat": "00:28:30,000",
+               "endSrtFormat": "00:28:35,000"
           }
      ]
 }

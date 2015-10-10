@@ -82,7 +82,9 @@ angular.module('dictofullstackApp')
 
       $scope.mediaIsSeekingAt = 0;
 
-        $scope.currentTimeS = 0;
+      $scope.currentTimeS = 0;
+
+      $scope.leftColumnPrct = 50;
 
     }
 
@@ -225,6 +227,24 @@ angular.module('dictofullstackApp')
         if(!$scope.$$phase)
             $scope.$apply();
     };
+
+    $scope.startDragWidth = function(){
+      $scope.draggingColumnWidth = true;
+      angular.element('iframe').css('pointer-events', 'none');
+    }
+
+    $scope.endDragWidth = function(){
+      $scope.draggingColumnWidth = false;
+
+      angular.element('iframe').css('pointer-events', 'all');
+    }
+
+    $scope.dragWidth = function(val){
+      $scope.leftColumnPrct = val;
+      setTimeout(function(){
+        $scope.$apply();
+      })
+    }
 
     //I update view when search term is changed
     var onSearchTermChange = function(s){

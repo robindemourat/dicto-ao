@@ -480,6 +480,41 @@ GUI BAR
     /*cursor : ns-resize;*/
 }
 
+
+.gui-resize-container{
+    position : absolute;
+    width : 100%;
+    bottom : 1em;
+    left : 0;
+    text-align: center;
+    cursor : ew-resize;
+}
+
+.gui-resize-container .btn{
+    font-size : 0.5em;
+    background : transparent;
+
+    color : white;
+    cursor : ew-resize;
+
+    border : 1px solid white!important;
+
+    border-radius : 50%!important;
+}
+
+.gui-resize-container .btn:hover
+{
+    font-size : .7em;
+    background : rgba(0,0,0,.1);
+}
+
+.gui-resize-container.active .btn
+{
+    font-size : .8em;
+    background : rgba(0,0,0,.2);
+
+}
+
 @keyframes blink
 {
     0%
@@ -509,3 +544,4 @@ GUI BAR
        -moz-animation: blink 1s linear infinite;
             animation: blink 1s linear infinite;
 }
+

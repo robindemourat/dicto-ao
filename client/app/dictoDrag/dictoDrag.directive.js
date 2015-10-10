@@ -21,7 +21,9 @@ angular.module('dictofullstackApp')
         onEnd2 : "&dictoDragEndBis",
 
         upperLimit : "=dictoDragUpperLimit",
-        lowerLimit : "=dictoDragLowerLimit"
+        lowerLimit : "=dictoDragLowerLimit",
+
+        direction: "@dictoDragDirection"
       },
       link: function (scope, element, attrs) {
 
@@ -35,7 +37,11 @@ angular.module('dictofullstackApp')
           angular.element($window).on('mousemove', onMouseMove);
 
           onDrag = true;
-          prevY = e.screenY;
+          if(scope.direction && scope.direction == "horizontal"){
+            prevY = e.screenX;
+          }else{
+            prevY = e.screenY;
+          }
 
 
           //console.log('drag started');
@@ -52,14 +58,18 @@ angular.module('dictofullstackApp')
         var onMouseMove = function(e){
           if(onDrag){
             //console.log('drag is moving', scope.model);
-            y = e.screenY;
+            if(scope.direction && scope.direction == "horizontal"){
+              y = e.screenX;
+            }else{
+              y = e.screenY;
+            }
             var oldModel = scope.model;
-            var wanted =  scope.model + (y - prevY) / scope.factor;
-            if(wanted > scope.upperLimit){
-              wanted = scope.upperLimit;
+            var wanted =  scope.model + (y - prevY) / +scope.factor;
+            if(wanted > +scope.upperLimit){
+              wanted = +scope.upperLimit;
               console.log('out of drag limit : too high');
-            }else if(wanted < scope.lowerLimit){
-              wanted = scope.lowerLimit;
+            }else if(wanted < +scope.lowerLimit){
+              wanted = +scope.lowerLimit;
               console.log('out of drag limit : too low');
             }
             scope.model = wanted;
@@ -72,7 +82,6 @@ angular.module('dictofullstackApp')
                 $event : e
               });
             }
-
 
             if(scope.model2){
               wanted =  scope.model2 + (y - prevY) / scope.factor;
@@ -115,6 +124,7 @@ angular.module('dictofullstackApp')
               scope.$apply();
             })
           }
+          e.stopPropagation();
         }
 
 

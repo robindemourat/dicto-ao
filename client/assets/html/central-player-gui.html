@@ -1,11 +1,13 @@
   <div role="navigation"
         class="
-        col-xs-6 col-xs-offset-7
-        col-sm-2 col-sm-offset-8
-        col-md-2 col-md-offset-5
+        col-xs-6
+        col-sm-2
+        col-md-2
         gui-container
         animate-medium
         "
+        ng-style="{'left' : leftColumnPrct - 8.333333 + '%'}"
+
         >
         <div class="gui-subcontainer">
           <div class="gui-background animate-fast"></div>
@@ -60,5 +62,22 @@
                  ></div>
               </div>
             </div>
-  </div>
+
+            <div
+              class="gui-resize-container"
+              dicto-drag="$parent.$parent.leftColumnPrct"
+              dicto-drag-start="$parent.$parent.startDragWidth($parent.$parent.leftColumnPrct)"
+              dicto-drag-dragging="$parent.$parent.dragWidth($parent.$parent.leftColumnPrct)"
+              dicto-drag-end="$parent.$parent.endDragWidth()"
+              dicto-drag-factor = "30"
+              dicto-drag-lower-limit="30"
+              dicto-drag-upper-limit="90"
+              dicto-drag-direction = "horizontal"
+              ng-class="{'active':$parent.$parent.draggingColumnWidth}"
+            >
+              <span class="btn animate-medium">
+                <span class="glyphicon glyphicon-resize-horizontal"></span>
+              </span>
+            </div>
+      </div>
 </div>
