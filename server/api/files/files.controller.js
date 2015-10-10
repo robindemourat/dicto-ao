@@ -61,7 +61,9 @@ var parseTranscriptionsMetadata = function(dir, callback){
           var contentSlug = transcript.metadata.slug;
           if(contentSlug != fileSlug){
             transcript.metadata.slug = fileSlug;
+            console.log('filename and slug concordancy bug, rewriting file ', filesList[i]);
             fs.writeFileSync(filesList[i], JSON.stringify(transcript, null, 6));
+            console.log('done rewriting');
           }
 					output.push(transcript.metadata);
 				}catch(e){

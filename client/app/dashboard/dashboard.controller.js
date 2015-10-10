@@ -37,7 +37,7 @@ angular.module('dictofullstackApp')
     				type : type
     			},
     			data : {},
-    			newItem : true
+                newItem : true
     	};
 
     	newItem.data = [];
@@ -80,20 +80,11 @@ angular.module('dictofullstackApp')
         }
     }
 
-    $scope.$watch('extractListOpen', function(d){
-        console.log(d)
-    })
-
     $scope.toggleextractDropdown = function($event) {
         $event.preventDefault();
         $event.stopPropagation();
         $scope.extractListOpen.status = !$scope.extractListOpen.status;
       };
-
-    $scope.$watch('optionsMode', function(mode, prevMode){
-        //$scope.extractorStatus = undefined;
-        //$scope.extractInfo = undefined;
-    });
 
     $scope.prepareSrt = function(str){
         return str.replace(/\n/g, '<br>');
