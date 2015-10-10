@@ -56,6 +56,13 @@ var parseTranscriptionsMetadata = function(dir, callback){
 				var str = results[i];
 				try{
 					var transcript = JSON.parse(str);
+          var filePath = filesList[i].split('/');
+          var fileSlug = filePath[filePath.length-1].split('.')[0];
+          var contentSlug = transcript.metadata.slug;
+          if(contentSlug != fileSlug){
+            transcript.metadata.slug = fileSlug;
+            fs.writeFileSync(filesList[i], JSON.stringify(transcript, null, 6));
+          }
 					output.push(transcript.metadata);
 				}catch(e){
 					console.log('json parsing error');
@@ -167,7 +174,7 @@ exports.index = function(req, res) {
 		});
 	}else{
 		parseTranscriptionsMetadata('server/contents/transcriptions', function(transcriptions){
-			var list = {};
+      var list = {};
 			list.transcriptions = transcriptions;
 			parseTranscriptionsMetadata('server/contents/montages', function(montages){
 				list.montages = montages;
