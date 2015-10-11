@@ -43,13 +43,14 @@ angular.module('dictofullstackApp')
 
           if(angular.isDefined(item)){
 
-            if(!parent){
-              parent = angular.element(document.body).find(attrs['targetIn']);
-            }
+            //if(!parent){
+            parent = angular.element(document.body).find(attrs['targetIn']);
+            //}
 
-            var paddingTop = (parent.css('paddingTop'))?(parseInt(parent.css('paddingTop'))):0;
+            var paddingTop = (parent.css('paddingTop'))?(parseInt(parent.css('paddingTop'))) + parent.offset().top:0;
 
-            itemOuterHeight = (itemType === 'item')? item.outerHeight() : item.parent().outerHeight();
+            itemOuterHeight = (itemType === 'item')? item.height() : item.parent().height();
+
             //console.log(item.parent().attr('class'),item.outerHeight(), item.parent().outerHeight());
             itemOffsetTop = item.parent().offset().top - paddingTop + parent.scrollTop();
             parentScrollHeight = parent.prop('scrollHeight') + paddingTop;
@@ -61,6 +62,7 @@ angular.module('dictofullstackApp')
               top : itemPercentY + '%',
               height : itemPercentH + '%'
             });
+
 
             /*element.css('top', itemPercentY + '%');
             element.css('height', itemPercentH + '%');*/
@@ -87,6 +89,7 @@ angular.module('dictofullstackApp')
             if(!parent){
               parent = angular.element(document.body).find(attrs['targetIn']);
             }
+            update();
           }
         })
 
