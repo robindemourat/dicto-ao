@@ -952,7 +952,7 @@ angular.module('dictofullstackApp')
       if(seekAt){
         console.info('set seek at ', seekAt, 'begining and end of item : ', item.begin, item.end);
       }else{
-        seekAt = 0;
+        //seekAt = 0;
       }
       if(item.type == 'free'){
         return;

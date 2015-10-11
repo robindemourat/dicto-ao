@@ -336,12 +336,12 @@ angular.module('dictofullstackApp')
 
             scope.$on('seekTo', function(e, d){
               //console.log('ready ', scope.ready);
-              if(scope.player && d){
+              if(scope.player && d != undefined){
                 if(scope.ready){
                   scope.$emit('mediaWorking');
                   try{
                     scope.player.pauseVideo();
-                    //console.info('directive seeks to ', d);
+                    console.info('youtube directive seeks to ', d);
                     scope.player.seekTo(d);
                     scope.player.playVideo();
                   }catch(e){

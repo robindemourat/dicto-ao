@@ -723,7 +723,8 @@ angular.module('dictofullstackApp')
         length = 30;
       }
       if(!computedY){
-        y = e.offsetY - angular.element(e.currentTarget).offset().top + angular.element('.left-column .column-contents').scrollTop();
+        var offsetTop = (angular.element(e.currentTarget).offset())?angular.element(e.currentTarget).offset().top:0;
+        y = e.offsetY - offsetTop + angular.element('.left-column .column-contents').scrollTop();
         computedY = y / $scope.$parent.viewSettings.computedZoom;
       }
       // var y = e.offsetY/* - angular.element('.left-column .column-contents').offset().top*/ + angular.element('.left-column .column-contents').scrollTop();

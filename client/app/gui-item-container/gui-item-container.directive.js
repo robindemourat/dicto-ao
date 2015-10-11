@@ -14,6 +14,7 @@ angular.module('dictofullstackApp')
       restrict: 'C',
       link: function (scope, element, attrs) {
 
+
         var el = angular.element(element),
             item,
             targetSelector = attrs['targetIn'] + ' .dicto-item',

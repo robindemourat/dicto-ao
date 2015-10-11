@@ -68,8 +68,9 @@ angular.module('dictofullstackApp')
 
     //I order active media to seek at a position (if the mediaplayer is not ready, it has to store the wanted timecode and seek to it once ready)
     $scope.seekTo = function(begin){
+      console.log('media controller : seek to', begin, $scope.mediaReady);
       if(begin != undefined && $scope.mediaReady){
-        //console.log(begin, $scope.mediaReady);
+        console.log(begin, $scope.mediaReady);
         $scope.$broadcast('seekTo', begin);
         //console.log('seek to ', begin);
         $scope.seekToAtBegin = undefined;
@@ -81,7 +82,7 @@ angular.module('dictofullstackApp')
     //when user select an item, seek to its begining
     $scope.$on('userSetActiveItem', function(e, d){
       var to = (d.seekAt != undefined)? d.seekAt : d.item.begin;
-      //console.log('seek to from media controller', d, to);
+      console.log('seek to from media controller', d, to);
       $scope.seekTo(to);
     });
 
