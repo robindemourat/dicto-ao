@@ -2,7 +2,7 @@
 <div
   class="column animate-medium"
   ng-class="{'main-column col-xs-6' : optionsMode, 'stack-left' : !showMenu,
-              'col-xs-12 col-sm-3 col-md-6 ' : !options-mode}"
+              'col-xs-12 col-sm-6 col-md-6 ' : !options-mode}"
   ng-include="'/assets/html/aside-edition-menu.html'"
 >
 </div>
@@ -19,7 +19,7 @@
 <section
   class="column animate-medium col-xs-10 col-sm-9 col-md-6"
   ng-class="{'left-column':!showMenu,'right-column':showMenu}"
-  ng-style="{'width' : leftColumnPrct + '%'}"
+  ng-style="{'width' : (showMenu)?'50%':leftColumnPrct + '%'}"
 >
 
   <!-- aside left menu -->
@@ -353,6 +353,7 @@
 <!-- zoom in and out -->
 <div
   class="pull-left-in-column pull-bottom-in-column btn-column"
+  ng-if="!showMenu"
 >
   <div
     class="btn slide-height toggle circled"

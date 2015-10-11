@@ -101,7 +101,9 @@
         </td>
       </tr>
       <tr class="squeeze-height"
-        ng-repeat="tag in $parent.active.metadata.tags|orderBy:'count':reverse track by $index">
+        ng-repeat="tag in $parent.active.metadata.tags|orderBy:'count':reverse track by $index"
+        ng-if="!(tag.name.length == 0)"
+        >
         <td>
           <span
             class="glyphicon glyphicon-trash animate-medium"

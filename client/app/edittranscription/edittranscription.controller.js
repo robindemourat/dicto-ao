@@ -149,6 +149,10 @@ angular.module('dictofullstackApp')
     }
 
     $scope.newByDragStart = function(e){
+      var button = e.which || evt.button;
+      if(button != 1){
+        return;
+      }
       console.log('new by drag start', e);
       //var newItemData = $scope.addNewItemAtMousePosition(event, 10);
       var y = e.offsetY + angular.element('.time-grads-container').offset().top + angular.element('.left-column .column-contents').scrollTop() - angular.element('.left-column .column-contents').offset().top;
@@ -156,6 +160,10 @@ angular.module('dictofullstackApp')
     }
 
     $scope.newByDragDragging = function(tempDraggedEnd, e){
+      var button = e.which || e.button;
+      if(button != 1){
+        return;
+      }
       if(!angular.isDefined($scope.createdByDragIndex)){
         $timeout(function(){
           if(!angular.isDefined($scope.createdByDragIndex)){
@@ -223,12 +231,14 @@ angular.module('dictofullstackApp')
     $scope.blurColor = function(tag, index){
       if(tag.color != tag.previousColor){
         $scope.$parent.active.data.forEach(function(item){
-          item.tags.forEach(function(t){
-            if(tag.name === t.name && tag.category === t.category){
-              t.color = tag.color;
-              t.previousColor = tag.color;
-            }
-          });
+          if(item.tags){
+            item.tags.forEach(function(t){
+              if(tag.name === t.name && tag.category === t.category){
+                t.color = tag.color;
+                t.previousColor = tag.color;
+              }
+            });
+          }
         })
         $scope.$parent.updateTagsInActive();
         $scope.$parent.addToHistory({
@@ -365,7 +375,6 @@ angular.module('dictofullstackApp')
       var n = this.$$childHead.searchStr || '';
       var tag = this.tag;
       tag.focused = false;
-      console.log(n);
       if(n != tag.name || n == ''){
         tag.name = n;
         var item = this.$parent.$parent.item;
@@ -596,9 +605,9 @@ angular.module('dictofullstackApp')
           console.log(id, newValue, transcript.prevItemEnd, newValue >= transcript.prevItemEnd);
 
           //success
-          if(newValue
-              && newValue < transcript.end
-              && newValue >= transcript.prevItemEnd
+          if(newValue != undefined
+              && newValue <= transcript.end
+              && newValue+.01 >= transcript.prevItemEnd
             ){
             prevValue = transcript.prevBegin;
             transcript.begin = newValue;
@@ -636,10 +645,10 @@ angular.module('dictofullstackApp')
 
           transcript.nextBegin = (id < $scope.active.data.length - 1)?$scope.active.data[+id+1].begin : $scope.activeMediaDuration;
           //success
-          if(newValue
-            && newValue <= transcript.nextBegin
+          if(newValue != undefined
+            && newValue - 0.1 <= transcript.nextBegin
             &&
-            newValue > transcript.begin){
+            newValue >= transcript.begin){
               prevValue = transcript.prevEnd;
               transcript.end = newValue;
               transcript.prevEnd = newValue;
@@ -708,7 +717,7 @@ angular.module('dictofullstackApp')
     }
 
     $scope.addNewItemAtMousePosition = function(e, computedY, length){
-      console.log(e.clientY, e.offsetY);
+      console.log('client y', e.clientY, 'offset y', e.offsetY);
       var y;
       if(!length){
         length = 30;
@@ -936,7 +945,7 @@ angular.module('dictofullstackApp')
       color = $scope.$parent.randomColor();
       tag = (tag)?tag:{
         name : "",
-        category : (category)?category.name:"No category",
+        category : (category != undefined)?category.name:"No category",
         previousName : "",
         previousCategory : (category)?category.name:"No category",
         color : color,
@@ -954,6 +963,7 @@ angular.module('dictofullstackApp')
 
       updateTagCategories(item);
 
+
       $scope.$parent.updateTagsInActive();
 
       setTimeout(function(){
@@ -961,11 +971,20 @@ angular.module('dictofullstackApp')
       })
     }
 
+    //carefull, index param is a filtered index
     $scope.blurTag = function(item, tag, index, itemIndex){
-      console.log('blur tag', tag);
+
       tag.focused = false;
       var exists;
       tag.name = tag.name.trim();
+
+      var newName = tag.name;
+      var splitted = newName.split(':');
+      if(splitted.length > 1){
+        tag.category = splitted[0];
+        splitted.shift();
+        tag.name = splitted.join(':');
+      }
 
       //get absolute index
       item.tags.forEach(function(t, i){
@@ -988,23 +1007,27 @@ angular.module('dictofullstackApp')
         }else return true;
       });
 
+
       if(exists){
           return;
       }
 
       //console.log(tag);
       //tag change or category change
+      /*
       if(!tag.previousName || tag.name != tag.previousName || !tag.previousCategory || tag.category != tag.previousCategory){
         var newName = tag.name;
         var splitted = newName.split(':');
         if(splitted.length > 1){
           tag.category = splitted[0];
-          tag.name = splitted[1];
+          splitted.shift();
+          tag.name = splitted.join(':');
         }
       }else{
         tag.previousName = tag.name;
         tag.previousCategory = tag.category;
       }
+      */
 
 
       if(tag.toSave){
@@ -1034,6 +1057,15 @@ angular.module('dictofullstackApp')
                       });
       }
 
+      //cleaning
+      for(var i = item.tags.length - 1 ; i>= 0 ; i--){
+        var t = item.tags[i];
+        if(t.name.length == 0){
+          item.tags.splice(i, 1);
+        }
+      }
+
+
       if(tag.name.length > 0){
         //$scope.$parent.updateTagInActive(tag);
         $scope.$parent.updateTagsInActive();
@@ -1043,6 +1075,10 @@ angular.module('dictofullstackApp')
       tag.previousCategory = tag.category;
       updateTagCategories(item);
       $scope.$parent.updateActive();
+
+      setTimeout(function(){
+        $scope.$apply();
+      })
 
     }
 

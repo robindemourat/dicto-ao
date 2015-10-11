@@ -27,8 +27,9 @@ angular.module('dictofullstackApp')
         //I react to a seekTo event, specifying a time in seconds
         scope.$on('seekTo', function(e, d){
           //console.log('ready ', scope.ready);
-          if(d == 0)
+          if(d == 0){
             d = .1;
+          }
           console.log('seek to', d);
           if(activePlayer && d){
             if(scope.ready){

@@ -98,7 +98,7 @@
 <!-- case existing transcription-->
 <div
   class="dicto-item-gui-wrapper animate-medium slide-height"
-  ng-repeat="item in active.data track by $index"
+  ng-repeat="item in active.data"
    ng-class="setDictoItemClass(item, $index, $parent.searchTerm)"
     ng-click="test()"
 
@@ -132,6 +132,7 @@
                 ng-model='item.beginSrtFormat'
                 ng-blur = "saveTimecodeOnBlur(item, $index, true, false)"
                 ng-click="$event.stopPropagation()"
+                ng-dblclick="$event.stopPropagation()"
               >
             </form>
           </div>
@@ -167,11 +168,11 @@
                 <div
                   class="tags-category-container"
                   ng-repeat="category in $parent.active.metadata.tagCategories track by $index"
-                  ng-if="item.contentEdited || categoryPopulated(item, category) || category == 'No category'"
+                  ng-if="category.name.length > 0 && item.contentEdited || categoryPopulated(item, category)"
                 >
                   <div
                     class="tag-category-name"
-                    ng-bind="category.name"
+                    ng-bind="(category.name == 'No category')?'':category.name"
                   ></div>
                   <div class="tag-subcontainer">
                     <span
@@ -196,7 +197,7 @@
 
                       <form
                         ng-class="animate-medium"
-                        ng-submit="blurChildren($event);addTag(item, category.name);"
+                        ng-submit="blurChildren($event);addTag(item, category);"
                         focus-me="tag.focused"
                         focus-me-find-input="da"
                         change-input-on-model-change="{{tag.name}}"
@@ -241,7 +242,8 @@
                       class="tag animate-fast"
                       ng-click="addTag(item, category);$event.stopPropagation();"
                       ng-if="item.contentEdited"
-                      dicto-tooltip="add a '{{category}}'' tag"
+                      dicto-tooltip="add a '{{category.name}}'' tag"
+                      ng-show="category.name != 'No category'"
                     >
                         <span class="glyphicon glyphicon-plus"></span>
                     </span>
@@ -297,6 +299,7 @@
                 ng-model="item.endSrtFormat"
                 ng-blur = "saveTimecodeOnBlur(item, $index, false, true)"
                 ng-click="$event.stopPropagation()"
+                ng-dblclick="$event.stopPropagation()"
               >
             </form>
           </div>

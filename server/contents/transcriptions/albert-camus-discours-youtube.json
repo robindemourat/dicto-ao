@@ -4,574 +4,1986 @@
           "slug": "albert-camus-discours-youtube",
           "mediaUrl": "https://www.youtube.com/watch?v=M5QD-32MCv4",
           "type": "transcription",
-          "tags": [],
-          "tagCategories": []
+          "tags": [
+               {
+                    "name": "test",
+                    "category": "No category",
+                    "color": "#57e8b5"
+               },
+               {
+                    "name": "test 2",
+                    "category": "No category",
+                    "color": "#beab36"
+               },
+               {
+                    "name": "Albert Camus",
+                    "category": "Orateur",
+                    "color": "#ccc36e"
+               },
+               {
+                    "name": "distinction",
+                    "category": "No category",
+                    "color": "#a19e14"
+               },
+               {
+                    "name": "lumière",
+                    "category": "No category",
+                    "color": "#b69bc9"
+               }
+          ],
+          "tagCategories": [
+               {
+                    "name": "No category"
+               },
+               {
+                    "name": "Orateur"
+               }
+          ]
      },
      "data": [
           {
                "begin": 3.7199999999999998,
                "end": 9.29,
-               "content": "Sire, Madame, Altesses Royales, Mesdames,\nMessieurs,"
+               "content": "Sire, Madame, Altesses Royales, Mesdames,\nMessieurs,",
+               "beginSrtFormat": "00:00:03,719",
+               "endSrtFormat": "00:00:09,290",
+               "tags": [
+                    {
+                         "name": "test",
+                         "category": "No category",
+                         "color": "#57e8b5"
+                    },
+                    {
+                         "name": "test 2",
+                         "category": "No category",
+                         "color": "#beab36"
+                    },
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "No category",
+                    "Orateur"
+               ]
           },
           {
                "begin": 9.29,
                "end": 16.26,
-               "content": "En recevant la distinction dont votre libre\nAcadémie a bien voulu m'honorer, ma gratitude"
+               "content": "En recevant la distinction dont votre libre\nAcadémie a bien voulu m'honorer, ma gratitude",
+               "beginSrtFormat": "00:00:09,290",
+               "endSrtFormat": "00:00:16,260",
+               "tags": [
+                    {
+                         "name": "distinction",
+                         "category": "No category",
+                         "color": "#a19e14"
+                    },
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "No category",
+                    "Orateur"
+               ]
           },
           {
                "begin": 16.26,
                "end": 21.789,
-               "content": "était d'autant plus profonde que je mesurais\nà quel point cette récompense dépassait"
+               "content": "était d'autant plus profonde que je mesurais\nà quel point cette récompense dépassait",
+               "beginSrtFormat": "00:00:16,260",
+               "endSrtFormat": "00:00:21,789",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 21.789,
                "end": 29.039,
-               "content": "mes mérites personnels. Tout homme et, à\nplus forte raison, tout artiste, désire être"
+               "content": "mes mérites personnels. Tout homme et, à\nplus forte raison, tout artiste, désire être",
+               "beginSrtFormat": "00:00:21,789",
+               "endSrtFormat": "00:00:29,039",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 29.039,
                "end": 38.15,
-               "content": "reconnu. Je le désire aussi. Mais il ne m'a\npas été possible d'apprendre votre décision"
+               "content": "reconnu. Je le désire aussi. Mais il ne m'a\npas été possible d'apprendre votre décision",
+               "beginSrtFormat": "00:00:29,039",
+               "endSrtFormat": "00:00:38,150",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 38.15,
                "end": 45.16,
-               "content": "sans comparer son retentissement à ce que\nje suis réellement. Comment un homme presque"
+               "content": "sans comparer son retentissement à ce que\nje suis réellement. Comment un homme presque",
+               "beginSrtFormat": "00:00:38,150",
+               "endSrtFormat": "00:00:45,160",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 45.16,
                "end": 53.17,
-               "content": "jeune, riche de ses seuls doutes et d'une\nœuvre encore en chantier, habitué à vivre"
+               "content": "jeune, riche de ses seuls doutes et d'une\nœuvre encore en chantier, habitué à vivre",
+               "beginSrtFormat": "00:00:45,160",
+               "endSrtFormat": "00:00:53,170",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 53.17,
                "end": 60.31,
-               "content": "dans la solitude du travail ou dans les retraites\nde l'amitié, n'aurait-il pas appris avec"
+               "content": "dans la solitude du travail ou dans les retraites\nde l'amitié, n'aurait-il pas appris avec",
+               "beginSrtFormat": "00:00:53,170",
+               "endSrtFormat": "00:01:00,310",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 60.31,
                "end": 68.25,
-               "content": "une sorte de panique un arrêt qui le portait\nd'un coup, seul et réduit à lui-même, au"
+               "content": "une sorte de panique un arrêt qui le portait\nd'un coup, seul et réduit à lui-même, au",
+               "beginSrtFormat": "00:01:00,310",
+               "endSrtFormat": "00:01:08,250",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 68.25,
                "end": 77.13,
-               "content": "centre d'une lumière crue ? De quel cœur\naussi pouvait-il recevoir cet honneur à l'heure"
+               "content": "centre d'une lumière crue ? De quel cœur\naussi pouvait-il recevoir cet honneur à l'heure",
+               "beginSrtFormat": "00:01:08,250",
+               "endSrtFormat": "00:01:17,130",
+               "tags": [
+                    {
+                         "name": "lumière",
+                         "category": "No category",
+                         "color": "#b69bc9"
+                    },
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "No category",
+                    "Orateur"
+               ]
           },
           {
                "begin": 77.13,
                "end": 83.33,
-               "content": "où, en Europe, d'autres écrivains, parmi\nles plus grands, sont réduits au silence,"
+               "content": "où, en Europe, d'autres écrivains, parmi\nles plus grands, sont réduits au silence,",
+               "beginSrtFormat": "00:01:17,130",
+               "endSrtFormat": "00:01:23,330",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 83.33,
                "end": 87.53,
-               "content": "et dans le temps même où sa terre natale\nconnaît un malheur incessant ?"
+               "content": "et dans le temps même où sa terre natale\nconnaît un malheur incessant ?",
+               "beginSrtFormat": "00:01:23,330",
+               "endSrtFormat": "00:01:27,530",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 87.53,
                "end": 96.63,
-               "content": "J'ai connu ce désarroi et ce trouble intérieur.\nPour retrouver la paix, il m'a fallu, en somme,"
+               "content": "J'ai connu ce désarroi et ce trouble intérieur.\nPour retrouver la paix, il m'a fallu, en somme,",
+               "beginSrtFormat": "00:01:27,530",
+               "endSrtFormat": "00:01:36,630",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 96.63,
                "end": 103.07,
-               "content": "me mettre en règle avec un sort trop généreux.\nEt, puisque je ne pouvais m'égaler à lui"
+               "content": "me mettre en règle avec un sort trop généreux.\nEt, puisque je ne pouvais m'égaler à lui",
+               "beginSrtFormat": "00:01:36,630",
+               "endSrtFormat": "00:01:43,070",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 103.07,
                "end": 110.4,
-               "content": "en m'appuyant sur mes seuls mérites, je n'ai\nrien trouvé d'autre pour m'aider que ce qui"
+               "content": "en m'appuyant sur mes seuls mérites, je n'ai\nrien trouvé d'autre pour m'aider que ce qui",
+               "beginSrtFormat": "00:01:43,070",
+               "endSrtFormat": "00:01:50,400",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 110.4,
                "end": 117.409,
-               "content": "m'a soutenu tout au long de ma vie, et dans\nles circonstances les plus contraires : l'idée"
+               "content": "m'a soutenu tout au long de ma vie, et dans\nles circonstances les plus contraires : l'idée",
+               "beginSrtFormat": "00:01:50,400",
+               "endSrtFormat": "00:01:57,409",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 117.409,
                "end": 124.7,
-               "content": "que je me fais de mon art et du rôle de l'écrivain.\nPermettez seulement que, dans un sentiment"
+               "content": "que je me fais de mon art et du rôle de l'écrivain.\nPermettez seulement que, dans un sentiment",
+               "beginSrtFormat": "00:01:57,409",
+               "endSrtFormat": "00:02:04,700",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 124.7,
                "end": 130.019,
-               "content": "de reconnaissance et d'amitié, je vous dise,\naussi simplement que je le pourrai, quelle"
+               "content": "de reconnaissance et d'amitié, je vous dise,\naussi simplement que je le pourrai, quelle",
+               "beginSrtFormat": "00:02:04,700",
+               "endSrtFormat": "00:02:10,019",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 130.019,
                "end": 130.59,
-               "content": "est cette idée."
+               "content": "est cette idée.",
+               "beginSrtFormat": "00:02:10,019",
+               "endSrtFormat": "00:02:10,590",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 130.59,
                "end": 139.849,
-               "content": "Je ne puis vivre personnellement sans mon\nart. Mais je n'ai jamais placé cet art au-dessus"
+               "content": "Je ne puis vivre personnellement sans mon\nart. Mais je n'ai jamais placé cet art au-dessus",
+               "beginSrtFormat": "00:02:10,590",
+               "endSrtFormat": "00:02:19,849",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 139.849,
                "end": 147.08,
-               "content": "de tout. S'il m'est nécessaire au contraire,\nc'est qu'il ne se sépare de personne et me"
+               "content": "de tout. S'il m'est nécessaire au contraire,\nc'est qu'il ne se sépare de personne et me",
+               "beginSrtFormat": "00:02:19,849",
+               "endSrtFormat": "00:02:27,080",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 147.08,
                "end": 154.42,
-               "content": "permet de vivre, tel que je suis, au niveau\nde tous. L'art n'est pas à mes yeux une réjouissance"
+               "content": "permet de vivre, tel que je suis, au niveau\nde tous. L'art n'est pas à mes yeux une réjouissance",
+               "beginSrtFormat": "00:02:27,080",
+               "endSrtFormat": "00:02:34,420",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 154.42,
                "end": 160.4,
-               "content": "solitaire. Il est un moyen d'émouvoir le\nplus grand nombre d'hommes en leur offrant"
+               "content": "solitaire. Il est un moyen d'émouvoir le\nplus grand nombre d'hommes en leur offrant",
+               "beginSrtFormat": "00:02:34,420",
+               "endSrtFormat": "00:02:40,400",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 160.4,
                "end": 167.7,
-               "content": "une image privilégiée des souffrances et\ndes joies communes. Il oblige donc l'artiste"
+               "content": "une image privilégiée des souffrances et\ndes joies communes. Il oblige donc l'artiste",
+               "beginSrtFormat": "00:02:40,400",
+               "endSrtFormat": "00:02:47,700",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 167.7,
                "end": 174.5,
-               "content": "à ne pas se séparer ; il le soumet à la\nvérité la plus humble et la plus universelle."
+               "content": "à ne pas se séparer ; il le soumet à la\nvérité la plus humble et la plus universelle.",
+               "beginSrtFormat": "00:02:47,700",
+               "endSrtFormat": "00:02:54,500",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 174.5,
                "end": 183.47,
-               "content": "Et celui qui, souvent, a choisi son destin\nd'artiste parce qu'il se sentait différent"
+               "content": "Et celui qui, souvent, a choisi son destin\nd'artiste parce qu'il se sentait différent",
+               "beginSrtFormat": "00:02:54,500",
+               "endSrtFormat": "00:03:03,470",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 183.47,
                "end": 190.93,
-               "content": "apprend bien vite qu'il ne nourrira son art,\net sa différence, qu'en avouant sa ressemblance"
+               "content": "apprend bien vite qu'il ne nourrira son art,\net sa différence, qu'en avouant sa ressemblance",
+               "beginSrtFormat": "00:03:03,470",
+               "endSrtFormat": "00:03:10,930",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 190.93,
                "end": 200.709,
-               "content": "avec tous. L'artiste se forge dans cet aller\nretour perpétuel de lui aux autres, à mi-chemin"
+               "content": "avec tous. L'artiste se forge dans cet aller\nretour perpétuel de lui aux autres, à mi-chemin",
+               "beginSrtFormat": "00:03:10,930",
+               "endSrtFormat": "00:03:20,709",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 200.709,
                "end": 206.629,
-               "content": "de la beauté dont il ne peut se passer et\nde la communauté à laquelle il ne peut s'arracher."
+               "content": "de la beauté dont il ne peut se passer et\nde la communauté à laquelle il ne peut s'arracher.",
+               "beginSrtFormat": "00:03:20,709",
+               "endSrtFormat": "00:03:26,629",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 206.629,
                "end": 214.459,
-               "content": "C'est pourquoi les vrais artistes ne méprisent\nrien ; ils s'obligent à comprendre au lieu"
+               "content": "C'est pourquoi les vrais artistes ne méprisent\nrien ; ils s'obligent à comprendre au lieu",
+               "beginSrtFormat": "00:03:26,629",
+               "endSrtFormat": "00:03:34,459",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 214.459,
                "end": 220.95,
-               "content": "de juger. Et s'ils ont un parti à prendre\nen ce monde ce ne peut être que celui d'une"
+               "content": "de juger. Et s'ils ont un parti à prendre\nen ce monde ce ne peut être que celui d'une",
+               "beginSrtFormat": "00:03:34,459",
+               "endSrtFormat": "00:03:40,950",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 220.95,
                "end": 228.65,
-               "content": "société où, selon le grand mot de Nietzsche,\nne règnera plus le juge, mais le créateur,"
+               "content": "société où, selon le grand mot de Nietzsche,\nne règnera plus le juge, mais le créateur,",
+               "beginSrtFormat": "00:03:40,950",
+               "endSrtFormat": "00:03:48,650",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 228.65,
                "end": 230.349,
-               "content": "qu'il soit travailleur ou intellectuel."
+               "content": "qu'il soit travailleur ou intellectuel.",
+               "beginSrtFormat": "00:03:48,650",
+               "endSrtFormat": "00:03:50,349",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 230.349,
                "end": 239.33,
-               "content": "Le rôle de l'écrivain, du même coup, ne\nse sépare pas de devoirs difficiles. Par"
+               "content": "Le rôle de l'écrivain, du même coup, ne\nse sépare pas de devoirs difficiles. Par",
+               "beginSrtFormat": "00:03:50,349",
+               "endSrtFormat": "00:03:59,330",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 239.33,
                "end": 245.9,
-               "content": "définition, il ne peut se mettre aujourd'hui\nau service de ceux qui font l'histoire : il"
+               "content": "définition, il ne peut se mettre aujourd'hui\nau service de ceux qui font l'histoire : il",
+               "beginSrtFormat": "00:03:59,330",
+               "endSrtFormat": "00:04:05,900",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 245.9,
                "end": 253.069,
-               "content": "est au service de ceux qui la subissent. Ou\nsinon, le voici seul et privé de son art."
+               "content": "est au service de ceux qui la subissent. Ou\nsinon, le voici seul et privé de son art.",
+               "beginSrtFormat": "00:04:05,900",
+               "endSrtFormat": "00:04:13,069",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 253.069,
                "end": 259.289,
-               "content": "Toutes les armées de la tyrannie avec leurs\nmillions d'hommes ne l'enlèveront pas à"
+               "content": "Toutes les armées de la tyrannie avec leurs\nmillions d'hommes ne l'enlèveront pas à",
+               "beginSrtFormat": "00:04:13,069",
+               "endSrtFormat": "00:04:19,289",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 259.289,
                "end": 266.37,
-               "content": "la solitude, même et surtout s'il consent\nà prendre leur pas. Mais le silence d'un"
+               "content": "la solitude, même et surtout s'il consent\nà prendre leur pas. Mais le silence d'un",
+               "beginSrtFormat": "00:04:19,289",
+               "endSrtFormat": "00:04:26,370",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 266.37,
                "end": 273.36,
-               "content": "prisonnier inconnu, abandonné aux humiliations\nà l'autre bout du monde, suffit à retirer"
+               "content": "prisonnier inconnu, abandonné aux humiliations\nà l'autre bout du monde, suffit à retirer",
+               "beginSrtFormat": "00:04:26,370",
+               "endSrtFormat": "00:04:33,360",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 273.36,
                "end": 278.9,
-               "content": "l'écrivain de l'exil chaque fois, du moins,\nqu'il parvient, au milieu des privilèges"
+               "content": "l'écrivain de l'exil chaque fois, du moins,\nqu'il parvient, au milieu des privilèges",
+               "beginSrtFormat": "00:04:33,360",
+               "endSrtFormat": "00:04:38,900",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 278.9,
                "end": 285.889,
-               "content": "de la liberté, à ne pas oublier ce silence,\net à le relayer pour le faire retentir par"
+               "content": "de la liberté, à ne pas oublier ce silence,\net à le relayer pour le faire retentir par",
+               "beginSrtFormat": "00:04:38,900",
+               "endSrtFormat": "00:04:45,889",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 285.889,
                "end": 288.09,
-               "content": "les moyens de l'art."
+               "content": "les moyens de l'art.",
+               "beginSrtFormat": "00:04:45,889",
+               "endSrtFormat": "00:04:48,090",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 288.09,
                "end": 295.84,
-               "content": "Aucun de nous n'est assez grand pour une pareille\nvocation. Mais dans toutes les circonstances"
+               "content": "Aucun de nous n'est assez grand pour une pareille\nvocation. Mais dans toutes les circonstances",
+               "beginSrtFormat": "00:04:48,090",
+               "endSrtFormat": "00:04:55,840",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 295.84,
                "end": 304.75,
-               "content": "de sa vie, obscur ou provisoirement célèbre,\njeté dans les fers de la tyrannie ou libre"
+               "content": "de sa vie, obscur ou provisoirement célèbre,\njeté dans les fers de la tyrannie ou libre",
+               "beginSrtFormat": "00:04:55,840",
+               "endSrtFormat": "00:05:04,750",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 304.75,
                "end": 311.43,
-               "content": "pour un temps de s'exprimer, l'écrivain peut\nretrouver le sentiment d'une communauté vivante"
+               "content": "pour un temps de s'exprimer, l'écrivain peut\nretrouver le sentiment d'une communauté vivante",
+               "beginSrtFormat": "00:05:04,750",
+               "endSrtFormat": "00:05:11,430",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 311.43,
                "end": 318.8,
-               "content": "qui le justifiera, à la seule condition qu'il\naccepte, autant qu'il peut, les deux charges"
+               "content": "qui le justifiera, à la seule condition qu'il\naccepte, autant qu'il peut, les deux charges",
+               "beginSrtFormat": "00:05:11,430",
+               "endSrtFormat": "00:05:18,800",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 318.8,
                "end": 326.1,
-               "content": "qui font la grandeur de son métier : le service\nde la vérité et celui de la liberté. Puisque"
+               "content": "qui font la grandeur de son métier : le service\nde la vérité et celui de la liberté. Puisque",
+               "beginSrtFormat": "00:05:18,800",
+               "endSrtFormat": "00:05:26,100",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 326.1,
                "end": 332.53,
-               "content": "sa vocation est de réunir le plus grand nombre\nd'hommes possible, elle ne peut s'accommoder"
+               "content": "sa vocation est de réunir le plus grand nombre\nd'hommes possible, elle ne peut s'accommoder",
+               "beginSrtFormat": "00:05:26,100",
+               "endSrtFormat": "00:05:32,530",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 332.53,
                "end": 339.27,
-               "content": "du mensonge et de la servitude qui, là où\nils règnent, font proliférer les solitudes."
+               "content": "du mensonge et de la servitude qui, là où\nils règnent, font proliférer les solitudes.",
+               "beginSrtFormat": "00:05:32,530",
+               "endSrtFormat": "00:05:39,270",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 339.27,
                "end": 346.009,
-               "content": "Quelles que soient nos infirmités personnelles,\nla noblesse de notre métier s'enracinera"
+               "content": "Quelles que soient nos infirmités personnelles,\nla noblesse de notre métier s'enracinera",
+               "beginSrtFormat": "00:05:39,270",
+               "endSrtFormat": "00:05:46,009",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 346.009,
                "end": 352.78,
-               "content": "toujours dans deux engagements difficiles\nà maintenir : le refus de mentir sur ce que"
+               "content": "toujours dans deux engagements difficiles\nà maintenir : le refus de mentir sur ce que",
+               "beginSrtFormat": "00:05:46,009",
+               "endSrtFormat": "00:05:52,780",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 352.78,
                "end": 355.59,
-               "content": "l'on sait et la résistance à l'oppression."
+               "content": "l'on sait et la résistance à l'oppression.",
+               "beginSrtFormat": "00:05:52,780",
+               "endSrtFormat": "00:05:55,590",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 355.59,
                "end": 364.08,
-               "content": "Pendant plus de vingt ans d'une histoire démentielle,\nperdu sans secours, comme tous les hommes"
+               "content": "Pendant plus de vingt ans d'une histoire démentielle,\nperdu sans secours, comme tous les hommes",
+               "beginSrtFormat": "00:05:55,590",
+               "endSrtFormat": "00:06:04,080",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 364.08,
                "end": 370.59,
-               "content": "de mon âge, dans les convulsions du temps,\nj'ai été soutenu ainsi : par le sentiment"
+               "content": "de mon âge, dans les convulsions du temps,\nj'ai été soutenu ainsi : par le sentiment",
+               "beginSrtFormat": "00:06:04,080",
+               "endSrtFormat": "00:06:10,590",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 370.59,
                "end": 378.88,
-               "content": "obscur qu'écrire était aujourd'hui un honneur,\nparce que cet acte obligeait, et obligeait"
+               "content": "obscur qu'écrire était aujourd'hui un honneur,\nparce que cet acte obligeait, et obligeait",
+               "beginSrtFormat": "00:06:10,590",
+               "endSrtFormat": "00:06:18,880",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 378.88,
                "end": 385.74,
-               "content": "à ne pas écrire seulement. Il m'obligeait\nparticulièrement à porter, tel que j'étais"
+               "content": "à ne pas écrire seulement. Il m'obligeait\nparticulièrement à porter, tel que j'étais",
+               "beginSrtFormat": "00:06:18,880",
+               "endSrtFormat": "00:06:25,740",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 385.74,
                "end": 392.93,
-               "content": "et selon mes forces, avec tous ceux qui vivaient\nla même histoire, le malheur et l'espérance"
+               "content": "et selon mes forces, avec tous ceux qui vivaient\nla même histoire, le malheur et l'espérance",
+               "beginSrtFormat": "00:06:25,740",
+               "endSrtFormat": "00:06:32,930",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 392.93,
                "end": 400.61,
-               "content": "que nous partagions. Ces hommes, nés au début\nde la première guerre mondiale, qui ont eu"
+               "content": "que nous partagions. Ces hommes, nés au début\nde la première guerre mondiale, qui ont eu",
+               "beginSrtFormat": "00:06:32,930",
+               "endSrtFormat": "00:06:40,610",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 400.61,
                "end": 406.85,
-               "content": "vingt ans au moment où s'installaient à\nla fois le pouvoir hitlérien et les premiers"
+               "content": "vingt ans au moment où s'installaient à\nla fois le pouvoir hitlérien et les premiers",
+               "beginSrtFormat": "00:06:40,610",
+               "endSrtFormat": "00:06:46,850",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 406.85,
                "end": 413.88,
-               "content": "procès révolutionnaires, qui furent confrontés\nensuite, pour parfaire leur éducation, à"
+               "content": "procès révolutionnaires, qui furent confrontés\nensuite, pour parfaire leur éducation, à",
+               "beginSrtFormat": "00:06:46,850",
+               "endSrtFormat": "00:06:53,880",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 413.88,
                "end": 420.46,
-               "content": "la guerre d'Espagne, à la deuxième guerre\nmondiale, à l'univers concentrationnaire,"
+               "content": "la guerre d'Espagne, à la deuxième guerre\nmondiale, à l'univers concentrationnaire,",
+               "beginSrtFormat": "00:06:53,880",
+               "endSrtFormat": "00:07:00,460",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 420.46,
                "end": 425.66,
-               "content": "à l'Europe de la torture et des prisons,\ndoivent aujourd'hui élever leurs fils et"
+               "content": "à l'Europe de la torture et des prisons,\ndoivent aujourd'hui élever leurs fils et",
+               "beginSrtFormat": "00:07:00,460",
+               "endSrtFormat": "00:07:05,660",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 425.66,
                "end": 433.99,
-               "content": "leurs œuvres dans un monde menacé de destruction\nnucléaire. Personne, je suppose, ne peut"
+               "content": "leurs œuvres dans un monde menacé de destruction\nnucléaire. Personne, je suppose, ne peut",
+               "beginSrtFormat": "00:07:05,660",
+               "endSrtFormat": "00:07:13,990",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 433.99,
                "end": 440.199,
-               "content": "leur demander d'être optimistes. Et je suis\nmême d'avis que nous devons comprendre, sans"
+               "content": "leur demander d'être optimistes. Et je suis\nmême d'avis que nous devons comprendre, sans",
+               "beginSrtFormat": "00:07:13,990",
+               "endSrtFormat": "00:07:20,199",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 440.199,
                "end": 447.37,
-               "content": "cesser de lutter contre eux, l'erreur de ceux\nqui, par une surenchère de désespoir, ont"
+               "content": "cesser de lutter contre eux, l'erreur de ceux\nqui, par une surenchère de désespoir, ont",
+               "beginSrtFormat": "00:07:20,199",
+               "endSrtFormat": "00:07:27,370",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 447.37,
                "end": 452.27,
-               "content": "revendiqué le droit au déshonneur, et se\nsont rués dans les nihilismes de l'époque."
+               "content": "revendiqué le droit au déshonneur, et se\nsont rués dans les nihilismes de l'époque.",
+               "beginSrtFormat": "00:07:27,370",
+               "endSrtFormat": "00:07:32,270",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 452.27,
                "end": 459.009,
-               "content": "Mais il reste que la plupart d'entre nous,\ndans mon pays et en Europe, ont refusé ce"
+               "content": "Mais il reste que la plupart d'entre nous,\ndans mon pays et en Europe, ont refusé ce",
+               "beginSrtFormat": "00:07:32,270",
+               "endSrtFormat": "00:07:39,009",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 459.009,
                "end": 465.55,
-               "content": "nihilisme et se sont mis à la recherche d'une\nlégitimité. Il leur a fallu se forger un"
+               "content": "nihilisme et se sont mis à la recherche d'une\nlégitimité. Il leur a fallu se forger un",
+               "beginSrtFormat": "00:07:39,009",
+               "endSrtFormat": "00:07:45,550",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 465.55,
                "end": 472.65,
-               "content": "art de vivre par temps de catastrophe, pour\nnaître une seconde fois, et lutter ensuite,"
+               "content": "art de vivre par temps de catastrophe, pour\nnaître une seconde fois, et lutter ensuite,",
+               "beginSrtFormat": "00:07:45,550",
+               "endSrtFormat": "00:07:52,650",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 472.65,
                "end": 476.81,
-               "content": "à visage découvert, contre l'instinct de\nmort à l'œuvre dans notre histoire."
+               "content": "à visage découvert, contre l'instinct de\nmort à l'œuvre dans notre histoire.",
+               "beginSrtFormat": "00:07:52,650",
+               "endSrtFormat": "00:07:56,810",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 476.81,
                "end": 485.479,
-               "content": "Chaque génération, sans doute, se croit\nvouée à refaire le monde. La mienne sait"
+               "content": "Chaque génération, sans doute, se croit\nvouée à refaire le monde. La mienne sait",
+               "beginSrtFormat": "00:07:56,810",
+               "endSrtFormat": "00:08:05,479",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 485.479,
                "end": 492.25,
-               "content": "pourtant qu'elle ne le refera pas. Mais sa\ntâche est peut-être plus grande. Elle consiste"
+               "content": "pourtant qu'elle ne le refera pas. Mais sa\ntâche est peut-être plus grande. Elle consiste",
+               "beginSrtFormat": "00:08:05,479",
+               "endSrtFormat": "00:08:12,250",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 492.25,
                "end": 499.449,
-               "content": "à empêcher que le monde se défasse. Héritière\nd'une histoire corrompue où se mêlent les"
+               "content": "à empêcher que le monde se défasse. Héritière\nd'une histoire corrompue où se mêlent les",
+               "beginSrtFormat": "00:08:12,250",
+               "endSrtFormat": "00:08:19,449",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 499.449,
                "end": 505.66,
-               "content": "révolutions déchues, les techniques devenues\nfolles, les dieux morts et les idéologies"
+               "content": "révolutions déchues, les techniques devenues\nfolles, les dieux morts et les idéologies",
+               "beginSrtFormat": "00:08:19,449",
+               "endSrtFormat": "00:08:25,660",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 505.66,
                "end": 511.41,
-               "content": "exténuées, où de médiocres pouvoirs peuvent\naujourd'hui tout détruire mais ne savent"
+               "content": "exténuées, où de médiocres pouvoirs peuvent\naujourd'hui tout détruire mais ne savent",
+               "beginSrtFormat": "00:08:25,660",
+               "endSrtFormat": "00:08:31,410",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 511.41,
                "end": 516.919,
-               "content": "plus convaincre, où l'intelligence s'est\nabaissée jusqu'à se faire la servante de"
+               "content": "plus convaincre, où l'intelligence s'est\nabaissée jusqu'à se faire la servante de",
+               "beginSrtFormat": "00:08:31,410",
+               "endSrtFormat": "00:08:36,919",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 516.919,
                "end": 524.36,
-               "content": "la haine et de l'oppression, cette génération\na dû, en elle-même et autour d'elle, restaurer,"
+               "content": "la haine et de l'oppression, cette génération\na dû, en elle-même et autour d'elle, restaurer,",
+               "beginSrtFormat": "00:08:36,919",
+               "endSrtFormat": "00:08:44,360",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 524.36,
                "end": 530.689,
-               "content": "à partir de ses seules négations, un peu\nde ce qui fait la dignité de vivre et de"
+               "content": "à partir de ses seules négations, un peu\nde ce qui fait la dignité de vivre et de",
+               "beginSrtFormat": "00:08:44,360",
+               "endSrtFormat": "00:08:50,689",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 530.689,
                "end": 534.809,
-               "content": "mourir. Devant un monde menacé de désintégration,\noù nos grands inquisiteurs risquent d'établir"
+               "content": "mourir. Devant un monde menacé de désintégration,\noù nos grands inquisiteurs risquent d'établir",
+               "beginSrtFormat": "00:08:50,689",
+               "endSrtFormat": "00:08:54,809",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 534.809,
                "end": 539.8,
-               "content": "pour toujours les royaumes de la mort, elle\nsait qu'elle devrait, dans une sorte de course"
+               "content": "pour toujours les royaumes de la mort, elle\nsait qu'elle devrait, dans une sorte de course",
+               "beginSrtFormat": "00:08:54,809",
+               "endSrtFormat": "00:08:59,800",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 539.8,
                "end": 546.569,
-               "content": "folle contre la montre, restaurer entre les\nnations une paix qui ne soit pas celle de"
+               "content": "folle contre la montre, restaurer entre les\nnations une paix qui ne soit pas celle de",
+               "beginSrtFormat": "00:08:59,800",
+               "endSrtFormat": "00:09:06,569",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 546.569,
                "end": 553.629,
-               "content": "la servitude, réconcilier à nouveau travail\net culture, et refaire avec tous les hommes"
+               "content": "la servitude, réconcilier à nouveau travail\net culture, et refaire avec tous les hommes",
+               "beginSrtFormat": "00:09:06,569",
+               "endSrtFormat": "00:09:13,629",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 553.629,
                "end": 561.48,
-               "content": "une arche d'alliance. Il n'est pas sûr qu'elle\npuisse jamais accomplir cette tâche immense,"
+               "content": "une arche d'alliance. Il n'est pas sûr qu'elle\npuisse jamais accomplir cette tâche immense,",
+               "beginSrtFormat": "00:09:13,629",
+               "endSrtFormat": "00:09:21,480",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 561.48,
                "end": 567.079,
-               "content": "mais il est sûr que partout dans le monde,\nelle tient déjà son double pari de vérité"
+               "content": "mais il est sûr que partout dans le monde,\nelle tient déjà son double pari de vérité",
+               "beginSrtFormat": "00:09:21,480",
+               "endSrtFormat": "00:09:27,079",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 567.079,
                "end": 575.54,
-               "content": "et de liberté, et, à l'occasion, sait mourir\nsans haine pour lui. C'est elle qui mérite"
+               "content": "et de liberté, et, à l'occasion, sait mourir\nsans haine pour lui. C'est elle qui mérite",
+               "beginSrtFormat": "00:09:27,079",
+               "endSrtFormat": "00:09:35,540",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 575.54,
                "end": 580.73,
-               "content": "d'être saluée et encouragée partout où\nelle se trouve, et surtout là où elle se"
+               "content": "d'être saluée et encouragée partout où\nelle se trouve, et surtout là où elle se",
+               "beginSrtFormat": "00:09:35,540",
+               "endSrtFormat": "00:09:40,730",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 580.73,
                "end": 587.029,
-               "content": "sacrifie. C'est sur elle, en tout cas, que,\ncertain de votre accord profond, je voudrais"
+               "content": "sacrifie. C'est sur elle, en tout cas, que,\ncertain de votre accord profond, je voudrais",
+               "beginSrtFormat": "00:09:40,730",
+               "endSrtFormat": "00:09:47,029",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 587.029,
                "end": 589.17,
-               "content": "reporter l'honneur que vous venez de me faire."
+               "content": "reporter l'honneur que vous venez de me faire.",
+               "beginSrtFormat": "00:09:47,029",
+               "endSrtFormat": "00:09:49,170",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 589.17,
                "end": 597.86,
-               "content": "Du même coup, après avoir dit la noblesse\ndu métier d'écrire, j'aurais remis l'écrivain"
+               "content": "Du même coup, après avoir dit la noblesse\ndu métier d'écrire, j'aurais remis l'écrivain",
+               "beginSrtFormat": "00:09:49,170",
+               "endSrtFormat": "00:09:57,860",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 597.86,
                "end": 603.22,
-               "content": "à sa vraie place, n'ayant d'autres titres\nque ceux qu'il partage avec ses compagnons"
+               "content": "à sa vraie place, n'ayant d'autres titres\nque ceux qu'il partage avec ses compagnons",
+               "beginSrtFormat": "00:09:57,860",
+               "endSrtFormat": "00:10:03,220",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 603.22,
                "end": 611.399,
-               "content": "de lutte, vulnérable mais entêté, injuste\net passionné de justice, construisant son"
+               "content": "de lutte, vulnérable mais entêté, injuste\net passionné de justice, construisant son",
+               "beginSrtFormat": "00:10:03,220",
+               "endSrtFormat": "00:10:11,399",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 611.399,
                "end": 617.1,
-               "content": "œuvre sans honte ni orgueil à la vue de\ntous, sans cesse partagé entre la douleur"
+               "content": "œuvre sans honte ni orgueil à la vue de\ntous, sans cesse partagé entre la douleur",
+               "beginSrtFormat": "00:10:11,399",
+               "endSrtFormat": "00:10:17,100",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 617.1,
                "end": 623.779,
-               "content": "et la beauté, et voué enfin à tirer de\nson être double les créations qu'il essaie"
+               "content": "et la beauté, et voué enfin à tirer de\nson être double les créations qu'il essaie",
+               "beginSrtFormat": "00:10:17,100",
+               "endSrtFormat": "00:10:23,779",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 623.779,
                "end": 631.339,
-               "content": "obstinément d'édifier dans le mouvement\ndestructeur de l'histoire. Qui, après cela,"
+               "content": "obstinément d'édifier dans le mouvement\ndestructeur de l'histoire. Qui, après cela,",
+               "beginSrtFormat": "00:10:23,779",
+               "endSrtFormat": "00:10:31,339",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 631.339,
                "end": 636.019,
-               "content": "pourrait attendre de lui des solutions toutes\nfaites et de belles morales ? La vérité"
+               "content": "pourrait attendre de lui des solutions toutes\nfaites et de belles morales ? La vérité",
+               "beginSrtFormat": "00:10:31,339",
+               "endSrtFormat": "00:10:36,019",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 636.019,
                "end": 642.29,
-               "content": "est mystérieuse, fuyante, toujours à conquérir.\nLa liberté est dangereuse, dure à vivre"
+               "content": "est mystérieuse, fuyante, toujours à conquérir.\nLa liberté est dangereuse, dure à vivre",
+               "beginSrtFormat": "00:10:36,019",
+               "endSrtFormat": "00:10:42,290",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 642.29,
                "end": 648.679,
-               "content": "autant qu'exaltante. Nous devons marcher vers\nces deux buts, péniblement, mais résolument,"
+               "content": "autant qu'exaltante. Nous devons marcher vers\nces deux buts, péniblement, mais résolument,",
+               "beginSrtFormat": "00:10:42,290",
+               "endSrtFormat": "00:10:48,679",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 648.679,
                "end": 655.639,
-               "content": "certains d'avance de nos défaillances sur\nun si long chemin. Quel écrivain, dès lors"
+               "content": "certains d'avance de nos défaillances sur\nun si long chemin. Quel écrivain, dès lors",
+               "beginSrtFormat": "00:10:48,679",
+               "endSrtFormat": "00:10:55,639",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 655.639,
                "end": 661.499,
-               "content": "oserait, dans la bonne conscience, se faire\nprêcheur de vertu ? Quant à moi, il me faut"
+               "content": "oserait, dans la bonne conscience, se faire\nprêcheur de vertu ? Quant à moi, il me faut",
+               "beginSrtFormat": "00:10:55,639",
+               "endSrtFormat": "00:11:01,499",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 661.499,
                "end": 665.35,
-               "content": "dire une fois de plus que je ne suis rien\nde tout cela. Je n'ai jamais pu renoncer à"
+               "content": "dire une fois de plus que je ne suis rien\nde tout cela. Je n'ai jamais pu renoncer à",
+               "beginSrtFormat": "00:11:01,499",
+               "endSrtFormat": "00:11:05,350",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 665.35,
                "end": 670.709,
-               "content": "la lumière, au bonheur d'être, à la vie\nlibre où j'ai grandi. Mais bien que cette"
+               "content": "la lumière, au bonheur d'être, à la vie\nlibre où j'ai grandi. Mais bien que cette",
+               "beginSrtFormat": "00:11:05,350",
+               "endSrtFormat": "00:11:10,709",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 670.709,
                "end": 677.049,
-               "content": "nostalgie explique beaucoup de mes erreurs\net de mes fautes, elle m'a aidé sans doute"
+               "content": "nostalgie explique beaucoup de mes erreurs\net de mes fautes, elle m'a aidé sans doute",
+               "beginSrtFormat": "00:11:10,709",
+               "endSrtFormat": "00:11:17,049",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 677.049,
                "end": 684.059,
-               "content": "à mieux comprendre mon métier, elle m'aide\nencore à me tenir, aveuglément, auprès"
+               "content": "à mieux comprendre mon métier, elle m'aide\nencore à me tenir, aveuglément, auprès",
+               "beginSrtFormat": "00:11:17,049",
+               "endSrtFormat": "00:11:24,059",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 684.059,
                "end": 689.759,
-               "content": "de tous ces hommes silencieux qui ne supportent,\ndans le monde, la vie qui leur est faite que"
+               "content": "de tous ces hommes silencieux qui ne supportent,\ndans le monde, la vie qui leur est faite que",
+               "beginSrtFormat": "00:11:24,059",
+               "endSrtFormat": "00:11:29,759",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 689.759,
                "end": 693.66,
-               "content": "par le souvenir ou le retour de brefs et libres\nbonheurs."
+               "content": "par le souvenir ou le retour de brefs et libres\nbonheurs.",
+               "beginSrtFormat": "00:11:29,759",
+               "endSrtFormat": "00:11:33,660",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 693.66,
                "end": 702.1,
-               "content": "Ramené ainsi à ce que je suis réellement,\nà mes limites, à mes dettes, comme à ma"
+               "content": "Ramené ainsi à ce que je suis réellement,\nà mes limites, à mes dettes, comme à ma",
+               "beginSrtFormat": "00:11:33,660",
+               "endSrtFormat": "00:11:42,100",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 702.1,
                "end": 710.059,
-               "content": "foi difficile, je me sens plus libre de vous\nmontrer pour finir, l'étendue et la générosité"
+               "content": "foi difficile, je me sens plus libre de vous\nmontrer pour finir, l'étendue et la générosité",
+               "beginSrtFormat": "00:11:42,100",
+               "endSrtFormat": "00:11:50,059",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 710.059,
                "end": 716.279,
-               "content": "de la distinction que vous venez de m'accorder,\nplus libre de vous dire aussi que je voudrais"
+               "content": "de la distinction que vous venez de m'accorder,\nplus libre de vous dire aussi que je voudrais",
+               "beginSrtFormat": "00:11:50,059",
+               "endSrtFormat": "00:11:56,279",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 716.279,
                "end": 725.1,
-               "content": "la recevoir comme un hommage rendu à tous\nceux qui, partageant le même combat, n'en"
+               "content": "la recevoir comme un hommage rendu à tous\nceux qui, partageant le même combat, n'en",
+               "beginSrtFormat": "00:11:56,279",
+               "endSrtFormat": "00:12:05,100",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 725.1,
                "end": 731.999,
-               "content": "ont reçu aucun privilège, mais ont connu\nau contraire malheur et persécution. Il me"
+               "content": "ont reçu aucun privilège, mais ont connu\nau contraire malheur et persécution. Il me",
+               "beginSrtFormat": "00:12:05,100",
+               "endSrtFormat": "00:12:11,999",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 731.999,
                "end": 737.98,
-               "content": "restera alors à vous en remercier, du fond\ndu cœur, et à vous faire publiquement, en"
+               "content": "restera alors à vous en remercier, du fond\ndu cœur, et à vous faire publiquement, en",
+               "beginSrtFormat": "00:12:11,999",
+               "endSrtFormat": "00:12:17,980",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 737.98,
                "end": 745.139,
-               "content": "témoignage personnel de gratitude, la même\net ancienne promesse de fidélité que chaque"
+               "content": "témoignage personnel de gratitude, la même\net ancienne promesse de fidélité que chaque",
+               "beginSrtFormat": "00:12:17,980",
+               "endSrtFormat": "00:12:25,139",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           },
           {
                "begin": 745.139,
                "end": 750.19,
-               "content": "artiste vrai, chaque jour, se fait à lui-même,\ndans le silence."
+               "content": "artiste vrai, chaque jour, se fait à lui-même,\ndans le silence.",
+               "beginSrtFormat": "00:12:25,139",
+               "endSrtFormat": "00:12:30,190",
+               "tags": [
+                    {
+                         "name": "Albert Camus",
+                         "category": "Orateur",
+                         "color": "#ccc36e"
+                    }
+               ],
+               "tagCategories": [
+                    "Orateur"
+               ]
           }
      ]
 }

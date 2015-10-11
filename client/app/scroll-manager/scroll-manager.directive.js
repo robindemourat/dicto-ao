@@ -13,7 +13,7 @@ angular.module('dictofullstackApp')
 
 
         var scrollToFirst = function(selector){
-         // console.log('scroll to first ', selector);
+          console.log('scroll to first ', selector);
           scrolling = true;
           var first = angular.element(el.find(selector)[0]);
           if(!first.offset())

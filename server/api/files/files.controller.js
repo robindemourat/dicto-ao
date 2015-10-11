@@ -48,7 +48,7 @@ var parseJsonFile = function(path, callback){
 }
 
 //I parse a dir for json formatted dicto transcriptions and return them with just the meta fields
-var parseTranscriptionsMetadata = function(dir, callback){
+var parseDocumentsMetadata = function(dir, callback){
 	var output = [];
 	listFiles(dir, function(filesList){
 		async.map(filesList, readAsync, function(err, results, f) {
@@ -133,11 +133,11 @@ exports.index = function(req, res) {
 	if(req.params.downloadall){
 		var files = [];
 
-		parseTranscriptionsMetadata('server/contents/transcriptions', function(transcriptions){
+		parseDocumentsMetadata('server/contents/transcriptions', function(transcriptions){
 			transcriptions.forEach(function(t){
 				files.push('server/contents/'+t.type+'s/'+t.slug+'.json');
 			})
-			parseTranscriptionsMetadata('server/contents/montages', function(montages){
+			parseDocumentsMetadata('server/contents/montages', function(montages){
 				montages.forEach(function(t){
 					files.push('server/contents/'+t.type+'s/'+t.slug+'.json');
 				})
@@ -175,10 +175,10 @@ exports.index = function(req, res) {
 			});
 		});
 	}else{
-		parseTranscriptionsMetadata('server/contents/transcriptions', function(transcriptions){
+		parseDocumentsMetadata('server/contents/transcriptions', function(transcriptions){
       var list = {};
 			list.transcriptions = transcriptions;
-			parseTranscriptionsMetadata('server/contents/montages', function(montages){
+			parseDocumentsMetadata('server/contents/montages', function(montages){
 				list.montages = montages;
 				res.json(list);
 			});

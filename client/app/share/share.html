@@ -1,4 +1,7 @@
-<section class="  col-xs-10 col-sm-9 col-md-6 column animate-medium left-column">
+<section
+  class="  col-xs-10 col-sm-9 col-md-6 column animate-medium left-column"
+  ng-style="{'width' : leftColumnPrct + '%'}"
+>
 	<header class="full-header animate-medium">
 		<div
 			class="second-header-container animate-medium"
@@ -141,7 +144,11 @@
 		</div>
 	</section>
 </section>
-<section class="col-xs-2 col-sm-3 col-md-6 column animate-medium media-column right-column" ng-controller="MediaCtrl">
+<section
+  class="col-xs-2 col-sm-3 col-md-6 column animate-medium media-column right-column"
+  ng-controller="MediaCtrl"
+  ng-style="{'width' : 100 - leftColumnPrct + '%'}"
+>
 
 	<div ng-switch="activeMediaType" class="media-container">
 		<vimeo-embed

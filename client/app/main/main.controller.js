@@ -1237,9 +1237,9 @@ angular.module('dictofullstackApp')
 
     $scope.categoryPopulated = function(item, category){
       var ok = item && item.tags;
-      if(!category.name || category.name == 'No category'){
-        return true;
-      }else if(ok){
+      /*if(!category.name || category.name == 'No category'){
+        return false;
+      }else */if(ok){
         return item.tags.filter(function(t){return t.category == category.name}).length > 0;
       }else{
         return undefined;
@@ -1428,6 +1428,7 @@ angular.module('dictofullstackApp')
 
 
       setTimeout(function(){
+        $scope.$broadcast('scrollToFirst', {selector:'.dicto-item-gui-wrapper.content-edited',delay:0});
         $scope.$apply();
       })
     }

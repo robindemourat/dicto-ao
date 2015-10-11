@@ -1,6 +1,6 @@
 <!-- menu -->
 <div
-  class="col-xs-12 col-sm-3 col-md-6 column animate-medium"
+  class="col-xs-12 col-sm-6 column animate-medium"
   ng-class="{'main-column' : optionsMode, 'stack-left' : !showMenu}"
   ng-include="'/assets/html/aside-edition-menu.html'"
 >
@@ -19,7 +19,7 @@
 <section
   class="column animate-medium left-column"
   ng-class="{'col-xs-10 col-sm-9 col-md-6' : !fullMain, 'col-xs-12' : fullMain, 'left-column':!showMenu,'right-column':showMenu}"
-  ng-style="{'width' : (mode == 'preview')?leftColumnPrct + '%':'50%'}"
+  ng-style="{'width' : (mode == 'preview' && !showMenu)?leftColumnPrct + '%':'50%'}"
 >
 
   <!-- aside left menu -->
