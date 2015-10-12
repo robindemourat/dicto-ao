@@ -14,11 +14,14 @@ var config = require('./config/environment');
 // Setup server
 var app = express();
 var server = require('http').createServer(app);
+
+
+var cors = require('cors');
+//app.use(cors());
+
 require('./config/express')(app);//set express config
 require('./routes')(app);//set routes
-var cors = require('cors');
 
-app.use(cors());
 
 
 // Start server

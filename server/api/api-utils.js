@@ -333,7 +333,6 @@ var makeLinks = function(tagsList, transcriptions){
   });
 
 
-  console.log(links[0])
   return links;
 }
 
