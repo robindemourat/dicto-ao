@@ -53,7 +53,7 @@ angular.module('dictofullstackApp')
 
             //console.log(item.parent().attr('class'),item.outerHeight(), item.parent().outerHeight());
             itemOffsetTop = item.parent().offset().top - paddingTop + parent.scrollTop();
-            parentScrollHeight = parent.prop('scrollHeight') + paddingTop;
+            parentScrollHeight = parent.prop('scrollHeight') - paddingTop - parseInt(parent.css('paddingBottom'));
 
             itemPercentY = Math.abs(itemOffsetTop / parentScrollHeight) * 100;
             itemPercentH = Math.abs(itemOuterHeight / parentScrollHeight) * 100;

@@ -5,7 +5,6 @@ angular.module('dictofullstackApp')
   .controller('DashboardCtrl', function ($scope, $location, fileDownload, dictoImporter, dictoExporter, FileUploader, $timeout, $http, $interval) {
 
   	var matchVimeoId = /([\d]{9})/;
-
   	$scope.deleteActiveQuestion = false;
     $scope.exports = {};
 

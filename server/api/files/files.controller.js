@@ -5,7 +5,6 @@ var walk    = require('walk');
 var fs      = require('fs');
 var async = require('async');
 var Zip = require('node-zip');
-var async = require('async');
 var zip = new Zip;
 var zipOptions = {base64: false, compression:'DEFLATE'};
 var mime = require('mime');

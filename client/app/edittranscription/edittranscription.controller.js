@@ -753,7 +753,11 @@ angular.module('dictofullstackApp')
       if(end > $scope.$parent.activeMediaDuration){
         end = $scope.$parent.activeMediaDuration;
       }
+      if(computedY < 0){
+        computedY = 0;
+      }
       $scope.addNewTranscript(closer, computedY, end);
+      console.log('begin y', computedY);
       return {
         index : closer,
         begin : computedY,
