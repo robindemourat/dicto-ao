@@ -55,6 +55,7 @@ var listFiles = function(dir, callback){
   });
 };
 
+//I read a JSON file and return its content as JSON
 var loadJSONFile = function(path, callback){
   readAsync(path, function(err, str){
     if(err){
@@ -71,7 +72,7 @@ var loadJSONFile = function(path, callback){
   });
 }
 
-
+//I read a directory containing exclusively JSON files and return its content as a single array
 var loadJSONFiles = function(dir, callback){
   var output = [];
   listFiles(dir, function(filesList){
@@ -94,13 +95,14 @@ var loadJSONFiles = function(dir, callback){
   });
 }
 
+//I load all transcriptions and callback them as an JSON array
 var loadTranscriptions = function(callback){
   loadJSONFiles(transcriptionsDir, function(err, transcriptions){
     callback(err, transcriptions);
   });
 }
 
-
+//I load one transcription and callback it as a JSON object
 var loadTranscription = function(slug, callback){
   var adr = transcriptionsDir + '/' + slug + '.json';
   loadJSONFile(adr, function(err, transcription){
@@ -108,12 +110,14 @@ var loadTranscription = function(slug, callback){
   })
 }
 
+//I load all montages and callback them as an JSON array
 var loadMontages = function(callback){
   loadJSONFiles(montagesDir, function(err, montages){
     callback(err, montages);
   });
 }
 
+//I load one montage and callback it as a JSON object
 var loadMontage = function(slug, callback){
   var adr = montagesDir + '/' + slug + '.json';
   loadJSONFile(adr, function(err, montage){
@@ -127,7 +131,7 @@ FILES TO API FORMATTING
 =====================================
 */
 
-
+//I transform a dicto chunk to an ao-formatted chunk
 var prepareChunk = function(chunk, transcription, chunkIndex){
   chunk.videoId = transcription.metadata.slug;
   chunk.videoTitle = transcription.metadata.title;
@@ -158,6 +162,7 @@ var prepareChunk = function(chunk, transcription, chunkIndex){
   return chunk;
 }
 
+//I transform a dicto-formatted montage chunk into an ao-formatted montage chunk
 var prepareMontageChunk = function(chunk, montage, chunkIndex){
   chunk.videoId = chunk.slug;
   chunk.videoTitle = chunk.title;
@@ -193,6 +198,7 @@ var prepareMontageChunk = function(chunk, montage, chunkIndex){
   return chunk;
 }
 
+//I transform a dicto-formatted transcription into an ao-formatted transcription
 var prepareTranscription = function(transcription){
   var chunks = transcription.data.map(function(chunk, i){
     return prepareChunk(chunk, transcription, i);
@@ -200,6 +206,7 @@ var prepareTranscription = function(transcription){
   return chunks;
 }
 
+//I transform a dicto-formatted montage into an ao-formatted montage
 var prepareMontage = function(montage){
   var output = {};
   output.id = montage.metadata.slug;
@@ -218,6 +225,7 @@ SPECIAL PROCESSING
 =====================================
 */
 
+//I transform a dicto-formatted transcription into an ao-formatted transcription's metadata information
 var normalizeTranscriptionMeta = function(transcription){
   var meta = transcription.metadata;
   var output = {};
@@ -236,6 +244,7 @@ var normalizeTranscriptionMeta = function(transcription){
   return output;
 }
 
+//I transform a dicto-formatted montage into an ao-formatted montage
 var normalizeMontageMeta = function(transcription){
   var meta = transcription.metadata;
   var output = {};
@@ -253,6 +262,7 @@ var normalizeMontageMeta = function(transcription){
   return output;
 }
 
+//I transform a dicto-formatted tag into an ao-formatted entity
 var normalizeTags = function(tags){
   return tags.map(function(tag){
     delete tag.color;
@@ -261,6 +271,7 @@ var normalizeTags = function(tags){
   });
 }
 
+//I collect all the transcriptions chunks featuring a specific entity
 var populateEntityChunks = function(entity, transcriptions){
   entity.chunks = [];
   transcriptions.forEach(function(transcription){
@@ -278,6 +289,7 @@ var populateEntityChunks = function(entity, transcriptions){
   return entity;
 }
 
+//I compute co-occurence links between tags featured in the same chunks
 var makeLinks = function(tagsList, transcriptions){
   var links = [];
   tagsList.forEach(function(tag1, i){
@@ -328,6 +340,8 @@ var makeLinks = function(tagsList, transcriptions){
 /*
 ENDPOINTS FORMATTING
 */
+
+//I prepare the data for serving a simple chunk
 var serveChunk = function(slug, rank, callback){
   loadTranscription(slug, function(err, transcription){
     if(err){
@@ -339,6 +353,7 @@ var serveChunk = function(slug, rank, callback){
   });
 }
 
+//I prepare the data for serving a simple transcription
 var serveTranscription = function(slug, callback){
   loadTranscription(slug, function(err, transcription){
     if(err){
@@ -349,6 +364,7 @@ var serveTranscription = function(slug, callback){
   });
 }
 
+//I prepare the data for serving a simple montage
 var serveMontage = function(slug, callback){
   loadMontage(slug, function(err, montage){
     if(err){
@@ -359,6 +375,7 @@ var serveMontage = function(slug, callback){
   });
 }
 
+//I prepare the data for serving all transcriptions' metadata
 var serveTranscriptionsMetadata = function(callback){
   loadTranscriptions(function(err, transcriptions){
     if(err){
@@ -370,6 +387,7 @@ var serveTranscriptionsMetadata = function(callback){
   })
 }
 
+//I prepare the data for serving all montages' metadata
 var serveMontagesMetadata = function(callback){
   loadMontages(function(err, montages){
     if(err){
@@ -382,6 +400,7 @@ var serveMontagesMetadata = function(callback){
 }
 
 
+//I prepare the data for serving all entities list and count
 var getTagsList = function(transcriptions){
   console.log('about to get tags list');
   var tags = [];
