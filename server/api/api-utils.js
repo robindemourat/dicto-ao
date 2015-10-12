@@ -238,7 +238,7 @@ var normalizeTranscriptionMeta = function(transcription){
   }).entries(meta.tags);
 
   for(var i in tags){
-    output[tags[i].key + 's'] = tags[i];
+    output[tags[i].key + 's'] = tags[i].values;
   }
 
   return output;
