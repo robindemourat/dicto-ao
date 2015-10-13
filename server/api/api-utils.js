@@ -133,6 +133,8 @@ FILES TO API FORMATTING
 
 //I transform a dicto chunk to an ao-formatted chunk
 var prepareChunk = function(chunk, transcription, chunkIndex){
+  console.log(chunk);
+
   chunk.videoId = transcription.metadata.slug;
   chunk.videoTitle = transcription.metadata.title;
   chunk.id = transcription.metadata.slug + '-' + chunkIndex;
@@ -143,6 +145,7 @@ var prepareChunk = function(chunk, transcription, chunkIndex){
   delete chunk.endSrtFormat;
   delete chunk.playedAtP;
   delete chunk.playedAt;
+
 
   chunk.duration = chunk.end - chunk.start;
 
@@ -293,7 +296,7 @@ var populateEntityChunks = function(entity, transcriptions){
 
 
 //I find first-level connected tags
-var findRelatedNodes = function(tagsList, transcriptions){
+var findRelatedNodes = function(tagsList, transcriptions, allTags){
   tagsList.forEach(function(listedTag, i){
         transcriptions.forEach(function(transcription){
           transcription.data.forEach(function(chunk){
@@ -309,7 +312,11 @@ var findRelatedNodes = function(tagsList, transcriptions){
             if(hasListedTag){
               chunk.tags.forEach(function(chunkTag, chunkIndex){
                 if(chunkTag.category !== listedTag.category && chunkTag.name !== listedTag.name){
-                  tagsList.push(prepareChunk(chunkTag, transcription, chunkIndex))
+                  allTags.forEach(function(allTag){
+                    if(allTag.category === chunkTag.category && allTag.name === chunkTag.name){
+                      tagsList.push(allTag);
+                    }
+                  })
                 }
               });
             }
@@ -325,13 +332,13 @@ var findRelatedNodes = function(tagsList, transcriptions){
   });
 
   //remove duplicates
-  for(var i = tagsList.length - 1; i >=1 ; i--){
-    if(tagsList[i].id === tagsList[i-1]){
+  var i = tagsList.length;
+  while(--i >= 1){
+    if(tagsList[i].id === tagsList[i-1].id){
       tagsList.splice(i, 1);
     }
   }
 
-  console.log(tagsList);
 
 
   return tagsList;

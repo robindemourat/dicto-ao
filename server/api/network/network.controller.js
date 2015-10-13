@@ -22,8 +22,10 @@ exports.index = function(req, res) {
         if(typeof filters === 'string'){
           filters = [filters];
         }
+        //console.log(tags);
         var ok = filters && filters.length && filters.length > 0;
         if(ok){
+          var allTags = tags;
           tags = tags.filter(function(tag){
             var include = false;
             filters.forEach(function(filter){
@@ -33,14 +35,11 @@ exports.index = function(req, res) {
             });
             return include;
           });
-          tags = utils.findRelatedNodes(tags, transcriptions);
+          tags = utils.findRelatedNodes(tags, transcriptions, allTags);
         }
 
       }
 
-      /*tags.forEach(function(tag, i){
-        tag.id = i;
-      });*/
       output.nodes = tags;
       console.log('nodes done');
       output.links = utils.makeLinks(tags, transcriptions);
