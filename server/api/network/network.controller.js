@@ -33,6 +33,7 @@ exports.index = function(req, res) {
             });
             return include;
           });
+          tags = utils.findRelatedNodes(tags, transcriptions);
         }
 
       }

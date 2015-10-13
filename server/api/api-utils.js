@@ -141,6 +141,8 @@ var prepareChunk = function(chunk, transcription, chunkIndex){
   delete chunk.begin;
   delete chunk.beginSrtFormat;
   delete chunk.endSrtFormat;
+  delete chunk.playedAtP;
+  delete chunk.playedAt;
 
   chunk.duration = chunk.end - chunk.start;
 
@@ -287,6 +289,52 @@ var populateEntityChunks = function(entity, transcriptions){
     })
   });
   return entity;
+}
+
+
+//I find first-level connected tags
+var findRelatedNodes = function(tagsList, transcriptions){
+  tagsList.forEach(function(listedTag, i){
+        transcriptions.forEach(function(transcription){
+          transcription.data.forEach(function(chunk){
+            var chunkHasTags= chunk.tags && chunk.tags.length && chunk.tags.length > 0;
+            var hasListedTag;
+            if(chunkHasTags){
+              chunk.tags.forEach(function(chunkTag){
+                if(chunkTag.category === listedTag.category && chunkTag.name === listedTag.name){
+                  hasListedTag = true;
+                }
+              });
+            }
+            if(hasListedTag){
+              chunk.tags.forEach(function(chunkTag, chunkIndex){
+                if(chunkTag.category !== listedTag.category && chunkTag.name !== listedTag.name){
+                  tagsList.push(prepareChunk(chunkTag, transcription, chunkIndex))
+                }
+              });
+            }
+          });
+        });
+  });
+
+  //sort to prepare duplicates checking
+  tagsList = tagsList.sort(function(tag1, tag2){
+    if(tag1.id > tag2.id)return 1;
+    else if(tag2.id > tag1.id)return -1;
+    else return 0;
+  });
+
+  //remove duplicates
+  for(var i = tagsList.length - 1; i >=1 ; i--){
+    if(tagsList[i].id === tagsList[i-1]){
+      tagsList.splice(i, 1);
+    }
+  }
+
+  console.log(tagsList);
+
+
+  return tagsList;
 }
 
 //I compute co-occurence links between tags featured in the same chunks
@@ -482,6 +530,7 @@ lib.getTagsList = getTagsList;
 lib.populateEntityChunks = populateEntityChunks;
 lib.makeLinks = makeLinks;
 lib.prepareChunk = prepareChunk;
+lib.findRelatedNodes = findRelatedNodes;
 
 
 module.exports = lib;
