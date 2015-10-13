@@ -293,42 +293,44 @@ var populateEntityChunks = function(entity, transcriptions){
 var makeLinks = function(tagsList, transcriptions){
   var links = [];
   tagsList.forEach(function(tag1, i){
-    tagsList.slice(i+1, tagsList.length - 1).forEach(function(tag2, j){
-      transcriptions.forEach(function(transcription){
-        transcription.data.forEach(function(chunk){
-          var chunkHasTags= chunk.tags && chunk.tags.length && chunk.tags.length > 0;
-          if(chunkHasTags){
-            var hasTag1, hasTag2;
-            chunk.tags.forEach(function(chunkTag){
-              if(tag1.category === chunkTag.category && slugify(tag1.name) === slugify(chunkTag.name)){
-                hasTag1 = true;
-              }
-              if(tag2.category === chunkTag.category && slugify(tag2.name) === slugify(chunkTag.name)){
-                hasTag2 = true;
-              }
-            });
-            if(hasTag1 && hasTag2){
-              var linkId;
-              links.forEach(function(link, k){
-                if(link.source === i && link.target === j){
-                  linkId = k;
+    tagsList.slice(i, tagsList.length).forEach(function(tag2, j){
+      if(j > i){
+        transcriptions.forEach(function(transcription){
+          transcription.data.forEach(function(chunk){
+            var chunkHasTags= chunk.tags && chunk.tags.length && chunk.tags.length > 0;
+            if(chunkHasTags){
+              var hasTag1, hasTag2;
+              chunk.tags.forEach(function(chunkTag){
+                if(tag1.category === chunkTag.category && slugify(tag1.name) === slugify(chunkTag.name)){
+                  hasTag1 = true;
                 }
-              })
+                if(tag2.category === chunkTag.category && slugify(tag2.name) === slugify(chunkTag.name)){
+                  hasTag2 = true;
+                }
+              });
+              if(hasTag1 && hasTag2){
+                var linkId;
+                links.forEach(function(link, k){
+                  if(link.source === i && link.target === j){
+                    linkId = k;
+                  }
+                })
 
-              if(linkId === undefined){
-                links.push({
-                  source : i,
-                  target : i+j+1,
-                  value : 1
-                });
-              }else{
-                links[linkId].value++;
+                if(linkId === undefined){
+                  links.push({
+                    source : i,
+                    target : i+j,
+                    value : 1
+                  });
+                }else{
+                  links[linkId].value++;
+                }
               }
             }
-          }
 
+          });
         });
-      });
+      }
     });
   });
 
