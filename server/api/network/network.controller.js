@@ -17,11 +17,16 @@ exports.index = function(req, res) {
       if(req.query.nodes){
         var stringified = JSON.stringify(req.query);
         //var filters = decodeURIComponent(req.query.nodes);
-        var query = JSON.parse(stringified);
-        var filters = JSON.parse(query.nodes);
-        if(typeof filters === 'string'){
-          filters = [filters];
+        try{
+          var query = JSON.parse(stringified);
+          var filters = JSON.parse(query.nodes);
+          if(typeof filters === 'string'){
+            filters = [filters];
+          }
+        }catch(e){
+          res.status(400).send({msg:'query badly formatted', error : e})
         }
+
         //console.log(tags);
         var ok = filters && filters.length && filters.length > 0;
         if(ok){
