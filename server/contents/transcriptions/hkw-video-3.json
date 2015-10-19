@@ -7,7 +7,7 @@
             "sharable": "true",
             "tags": [
                   {
-                        "name": "Pavel Kabat, IIASA International Institute for Advanced Systems Analysis",
+                        "name": "Pavel Kabat, Iiasa International Institute For Advanced Systems Analysis",
                         "category": "speaker",
                         "color": "#556dd9"
                   },
@@ -17,12 +17,22 @@
                         "color": "#889b1b"
                   },
                   {
-                        "name": "Satellites data",
+                        "name": "Satellites",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Political intentions",
+                        "name": "Geography",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Data",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Political Issues",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
@@ -32,17 +42,37 @@
                         "color": "#ccc36e"
                   },
                   {
+                        "name": "Climate Convention",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Energy",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Climate Convention",
+                        "category": "theme",
+                        "color": "#a2b2e3"
+                  },
+                  {
                         "name": "Governance",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "System analysis",
+                        "name": "Network Theory & System Thinking",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Hans Joachim John Schellnhuber, Director PIK Potsdam Institute for Climate Impact Research",
+                        "name": "Network Theory & System Thinking",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Hans Joachim John Schellnhuber, Director Pik Potsdam Institute For Climate Impact Research",
                         "category": "speaker",
                         "color": "#556dd9"
                   },
@@ -52,47 +82,87 @@
                         "color": "#889b1b"
                   },
                   {
-                        "name": "Global environment",
+                        "name": "Global Issues",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Climate modeling",
+                        "name": "Climate Simulation",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "His Royal Highness The Prince of Wales",
+                        "name": "Interdisplinarity",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "His Royal Highness The Prince Of Wales",
                         "category": "speaker",
                         "color": "#556dd9"
                   },
                   {
-                        "name": "Potsdam Institute for Climate Impact Research",
+                        "name": "Potsdam Institute For Climate Impact Research",
                         "category": "place",
                         "color": "#889b1b"
                   },
                   {
-                        "name": "Decisive actions",
+                        "name": "Decisive Actions",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Climate change",
+                        "name": "Climate Change",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Risk",
+                        "name": "Risks",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "New platform",
+                        "name": "Greenhouse Gas",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                        "name": "Economy",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Models",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Risks",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Climate Change",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "2 Degrees",
+                        "category": "theme",
+                        "color": "#42542b"
+                  },
+                  {
+                        "name": "New Platform",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Science",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
                         "category": "speaker",
                         "color": "#556dd9"
                   },
@@ -107,42 +177,82 @@
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Temperature increase",
+                        "name": "Temperature",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Global emissions",
+                        "name": "Policy",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Urbanization",
+                        "name": "Temperature",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Gas emission",
+                        "name": "Temperature",
+                        "category": "theme",
+                        "color": "#9ada39"
+                  },
+                  {
+                        "name": "Emissions",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Climate change laws",
+                        "name": "Urban Area",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Industrialized countries",
+                        "name": "Greenhouse Gas",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Developing countries",
+                        "name": "Carbon",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Climate Change",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Renewable Energy",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Industrialized Countries",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Developing Countries",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
                         "name": "Population",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Greenhouse Gas",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Renewable Energy",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Economy",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
@@ -167,17 +277,42 @@
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Global change program",
+                        "name": "Global Issues",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Human dimensions",
+                        "name": "Human Dimensions",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Earth system",
+                        "name": "Biogeophysic",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Social Issues",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Political Issues",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Network Theory & System Thinking",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Society",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Biogeophysic",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
@@ -187,7 +322,12 @@
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Developing models",
+                        "name": "Satellites",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Developing Models",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
@@ -197,12 +337,17 @@
                         "color": "#889b1b"
                   },
                   {
-                        "name": "Different perspectives",
+                        "name": "Different Perspectives",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Network theory",
+                        "name": "Agricolture",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Network Theory & System Thinking",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
@@ -217,12 +362,17 @@
                         "color": "#889b1b"
                   },
                   {
-                        "name": "Fossil fuels",
+                        "name": "Fossil Fuels",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Historical responsibility",
+                        "name": "Responsibilities",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Poverty",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
@@ -232,22 +382,37 @@
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Efficient technologies",
+                        "name": "India",
+                        "category": "place",
+                        "color": "#889b1b"
+                  },
+                  {
+                        "name": "Infrastrucutre",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Asymmetric situation",
+                        "name": "Technology",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Political will",
+                        "name": "Soviet Union",
+                        "category": "place",
+                        "color": "#889b1b"
+                  },
+                  {
+                        "name": "Asymmetric Situation",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Global agreement",
+                        "name": "Global Agreement",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Political Issues",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
@@ -257,12 +422,17 @@
                         "color": "#889b1b"
                   },
                   {
-                        "name": "India",
-                        "category": "place",
-                        "color": "#889b1b"
+                        "name": "Emissions",
+                        "category": "theme",
+                        "color": "#ccc36e"
                   },
                   {
-                        "name": "Global constituents",
+                        "name": "",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Global Issues",
                         "category": "theme",
                         "color": "#ccc36e"
                   }
@@ -288,7 +458,7 @@
                   "endSrtFormat": "00:02:45,000",
                   "tags": [
                         {
-                              "name": "Pavel Kabat, IIASA International Institute for Advanced Systems Analysis",
+                              "name": "Pavel Kabat, Iiasa International Institute For Advanced Systems Analysis",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
@@ -298,7 +468,17 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Satellites data",
+                              "name": "Satellites",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Geography",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Data",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -317,7 +497,7 @@
                   "endSrtFormat": "00:03:20,000",
                   "tags": [
                         {
-                              "name": "Pavel Kabat, IIASA International Institute for Advanced Systems Analysis",
+                              "name": "Pavel Kabat, Iiasa International Institute For Advanced Systems Analysis",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
@@ -327,7 +507,7 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Political intentions",
+                              "name": "Political Issues",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
@@ -335,6 +515,26 @@
                               "name": "Sustainability",
                               "category": "theme",
                               "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate Convention",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Energy",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Sustainability",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate Convention",
+                              "category": "theme",
+                              "color": "#a2b2e3"
                         }
                   ],
                   "tagCategories": [
@@ -346,12 +546,12 @@
             {
                   "begin": 203,
                   "end": 236,
-                  "content": "I think the next step really is on the governance, on the government side of the problem. We need a system where the political and governmental actions will be able to release themselves for what I call\n(25:45) of (25:46) governance. We need to adopt the concepts which are cross cutting across the sectors..",
+                  "content": "I think the next step really is on the governance, on the government side of the problem. We need a system where the political and governmental actions will be able to release themselves for what I call\n of governance. We need to adopt the concepts which are cross cutting across the sectors..",
                   "beginSrtFormat": "00:03:23,000",
                   "endSrtFormat": "00:03:56,000",
                   "tags": [
                         {
-                              "name": "Pavel Kabat, IIASA International Institute for Advanced Systems Analysis",
+                              "name": "Pavel Kabat, Iiasa International Institute For Advanced Systems Analysis",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
@@ -380,7 +580,7 @@
                   "endSrtFormat": "00:04:21,000",
                   "tags": [
                         {
-                              "name": "Pavel Kabat, IIASA International Institute for Advanced Systems Analysis",
+                              "name": "Pavel Kabat, Iiasa International Institute For Advanced Systems Analysis",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
@@ -390,7 +590,12 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "System analysis",
+                              "name": "Network Theory & System Thinking",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Network Theory & System Thinking",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -409,7 +614,7 @@
                   "endSrtFormat": "00:05:14,000",
                   "tags": [
                         {
-                              "name": "Hans Joachim John Schellnhuber, Director PIK Potsdam Institute for Climate Impact Research",
+                              "name": "Hans Joachim John Schellnhuber, Director Pik Potsdam Institute For Climate Impact Research",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
@@ -419,12 +624,17 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Global environment",
+                              "name": "Global Issues",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Climate modeling",
+                              "name": "Climate Simulation",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Interdisplinarity",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -443,7 +653,7 @@
                   "endSrtFormat": "00:08:00,000",
                   "tags": [
                         {
-                              "name": "His Royal Highness The Prince of Wales",
+                              "name": "His Royal Highness The Prince Of Wales",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
@@ -453,24 +663,54 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Potsdam Institute for Climate Impact Research",
-                              "category": "place",
+                              "name": "Potsdam Institute For Climate Impact Research",
+                              "category": "theme",
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Decisive actions",
+                              "name": "Decisive Actions",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Climate change",
+                              "name": "Climate Change",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Risk",
+                              "name": "Risks",
                               "category": "theme",
                               "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Greenhouse Gas",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Economy",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Models",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Risks",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "2 Degrees",
+                              "category": "theme",
+                              "color": "#42542b"
                         }
                   ],
                   "tagCategories": [
@@ -487,7 +727,7 @@
                   "endSrtFormat": "00:08:36,000",
                   "tags": [
                         {
-                              "name": "His Royal Highness The Prince of Wales",
+                              "name": "His Royal Highness The Prince Of Wales",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
@@ -497,12 +737,17 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Potsdam Institute for Climate Impact Research",
-                              "category": "place",
+                              "name": "Potsdam Institute For Climate Impact Research",
+                              "category": "theme",
                               "color": "#889b1b"
                         },
                         {
-                              "name": "New platform",
+                              "name": "New Platform",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Science",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -521,7 +766,7 @@
                   "endSrtFormat": "00:12:49,000",
                   "tags": [
                         {
-                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
@@ -536,9 +781,34 @@
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Temperature increase",
+                              "name": "Temperature",
                               "category": "theme",
                               "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Policy",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Temperature",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Temperature",
+                              "category": "theme",
+                              "color": "#9ada39"
+                        },
+                        {
+                              "name": "2 Degrees",
+                              "category": "theme",
+                              "color": "#42542b"
                         }
                   ],
                   "tagCategories": [
@@ -555,7 +825,7 @@
                   "endSrtFormat": "00:13:43,000",
                   "tags": [
                         {
-                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
@@ -570,7 +840,12 @@
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Global emissions",
+                              "name": "Emissions",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate Change",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -589,7 +864,7 @@
                   "endSrtFormat": "00:14:32,000",
                   "tags": [
                         {
-                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
@@ -599,12 +874,22 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Urbanization",
+                              "name": "Urban Area",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Gas emission",
+                              "name": "Greenhouse Gas",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Carbon",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate Change",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -623,7 +908,7 @@
                   "endSrtFormat": "00:15:31,000",
                   "tags": [
                         {
-                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
@@ -633,7 +918,22 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Climate change laws",
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Renewable Energy",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Emissions",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate Change",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -652,7 +952,7 @@
                   "endSrtFormat": "00:17:05,000",
                   "tags": [
                         {
-                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
@@ -662,17 +962,52 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Industrialized countries",
+                              "name": "Industrialized Countries",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Developing countries",
+                              "name": "Developing Countries",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
                               "name": "Population",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Greenhouse Gas",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Renewable Energy",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Emissions",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Economy",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Developing Countries",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Carbon",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -735,12 +1070,27 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Global change program",
+                              "name": "Global Issues",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Human dimensions",
+                              "name": "Human Dimensions",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Biogeophysic",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Social Issues",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Political Issues",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -769,7 +1119,22 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Earth system",
+                              "name": "Network Theory & System Thinking",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Anthropocene",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Society",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Biogeophysic",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
@@ -783,7 +1148,9 @@
                         "speaker",
                         "place",
                         "theme"
-                  ]
+                  ],
+                  "playedAt": null,
+                  "playedAtP": null
             },
             {
                   "begin": 1261,
@@ -835,6 +1202,16 @@
                               "name": "IGBP",
                               "category": "theme",
                               "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Anthropocene",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Satellites",
+                              "category": "theme",
+                              "color": "#ccc36e"
                         }
                   ],
                   "tagCategories": [
@@ -861,7 +1238,7 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Developing models",
+                              "name": "Developing Models",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -895,7 +1272,12 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Different perspectives",
+                              "name": "Different Perspectives",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Agricolture",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -924,7 +1306,7 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Network theory",
+                              "name": "Network Theory & System Thinking",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
@@ -943,7 +1325,7 @@
             {
                   "begin": 1533,
                   "end": 1606,
-                  "content": "Well, of course we will be the largest contributors. We are the two largest countries in the world. And if we, given the present global dependence on fossil fuels, given the fact that renewable energy technologies still are some way off before they can replace fossil fuels on a large enough scale --> unless we condemn our people to poverty we are not going to be able to meet that development aspirations. But our historical responsibility and our per capita responsibility will remain below that of the West for many decades into the future. Alright..",
+                  "content": "Well, of course we will be the largest contributors. We are the two largest countries in the world. And if we, given the present global dependence on fossil fuels, given the fact that renewable energy technologies still are some way off before they can replace fossil fuels on a large enough scale unless we condemn our people to poverty we are not going to be able to meet that development aspirations. But our historical responsibility and our per capita responsibility will remain below that of the West for many decades into the future. Alright..",
                   "beginSrtFormat": "00:25:33,000",
                   "endSrtFormat": "00:26:46,000",
                   "tags": [
@@ -958,12 +1340,17 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Fossil fuels",
+                              "name": "Fossil Fuels",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Historical responsibility",
+                              "name": "Responsibilities",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Poverty",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -995,6 +1382,11 @@
                               "name": "Colonialism",
                               "category": "theme",
                               "color": "#ccc36e"
+                        },
+                        {
+                              "name": "India",
+                              "category": "place",
+                              "color": "#889b1b"
                         }
                   ],
                   "tagCategories": [
@@ -1024,6 +1416,16 @@
                               "name": "Colonialism",
                               "category": "theme",
                               "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Infrastrucutre",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Economy",
+                              "category": "theme",
+                              "color": "#ccc36e"
                         }
                   ],
                   "tagCategories": [
@@ -1035,7 +1437,7 @@
             {
                   "begin": 1723,
                   "end": 1769,
-                  "content": "And there was a period of technology denial, for example, the Bukhari Steel Plant is a case in point by the west --> which meant that we could not import the most efficient technologies, develop the most of efficient technologies. We had to go to former Soviet Union for these technologies. And there was a certain locking period for that. However, what has happened after the 1990s reform of the Indian economy is that India became free to import these technologies from the global market, and also to develop the manufacturing capability for these technologies..",
+                  "content": "And there was a period of technology denial, for example, the Bukhari Steel Plant is a case in point by the west which meant that we could not import the most efficient technologies, develop the most of efficient technologies. We had to go to former Soviet Union for these technologies. And there was a certain locking period for that. However, what has happened after the 1990s reform of the Indian economy is that India became free to import these technologies from the global market, and also to develop the manufacturing capability for these technologies..",
                   "beginSrtFormat": "00:28:43,000",
                   "endSrtFormat": "00:29:29,000",
                   "tags": [
@@ -1050,9 +1452,19 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Efficient technologies",
+                              "name": "Technology",
                               "category": "theme",
                               "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Soviet Union",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "India",
+                              "category": "place",
+                              "color": "#889b1b"
                         }
                   ],
                   "tagCategories": [
@@ -1079,7 +1491,12 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Asymmetric situation",
+                              "name": "Asymmetric Situation",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Global Agreement",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -1108,12 +1525,12 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Political will",
+                              "name": "Political Issues",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Global agreement",
+                              "name": "Global Agreement",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -1152,7 +1569,22 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Developing countries",
+                              "name": "Developing Countries",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Emissions",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -1181,7 +1613,7 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Global constituents",
+                              "name": "Global Issues",
                               "category": "theme",
                               "color": "#ccc36e"
                         }

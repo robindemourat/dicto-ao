@@ -4,6 +4,7 @@ var _ = require('lodash');
 var d3 = require('d3');
 var utils = require('./../api-utils.js');
 var url = require('url');
+var fs = require('fs');
 
 // Get network
 exports.index = function(req, res) {
@@ -43,15 +44,27 @@ exports.index = function(req, res) {
           tags = utils.findRelatedNodes(tags, transcriptions, allTags);
         }
 
+        output.nodes = tags;
+        console.log('nodes done');
+        output.links = utils.makeLinks(tags, transcriptions);
+        console.log('links done');
+
+        res.json(output);
+        console.log('network sent');
+
+      }else{
+        fs.readFile(__dirname +'/../../contents/fixed_data/network.json', 'utf-8', function(err, net){
+          if(err){
+            res.status(500).send({msg:'network data not loaded', error : err});
+          }else{
+            try{
+              res.json(JSON.parse(net));
+            }catch(e){
+              res.status(400).send({msg:'error while reading network file', error : e})
+            }
+          }
+        })
       }
-
-      output.nodes = tags;
-      console.log('nodes done');
-      output.links = utils.makeLinks(tags, transcriptions);
-      console.log('links done');
-
-      res.json(output);
-      console.log('network sent');
     }
   });
 };

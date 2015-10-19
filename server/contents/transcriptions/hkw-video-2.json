@@ -27,12 +27,47 @@
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Geological deposits",
+                        "name": "Geological Deposits",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Marine strata",
+                        "name": "Marine Strata",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Rivers",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Dams",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Sediments",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Erosion",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Deep Sea",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Land",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Anthropocene",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
@@ -47,7 +82,17 @@
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "New frontier",
+                        "name": "Frontier",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Acqua Culture",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Renewable Energy",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
@@ -77,12 +122,7 @@
                         "color": "#889b1b"
                   },
                   {
-                        "name": "Submarine areas",
-                        "category": "theme",
-                        "color": "#ccc36e"
-                  },
-                  {
-                        "name": "International law",
+                        "name": "Submarine Areas",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
@@ -92,7 +132,62 @@
                         "color": "#ccc36e"
                   },
                   {
+                        "name": "WW-II",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Territory",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Land",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Law",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Institutions",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "USA",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Institutions",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
                         "name": "Delimitation",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Sea Level",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "IPCC",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Coasts",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Islands",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
@@ -107,17 +202,22 @@
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Sea level",
+                        "name": "Migration & Refugees",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Balanced water",
+                        "name": "Water",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Earth system",
+                        "name": "Trade",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Network Theory & System Thinking",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
@@ -127,12 +227,37 @@
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Human population",
+                        "name": "Population",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Industrial revolution",
+                        "name": "Frontier",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Future",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Population",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Industrial Revolution",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Agricolture",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Population",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
@@ -152,22 +277,42 @@
                         "color": "#889b1b"
                   },
                   {
+                        "name": "Fossil Fuels",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Urban Area",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Pollutants",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
                         "name": "Australia",
                         "category": "place",
                         "color": "#889b1b"
                   },
                   {
-                        "name": "Petrol",
+                        "name": "Fossil Fuels",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Industrial pollutants",
+                        "name": "Biogeophysic",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Chemical anthropocene",
+                        "name": "Pollutants",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Anthropocene",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
@@ -177,7 +322,12 @@
                         "color": "#889b1b"
                   },
                   {
-                        "name": "Brick material",
+                        "name": "Brick Material",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "",
                         "category": "theme",
                         "color": "#ccc36e"
                   }
@@ -223,12 +373,47 @@
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Geological deposits",
+                              "name": "Geological Deposits",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Marine strata",
+                              "name": "Marine Strata",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Rivers",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Dams",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Sediments",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Erosion",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Deep Sea",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Land",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Anthropocene",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -280,7 +465,17 @@
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "New frontier",
+                              "name": "Frontier",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Acqua Culture",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Renewable Energy",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -293,7 +488,7 @@
             {
                   "begin": 446,
                   "end": 547,
-                  "content": "Whether there is some relationship in between international law and geology. For a very long time, there was a relationship in between development of international law and geography – a fixed geography, as we perceive it in Holocene. Of course all the time also, international law was a facilitator of certain ideology and spoke for certain ideology. We can come back to ideology, but geology was introduced in international law, I would say, right after the Second World War. This question about [4:15] continental shelf in the Arctic today, which is very interesting – they have to start from there, from 1945, when there was U.S. President Truman proclamation about continental shelf rights, submarine areas. Of course the reason was getting resources – oil and gas. But justification was on geological [4:45] that the territorial rights or certain sovereign rights did not really stop at the shore, that there is a same geological composition of our state or land which goes further under the sea..",
+                  "content": "Whether there is some relationship in between international law and geology. For a very long time, there was a relationship in between development of international law and geography - a fixed geography, as we perceive it in Holocene. Of course all the time also, international law was a facilitator of certain ideology and spoke for certain ideology. We can come back to ideology, but geology was introduced in international law, I would say, right after the Second World War. This question about continental shelf in the Arctic today, which is very interesting - they have to start from there, from 1945, when there was U.S. President Truman proclamation about continental shelf rights, submarine areas. Of course the reason was getting resources - oil and gas. But justification was on geological  that the territorial rights or certain sovereign rights did not really stop at the shore, that there is a same geological composition of our state or land which goes further under the sea..",
                   "beginSrtFormat": "00:07:26,000",
                   "endSrtFormat": "00:09:07,000",
                   "tags": [
@@ -323,7 +518,27 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Submarine areas",
+                              "name": "Submarine Areas",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Holocene",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "WW-II",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Territory",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Land",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -337,7 +552,7 @@
             {
                   "begin": 548,
                   "end": 693,
-                  "content": "Then there was also a judgment of the International Court of Justice and in dispute in [6:10], also stating that those rights on continental shelf – they are ipso facto, by the fact that there is a state, and also that they’re inherent rights. Imagine. You have inherent rights on the submarine areas because you have certain territorial rights on the land. This actually is accepted. Of course those inherent rights are not unlimited. This is the issue of the [6:43] and any other area. Today there is a United Nations Convention on the law of the sea which was adopted in 1982 which today has under 66 parties, when you know that we have 150 [7:00] states. There are more state parties through the law of the sea convention than there are states with their own course in this planet, meaning we have something which is almost universally accepted, even though some states are not parties to the convention, and there is a very big state which is not a party and that is the United States. However, also the United States very often refers to this convention because the convention reflects customary international law in most of its provisions. That convention has a set of very complex criteria on how you could claim your rights to the continental shelf. In any case, you have them up to 200 nautical miles from your baselines. We shall come to baselines later in this conversation. Or you get rights even further than that distance of 200 nautical miles. If there is a geological connection with your coastal area, that one cannot go further than 250 nautical miles, but there are various clauses which are quite complex in the Law of the Sea Convention, allowing also setting of various bodies.\nBut to put it very short, there is development of international law after the Second World War until now in 2013 has been very closely connected with geology. But in those terms of acquiring territorial rights, they could have quite a different relationship to geology with the concept of the anthropocene. That is looking at geology not of spreading territorial rights but of thinking of whether our international law is actually the law of the anthropocene or it only belongs to the epoch of Holocene. That is the key challenge today, I believe, when we introduced this anthropocene concept..",
+                  "content": "Then there was also a judgment of the International Court of Justice and in dispute in, also stating that those rights on continental shelf - they are ipso facto, by the fact that there is a state, and also that they’re inherent rights. Imagine. You have inherent rights on the submarine areas because you have certain territorial rights on the land. This actually is accepted. Of course those inherent rights are not unlimited. This is the issue of the and any other area. Today there is a United Nations Convention on the law of the sea which was adopted in 1982 which today has under 66 parties, when you know that we have 150 states. There are more state parties through the law of the sea convention than there are states with their own course in this planet, meaning we have something which is almost universally accepted, even though some states are not parties to the convention, and there is a very big state which is not a party and that is the United States. However, also the United States very often refers to this convention because the convention reflects customary international law in most of its provisions. That convention has a set of very complex criteria on how you could claim your rights to the continental shelf. In any case, you have them up to 200 nautical miles from your baselines. We shall come to baselines later in this conversation. Or you get rights even further than that distance of 200 nautical miles. If there is a geological connection with your coastal area, that one cannot go further than 250 nautical miles, but there are various clauses which are quite complex in the Law of the Sea Convention, allowing also setting of various bodies.\nBut to put it very short, there is development of international law after the Second World War until now in 2013 has been very closely connected with geology. But in those terms of acquiring territorial rights, they could have quite a different relationship to geology with the concept of the anthropocene. That is looking at geology not of spreading territorial rights but of thinking of whether our international law is actually the law of the anthropocene or it only belongs to the epoch of Holocene. That is the key challenge today, I believe, when we introduced this anthropocene concept..",
                   "beginSrtFormat": "00:09:08,000",
                   "endSrtFormat": "00:11:33,000",
                   "tags": [
@@ -352,12 +567,32 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Submarine areas",
+                              "name": "Submarine Areas",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "International law",
+                              "name": "Law",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Institutions",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "USA",
+                              "category": "place",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Institutions",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Territory",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -371,7 +606,7 @@
             {
                   "begin": 694,
                   "end": 942,
-                  "content": "I think that we have to start from the first, very basic truth for an international lawyer. Neither the word of Holocene or the concept of Holocene or even, by any means, the anthropocene is not something you would think on a daily basis. Better to say you don’t think of it. More or less not at all. You don’t think about those. You take them for granted. If you are aware of the Holocene, then you might know that this is something which is here for us for a very long time. This is a geological epoch which so far has lasted for 11,700 years. It’s pretty much older than international law itself. It’s pretty much older than any state itself. It’s probably as old as human civilization. It has probably – or many will say for sure – enabled the development of human civilization. All that we have on international law today is made on an assumption which is taking for granted that we have ever lived – for all the time so far – in the Holocene and that we will continue to live in the Holocene. What does this mean? Holocene is the epoch of the longest relative elemental stability since the ice age has begun 11,700 years. Very long time for human species and a very short time for the planet. But due to our experience so far, we take it for granted. We think that geography as it is today will be forever. This is how our international law is conceived of. With the anthropocene, not only is it viewed as a formal term, because it’s one thing, but it changes all those conditions. For instance, with change of sea level rise, imagine that. There are very serious forecasts that already in this century we could have a rather big rise of sea level. Rather big – whatever that means really. There is a span of various problems, but up to one meter seems not to be unrealistic in terms of literature which we have today. Even IPCC, which makes a very conservative forecasts based on modeling, has stated in the last report a few weeks ago that up to 89 centimeters is one of the possibilities for this century. There are [13:40] studies which make even higher [13:44] than that. But imagine a sea level rise of a meter. All that you have on the law of the sea is actually based on the stability of geography. What is the cornerstone of the entire building of the law of the sea, of its core architecture, is something that is called baseline. Baseline is, in many respects, coast. It’s called normal baseline. Or it can be a certain geometrical line which connects features of indented coast. Then within that baseline which is straight baseline, you have your internal waters. Outside are various zones. First is up to 12 nautical miles territorial sea. Then you have up to 24 nautical miles contiguous zone. You have up to 200 nautical miles of exclusive economic zone. We spoke about continental shelf. It’s also 200 nautical miles from the same baseline, or 350 nautical miles if geology allows. All these big buildings, all those architectural zones is based on this assumption of stability, because we take coast as an objective, stable criterion. That is very important in terms of delimitation as well, because states will always wish to have some more. You have one state and another state which face each other. There are some island features there. There are no island features there. This state says, “We’d like to have median line here from that little island which is uninhabited.” The other state says, “No. This is not to be taken into account, but the other islands are your main land, so then we will meet in the middle.” What the court will then take into account – relevant coast. This is the key concept in delimitation – relevant coast. This objective situation, which is permanent and which is stable, is the guarantee of security in a way, of predictability, and of avoidance of conflicts. You could have a war because it’s a matter of boundaries. They’re in two respects stable geography. It’s of utmost importance in the law of the sea, but not only in the law of the sea, [16:24] international law. But in the law of the sea, this gives us predictability and avoidance of conflicts..",
+                  "content": "I think that we have to start from the first, very basic truth for an international lawyer. Neither the word of Holocene or the concept of Holocene or even, by any means, the anthropocene is not something you would think on a daily basis. Better to say you don’t think of it. More or less not at all. You don’t think about those. You take them for granted. If you are aware of the Holocene, then you might know that this is something which is here for us for a very long time. This is a geological epoch which so far has lasted for 11,700 years. It’s pretty much older than international law itself. It’s pretty much older than any state itself. It’s probably as old as human civilization. It has probably - or many will say for sure - enabled the development of human civilization. All that we have on international law today is made on an assumption which is taking for granted that we have ever lived - for all the time so far - in the Holocene and that we will continue to live in the Holocene. What does this mean? Holocene is the epoch of the longest relative elemental stability since the ice age has begun 11,700 years. Very long time for human species and a very short time for the planet. But due to our experience so far, we take it for granted. We think that geography as it is today will be forever. This is how our international law is conceived of. With the anthropocene, not only is it viewed as a formal term, because it’s one thing, but it changes all those conditions. For instance, with change of sea level rise, imagine that. There are very serious forecasts that already in this century we could have a rather big rise of sea level. Rather big – whatever that means really. There is a span of various problems, but up to one meter seems not to be unrealistic in terms of literature which we have today. Even IPCC, which makes a very conservative forecasts based on modeling, has stated in the last report a few weeks ago that up to 89 centimeters is one of the possibilities for this century. There are studies which make even higher than that. But imagine a sea level rise of a meter. All that you have on the law of the sea is actually based on the stability of geography. What is the cornerstone of the entire building of the law of the sea, of its core architecture, is something that is called baseline. Baseline is, in many respects, coast. It’s called normal baseline. Or it can be a certain geometrical line which connects features of indented coast. Then within that baseline which is straight baseline, you have your internal waters. Outside are various zones. First is up to 12 nautical miles territorial sea. Then you have up to 24 nautical miles contiguous zone. You have up to 200 nautical miles of exclusive economic zone. We spoke about continental shelf. It’s also 200 nautical miles from the same baseline, or 350 nautical miles if geology allows. All these big buildings, all those architectural zones is based on this assumption of stability, because we take coast as an objective, stable criterion. That is very important in terms of delimitation as well, because states will always wish to have some more. You have one state and another state which face each other. There are some island features there. There are no island features there. This state says, “We’d like to have median line here from that little island which is uninhabited.” The other state says, “No. This is not to be taken into account, but the other islands are your main land, so then we will meet in the middle.” What the court will then take into account - relevant coast. This is the key concept in delimitation - relevant coast. This objective situation, which is permanent and which is stable, is the guarantee of security in a way, of predictability, and of avoidance of conflicts. You could have a war because it’s a matter of boundaries. They’re in two respects stable geography. It’s of utmost importance in the law of the sea, but not only in the law of the sea, international law. But in the law of the sea, this gives us predictability and avoidance of conflicts..",
                   "beginSrtFormat": "00:11:34,000",
                   "endSrtFormat": "00:15:42,000",
                   "tags": [
@@ -391,12 +626,42 @@
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "International law",
+                              "name": "Law",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
                               "name": "Delimitation",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Holocene",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Anthropocene",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Sea Level",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "IPCC",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Coasts",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Islands",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -410,7 +675,7 @@
             {
                   "begin": 946,
                   "end": 1032,
-                  "content": "Now if you think about state, state is the main subject in international law. That is a territorial obligation. The definition of state – there are some elements of how the state is created. What is a state? Of course it has to have a relatively defined territory. It has to have population and relatively independent government. But again, this element of territory is a key here. If you don’t have a territory, you don’t have a state. What happens… Let’s say we have a sea level rise of a meter and 30 centimeters by the end of the century. There are many island states for whom one meter and a half means last of the territory. But even much less than that would pose the question of whether the island is a place where you can live, whether your agriculture will be functional if you have salty water. They have fresh water – should be. Therefore, also you could expect migration and movement of the entire population from small islands..",
+                  "content": "Now if you think about state, state is the main subject in international law. That is a territorial obligation. The definition of state - there are some elements of how the state is created. What is a state? Of course it has to have a relatively defined territory. It has to have population and relatively independent government. But again, this element of territory is a key here. If you don’t have a territory, you don’t have a state. What happens… Let’s say we have a sea level rise of a meter and 30 centimeters by the end of the century. There are many island states for whom one meter and a half means last of the territory. But even much less than that would pose the question of whether the island is a place where you can live, whether your agriculture will be functional if you have salty water. They have fresh water - should be. Therefore, also you could expect migration and movement of the entire population from small islands..",
                   "beginSrtFormat": "00:15:46,000",
                   "endSrtFormat": "00:17:12,000",
                   "tags": [
@@ -435,7 +700,17 @@
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Sea level",
+                              "name": "Sea Level",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Law",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Migration & Refugees",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -464,7 +739,17 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Balanced water",
+                              "name": "Water",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Anthropocene",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Trade",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -478,7 +763,7 @@
             {
                   "begin": 1083,
                   "end": 1249,
-                  "content": "If the law of the sea is reduced to one maxim, to one very short sentence, then the sentence reads: “The land dominates the sea.” Why? Because we only live on the land. It is not so that it must be, but we are a land species. Therefore, we wish to dominate this remaining 71% of the surface of our planet which constitutes the ocean. Of course, therefore, we also lay our boundaries on the sea all related to our land. Now, if I will make a complete digression from international law, I remember something from childhood. We spoke briefly about that earlier on. That is the photograph of earth rise. Of course, that happened in 1968 on the Apollo mission. There was one image that followed me for a very long time. I thought, “What really do the astronauts see when they look on the earth?” I thought there were several key observations that they could make. One is that earth is very isolated in space. The other is that it is very blue, I believe, because most of it is seawater, oceans. The third – they couldn’t see any boundaries. There are no boundaries on this planet in reality. [25:24] But as I grew older, I thought there was also one other element they couldn’t have seen. They couldn’t have seen people. They couldn’t have seen human beings. Of course the earth could be without us. We are now here. We are for a very short time here. We don’t know how long we will be here. Whatever we do, be it in international law, be it in architecture or be it in economy or production or this and that, I believe it has to be targeted on our understanding that we are a component part of the earth system, that it is not us on the one side and all the rest on the other. This is how actually we proceed in our law of the sea. We own the land, and then we conquer everything around us. But we will need to find one other way of approaching the matters. That higher harmony with the earth system will need to be conceived in order to have sustainable relationship on this earth for the future of human population. Where does international law fit in that? It fits in following this change of perspective in the future. I would say that, at this moment, anthropocene can be no more than an awareness-raising term for international law that conditions which we have now will not last forever. When you say “Could we conceive of different distribution of land and the sea rights?” of course we could. Of course it’s not realistic today, but it may become realistic in the not so distant future, because look at developments so far. Look at the speed and acceleration of the change which we witness – all of us. If you think of one element, the growth of global population and the acceleration which we have witnessed in that – that is tremendous. All of the history of human population until early 19th century was nearly for the first billion of people on the earth. Then on the 125 years approximately – for the second billion. That was in fact the year when my father was born. They say 1925 – there was approximately second billion. I was born in 1960. That was only 35 years later. In that year, that was the third billion on the earth. Now, from three billion people on the earth until today, in my own lifetime – which is not that long, I consider myself rather young. I’m 53 only – we hit four more billion. In that short time, we had such an acceleration in human population that we have in our time four billion in the entire history of population. Acceleration is tremendous. We follow patterns which were created in international law, fundaments which were created. In the late 16th and early century, of course a lot has changed from that. But still, the fundament of international law is found… If we take only one input and work, then all international lawyers would know it is the [29:50], the free sea, or the freedom of the seas – whatever you translate it – by [29:55] which was published in 1609. It introduced the principle of the freedom of the seas. That freedom of the seas still today governs relationship on the high seas. Of course it had been subject to many modifications. A lot has been changed, but its principle is still here. Not because of ideal of freedom. It is not because of that. It is because of the fact that most international trade is done – the transport is on the sea. 90% of international trade travels on the sea. Therefore, subtitle in the book by [30:42] what has actually survived 404 and a half years, so far.  That subtitle reads: “The rights which belong to a Dutch to take part in East Indian trade.” If we translate it to today’s language, the rights which belong to all industrially developed states to have international commerce. This is something we all benefit from..",
+                  "content": "If the law of the sea is reduced to one maxim, to one very short sentence, then the sentence reads: “The land dominates the sea.” Why? Because we only live on the land. It is not so that it must be, but we are a land species. Therefore, we wish to dominate this remaining 71% of the surface of our planet which constitutes the ocean. Of course, therefore, we also lay our boundaries on the sea all related to our land. Now, if I will make a complete digression from international law, I remember something from childhood. We spoke briefly about that earlier on. That is the photograph of earth rise. Of course, that happened in 1968 on the Apollo mission. There was one image that followed me for a very long time. I thought, “What really do the astronauts see when they look on the earth?” I thought there were several key observations that they could make. One is that earth is very isolated in space. The other is that it is very blue, I believe, because most of it is seawater, oceans. The third - they couldn’t see any boundaries. There are no boundaries on this planet in reality. But as I grew older, I thought there was also one other element they couldn’t have seen. They couldn’t have seen people. They couldn’t have seen human beings. Of course the earth could be without us. We are now here. We are for a very short time here. We don’t know how long we will be here. Whatever we do, be it in international law, be it in architecture or be it in economy or production or this and that, I believe it has to be targeted on our understanding that we are a component part of the earth system, that it is not us on the one side and all the rest on the other. This is how actually we proceed in our law of the sea. We own the land, and then we conquer everything around us. But we will need to find one other way of approaching the matters. That higher harmony with the earth system will need to be conceived in order to have sustainable relationship on this earth for the future of human population. Where does international law fit in that? It fits in following this change of perspective in the future. I would say that, at this moment, anthropocene can be no more than an awareness-raising term for international law that conditions which we have now will not last forever. When you say “Could we conceive of different distribution of land and the sea rights?” of course we could. Of course it’s not realistic today, but it may become realistic in the not so distant future, because look at developments so far. Look at the speed and acceleration of the change which we witness - all of us. If you think of one element, the growth of global population and the acceleration which we have witnessed in that – that is tremendous. All of the history of human population until early 19th century was nearly for the first billion of people on the earth. Then on the 125 years approximately – for the second billion. That was in fact the year when my father was born. They say 1925 – there was approximately second billion. I was born in 1960. That was only 35 years later. In that year, that was the third billion on the earth. Now, from three billion people on the earth until today, in my own lifetime – which is not that long, I consider myself rather young. I’m 53 only – we hit four more billion. In that short time, we had such an acceleration in human population that we have in our time four billion in the entire history of population. Acceleration is tremendous. We follow patterns which were created in international law, fundaments which were created. In the late 16th and early century, of course a lot has changed from that. But still, the fundament of international law is found… If we take only one input and work, then all international lawyers would know it is the, the free sea, or the freedom of the seas - whatever you translate it - by which was published in 1609. It introduced the principle of the freedom of the seas. That freedom of the seas still today governs relationship on the high seas. Of course it had been subject to many modifications. A lot has been changed, but its principle is still here. Not because of ideal of freedom. It is not because of that. It is because of the fact that most international trade is done - the transport is on the sea. 90% of international trade travels on the sea. Therefore, subtitle in the book by what has actually survived 404 and a half years, so far.  That subtitle reads: “The rights which belong to a Dutch to take part in East Indian trade.” If we translate it to today’s language, the rights which belong to all industrially developed states to have international commerce. This is something we all benefit from..",
                   "beginSrtFormat": "00:18:03,000",
                   "endSrtFormat": "00:20:49,000",
                   "tags": [
@@ -493,12 +778,12 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Earth system",
+                              "name": "Network Theory & System Thinking",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "International law",
+                              "name": "Law",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
@@ -508,7 +793,37 @@
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Human population",
+                              "name": "Population",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Sea Level",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Ocean",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Frontier",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Future",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Population",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Trade",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -522,7 +837,7 @@
             {
                   "begin": 1252,
                   "end": 1317,
-                  "content": "There are, of course, some linkages with the history of international law and the development towards the anthropocene, because after all this ideology of the free sea, free to those who are capable to take it, has enabled a lot of reshuffling on the globe, a lot of development. From the early 17th century until today, industrial revolution was [32:33]. It wasn’t able to, to a large extent, by those developments of naval powers and trade powers. Mechanization of agriculture which followed, growth of global population which we have today – all this is somehow interrelated and not entirely unrelated to the ideology which is behind the law of the sea. Now perhaps we have to take this boomerang and think about it, further with it, because we probably have made one very big circle already now where we start to feel the consequences..",
+                  "content": "There are, of course, some linkages with the history of international law and the development towards the anthropocene, because after all this ideology of the free sea, free to those who are capable to take it, has enabled a lot of reshuffling on the globe, a lot of development. From the early 17th century until today, industrial revolution was. It wasn’t able to, to a large extent, by those developments of naval powers and trade powers. Mechanization of agriculture which followed, growth of global population which we have today – all this is somehow interrelated and not entirely unrelated to the ideology which is behind the law of the sea. Now perhaps we have to take this boomerang and think about it, further with it, because we probably have made one very big circle already now where we start to feel the consequences..",
                   "beginSrtFormat": "00:20:52,000",
                   "endSrtFormat": "00:21:57,000",
                   "tags": [
@@ -537,12 +852,32 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "International law",
+                              "name": "Law",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Industrial revolution",
+                              "name": "Industrial Revolution",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Anthropocene",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Industrial Revolution",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Agricolture",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Population",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -571,7 +906,7 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Industrial revolution",
+                              "name": "Industrial Revolution",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
@@ -579,6 +914,21 @@
                               "name": "United Kingdom",
                               "category": "place",
                               "color": "#889b1b"
+                        },
+                        {
+                              "name": "Fossil Fuels",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Urban Area",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Pollutants",
+                              "category": "theme",
+                              "color": "#ccc36e"
                         }
                   ],
                   "tagCategories": [
@@ -610,7 +960,12 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Petrol",
+                              "name": "Fossil Fuels",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Biogeophysic",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -634,12 +989,17 @@
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Industrial pollutants",
+                              "name": "Pollutants",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Chemical anthropocene",
+                              "name": "Anthropocene",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Pollutants",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -667,7 +1027,17 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Brick material",
+                              "name": "Brick Material",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "WW-II",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -691,7 +1061,7 @@
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Industrial pollutants",
+                              "name": "Pollutants",
                               "category": "theme",
                               "color": "#ccc36e"
                         }

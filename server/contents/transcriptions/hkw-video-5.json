@@ -6,19 +6,24 @@
             "type": "transcription",
             "tags": [
                   {
-                        "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                        "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
                         "category": "speaker",
                         "color": "#556dd9"
                   },
                   {
-                        "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                        "name": "Bruno Latour, Sociologist, Anthropologist And Philosopher, Sciencespo University",
                         "category": "speaker",
                         "color": "#556dd9"
                   },
                   {
-                        "name": "Simulation of Copenhagen meeting",
+                        "name": "Negotiation Simulation",
                         "category": "theme",
                         "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Climate Change",
+                        "category": "theme",
+                        "color": "#8add10"
                   },
                   {
                         "name": "Group Climate",
@@ -26,17 +31,27 @@
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Negotiation simulation",
+                        "name": "Negotiation Simulation",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "United Nations",
+                        "name": "UN",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Issue-based negotiation",
+                        "name": "Negotiations",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Paris",
+                        "category": "theme",
+                        "color": "#c3b63c"
+                  },
+                  {
+                        "name": "Negotiations",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
@@ -51,47 +66,62 @@
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Critical zone",
+                        "name": "Critical Zone",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Halldór Thorgeirsson, Director for Implementation Strategy, United Nations Framework Convention on Climate Change",
+                        "name": "2 Degrees",
+                        "category": "theme",
+                        "color": "#5b492b"
+                  },
+                  {
+                        "name": "Halldór Thorgeirsson, Director For Implementation Strategy, United Nations Framework Convention On Climate Change",
                         "category": "speaker",
                         "color": "#556dd9"
                   },
                   {
-                        "name": "Next simulation",
+                        "name": "Climate Simulation",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Governance boundaries",
+                        "name": "Global Climate",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Social contract",
+                        "name": "Governance",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Individual level",
+                        "name": "Social Issues",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Adaptation Committee",
+                        "name": "Individual Level",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Global level",
+                        "name": "Adaptation",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Smart data",
+                        "name": "Global Issues",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Climate Convention",
+                        "category": "theme",
+                        "color": "#5592fb"
+                  },
+                  {
+                        "name": "Data",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
@@ -101,12 +131,12 @@
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Google Maps",
+                        "name": "Visual Of Climate",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Screen",
+                        "name": "Visual Of Climate",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
@@ -116,7 +146,7 @@
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Visual of climate",
+                        "name": "Visual Of Climate",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
@@ -126,7 +156,167 @@
                         "color": "#889b1b"
                   },
                   {
-                        "name": "Geographical distance",
+                        "name": "Geography",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Pacific Islands",
+                        "category": "place",
+                        "color": "#889b1b"
+                  },
+                  {
+                        "name": "Political Issues",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Decision Making",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Bolivia",
+                        "category": "place",
+                        "color": "#889b1b"
+                  },
+                  {
+                        "name": "Cold War",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Intelligence Report",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "DNA",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Theology Of Ecology",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Gaia",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "UN",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Responsibilities",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Rituals",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "WW-II",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Climate Convention",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Disaster",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Conflicts",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Diplomacy",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Conflicts",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Zero Sum Games",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Carbon",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Global Issues",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Welfare",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Industrialized Countries",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Decarbonize",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Decarbonize",
+                        "category": "theme",
+                        "color": "#f1159f"
+                  },
+                  {
+                        "name": "Future",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "South Africa",
+                        "category": "place",
+                        "color": "#889b1b"
+                  },
+                  {
+                        "name": "IPCC",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Canada",
+                        "category": "place",
+                        "color": "#889b1b"
+                  },
+                  {
+                        "name": "Climate Change",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Planetary Solutions",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "",
                         "category": "theme",
                         "color": "#ccc36e"
                   }
@@ -152,19 +342,24 @@
                   "endSrtFormat": "00:04:01,600",
                   "tags": [
                         {
-                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "name": "Bruno Latour, Sociologist, Anthropologist And Philosopher, Sciencespo University",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Simulation of Copenhagen meeting",
+                              "name": "Negotiation Simulation",
                               "category": "theme",
                               "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#8add10"
                         }
                   ],
                   "tagCategories": [
@@ -173,19 +368,19 @@
                   ]
             },
             {
-                  "content": "Bruno Latour: It was a simulation and not just a role playing film and the audience were so moved by the experience that they created a group called Climate, which is a group of young experts throughout the world. I think they have now 100 countries in it, which was sort of an amazing event. So because of [0:02:23] and my work and because of that event, we decided to do in 2015 another simulation, this time in May before the big meeting, and this is where we should learn from you. I don’t think it can go in the opposite direction, but we are interested in simulating alternative ways of negotiating on two dimensions. That is one where we try to be who is representing the issues, that is, the stakeholders, not necessarily nation states, the one that you encounter constantly. And how do you represent the [0:03:05] issue itself?\n\nChristiana Figueres: You are then... I’m assuming you are relieving yourselves of the constraints of the United Nations. Right? You’re saying, “Okay, what could this negotiation look like if it weren’t held by the United Nations?” because as long as it’s held by the United Nations, it has to be within the nations’ boundaries.\n\nBruno Latour: Right.\n\nChristiana Figueres: So you’re saying, “Okay, now let’s do a thought experiment. What would this negotiation look like if it were actually issue-based as opposed to nation-based?”\nBruno Latour: That’s exactly right.\n\nChristiana Figueres: Can we do the Paris agreement according to your model? Because I think it would be easier. [laughs]\n\nBruno Latour: Personally, I think we don’t know that because the whole thing starts from the realization that people, the general public is quietist. They are concerned but not that much.",
+                  "content": "Bruno Latour: It was a simulation and not just a role playing film and the audience were so moved by the experience that they created a group called Climate, which is a group of young experts throughout the world. I think they have now 100 countries in it, which was sort of an amazing event. So because of [0:02:23] and my work and because of that event, we decided to do in 2015 another simulation, this time in May before the big meeting, and this is where we should learn from you. I don’t think it can go in the opposite direction, but we are interested in simulating alternative ways of negotiating on two dimensions. That is one where we try to be who is representing the issues, that is, the stakeholders, not necessarily nation states, the one that you encounter constantly. And how do you represent the issue itself?\n\nChristiana Figueres: You are then... I’m assuming you are relieving yourselves of the constraints of the United Nations. Right? You’re saying, “Okay, what could this negotiation look like if it weren’t held by the United Nations?” because as long as it’s held by the United Nations, it has to be within the nations’ boundaries.\n\nBruno Latour: Right.\n\nChristiana Figueres: So you’re saying, “Okay, now let’s do a thought experiment. What would this negotiation look like if it were actually issue-based as opposed to nation-based?”\nBruno Latour: That’s exactly right.\n\nChristiana Figueres: Can we do the Paris agreement according to your model? Because I think it would be easier. [laughs]\n\nBruno Latour: Personally, I think we don’t know that because the whole thing starts from the realization that people, the general public is quietist. They are concerned but not that much.",
                   "begin": 249.124,
                   "end": 370.441,
                   "beginSrtFormat": "00:04:09,124",
                   "endSrtFormat": "00:06:10,441",
                   "tags": [
                         {
-                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "name": "Bruno Latour, Sociologist, Anthropologist And Philosopher, Sciencespo University",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
@@ -195,17 +390,32 @@
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Negotiation simulation",
+                              "name": "Negotiation Simulation",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "United Nations",
+                              "name": "UN",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Issue-based negotiation",
+                              "name": "Negotiations",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Paris",
+                              "category": "theme",
+                              "color": "#c3b63c"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#8add10"
+                        },
+                        {
+                              "name": "Negotiations",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -223,12 +433,12 @@
                   "endSrtFormat": "00:08:07,000",
                   "tags": [
                         {
-                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "name": "Bruno Latour, Sociologist, Anthropologist And Philosopher, Sciencespo University",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
@@ -243,9 +453,24 @@
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Critical zone",
+                              "name": "Critical Zone",
                               "category": "theme",
                               "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Paris",
+                              "category": "theme",
+                              "color": "#c3b63c"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#8add10"
+                        },
+                        {
+                              "name": "2 Degrees",
+                              "category": "theme",
+                              "color": "#5b492b"
                         }
                   ],
                   "tagCategories": [
@@ -261,27 +486,47 @@
                   "endSrtFormat": "00:10:01,499",
                   "tags": [
                         {
-                              "name": "Halldór Thorgeirsson, Director for Implementation Strategy, United Nations Framework Convention on Climate Change",
+                              "name": "Halldór Thorgeirsson, Director For Implementation Strategy, United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "name": "Bruno Latour, Sociologist, Anthropologist And Philosopher, Sciencespo University",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Next simulation",
+                              "name": "Climate Simulation",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "United Nations",
+                              "name": "UN",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Paris",
+                              "category": "theme",
+                              "color": "#c3b63c"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#8add10"
+                        },
+                        {
+                              "name": "Global Climate",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Negotiations",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -299,19 +544,24 @@
                   "endSrtFormat": "00:12:08,810",
                   "tags": [
                         {
-                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Governance boundaries",
+                              "name": "Governance",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Social contract",
+                              "name": "Social Issues",
                               "category": "theme",
                               "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#8add10"
                         }
                   ],
                   "tagCategories": [
@@ -327,17 +577,17 @@
                   "endSrtFormat": "00:14:18,645",
                   "tags": [
                         {
-                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "name": "Bruno Latour, Sociologist, Anthropologist And Philosopher, Sciencespo University",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Individual level",
+                              "name": "Individual Level",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
@@ -345,6 +595,11 @@
                               "name": "Anthropocene",
                               "category": "theme",
                               "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#8add10"
                         }
                   ],
                   "tagCategories": [
@@ -360,24 +615,34 @@
                   "endSrtFormat": "00:16:03,238",
                   "tags": [
                         {
-                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "name": "Bruno Latour, Sociologist, Anthropologist And Philosopher, Sciencespo University",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Adaptation Committee",
+                              "name": "Adaptation",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Global level",
+                              "name": "Global Issues",
                               "category": "theme",
                               "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#8add10"
+                        },
+                        {
+                              "name": "Climate Convention",
+                              "category": "theme",
+                              "color": "#5592fb"
                         }
                   ],
                   "tagCategories": [
@@ -393,29 +658,34 @@
                   "endSrtFormat": "00:18:11,870",
                   "tags": [
                         {
-                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "name": "Bruno Latour, Sociologist, Anthropologist And Philosopher, Sciencespo University",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Adaptation Committee",
+                              "name": "Adaptation",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Individual level",
+                              "name": "Individual Level",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Smart data",
+                              "name": "Data",
                               "category": "theme",
                               "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#8add10"
                         }
                   ],
                   "tagCategories": [
@@ -424,24 +694,24 @@
                   ]
             },
             {
-                  "content": "Christiana Figueres: You lose the granularity.\n\nBruno Latour: Yeah. You could possibly trace back to the original interview but you will never have the practice to do it. Now it’s very easy to do. So one of the bigger challenges for all these mappings and cartography and issue scenarization is to render that easy, including for the African women with the telephone. But now you only have to do that, which is simultaneously to... This is also what we want to do with the music event simultaneously to hear the complete sound and also to zoom in one individual sound, because that’s the novelty which the nation state never actually well did because the nation states are all sort of not exactly dinosaurs but they are old animals from the time of statistics.\nChristiana Figueres: We have a few new states that are not dinosaurs.\n\nBruno Latour: But the one you have is [0:17:02]. It’s a multinational, which are states in a way.\n\nChristiana Figueres: So why does the nation state not do that?\n\nBruno Latour: Because the states are built around the notion of statistics. And maybe I’m talking as a French here. The French state has a statistical view of things. So it is geographically delineated and statistical. But in a way, technically this is our data because we can have a completely non-bounded connected network basically. But you can also zoom in and out of individual blogs or even under individual contribution and simultaneously have the aggregate. Before, you had to choose. Are you an anthropologist studying one village in Africa or are you a statistician studying the economy of Africa? Now you don’t have to choose. And that will be an enormous challenge in the composition of this question that you said. Actually, it is crucial in that.",
+                  "content": "Christiana Figueres: You lose the granularity.\n\nBruno Latour: Yeah. You could possibly trace back to the original interview but you will never have the practice to do it. Now it’s very easy to do. So one of the bigger challenges for all these mappings and cartography and issue scenarization is to render that easy, including for the African women with the telephone. But now you only have to do that, which is simultaneously to... This is also what we want to do with the music event simultaneously to hear the complete sound and also to zoom in one individual sound, because that’s the novelty which the nation state never actually well did because the nation states are all sort of not exactly dinosaurs but they are old animals from the time of statistics.\nChristiana Figueres: We have a few new states that are not dinosaurs.\n\nBruno Latour: But the one you have is. It’s a multinational, which are states in a way.\n\nChristiana Figueres: So why does the nation state not do that?\n\nBruno Latour: Because the states are built around the notion of statistics. And maybe I’m talking as a French here. The French state has a statistical view of things. So it is geographically delineated and statistical. But in a way, technically this is our data because we can have a completely non-bounded connected network basically. But you can also zoom in and out of individual blogs or even under individual contribution and simultaneously have the aggregate. Before, you had to choose. Are you an anthropologist studying one village in Africa or are you a statistician studying the economy of Africa? Now you don’t have to choose. And that will be an enormous challenge in the composition of this question that you said. Actually, it is crucial in that.",
                   "begin": 1091.87,
                   "end": 1212.799,
                   "beginSrtFormat": "00:18:11,870",
                   "endSrtFormat": "00:20:12,799",
                   "tags": [
                         {
-                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "name": "Bruno Latour, Sociologist, Anthropologist And Philosopher, Sciencespo University",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Individual level",
+                              "name": "Individual Level",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
@@ -449,6 +719,11 @@
                               "name": "Statistics",
                               "category": "theme",
                               "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#8add10"
                         }
                   ],
                   "tagCategories": [
@@ -464,22 +739,22 @@
                   "endSrtFormat": "00:22:10,000",
                   "tags": [
                         {
-                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "name": "Bruno Latour, Sociologist, Anthropologist And Philosopher, Sciencespo University",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Google Maps",
+                              "name": "Visual Of Climate",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Screen",
+                              "name": "Visual Of Climate",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
@@ -487,6 +762,11 @@
                               "name": "Disenfrachised",
                               "category": "theme",
                               "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#8add10"
                         }
                   ],
                   "tagCategories": [
@@ -502,22 +782,22 @@
                   "endSrtFormat": "00:24:08,373",
                   "tags": [
                         {
-                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "name": "Bruno Latour, Sociologist, Anthropologist And Philosopher, Sciencespo University",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Smart data",
+                              "name": "Data",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Visual of climate",
+                              "name": "Visual Of Climate",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
@@ -527,9 +807,19 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Geographical distance",
+                              "name": "Geography",
                               "category": "theme",
                               "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Pacific Islands",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#8add10"
                         }
                   ],
                   "tagCategories": [
@@ -546,13 +836,45 @@
                   "endSrtFormat": "00:26:08,000",
                   "tags": [
                         {
-                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
+                        },
+                        {
+                              "name": "Political Issues",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Decision Making",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Bolivia",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Pacific Islands",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#8add10"
+                        },
+                        {
+                              "name": "2 Degrees",
+                              "category": "theme",
+                              "color": "#5b492b"
                         }
                   ],
                   "tagCategories": [
-                        "speaker"
+                        "speaker",
+                        "theme",
+                        "place"
                   ]
             },
             {
@@ -563,40 +885,92 @@
                   "endSrtFormat": "00:28:05,252",
                   "tags": [
                         {
-                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "name": "Bruno Latour, Sociologist, Anthropologist And Philosopher, Sciencespo University",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
+                        },
+                        {
+                              "name": "Cold War",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Intelligence Report",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "DNA",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Theology Of Ecology",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Gaia",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#8add10"
                         }
                   ],
                   "tagCategories": [
-                        "speaker"
+                        "speaker",
+                        "theme"
                   ]
             },
             {
-                  "content": "That’s why I’m very interested in the figure of Gaia, because Gaia is a character which we do a big meeting in two weeks here on Gaia and the arrival of Gaia on the scene, what sort of being it is. Lots of things have to be done at the intermediary between… of course, we cannot divide the UN, but we can do it between philosophy, anthropology, art, theology and science, because Gaia is a mixture of all of those. It is a new age divinity. It’s a scientific concept. Disputed, but a scientific concept. It’s also politically very interesting because of what sort of sovereignty Gaia has over us.\nBut when you add these sorts of characters, immediately the position of people change because urgency is felt when you meet these characters like Gaia. It’s not just about nature, I think, which are very far away, because you capture a whole set of attitudes which have always been connected to what it is to be a citizen in the state, except you are [0:27:06] facing Gaia, which is a very different take. So our interest is in multiplying those sorts of takes so that the repertoire, which is of course certainly viewed from people like you, albeit worrying that people don’t pay attention to the urgency, delegate to others, or do...\n\nChristiana Figueres: Postpone.\n\nBruno Latour: Many people delay. That’s what I call quietist because people aren’t necessarily skeptic, but I think they are quietist, especially the French.\n\nChristiana Figueres: I don’t think the French are unique.\n\nBruno Latour: They’re intellectual quietists. That’s where I’m from.\n\nChristiana Figueres: What were you going to say? Back at the Cold War.",
+                  "content": "That’s why I’m very interested in the figure of Gaia, because Gaia is a character which we do a big meeting in two weeks here on Gaia and the arrival of Gaia on the scene, what sort of being it is. Lots of things have to be done at the intermediary between… of course, we cannot divide the UN, but we can do it between philosophy, anthropology, art, theology and science, because Gaia is a mixture of all of those. It is a new age divinity. It’s a scientific concept. Disputed, but a scientific concept. It’s also politically very interesting because of what sort of sovereignty Gaia has over us.\nBut when you add these sorts of characters, immediately the position of people change because urgency is felt when you meet these characters like Gaia. It’s not just about nature, I think, which are very far away, because you capture a whole set of attitudes which have always been connected to what it is to be a citizen in the state, except you are facing Gaia, which is a very different take. So our interest is in multiplying those sorts of takes so that the repertoire, which is of course certainly viewed from people like you, albeit worrying that people don’t pay attention to the urgency, delegate to others, or do...\n\nChristiana Figueres: Postpone.\n\nBruno Latour: Many people delay. That’s what I call quietist because people aren’t necessarily skeptic, but I think they are quietist, especially the French.\n\nChristiana Figueres: I don’t think the French are unique.\n\nBruno Latour: They’re intellectual quietists. That’s where I’m from.\n\nChristiana Figueres: What were you going to say? Back at the Cold War.",
                   "begin": 1685.252,
                   "end": 1804.028,
                   "beginSrtFormat": "00:28:05,252",
                   "endSrtFormat": "00:30:04,028",
                   "tags": [
                         {
-                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "name": "Bruno Latour, Sociologist, Anthropologist And Philosopher, Sciencespo University",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
+                        },
+                        {
+                              "name": "Gaia",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "UN",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Cold War",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#8add10"
                         }
                   ],
                   "tagCategories": [
-                        "speaker"
+                        "speaker",
+                        "theme"
                   ]
             },
             {
@@ -607,67 +981,143 @@
                   "endSrtFormat": "00:32:08,300",
                   "tags": [
                         {
-                              "name": "Halldór Thorgeirsson, Director for Implementation Strategy, United Nations Framework Convention on Climate Change",
+                              "name": "Halldór Thorgeirsson, Director For Implementation Strategy, United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "name": "Bruno Latour, Sociologist, Anthropologist And Philosopher, Sciencespo University",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
+                        },
+                        {
+                              "name": "Responsibilities",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Gaia",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#8add10"
+                        },
+                        {
+                              "name": "Negotiations",
+                              "category": "theme",
+                              "color": "#ccc36e"
                         }
                   ],
                   "tagCategories": [
-                        "speaker"
-                  ]
+                        "speaker",
+                        "theme"
+                  ],
+                  "playedAt": null,
+                  "playedAtP": null
             },
             {
-                  "content": "Halldór Thorgeirsson: Actually, Pachamama has an ambassador on…\n\nBruno Latour: From Bolivia.\n\nHalldór Thorgeirsson: It was a bigger issue a couple of years back, but I’m sure Pachamama will also surface. We are now going in her neighborhood and the next cup will be in…\n\nBruno Latour: [0:30:20]\n\nChristiana Figueres: Yes. It’s interesting. Bolivia is right now chairing the G77.\n\nBruno Latour: Yes, of course.\n\nChristiana Figueres: So it has also been very interesting. The very first meeting that they did, in New York in fact, was around the concept of Pachamama and the whole relationship of the UN to Pachamama.\n\nBruno Latour: They had a ritual for that?\n\nChristiana Figueres: They had a political ritual, yes. But that was definitely the first meeting that they called as G77 to mark their philosophy.\n\nBruno Latour: But did they invoke that?\n\nChristiana Figueres: No, unfortunately. That would have been even better. That would have been wonderful.\n\nBruno Latour: It’s fabulous. You need to do a ritual in Paris.\n\nChristiana Figueres: Oh, yes. I’ll be there. [laughs]\n\nHalldór Thorgeirsson: But there’s another observation I wanted to make, if I may. It really connects a bit to Europe’s expression of concern versus the power of politicians to act, because if you really look at the major decisions that have been made on governance, they’ve always been based on some calamity, or preceded by some calamity. Maybe the Second World War is one example of such calamities that allowed…\n\nBruno Latour: Alert. Yeah. There’s a signal.\n\nHalldór Thorgeirsson: It allowed also politicians to take action. It is quite clear that most of the important decisions have been on the back of a major concern that has really raised the concern basically to another level.",
+                  "content": "Halldór Thorgeirsson: Actually, Pachamama has an ambassador on…\n\nBruno Latour: From Bolivia.\n\nHalldór Thorgeirsson: It was a bigger issue a couple of years back, but I’m sure Pachamama will also surface. We are now going in her neighborhood and the next cup will be in…\n\nBruno Latour:\n\nChristiana Figueres: Yes. It’s interesting. Bolivia is right now chairing the G77.\n\nBruno Latour: Yes, of course.\n\nChristiana Figueres: So it has also been very interesting. The very first meeting that they did, in New York in fact, was around the concept of Pachamama and the whole relationship of the UN to Pachamama.\n\nBruno Latour: They had a ritual for that?\n\nChristiana Figueres: They had a political ritual, yes. But that was definitely the first meeting that they called as G77 to mark their philosophy.\n\nBruno Latour: But did they invoke that?\n\nChristiana Figueres: No, unfortunately. That would have been even better. That would have been wonderful.\n\nBruno Latour: It’s fabulous. You need to do a ritual in Paris.\n\nChristiana Figueres: Oh, yes. I’ll be there. [laughs]\n\nHalldór Thorgeirsson: But there’s another observation I wanted to make, if I may. It really connects a bit to Europe’s expression of concern versus the power of politicians to act, because if you really look at the major decisions that have been made on governance, they’ve always been based on some calamity, or preceded by some calamity. Maybe the Second World War is one example of such calamities that allowed…\n\nBruno Latour: Alert. Yeah. There’s a signal.\n\nHalldór Thorgeirsson: It allowed also politicians to take action. It is quite clear that most of the important decisions have been on the back of a major concern that has really raised the concern basically to another level.",
                   "begin": 1928.3,
                   "end": 2045.488,
                   "beginSrtFormat": "00:32:08,300",
                   "endSrtFormat": "00:34:05,488",
                   "tags": [
                         {
-                              "name": "Halldór Thorgeirsson, Director for Implementation Strategy, United Nations Framework Convention on Climate Change",
+                              "name": "Halldór Thorgeirsson, Director For Implementation Strategy, United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "name": "Bruno Latour, Sociologist, Anthropologist And Philosopher, Sciencespo University",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
+                        },
+                        {
+                              "name": "Rituals",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "WW-II",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Bolivia",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Paris",
+                              "category": "theme",
+                              "color": "#c3b63c"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#8add10"
                         }
                   ],
                   "tagCategories": [
-                        "speaker"
+                        "speaker",
+                        "theme",
+                        "place"
                   ]
             },
             {
-                  "content": "Halldór Thorgeirsson: What we in the Climate Convention are hoping is that we can actually turn the page on climate without having to go through a major climate disaster. These are basically the two choices that mankind has – is to do it before the major disaster, because we really… as they say, “You ain’t seen anything yet.” The things that have been happening – Hurricane Sandy or any of those things – they are really [0:32:27] by some of the things that are going to be happening in the future, or the heat wave here in 2003. Unfortunately, Paris is coming only a year from now and it sets an important point in all of this.\nBruno Latour: What do you mean by unfortunately? Is there a big catastrophe waiting for us? [laughs]\n\nHalldór Thorgeirsson: No. When I say unfortunately, it is because of our concern over the lack of awareness, of real seriousness in terms of… So there is no problem coming to an agreement in Paris. What the challenge is is to come to a meaningful agreement in Paris. You only come to a meaningful agreement by basically having the level of concern strong enough to push it over that limit to actually becoming. Therefore, I think anything that aggregates the concerns, like you were trying to do, could make it heard.\n\nBruno Latour: We are the creatures of the Holocene. During the Holocene, not much happened in terms of climate change. We have been civilized in a time where we have no precedent but we have lots of precedent for wars, if I followed your argument. When you read the [0:33:56], you’ll understand that.",
+                  "content": "Halldór Thorgeirsson: What we in the Climate Convention are hoping is that we can actually turn the page on climate without having to go through a major climate disaster. These are basically the two choices that mankind has – is to do it before the major disaster, because we really… as they say, “You ain’t seen anything yet.” The things that have been happening – Hurricane Sandy or any of those things – they are really by some of the things that are going to be happening in the future, or the heat wave here in 2003. Unfortunately, Paris is coming only a year from now and it sets an important point in all of this.\n\nBruno Latour: What do you mean by unfortunately? Is there a big catastrophe waiting for us? [laughs]\n\nHalldór Thorgeirsson: No. When I say unfortunately, it is because of our concern over the lack of awareness, of real seriousness in terms of… So there is no problem coming to an agreement in Paris. What the challenge is is to come to a meaningful agreement in Paris. You only come to a meaningful agreement by basically having the level of concern strong enough to push it over that limit to actually becoming. Therefore, I think anything that aggregates the concerns, like you were trying to do, could make it heard.\n\nBruno Latour: We are the creatures of the Holocene. During the Holocene, not much happened in terms of climate change. We have been civilized in a time where we have no precedent but we have lots of precedent for wars, if I followed your argument. When you read the, you’ll understand that.",
                   "begin": 2045.488,
                   "end": 2168,
                   "beginSrtFormat": "00:34:05,488",
                   "endSrtFormat": "00:36:08,000",
                   "tags": [
                         {
-                              "name": "Halldór Thorgeirsson, Director for Implementation Strategy, United Nations Framework Convention on Climate Change",
+                              "name": "Halldór Thorgeirsson, Director For Implementation Strategy, United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
+                        },
+                        {
+                              "name": "Climate Convention",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Disaster",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Paris",
+                              "category": "theme",
+                              "color": "#c3b63c"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#8add10"
+                        },
+                        {
+                              "name": "Climate Convention",
+                              "category": "theme",
+                              "color": "#5592fb"
                         }
                   ],
                   "tagCategories": [
-                        "speaker"
+                        "speaker",
+                        "theme"
                   ]
             },
             {
@@ -678,23 +1128,59 @@
                   "endSrtFormat": "00:38:15,000",
                   "tags": [
                         {
-                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "name": "Bruno Latour, Sociologist, Anthropologist And Philosopher, Sciencespo University",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Halldór Thorgeirsson, Director for Implementation Strategy, United Nations Framework Convention on Climate Change",
+                              "name": "Halldór Thorgeirsson, Director For Implementation Strategy, United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
+                        },
+                        {
+                              "name": "Conflicts",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Anthropocene",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Negotiations",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Diplomacy",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Conflicts",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Zero Sum Games",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#8add10"
                         }
                   ],
                   "tagCategories": [
-                        "speaker"
+                        "speaker",
+                        "theme"
                   ]
             },
             {
@@ -705,18 +1191,29 @@
                   "endSrtFormat": "00:40:04,490",
                   "tags": [
                         {
-                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "name": "Bruno Latour, Sociologist, Anthropologist And Philosopher, Sciencespo University",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
+                        },
+                        {
+                              "name": "Responsibilities",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#8add10"
                         }
                   ],
                   "tagCategories": [
-                        "speaker"
+                        "speaker",
+                        "theme"
                   ]
             },
             {
@@ -727,40 +1224,103 @@
                   "endSrtFormat": "00:42:06,099",
                   "tags": [
                         {
-                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
+                        },
+                        {
+                              "name": "Carbon",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Global Issues",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Welfare",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Industrialized Countries",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Decarbonize",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Decarbonize",
+                              "category": "theme",
+                              "color": "#f1159f"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#8add10"
                         }
                   ],
                   "tagCategories": [
-                        "speaker"
+                        "speaker",
+                        "theme"
                   ]
             },
             {
-                  "content": "Christiana Figueres: We do that as humans at the individual level and we do it at the planetary level. So we need to get beyond that and say “Okay. Yes, yes, yes. Fine. Yes, that is the past, but now how are we going to construct the future?” because the future is much more urgent than the past. The past has its place, but the future is really urgent. Whatever we do in the next six to ten years is really going to determine the future. So it has to be a gradual but urgent transition, and one that requires a generosity of spirit.\n\nBruno Latour: Truth and reconciliation came after a long bitter struggle. The bitterness of the struggle has to be recognized at some point. That’s what I mean by conflict. There’s a total harmony in all of these questions. We should be harmoniously considering the planet, which is also demobilized. A dimension of conflict has to be…\n\nHalldór Thorgeirsson: But it’s important that the ones that build the truth and reconciliation solution – they were also looking at a Nuremberg solution and they decided not…\n\nChristiana Figueres: Not to do that.\n\nHalldór Thorgeirsson: Not to do the Nuremberg solution. So I think it is hugely important. Why did they go down this road? They went on this road because they realized that they could only build future South Africa with [0:41:14] there. I think that’s also what the situation is with climate – is that everybody has more… really, if you seriously think about it, they have much more at stake in the solution than they have in the current state of affairs.\n\nBruno Latour: But with the added difficulty that even for peace and war with humans, we have [0:41:40] of attitude and feeling, but we don’t have any one of those for meeting with Gaia and knowing what to do with it. There’s a sort of uncertainty.\n\nHalldór Thorgeirsson: But what you’re really saying, Christiana, is it’s so much easier to assign responsibility than to assume responsibility.\n\nChristiana Figueres: Yeah. It’s much easier to…",
+                  "content": "Christiana Figueres: We do that as humans at the individual level and we do it at the planetary level. So we need to get beyond that and say “Okay. Yes, yes, yes. Fine. Yes, that is the past, but now how are we going to construct the future?” because the future is much more urgent than the past. The past has its place, but the future is really urgent. Whatever we do in the next six to ten years is really going to determine the future. So it has to be a gradual but urgent transition, and one that requires a generosity of spirit.\n\nBruno Latour: Truth and reconciliation came after a long bitter struggle. The bitterness of the struggle has to be recognized at some point. That’s what I mean by conflict. There’s a total harmony in all of these questions. We should be harmoniously considering the planet, which is also demobilized. A dimension of conflict has to be…\n\nHalldór Thorgeirsson: But it’s important that the ones that build the truth and reconciliation solution – they were also looking at a Nuremberg solution and they decided not…\n\nChristiana Figueres: Not to do that.\n\nHalldór Thorgeirsson: Not to do the Nuremberg solution. So I think it is hugely important. Why did they go down this road? They went on this road because they realized that they could only build future South Africa with there. I think that’s also what the situation is with climate – is that everybody has more… really, if you seriously think about it, they have much more at stake in the solution than they have in the current state of affairs.\n\nBruno Latour: But with the added difficulty that even for peace and war with humans, we have of attitude and feeling, but we don’t have any one of those for meeting with Gaia and knowing what to do with it. There’s a sort of uncertainty.\n\nHalldór Thorgeirsson: But what you’re really saying, Christiana, is it’s so much easier to assign responsibility than to assume responsibility.\n\nChristiana Figueres: Yeah. It’s much easier to…",
                   "begin": 2526.099,
                   "end": 2649.223,
                   "beginSrtFormat": "00:42:06,099",
                   "endSrtFormat": "00:44:09,223",
                   "tags": [
                         {
-                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "name": "Bruno Latour, Sociologist, Anthropologist And Philosopher, Sciencespo University",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Halldór Thorgeirsson, Director for Implementation Strategy, United Nations Framework Convention on Climate Change",
+                              "name": "Halldór Thorgeirsson, Director For Implementation Strategy, United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
+                        },
+                        {
+                              "name": "Future",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Conflicts",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "South Africa",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Gaia",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#8add10"
                         }
                   ],
                   "tagCategories": [
-                        "speaker"
+                        "speaker",
+                        "theme",
+                        "place"
                   ]
             },
             {
@@ -771,23 +1331,65 @@
                   "endSrtFormat": "00:46:27,300",
                   "tags": [
                         {
-                              "name": "Halldór Thorgeirsson, Director for Implementation Strategy, United Nations Framework Convention on Climate Change",
+                              "name": "Halldór Thorgeirsson, Director For Implementation Strategy, United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "name": "Bruno Latour, Sociologist, Anthropologist And Philosopher, Sciencespo University",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
+                        },
+                        {
+                              "name": "Responsibilities",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "IPCC",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "UN",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Canada",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Gaia",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#8add10"
+                        },
+                        {
+                              "name": "Negotiations",
+                              "category": "theme",
+                              "color": "#ccc36e"
                         }
                   ],
                   "tagCategories": [
-                        "speaker"
+                        "speaker",
+                        "theme",
+                        "place"
                   ]
             },
             {
@@ -798,23 +1400,54 @@
                   "endSrtFormat": "00:48:10,221",
                   "tags": [
                         {
-                              "name": "Bruno Latour, sociologist, anthropologist and philosopher, SciencesPo University",
+                              "name": "Bruno Latour, Sociologist, Anthropologist And Philosopher, Sciencespo University",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Christiana Figueres, Executive Secretary of the United Nations Framework Convention on Climate Change",
+                              "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
                         {
-                              "name": "Halldór Thorgeirsson, Director for Implementation Strategy, United Nations Framework Convention on Climate Change",
+                              "name": "Halldór Thorgeirsson, Director For Implementation Strategy, United Nations Framework Convention On Climate Change",
                               "category": "speaker",
                               "color": "#556dd9"
+                        },
+                        {
+                              "name": "UN",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Planetary Solutions",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Responsibilities",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Global Climate",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#8add10"
                         }
                   ],
                   "tagCategories": [
-                        "speaker"
+                        "speaker",
+                        "theme"
                   ]
             }
       ]

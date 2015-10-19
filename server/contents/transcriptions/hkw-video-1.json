@@ -27,6 +27,26 @@
                         "color": "#ccc36e"
                   },
                   {
+                        "name": "People",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Power",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "UN",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Identity",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
                         "name": "Africa",
                         "category": "place",
                         "color": "#889b1b"
@@ -42,12 +62,32 @@
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Refugees",
+                        "name": "Migration & Refugees",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "European Union",
+                        "name": "Mediterranean",
+                        "category": "place",
+                        "color": "#889b1b"
+                  },
+                  {
+                        "name": "Nationalistic Parties",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Mobility",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Global Issues",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "EU",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
@@ -57,17 +97,62 @@
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Land crisis",
+                        "name": "Land",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Climate change",
+                        "name": "Climate Change",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
                         "name": "Poverty",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Integration",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Land",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Agricolture",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Adaptation",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Negotiations",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Climate Change",
+                        "category": "theme",
+                        "color": "#f909df"
+                  },
+                  {
+                        "name": "CO2",
+                        "category": "theme",
+                        "color": "#51f32b"
+                  },
+                  {
+                        "name": "Territory",
+                        "category": "theme",
+                        "color": "#ca438b"
+                  },
+                  {
+                        "name": "Negotiations",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
@@ -87,7 +172,7 @@
                         "color": "#889b1b"
                   },
                   {
-                        "name": "Food production",
+                        "name": "Food",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
@@ -97,7 +182,22 @@
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Destabilized regions",
+                        "name": "Destabilized Regions",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Energy",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Policy",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Land",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
@@ -122,14 +222,24 @@
                         "color": "#889b1b"
                   },
                   {
-                        "name": "Dry lands",
+                        "name": "Land",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Global warming",
+                        "name": "Global Warming",
                         "category": "theme",
                         "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Migration & Refugees",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "2 Degrees",
+                        "category": "theme",
+                        "color": "#7b08b4"
                   },
                   {
                         "name": "Pacific Islands",
@@ -142,17 +252,27 @@
                         "color": "#889b1b"
                   },
                   {
-                        "name": "Cultural identity",
+                        "name": "Cultural Identity",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "International law",
+                        "name": "Law",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Land",
+                        "name": "Fishery",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Institutions",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Government",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
@@ -162,9 +282,24 @@
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Yulia Korshunova, sociologist",
+                        "name": "Society",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Yulia Korshunova, Sociologist",
                         "category": "speaker",
                         "color": "#556dd9"
+                  },
+                  {
+                        "name": "EBRD",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Standards",
+                        "category": "theme",
+                        "color": "#ccc36e"
                   },
                   {
                         "name": "Murmansk, Russia",
@@ -172,22 +307,27 @@
                         "color": "#889b1b"
                   },
                   {
-                        "name": "European Bank standards",
-                        "category": "theme",
-                        "color": "#ccc36e"
-                  },
-                  {
                         "name": "Russia",
                         "category": "place",
                         "color": "#889b1b"
                   },
                   {
-                        "name": "Negotiations",
+                        "name": "Banks",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "International banks",
+                        "name": "Global Issues",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Investments",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Finance",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
@@ -197,12 +337,17 @@
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Small localities",
+                        "name": "Project",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Farhad Mazhar, founder and Managing Director of UBINIG",
+                        "name": "Small Localities",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Farhad Mazhar, Founder And Managing Director Of Ubinig",
                         "category": "speaker",
                         "color": "#556dd9"
                   },
@@ -212,47 +357,52 @@
                         "color": "#889b1b"
                   },
                   {
-                        "name": "Dhaleswari river",
+                        "name": "Dhaleswari River",
                         "category": "place",
                         "color": "#889b1b"
                   },
                   {
-                        "name": "Third world people",
+                        "name": "Third World People",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Geneva",
+                        "name": "Geneva, Switzerland",
                         "category": "place",
                         "color": "#889b1b"
                   },
                   {
-                        "name": "Global elites",
+                        "name": "Elites",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Water control",
+                        "name": "Water",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Southern elites",
+                        "name": "Elites",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Local variety",
+                        "name": "Science",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Genetic engineering",
+                        "name": "Activists",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Companies",
+                        "name": "Agricolture",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Adaptation",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
@@ -262,7 +412,27 @@
                         "color": "#889b1b"
                   },
                   {
-                        "name": "Regional conflict",
+                        "name": "Local Variety",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "GMO",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Companies",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Conflicts",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "GMO",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
@@ -277,12 +447,12 @@
                         "color": "#889b1b"
                   },
                   {
-                        "name": "Global strategies",
+                        "name": "Global Issues",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Veerabhadran Ramanathan, Scripps Institutions of Oceanography, University of California at San Diego, Usa",
+                        "name": "Veerabhadran Ramanathan, Scripps Institutions Of Oceanography, University Of California At San Diego, Usa",
                         "category": "speaker",
                         "color": "#556dd9"
                   },
@@ -292,32 +462,27 @@
                         "color": "#889b1b"
                   },
                   {
-                        "name": "Other pollutants",
+                        "name": "Pollutants",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Two-world hypothesis",
+                        "name": "Two-world Hypothesis",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Philippines",
-                        "category": "place",
-                        "color": "#889b1b"
-                  },
-                  {
-                        "name": "Help the poor",
+                        "name": "CO2",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "China",
-                        "category": "place",
-                        "color": "#889b1b"
+                        "name": "Institutions",
+                        "category": "theme",
+                        "color": "#ccc36e"
                   },
                   {
-                        "name": "No borders",
+                        "name": "Consumption",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
@@ -327,22 +492,87 @@
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Cyclone diagram",
+                        "name": "Carbon",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Codependent world",
+                        "name": "Mitigation",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Periurban area",
+                        "name": "Decarbonize",
+                        "category": "theme",
+                        "color": "#b83f9"
+                  },
+                  {
+                        "name": "Climate Footprint",
+                        "category": "theme",
+                        "color": "#5155ab"
+                  },
+                  {
+                        "name": "Philippines",
+                        "category": "place",
+                        "color": "#889b1b"
+                  },
+                  {
+                        "name": "Population",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Energy access",
+                        "name": "Europe",
+                        "category": "place",
+                        "color": "#889b1b"
+                  },
+                  {
+                        "name": "America",
+                        "category": "place",
+                        "color": "#889b1b"
+                  },
+                  {
+                        "name": "China",
+                        "category": "place",
+                        "color": "#889b1b"
+                  },
+                  {
+                        "name": "Frontier",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Global Issues",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Visual Of Climate",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Codependent World",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Urban Area",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Population",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Energy",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Renewable Energy",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
@@ -357,7 +587,7 @@
                         "color": "#889b1b"
                   },
                   {
-                        "name": "California, USA",
+                        "name": "California, Usa",
                         "category": "place",
                         "color": "#889b1b"
                   },
@@ -372,27 +602,32 @@
                         "color": "#889b1b"
                   },
                   {
-                        "name": "Long term impact",
+                        "name": "Long Term Impact",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Pollution",
+                        "name": "Pollutants",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Affecting the oceans",
+                        "name": "Mobility",
                         "category": "theme",
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Greenland glaciers",
+                        "name": "Ocean",
+                        "category": "theme",
+                        "color": "#ccc36e"
+                  },
+                  {
+                        "name": "Greenland Glaciers",
                         "category": "place",
                         "color": "#889b1b"
                   },
                   {
-                        "name": "Antarctic glaciers",
+                        "name": "Antarctic Glaciers",
                         "category": "place",
                         "color": "#889b1b"
                   },
@@ -402,7 +637,7 @@
                         "color": "#ccc36e"
                   },
                   {
-                        "name": "Weather extremes",
+                        "name": "Weather",
                         "category": "theme",
                         "color": "#ccc36e"
                   }
@@ -444,6 +679,26 @@
                         },
                         {
                               "name": "Cyberspace",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "People",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Power",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "UN",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Identity",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -489,7 +744,27 @@
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Refugees",
+                              "name": "Migration & Refugees",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Mediterranean",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Nationalistic Parties",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Mobility",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Global Issues",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -520,8 +795,8 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "European Union",
-                              "category": "theme",
+                              "name": "EU",
+                              "category": "place",
                               "color": "#ccc36e"
                         },
                         {
@@ -530,17 +805,67 @@
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Land crisis",
+                              "name": "Land",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Climate change",
+                              "name": "Climate Change",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
                               "name": "Poverty",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Integration",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Land",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Land",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Agricolture",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Adaptation",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Negotiations",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#f909df"
+                        },
+                        {
+                              "name": "CO2",
+                              "category": "theme",
+                              "color": "#51f32b"
+                        },
+                        {
+                              "name": "Territory",
+                              "category": "theme",
+                              "color": "#ca438b"
+                        },
+                        {
+                              "name": "Negotiations",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -584,7 +909,7 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Food production",
+                              "name": "Food",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
@@ -594,12 +919,27 @@
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Destabilized regions",
+                              "name": "Destabilized Regions",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Land crisis",
+                              "name": "Land",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Energy",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Policy",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Land",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -660,14 +1000,44 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Dry lands",
+                              "name": "Land",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Global warming",
+                              "name": "Global Warming",
                               "category": "theme",
                               "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Agricolture",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Colonialism",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Adaptation",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Migration & Refugees",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#f909df"
+                        },
+                        {
+                              "name": "2 Degrees",
+                              "category": "theme",
+                              "color": "#7b08b4"
                         }
                   ],
                   "tagCategories": [
@@ -704,14 +1074,44 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Cultural identity",
+                              "name": "Cultural Identity",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "International law",
+                              "name": "Law",
                               "category": "theme",
                               "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Land",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Fishery",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Institutions",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Government",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#f909df"
                         }
                   ],
                   "tagCategories": [
@@ -748,33 +1148,9 @@
                               "name": "Indigenous",
                               "category": "theme",
                               "color": "#ccc36e"
-                        }
-                  ],
-                  "tagCategories": [
-                        "speaker",
-                        "place",
-                        "theme"
-                  ]
-            },
-            {
-                  "begin": 1219,
-                  "end": 1283,
-                  "content": "Now let’s refer to the European Bank for Reconstruction and Development. The bank has 10 standards, 10 requirements applied for assessing the impact of a project on social sphere and environment. The 1st standard --> preliminary social and ecological assessment and control, the 2nd standard --> labour relations and working conditions at the enterprise. The 3rd --> environment pollution and, of course, a plan for minimizing the pollution; the 4th --> health protection for the population living in the territory where the construction of an industrial object is planned. The 5th --> conservation of biological diversity; the 6th --> relocation of the population, which means relocation for economical reasons; the 7th standard --> aboriginal peoples. The 8th --> cultural heritage; the 9th --> financial intermediaries, and the 10th --> disclosing information about the project and framing a plan for interaction between interested parties..",
-                  "beginSrtFormat": "00:20:19,000",
-                  "endSrtFormat": "00:21:23,000",
-                  "tags": [
-                        {
-                              "name": "Yulia Korshunova, sociologist",
-                              "category": "speaker",
-                              "color": "#556dd9"
                         },
                         {
-                              "name": "Murmansk, Russia",
-                              "category": "place",
-                              "color": "#889b1b"
-                        },
-                        {
-                              "name": "European Bank standards",
+                              "name": "Society",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -786,6 +1162,40 @@
                   ]
             },
             {
+                  "begin": 1219,
+                  "end": 1283,
+                  "content": "Now let’s refer to the European Bank for Reconstruction and Development. The bank has 10 standards, 10 requirements applied for assessing the impact of a project on social sphere and environment. The 1st standard preliminary social and ecological assessment and control, the 2nd standard labour relations and working conditions at the enterprise. The 3rd environment pollution and, of course, a plan for minimizing the pollution; the 4th health protection for the population living in the territory where the construction of an industrial object is planned. The 5th conservation of biological diversity; the 6th relocation of the population, which means relocation for economical reasons; the 7th standard  aboriginal peoples. The 8th cultural heritage; the 9th financial intermediaries, and the 10th  disclosing information about the project and framing a plan for interaction between interested parties.",
+                  "beginSrtFormat": "00:20:19,000",
+                  "endSrtFormat": "00:21:23,000",
+                  "tags": [
+                        {
+                              "name": "Yulia Korshunova, Sociologist",
+                              "category": "speaker",
+                              "color": "#556dd9"
+                        },
+                        {
+                              "name": "EBRD",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Standards",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Murmansk, Russia",
+                              "category": "place",
+                              "color": "#889b1b"
+                        }
+                  ],
+                  "tagCategories": [
+                        "speaker",
+                        "theme",
+                        "place"
+                  ]
+            },
+            {
                   "begin": 1285,
                   "end": 1355,
                   "content": "First of all, I’d like to tell about the situation in general, how an assessment is being made in principle and what’s happening since the moment of the negotiations between a customer, a big industrial enterprise and a consulting company or a bank; what the meaning of these negotiations is, what they are taking place for. First of all, of course, when a big business comes into a region, even if it’s a rich company, anyway, some additional investments are needed during the project realization to minimize the investment risks for the company.  And it’s for this purpose that the industrial company applies to the banks for investments. A fairly frequent practice in the Russian territory is that the company applies to the international banks for a financial support. In this case we have a situation when the international banks put certain requirements before the projects will be financed. For example, at the present time the most known international bank standards, as we also say, are the requirements of the European Bank for Reconstruction and Development, 10 standards; the Equator Principles, and also the standards developed by the International Financial Corporation..",
@@ -793,7 +1203,7 @@
                   "endSrtFormat": "00:22:35,000",
                   "tags": [
                         {
-                              "name": "Yulia Korshunova, sociologist",
+                              "name": "Yulia Korshunova, Sociologist",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
@@ -813,7 +1223,32 @@
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "International banks",
+                              "name": "Banks",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Global Issues",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Investments",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Finance",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "EBRD",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Standards",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -832,7 +1267,7 @@
                   "endSrtFormat": "00:23:23,000",
                   "tags": [
                         {
-                              "name": "Yulia Korshunova, sociologist",
+                              "name": "Yulia Korshunova, Sociologist",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
@@ -843,6 +1278,26 @@
                         },
                         {
                               "name": "Relocation",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Standards",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Project",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Land",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Territory",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -861,7 +1316,7 @@
                   "endSrtFormat": "00:23:50,000",
                   "tags": [
                         {
-                              "name": "Yulia Korshunova, sociologist",
+                              "name": "Yulia Korshunova, Sociologist",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
@@ -871,7 +1326,12 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Small localities",
+                              "name": "Small Localities",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Territory",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -890,7 +1350,7 @@
                   "endSrtFormat": "00:27:25,000",
                   "tags": [
                         {
-                              "name": "Farhad Mazhar, founder and Managing Director of UBINIG",
+                              "name": "Farhad Mazhar, Founder And Managing Director Of Ubinig",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
@@ -900,39 +1360,69 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Dhaleswari river",
+                              "name": "Dhaleswari River",
                               "category": "place",
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Climate change",
+                              "name": "Climate Change",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Third world people",
+                              "name": "Third World People",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Geneva",
+                              "name": "Geneva, Switzerland",
                               "category": "place",
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Global elites",
+                              "name": "Elites",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Water control",
+                              "name": "Water",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Southern elites",
+                              "name": "Elites",
                               "category": "theme",
                               "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Science",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Activists",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Agricolture",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Adaptation",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "India",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#f909df"
                         }
                   ],
                   "tagCategories": [
@@ -949,7 +1439,7 @@
                   "endSrtFormat": "00:30:42,000",
                   "tags": [
                         {
-                              "name": "Farhad Mazhar, founder and Managing Director of UBINIG",
+                              "name": "Farhad Mazhar, Founder And Managing Director Of Ubinig",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
@@ -959,12 +1449,12 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Local variety",
+                              "name": "Local Variety",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Genetic engineering",
+                              "name": "GMO",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
@@ -974,7 +1464,7 @@
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Climate change",
+                              "name": "Climate Change",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
@@ -984,9 +1474,29 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Regional conflict",
+                              "name": "Conflicts",
                               "category": "theme",
                               "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Agricolture",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "GMO",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Elites",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#f909df"
                         }
                   ],
                   "tagCategories": [
@@ -1005,7 +1515,7 @@
                   "endSrtFormat": "00:32:44,000",
                   "tags": [
                         {
-                              "name": "Farhad Mazhar, founder and Managing Director of UBINIG",
+                              "name": "Farhad Mazhar, Founder And Managing Director Of Ubinig",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
@@ -1025,9 +1535,19 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Global strategies",
+                              "name": "Global Issues",
                               "category": "theme",
                               "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Agricolture",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#f909df"
                         }
                   ],
                   "tagCategories": [
@@ -1041,12 +1561,12 @@
             {
                   "begin": 1970,
                   "end": 2209,
-                  "content": "So in this project, just from these whole observations of brown clouds, to me there appeared a new idea (1:52) on climate change. Right now, the focus is on cutting down fossil fuel consumption, carbon dioxide. But it turns out about 40% of global warming is caused by pollutants other than carbon dioxide. That has been my work in the last 25 years. So I proposed a solution that the nations focus on carbon dioxide. From (2:23), there could be a new movement where we focus on cutting down these other pollutants. It turns out that they will slow down global warming by 50% quickly within the next 30 years. This idea has now been accepted by the United Nations. There is a coalition for it, Climate and Clean Air Coalition. One of the major sources of this other pollution is soot coming from cooking with firewood coal. So I decided that I was doing this project for four to five years, but sitting in San Diego in my computer (3:04). So then I decided early this year I should go spend 10 weeks living in villages. I spent a number of days talking to women and children and men. I talked about it yesterday. What I did then was… There was no electricity. It’s very hard. Every week or 10 days, I would go to the nearby city to live in an air-conditioned room for one day and some cold beer, and go back. That’s when I discovered that there are really two planets. I call the top four billion --> that’s us --> and then the bottom three billion who have no access to energy. We are codependent. Without the bottom three billion, there won’t be any cheap labor. I can’t buy my shirt for $40. This shirt would cost me $200. But at the same time, the top four billion is what is consuming the fossil fuel. I’m now thinking that the problem with the top four billion is consumption. That’s the anthropocene. The anthropocene, remind you, is because long ago, technology was critical in meeting our basic needs --> transportation. But now we’ve gone far beyond basic needs. Whereas for the bottom three billion, their problem is population. But for them, they need clean energy access. Now I’m taking my climate mitigation idea. I’m calling it two-world hypothesis. Reducing the carbon footprint, bringing down, decarbonizing the economy is for the top four billion. For the bottom three billion, for them we have to give energy access. Otherwise, they will follow us. If the bottom three billion go do the consumption like ours, there is no hope for that matter. The global warming will be five degrees to ten degrees. In building a case, purely for selfish reasons, for our survival, we have to help themm",
+                  "content": "So in this project, just from these whole observations of brown clouds, to me there appeared a new idea (1:52) on climate change. Right now, the focus is on cutting down fossil fuel consumption, carbon dioxide. But it turns out about 40% of global warming is caused by pollutants other than carbon dioxide. That has been my work in the last 25 years. So I proposed a solution that the nations focus on carbon dioxide. From, there could be a new movement where we focus on cutting down these other pollutants. It turns out that they will slow down global warming by 50% quickly within the next 30 years. This idea has now been accepted by the United Nations. There is a coalition for it, Climate and Clean Air Coalition. One of the major sources of this other pollution is soot coming from cooking with firewood coal. So I decided that I was doing this project for four to five years, but sitting in San Diego in my computer. So then I decided early this year I should go spend 10 weeks living in villages. I spent a number of days talking to women and children and men. I talked about it yesterday. What I did then was… There was no electricity. It’s very hard. Every week or 10 days, I would go to the nearby city to live in an air-conditioned room for one day and some cold beer, and go back. That’s when I discovered that there are really two planets. I call the top four billion that’s us and then the bottom three billion who have no access to energy. We are codependent. Without the bottom three billion, there won’t be any cheap labor. I can’t buy my shirt for $40. This shirt would cost me $200. But at the same time, the top four billion is what is consuming the fossil fuel. I’m now thinking that the problem with the top four billion is consumption. That’s the anthropocene. The anthropocene, remind you, is because long ago, technology was critical in meeting our basic needs transportation. But now we’ve gone far beyond basic needs. Whereas for the bottom three billion, their problem is population. But for them, they need clean energy access. Now I’m taking my climate mitigation idea. I’m calling it two-world hypothesis. Reducing the carbon footprint, bringing down, decarbonizing the economy is for the top four billion. For the bottom three billion, for them we have to give energy access. Otherwise, they will follow us. If the bottom three billion go do the consumption like ours, there is no hope for that matter. The global warming will be five degrees to ten degrees. In building a case, purely for selfish reasons, for our survival, we have to help themm",
                   "beginSrtFormat": "00:32:50,000",
                   "endSrtFormat": "00:36:49,000",
                   "tags": [
                         {
-                              "name": "Veerabhadran Ramanathan, Scripps Institutions of Oceanography, University of California at San Diego, Usa",
+                              "name": "Veerabhadran Ramanathan, Scripps Institutions Of Oceanography, University Of California At San Diego, Usa",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
@@ -1056,36 +1576,103 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Global warming",
+                              "name": "Global Warming",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Other pollutants",
+                              "name": "Pollutants",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Two-world hypothesis",
+                              "name": "Two-world Hypothesis",
                               "category": "theme",
                               "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "CO2",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "UN",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Institutions",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Consumption",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Anthropocene",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Carbon",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Mitigation",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Decarbonize",
+                              "category": "theme",
+                              "color": "#b83f9"
+                        },
+                        {
+                              "name": "Climate Change",
+                              "category": "theme",
+                              "color": "#f909df"
+                        },
+                        {
+                              "name": "2 Degrees",
+                              "category": "theme",
+                              "color": "#7b08b4"
+                        },
+                        {
+                              "name": "Climate Footprint",
+                              "category": "theme",
+                              "color": "#5155ab"
+                        },
+                        {
+                              "name": "CO2",
+                              "category": "theme",
+                              "color": "#51f32b"
                         }
                   ],
                   "tagCategories": [
                         "speaker",
                         "place",
                         "theme"
-                  ]
+                  ],
+                  "playedAt": null,
+                  "playedAtP": null
             },
             {
                   "begin": 2212,
                   "end": 2281,
-                  "content": "We should help the poor. I’m saying for our own survival, we need to help them because otherwise, if their per capita consumption of CO2 emission goes to eight tons a person --> that’s what the average European/American is. American is twice as much as European --> we are talking about the end of anthropocene. That is the new science. We don’t know how to appeal to our goodness in our heart. That has not worked. We have tried. We go to Warsaw. We go to Copenhagen. Island nation leaders came. Philippines came. They’re all dying. But what did we do? Nothing. But I think the science shows, the data shows for our selfish survival, for our children and grandchildren, we have to help the bottom three billion..",
+                  "content": "We should help the poor. I’m saying for our own survival, we need to help them because otherwise, if their per capita consumption of CO2 emission goes to eight tons a person that’s what the average European/American is. American is twice as much as European we are talking about the end of anthropocene. That is the new science. We don’t know how to appeal to our goodness in our heart. That has not worked. We have tried. We go to Warsaw. We go to Copenhagen. Island nation leaders came. Philippines came. They’re all dying. But what did we do? Nothing. But I think the science shows, the data shows for our selfish survival, for our children and grandchildren, we have to help the bottom three billion.",
                   "beginSrtFormat": "00:36:52,000",
                   "endSrtFormat": "00:38:01,000",
                   "tags": [
                         {
-                              "name": "Veerabhadran Ramanathan, Scripps Institutions of Oceanography, University of California at San Diego, Usa",
+                              "name": "Veerabhadran Ramanathan, Scripps Institutions Of Oceanography, University Of California At San Diego, Usa",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
@@ -1100,9 +1687,24 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Help the poor",
+                              "name": "Population",
                               "category": "theme",
                               "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Europe",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "America",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "CO2",
+                              "category": "theme",
+                              "color": "#51f32b"
                         }
                   ],
                   "tagCategories": [
@@ -1114,12 +1716,12 @@
             {
                   "begin": 2283,
                   "end": 2371,
-                  "content": "That’s the second thing I discovered when living in villages seven to ten days and then retreating to the nearby city. This is not… We used to think of the whole environment, global warming issues, the West and the East or North and South, but the West and North is every nation now. The standard of living, for example, in India has higher standard of living than people here. So there are no borders. There are villages and there are cities in every nation. A small fraction --> in India, it’s probably 10% to 15%, China 25% --> are living and consuming as much as European and American. This whole environment anthropocene issue is no longer an issue between north and south, or West Europe versus us. Because of globalization, in every nation there are people creating the anthropocene. About 80% will suffer. Those who are going to suffer in the anthropocene are not the people who put the pollution. It’s those who have no access to that..",
+                  "content": "That’s the second thing I discovered when living in villages seven to ten days and then retreating to the nearby city. This is not… We used to think of the whole environment, global warming issues, the West and the East or North and South, but the West and North is every nation now. The standard of living, for example, in India has higher standard of living than people here. So there are no borders. There are villages and there are cities in every nation. A small fraction in India, it’s probably 10% to 15%, China 25%  are living and consuming as much as European and American. This whole environment anthropocene issue is no longer an issue between north and south, or West Europe versus us. Because of globalization, in every nation there are people creating the anthropocene. About 80% will suffer. Those who are going to suffer in the anthropocene are not the people who put the pollution. It’s those who have no access to that.",
                   "beginSrtFormat": "00:38:03,000",
                   "endSrtFormat": "00:39:31,000",
                   "tags": [
                         {
-                              "name": "Veerabhadran Ramanathan, Scripps Institutions of Oceanography, University of California at San Diego, Usa",
+                              "name": "Veerabhadran Ramanathan, Scripps Institutions Of Oceanography, University Of California At San Diego, Usa",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
@@ -1139,12 +1741,27 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "No borders",
+                              "name": "Frontier",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
                               "name": "Anthropocene",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Consumption",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Global Issues",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Global Warming",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -1158,12 +1775,12 @@
             {
                   "begin": 2374,
                   "end": 2431,
-                  "content": "I have a diagram. It shows that if we think of a cyclone, there’s an outer circle and there’s an inner circle. There are four billion on the outer circle and three billion in the inner circle. But if you put the size of that circle based on their consumption or extracting natural resources, the three billion are here and the four billion are there. The boundary between them --> it’s a codependent world. The inner circle depend on us, but we depend on the inner circle, otherwise why do we send our manufacturing to Bangladesh, to India, to China??",
+                  "content": "I have a diagram. It shows that if we think of a cyclone, there’s an outer circle and there’s an inner circle. There are four billion on the outer circle and three billion in the inner circle. But if you put the size of that circle based on their consumption or extracting natural resources, the three billion are here and the four billion are there. The boundary between them it’s a codependent world. The inner circle depend on us, but we depend on the inner circle, otherwise why do we send our manufacturing to Bangladesh, to India, to China??",
                   "beginSrtFormat": "00:39:34,000",
                   "endSrtFormat": "00:40:31,000",
                   "tags": [
                         {
-                              "name": "Veerabhadran Ramanathan, Scripps Institutions of Oceanography, University of California at San Diego, Usa",
+                              "name": "Veerabhadran Ramanathan, Scripps Institutions Of Oceanography, University Of California At San Diego, Usa",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
@@ -1173,14 +1790,29 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Cyclone diagram",
+                              "name": "Visual Of Climate",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Codependent world",
+                              "name": "Codependent World",
                               "category": "theme",
                               "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Bangladesh",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "India",
+                              "category": "place",
+                              "color": "#889b1b"
+                        },
+                        {
+                              "name": "China",
+                              "category": "place",
+                              "color": "#889b1b"
                         }
                   ],
                   "tagCategories": [
@@ -1192,12 +1824,12 @@
             {
                   "begin": 2433,
                   "end": 2492,
-                  "content": "There’s the inner circle, the outer circle, but between that, there is a fuzzy region where there is flux --> people going from here to there. That is your periurban area. But you have to understand if you don’t do anything about it, the three billion bottom --> I call it B3B --> can become B5B in another 35 years. The population is going to nine billion. So my point is the guys sitting on this boundary between the two --> they’re the ones who are following our bad example. They are coming to the cities, consuming same consumption and carbon dioxide pollution. But if we can prevent that, give energy access to the B3B, there’s no need for them to go there..",
+                  "content": "There’s the inner circle, the outer circle, but between that, there is a fuzzy region where there is flux people going from here to there. That is your periurban area. But you have to understand if you don’t do anything about it, the three billion bottom. I call it B3B can become B5B in another 35 years. The population is going to nine billion. So my point is the guys sitting on this boundary between the two they’re the ones who are following our bad example. They are coming to the cities, consuming same consumption and carbon dioxide pollution. But if we can prevent that, give energy access to the B3B, there’s no need for them to go there.",
                   "beginSrtFormat": "00:40:33,000",
                   "endSrtFormat": "00:41:32,000",
                   "tags": [
                         {
-                              "name": "Veerabhadran Ramanathan, Scripps Institutions of Oceanography, University of California at San Diego, Usa",
+                              "name": "Veerabhadran Ramanathan, Scripps Institutions Of Oceanography, University Of California At San Diego, Usa",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
@@ -1207,9 +1839,29 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Periurban area",
+                              "name": "Urban Area",
                               "category": "theme",
                               "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Population",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Consumption",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "CO2",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "CO2",
+                              "category": "theme",
+                              "color": "#51f32b"
                         }
                   ],
                   "tagCategories": [
@@ -1226,7 +1878,7 @@
                   "endSrtFormat": "00:42:23,000",
                   "tags": [
                         {
-                              "name": "Veerabhadran Ramanathan, Scripps Institutions of Oceanography, University of California at San Diego, Usa",
+                              "name": "Veerabhadran Ramanathan, Scripps Institutions Of Oceanography, University Of California At San Diego, Usa",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
@@ -1236,9 +1888,19 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Energy access",
+                              "name": "Energy",
                               "category": "theme",
                               "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Renewable Energy",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Decarbonize",
+                              "category": "theme",
+                              "color": "#b83f9"
                         }
                   ],
                   "tagCategories": [
@@ -1250,12 +1912,12 @@
             {
                   "begin": 2546,
                   "end": 2627,
-                  "content": "I’m always interested in the long term impact, not the short term. The pollution travels. For example, pollution from Beijing within a week comes to California. I measured. While the Chinese are sending their gift to Americans, we send our gift to Europeans. Our pollution travels to Europe in three days. It is that long range pollution which causes long term problems. I’m always interested in the global long term problems. We wanted to see how much of this pollution from India is carried over to the oceans. What we found in the Indian Ocean experiment in the entire North Indian Ocean and Arabian Sea is it’s covered in a thick brown cloud three kilometers thick. Later, when I started working with (26:16), we found these brown clouds everywhere. With anywhere in transportation, you see this haze, but its severity is much larger in South Asia and East Asia..",
+                  "content": "I’m always interested in the long term impact, not the short term. The pollution travels. For example, pollution from Beijing within a week comes to California. I measured. While the Chinese are sending their gift to Americans, we send our gift to Europeans. Our pollution travels to Europe in three days. It is that long range pollution which causes long term problems. I’m always interested in the global long term problems. We wanted to see how much of this pollution from India is carried over to the oceans. What we found in the Indian Ocean experiment in the entire North Indian Ocean and Arabian Sea is it’s covered in a thick brown cloud three kilometers thick. Later, when I started working with, we found these brown clouds everywhere. With anywhere in transportation, you see this haze, but its severity is much larger in South Asia and East Asia..",
                   "beginSrtFormat": "00:42:26,000",
                   "endSrtFormat": "00:43:47,000",
                   "tags": [
                         {
-                              "name": "Veerabhadran Ramanathan, Scripps Institutions of Oceanography, University of California at San Diego, Usa",
+                              "name": "Veerabhadran Ramanathan, Scripps Institutions Of Oceanography, University Of California At San Diego, Usa",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
@@ -1275,7 +1937,7 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "California, USA",
+                              "name": "California, Usa",
                               "category": "place",
                               "color": "#889b1b"
                         },
@@ -1290,12 +1952,17 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Long term impact",
+                              "name": "Long Term Impact",
                               "category": "theme",
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Pollution",
+                              "name": "Pollutants",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Mobility",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -1309,12 +1976,12 @@
             {
                   "begin": 2633,
                   "end": 2681,
-                  "content": "If you are affecting the oceans, then you are affecting the entire part. The ocean water circulation --> it immediately connects the whole planet, whereas if you affect your land, it still affects the globe. But affecting the ocean, it will affect generations --> children, grandchildren, next four to five generations, because the ocean mixes everything up. And it has an enormous memory like an elephant. It doesn’t forget. The land forgets it. If you put something there, it heats up the next day, and then it’s gone. In the ocean, it takes everything and stores it..",
+                  "content": "If you are affecting the oceans, then you are affecting the entire part. The ocean water circulation it immediately connects the whole planet, whereas if you affect your land, it still affects the globe. But affecting the ocean, it will affect generations children, grandchildren, next four to five generations, because the ocean mixes everything up. And it has an enormous memory like an elephant. It doesn’t forget. The land forgets it. If you put something there, it heats up the next day, and then it’s gone. In the ocean, it takes everything and stores it..",
                   "beginSrtFormat": "00:43:53,000",
                   "endSrtFormat": "00:44:41,000",
                   "tags": [
                         {
-                              "name": "Veerabhadran Ramanathan, Scripps Institutions of Oceanography, University of California at San Diego, Usa",
+                              "name": "Veerabhadran Ramanathan, Scripps Institutions Of Oceanography, University Of California At San Diego, Usa",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
@@ -1324,7 +1991,7 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Affecting the oceans",
+                              "name": "Ocean",
                               "category": "theme",
                               "color": "#ccc36e"
                         }
@@ -1338,12 +2005,12 @@
             {
                   "begin": 2683,
                   "end": 2865,
-                  "content": "I’m a lot more optimistic than many of my colleagues. I know they’re going to solve this problem. I don’t think they’re going to let it go out of control. For example, my own projection is --> I made this forecast five years ago --> that we are going to surpass two-degree warming Celsius by mid-century and about four degrees by end of 2100. That is beyond anything two-degree warming from this current warm epoch. It’s anything beyond we have experienced in the last several million years. None of the ecosystems has faced it. If you just look at this year and last year, you had Hurricane Sandy, Haiyan, severe floods in India, Himalayas --> the weather extremes. Let’s even forget about Greenland glaciers and Antarctic glaciers --> the weather extreme. And fires in California. I had to cancel my vacation to Yosemite due to a huge fire. This only gets worse. As a human, we react more to catastrophes, tragedies. Then, we wake up. If my predictions come true, we are going to see severe changes and catastrophes over the next 10 to 20 years. Fortunately, there is still time for us to fix the problem. This short-lived (30:55) this 40% of the pollution will give us some time because you take the soot which is the second largest contributor to global warming. It’s a major part of the brown cloud. Half the source of soot is in the cooking. The other half is transportation. If we wave a magic wand and give everyone (31:23), that soot is gone in two weeks and its effects disappear in 10 years. We’ll be able to do something not too expensive to slow down, and then decarbonize the economy. That is where the outer world and inner world have to work together. If we don’t do that, then there’s no hope.",
+                  "content": "I’m a lot more optimistic than many of my colleagues. I know they’re going to solve this problem. I don’t think they’re going to let it go out of control. For example, my own projection is I made this forecast five years ago that we are going to surpass two-degree warming Celsius by mid-century and about four degrees by end of 2100. That is beyond anything two-degree warming from this current warm epoch. It’s anything beyond we have experienced in the last several million years. None of the ecosystems has faced it. If you just look at this year and last year, you had Hurricane Sandy, Haiyan, severe floods in India, Himalayas the weather extremes. Let’s even forget about Greenland glaciers and Antarctic glaciers the weather extreme. And fires in California. I had to cancel my vacation to Yosemite due to a huge fire. This only gets worse. As a human, we react more to catastrophes, tragedies. Then, we wake up. If my predictions come true, we are going to see severe changes and catastrophes over the next 10 to 20 years. Fortunately, there is still time for us to fix the problem. This short-lived this 40% of the pollution will give us some time because you take the soot which is the second largest contributor to global warming. It’s a major part of the brown cloud. Half the source of soot is in the cooking. The other half is transportation. If we wave a magic wand and give everyone, that soot is gone in two weeks and its effects disappear in 10 years. We’ll be able to do something not too expensive to slow down, and then decarbonize the economy. That is where the outer world and inner world have to work together. If we don’t do that, then there’s no hope.",
                   "beginSrtFormat": "00:44:43,000",
                   "endSrtFormat": "00:47:45,000",
                   "tags": [
                         {
-                              "name": "Veerabhadran Ramanathan, Scripps Institutions of Oceanography, University of California at San Diego, Usa",
+                              "name": "Veerabhadran Ramanathan, Scripps Institutions Of Oceanography, University Of California At San Diego, Usa",
                               "category": "speaker",
                               "color": "#556dd9"
                         },
@@ -1353,17 +2020,17 @@
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Greenland glaciers",
+                              "name": "Greenland Glaciers",
                               "category": "place",
                               "color": "#889b1b"
                         },
                         {
-                              "name": "California, USA",
+                              "name": "California, Usa",
                               "category": "place",
                               "color": "#889b1b"
                         },
                         {
-                              "name": "Antarctic glaciers",
+                              "name": "Antarctic Glaciers",
                               "category": "place",
                               "color": "#889b1b"
                         },
@@ -1373,9 +2040,24 @@
                               "color": "#ccc36e"
                         },
                         {
-                              "name": "Weather extremes",
+                              "name": "Weather",
                               "category": "theme",
                               "color": "#ccc36e"
+                        },
+                        {
+                              "name": "Decarbonize",
+                              "category": "theme",
+                              "color": "#b83f9"
+                        },
+                        {
+                              "name": "Global Warming",
+                              "category": "theme",
+                              "color": "#ccc36e"
+                        },
+                        {
+                              "name": "2 Degrees",
+                              "category": "theme",
+                              "color": "#7b08b4"
                         }
                   ],
                   "tagCategories": [
