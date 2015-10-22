@@ -348,10 +348,11 @@ var findRelatedNodes = function(tagsList, transcriptions, allTags){
 var makeLinks = function(tagsList, transcriptions){
   var links = [];
   tagsList.forEach(function(tag1, i){
+    // tagsList.forEach(function(tag2, j){
     tagsList.slice(i, tagsList.length).forEach(function(tag2, j){
-      if(j > i){
+      if(i+j > i){
         transcriptions.forEach(function(transcription){
-          transcription.data.forEach(function(chunk){
+          transcription.data.forEach(function(chunk, chunkIndex){
             var chunkHasTags= chunk.tags && chunk.tags.length && chunk.tags.length > 0;
             if(chunkHasTags){
               var hasTag1, hasTag2;
@@ -363,6 +364,8 @@ var makeLinks = function(tagsList, transcriptions){
                   hasTag2 = true;
                 }
               });
+
+
               if(hasTag1 && hasTag2){
                 var linkId;
                 links.forEach(function(link, k){
@@ -372,12 +375,17 @@ var makeLinks = function(tagsList, transcriptions){
                 })
 
                 if(linkId === undefined){
+                  hasLink= true;
+
                   links.push({
                     source : i,
-                    target : i+j,
+                    // target : j,
+                   target : i+j,
                     value : 1
                   });
                 }else{
+                  hasLink= true;
+
                   links[linkId].value++;
                 }
               }
@@ -388,6 +396,27 @@ var makeLinks = function(tagsList, transcriptions){
       }
     });
   });
+
+
+
+  //for verification
+  /*var items = [];
+  links.forEach(function(link){
+    var hasSource, hasTarget;
+    items.forEach(function(it){
+      if(it == link.source)
+        hasSource = true;
+      if(it == link.target)
+        hasTarget = true;
+    });
+    if(!hasSource){
+      items.push(link.source);
+    }
+    if(!hasTarget){
+      items.push(link.target);
+    }
+  });
+  console.log('wanted ', tagsList.length, ' got ', items.length)*/
 
 
   return links;

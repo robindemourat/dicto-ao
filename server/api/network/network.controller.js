@@ -64,6 +64,13 @@ exports.index = function(req, res) {
             }
           }
         })
+        /*output.nodes = tags;
+        console.log('nodes done');
+        output.links = utils.makeLinks(tags, transcriptions);
+        console.log('links done');
+
+        res.json(output);
+        console.log('network sent');*/
       }
     }
   });
