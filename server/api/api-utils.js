@@ -311,7 +311,8 @@ var findRelatedNodes = function(tagsList, transcriptions, allTags){
             }
             if(hasListedTag){
               chunk.tags.forEach(function(chunkTag, chunkIndex){
-                if(chunkTag.category !== listedTag.category && chunkTag.name !== listedTag.name){
+                if(!(chunkTag.category == listedTag.category && chunkTag.name == listedTag.name)){
+
                   allTags.forEach(function(allTag){
                     if(allTag.category === chunkTag.category && allTag.name === chunkTag.name){
                       tagsList.push(allTag);
@@ -348,8 +349,9 @@ var findRelatedNodes = function(tagsList, transcriptions, allTags){
 var makeLinks = function(tagsList, transcriptions){
   var links = [];
   tagsList.forEach(function(tag1, i){
-    // tagsList.forEach(function(tag2, j){
+   //tagsList.forEach(function(tag2, j){
     tagsList.slice(i, tagsList.length).forEach(function(tag2, j){
+      // if(j > i){
       if(i+j > i){
         transcriptions.forEach(function(transcription){
           transcription.data.forEach(function(chunk, chunkIndex){
@@ -363,6 +365,7 @@ var makeLinks = function(tagsList, transcriptions){
                 if(tag2.category === chunkTag.category && slugify(tag2.name) === slugify(chunkTag.name)){
                   hasTag2 = true;
                 }
+
               });
 
 
@@ -379,7 +382,7 @@ var makeLinks = function(tagsList, transcriptions){
 
                   links.push({
                     source : i,
-                    // target : j,
+                     // target : j,
                    target : i+j,
                     value : 1
                   });
