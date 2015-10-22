@@ -53,7 +53,7 @@ exports.index = function(req, res) {
         console.log('network sent');
 
       }else{
-        /*fs.readFile(__dirname +'/../../contents/fixed_data/network.json', 'utf-8', function(err, net){
+        fs.readFile(__dirname +'/../../contents/fixed_data/network.json', 'utf-8', function(err, net){
           if(err){
             res.status(500).send({msg:'network data not loaded', error : err});
           }else{
@@ -63,14 +63,14 @@ exports.index = function(req, res) {
               res.status(400).send({msg:'error while reading network file', error : e})
             }
           }
-        })*/
-        output.nodes = tags;
+        })
+        /*output.nodes = tags;
         console.log('nodes done');
         output.links = utils.makeLinks(tags, transcriptions);
         console.log('links done');
 
         res.json(output);
-        console.log('network sent');
+        console.log('network sent');*/
       }
     }
   });
