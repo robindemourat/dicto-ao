@@ -133,7 +133,6 @@ FILES TO API FORMATTING
 
 //I transform a dicto chunk to an ao-formatted chunk
 var prepareChunk = function(chunk, transcription, chunkIndex){
-  console.log(chunk);
 
   chunk.videoId = transcription.metadata.slug;
   chunk.videoTitle = transcription.metadata.title;
@@ -148,6 +147,7 @@ var prepareChunk = function(chunk, transcription, chunkIndex){
 
 
   chunk.duration = chunk.end - chunk.start;
+
 
   if(chunk.tags){
     var tags = normalizeTags(chunk.tags);
