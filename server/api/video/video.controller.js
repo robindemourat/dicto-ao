@@ -5,6 +5,7 @@ var utils = require('./../api-utils.js');
 
 // Get list of videos
 exports.index = function(req, res) {
+  res.header('Content-Type', 'application/json; charset=utf-8');
   if(req.params.id){
     utils.serveTranscription(req.params.id, function(err, transcription){
       if(err){
@@ -18,6 +19,7 @@ exports.index = function(req, res) {
       if(err){
         res.status(500).send({msg:'problem while parsing transcription', error:err});
       }else{
+
         res.json(metas);
       }
     })

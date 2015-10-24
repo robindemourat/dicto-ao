@@ -207,11 +207,6 @@
                     "color": "#889b1b"
                },
                {
-                    "name": "",
-                    "category": "theme",
-                    "color": "#ccc36e"
-               },
-               {
                     "name": "IPCC",
                     "category": "theme",
                     "color": "#ccc36e"
@@ -303,7 +298,7 @@
           {
                "begin": 128,
                "end": 258,
-               "content": "I was trying to show the complex system science and say that’s not actually not how complex systems operate. You don’t get anything in between. You either stay below a tipping point, at which point the system may be pushed but if you don’t push it any further, it will eventually relax down to the state that you knew, or if you go across that point, feedback mechanisms kick in that push it all the way up to another state and it splits. The technical term is that it bifurcates. You simply don’t see a spectrum in between. You see relaxing back down to the state it was in or you see it going up. Think of it this way. Here’s a simple analogy. If I draw out on the river here, the spring, and I’m in a kayak, kayaking down the spring. And I tip it a bit. It comes back. It doesn’t stay tipped because it has a mechanism to resettle itself. If I tip it a bit more, it comes back. If I tip it just a little bit more, I go completely under. So that’s a system. That kayak and myself form a system that has two stable states --> operate paddling and upside down with my head in water nothing in between. Going halfway down and lying on the water is not a stable state. It will either pop up or it will go down. That’s typical of a complex system. So the point I was trying to make is the climate may very well act like that. Right now we’re tipping it. This two degree guard rail you hear people talking about that could be like your canoe going over but still it comes back. So we stop. We get two degrees by 2100. By 2300 it’s dropping back down toward the Holocene. I think if you go four degrees or more, you’re under- water. The canoe is not going to come back up. Where that point is between the canoe popping up and the canoe going underwater, I think, is somewhere between two and four but I don’t know where it is between that. That’s going to require some more work. And we may never know precisely. ",
+               "content": "I was trying to show the complex system science and say that’s not actually not how complex systems operate. You don’t get anything in between. You either stay below a tipping point, at which point the system may be pushed but if you don’t push it any further, it will eventually relax down to the state that you knew, or if you go across that point, feedback mechanisms kick in that push it all the way up to another state and it splits. The technical term is that it bifurcates. You simply don’t see a spectrum in between. You see relaxing back down to the state it was in or you see it going up. Think of it this way. Here’s a simple analogy. If I draw out on the river here, the spring, and I’m in a kayak, kayaking down the spring. And I tip it a bit. It comes back. It doesn’t stay tipped because it has a mechanism to resettle itself. If I tip it a bit more, it comes back. If I tip it just a little bit more, I go completely under. So that’s a system. That kayak and myself form a system that has two stable states --> operate paddling and upside down with my head in water nothing in between. Going halfway down and lying on the water is not a stable state. It will either pop up or it will go down. That’s typical of a complex system. So the point I was trying to make is the climate may very well act like that. Right now we’re tipping it. This two degree guard rail you hear people talking about that could be like your canoe going over but still it comes back. So we stop. We get two degrees by 2100. By 2300 it’s dropping back down toward the Holocene. I think if you go four degrees or more, you’re under- water. The canoe is not going to come back up. Where that point is between the canoe popping up and the canoe going underwater, I think, is somewhere between two and four but I don’t know where it is between that. That’s going to require some more work. And we may never know precisely.",
                "beginSrtFormat": "00:02:08,000",
                "endSrtFormat": "00:04:18,000",
                "tags": [
@@ -375,11 +370,6 @@
                          "name": "Carbon Expo, Global Carbon Market Fair And Conference",
                          "category": "theme",
                          "color": "#889b1b"
-                    },
-                    {
-                         "name": "Carbon",
-                         "category": "theme",
-                         "color": "#ccc36e"
                     },
                     {
                          "name": "Carbon",
@@ -584,11 +574,6 @@
                          "color": "#ccc36e"
                     },
                     {
-                         "name": "Carbon",
-                         "category": "theme",
-                         "color": "#ccc36e"
-                    },
-                    {
                          "name": "Renewable Energy",
                          "category": "theme",
                          "color": "#ccc36e"
@@ -700,11 +685,6 @@
                          "name": "Institutions",
                          "category": "theme",
                          "color": "#ccc36e"
-                    },
-                    {
-                         "name": "Institutions",
-                         "category": "theme",
-                         "color": "#ccc36e"
                     }
                ],
                "tagCategories": [
@@ -770,11 +750,6 @@
                          "color": "#889b1b"
                     },
                     {
-                         "name": "",
-                         "category": "theme",
-                         "color": "#ccc36e"
-                    },
-                    {
                          "name": "IPCC",
                          "category": "theme",
                          "color": "#ccc36e"
@@ -786,11 +761,6 @@
                     },
                     {
                          "name": "UNEP",
-                         "category": "theme",
-                         "color": "#ccc36e"
-                    },
-                    {
-                         "name": "Communication Strategy",
                          "category": "theme",
                          "color": "#ccc36e"
                     },
@@ -896,16 +866,6 @@
                          "name": "Climate Simulation",
                          "category": "theme",
                          "color": "#ccc36e"
-                    },
-                    {
-                         "name": "Climate Simulation",
-                         "category": "theme",
-                         "color": "#ccc36e"
-                    },
-                    {
-                         "name": "Climate Simulation",
-                         "category": "theme",
-                         "color": "#ccc36e"
                     }
                ],
                "tagCategories": [
@@ -953,11 +913,6 @@
                     },
                     {
                          "name": "IPCC",
-                         "category": "theme",
-                         "color": "#ccc36e"
-                    },
-                    {
-                         "name": "",
                          "category": "theme",
                          "color": "#ccc36e"
                     }

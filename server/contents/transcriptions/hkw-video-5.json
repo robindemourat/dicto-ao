@@ -264,11 +264,6 @@
                     "name": "Planetary Solutions",
                     "category": "theme",
                     "color": "#ccc36e"
-               },
-               {
-                    "name": "",
-                    "category": "theme",
-                    "color": "#ccc36e"
                }
           ],
           "tagCategories": [
@@ -285,7 +280,7 @@
      },
      "data": [
           {
-               "content": "Christiana Figueres: \nSo Professor, are you going to explain to us? I’m here in total ignorance. I’m here on this gentleman’s recommendation, but in total ignorance. So are you going to explain to us your view here about the anthropocene and what we should be doing and how we should be doing it?\n\nBruno Latour: \nNo. I’m here to learn from you.\n\nChristiana Figueres: \nNo, no, no. That’s the wrong interpretation. [laughs]\n\nBruno Latour: \nFirst, you are here in the school which is also the school of Laurence Tubiana, who is the ambassador for the French climate. So you are in the school where the sort of thing you do is well known and where we are actually working a lot. We did in 2011 a simulation of the Copenhagen meeting, where we did it with 300 students.\nChristiana Figueres:\nIn 2011?\n\nBruno Latour: \nYeah, two years later. We did the Copenhagen meeting in a better shape, so to speak.\n\nChristiana Figueres: \nYeah, but that’s not fair because then you had two years to learn all the mistakes.\n\nBruno Latour: \nBut we wanted to test...\n\nChristiana Figueres: \nWith hindsight, one is always so much wiser.\n\nBruno Latour: \nBut it was very moving to the students to be able to be play. And we played absolutely marvelously. There was a beautiful film which was done about this simulation, which was in fact... We called it a simulation and not...\n\nChristiana Figueres: \nThat’s perfect. ",
+               "content": "Christiana Figueres: \nSo Professor, are you going to explain to us? I’m here in total ignorance. I’m here on this gentleman’s recommendation, but in total ignorance. So are you going to explain to us your view here about the anthropocene and what we should be doing and how we should be doing it?\n\nBruno Latour: \nNo. I’m here to learn from you.\n\nChristiana Figueres: \nNo, no, no. That’s the wrong interpretation. [laughs]\n\nBruno Latour: \nFirst, you are here in the school which is also the school of Laurence Tubiana, who is the ambassador for the French climate. So you are in the school where the sort of thing you do is well known and where we are actually working a lot. We did in 2011 a simulation of the Copenhagen meeting, where we did it with 300 students.  \nChristiana Figueres:\nIn 2011?\n\nBruno Latour: \nYeah, two years later. We did the Copenhagen meeting in a better shape, so to speak.\n\nChristiana Figueres: \nYeah, but that’s not fair because then you had two years to learn all the mistakes.\n\nBruno Latour: \nBut we wanted to test...\n\nChristiana Figueres: \nWith hindsight, one is always so much wiser.\n\nBruno Latour: \nBut it was very moving to the students to be able to be play. And we played absolutely marvelously. There was a beautiful film which was done about this simulation, which was in fact... We called it a simulation and not...\n\nChristiana Figueres: \nThat’s perfect.",
                "begin": 151,
                "end": 241.6,
                "beginSrtFormat": "00:02:31,000",
@@ -1204,11 +1199,6 @@
                          "color": "#ccc36e"
                     },
                     {
-                         "name": "Decarbonize",
-                         "category": "theme",
-                         "color": "#ccc36e"
-                    },
-                    {
                          "name": "Climate Change",
                          "category": "theme",
                          "color": "#8add10"
@@ -1326,11 +1316,6 @@
                          "color": "#8add10"
                     },
                     {
-                         "name": "Climate Change",
-                         "category": "theme",
-                         "color": "#8add10"
-                    },
-                    {
                          "name": "Negotiations",
                          "category": "theme",
                          "color": "#ccc36e"
@@ -1381,11 +1366,6 @@
                     },
                     {
                          "name": "Global Climate",
-                         "category": "theme",
-                         "color": "#ccc36e"
-                    },
-                    {
-                         "name": "",
                          "category": "theme",
                          "color": "#ccc36e"
                     },

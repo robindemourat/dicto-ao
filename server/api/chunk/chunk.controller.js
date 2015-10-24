@@ -5,6 +5,7 @@ var utils = require('./../api-utils.js');
 
 // Get list of chunks
 exports.index = function(req, res) {
+  res.header('Content-Type', 'application/json; charset=utf-8')
   var splitted = req.params.id.split('-');
   var rank = splitted.pop();
   var slug = splitted.join('-');

@@ -6,6 +6,7 @@ var utils = require('./../api-utils.js');
 
 // Get list of entities
 exports.index = function(req, res) {
+  res.header('Content-Type', 'application/json; charset=utf-8')
   utils.loadTranscriptions(function(err, transcriptions){
     console.log('transcriptions loaded, begining to process data');
     if(err){
@@ -22,12 +23,12 @@ exports.index = function(req, res) {
                       })
                       .entries(tags);
 
-
         var output = {};
 
         nested.forEach(function(group){
           output[group.key+'s'] = group.values;
         });
+
 
 
         res.json(output);

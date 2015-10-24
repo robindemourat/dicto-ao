@@ -117,7 +117,7 @@
                     "color": "#ccc36e"
                },
                {
-                    "name": "Agricolture",
+                    "name": "Agriculture",
                     "category": "theme",
                     "color": "#ccc36e"
                },
@@ -558,7 +558,7 @@
           {
                "begin": 361,
                "end": 432,
-               "content": "In a funny way, yes and no. I mean traditionally, the three elements that you need to be a sovereign state is territory, people and power over the territory. So it is deeply, deeply territorial. I think it’s very human to think territorially. And if you look at the implementation of everything that is being decided in the framework of the United Nations, it all goes down to national legislation. You need to have a territory on which you can actually implement what you discussed internationally. So yes, it is territorial. But at the same time, people lose this sort of traditional relationship to the territory. They don’t grow up in one place and stay there all their lives anymore. They are highly mobile. They are requested to be highly mobile. They are living in the cyberspace. They have friends all over the world. They spend their holidays here and there. And they are, in a strange way, disconnected to their territory. So our relationship also to the territory, which is an integral part also of identity, is rapidly changing...",
+               "content": "In a funny way, yes and no. I mean traditionally, the three elements that you need to be a sovereign state is territory, people and power over the territory. So it is deeply, deeply territorial. I think it’s very human to think territorially. And if you look at the implementation of everything that is being decided in the framework of the United Nations, it all goes down to national legislation. You need to have a territory on which you can actually implement what you discussed internationally. So yes, it is territorial. But at the same time, people lose this sort of traditional relationship to the territory. They don’t grow up in one place and stay there all their lives anymore. They are highly mobile. They are requested to be highly mobile. They are living in the cyberspace. They have friends all over the world. They spend their holidays here and there. And they are, in a strange way, disconnected to their territory. So our relationship also to the territory, which is an integral part also of identity, is rapidly changing... ",
                "beginSrtFormat": "00:06:01,000",
                "endSrtFormat": "00:07:12,000",
                "tags": [
@@ -725,17 +725,7 @@
                          "color": "#ccc36e"
                     },
                     {
-                         "name": "Land",
-                         "category": "theme",
-                         "color": "#ccc36e"
-                    },
-                    {
-                         "name": "Land",
-                         "category": "theme",
-                         "color": "#ccc36e"
-                    },
-                    {
-                         "name": "Agricolture",
+                         "name": "Agriculture",
                          "category": "theme",
                          "color": "#ccc36e"
                     },
@@ -750,22 +740,12 @@
                          "color": "#ccc36e"
                     },
                     {
-                         "name": "Climate Change",
-                         "category": "theme",
-                         "color": "#ccc36e"
-                    },
-                    {
                          "name": "CO2",
                          "category": "theme",
                          "color": "#51f32b"
                     },
                     {
                          "name": "Territory",
-                         "category": "theme",
-                         "color": "#ccc36e"
-                    },
-                    {
-                         "name": "Negotiations",
                          "category": "theme",
                          "color": "#ccc36e"
                     }
@@ -837,11 +817,6 @@
                          "name": "Policy",
                          "category": "theme",
                          "color": "#ccc36e"
-                    },
-                    {
-                         "name": "Land",
-                         "category": "theme",
-                         "color": "#ccc36e"
                     }
                ],
                "tagCategories": [
@@ -910,7 +885,7 @@
                          "color": "#ccc36e"
                     },
                     {
-                         "name": "Agricolture",
+                         "name": "Agriculture",
                          "category": "theme",
                          "color": "#ccc36e"
                     },
@@ -1005,11 +980,6 @@
                     },
                     {
                          "name": "Government",
-                         "category": "theme",
-                         "color": "#ccc36e"
-                    },
-                    {
-                         "name": "Climate Change",
                          "category": "theme",
                          "color": "#ccc36e"
                     }
@@ -1290,11 +1260,6 @@
                          "color": "#ccc36e"
                     },
                     {
-                         "name": "Elites",
-                         "category": "theme",
-                         "color": "#ccc36e"
-                    },
-                    {
                          "name": "Science",
                          "category": "theme",
                          "color": "#ccc36e"
@@ -1305,7 +1270,7 @@
                          "color": "#ccc36e"
                     },
                     {
-                         "name": "Agricolture",
+                         "name": "Agriculture",
                          "category": "theme",
                          "color": "#ccc36e"
                     },
@@ -1318,11 +1283,6 @@
                          "name": "India",
                          "category": "place",
                          "color": "#889b1b"
-                    },
-                    {
-                         "name": "Climate Change",
-                         "category": "theme",
-                         "color": "#ccc36e"
                     }
                ],
                "tagCategories": [
@@ -1379,22 +1339,12 @@
                          "color": "#ccc36e"
                     },
                     {
-                         "name": "Agricolture",
-                         "category": "theme",
-                         "color": "#ccc36e"
-                    },
-                    {
-                         "name": "GMO",
+                         "name": "Agriculture",
                          "category": "theme",
                          "color": "#ccc36e"
                     },
                     {
                          "name": "Elites",
-                         "category": "theme",
-                         "color": "#ccc36e"
-                    },
-                    {
-                         "name": "Climate Change",
                          "category": "theme",
                          "color": "#ccc36e"
                     }
@@ -1440,7 +1390,7 @@
                          "color": "#ccc36e"
                     },
                     {
-                         "name": "Agricolture",
+                         "name": "Agriculture",
                          "category": "theme",
                          "color": "#ccc36e"
                     },
@@ -1536,11 +1486,6 @@
                          "color": "#b83f9"
                     },
                     {
-                         "name": "Climate Change",
-                         "category": "theme",
-                         "color": "#ccc36e"
-                    },
-                    {
                          "name": "2 Degrees",
                          "category": "theme",
                          "color": "#7b08b4"
@@ -1549,11 +1494,6 @@
                          "name": "Climate Footprint",
                          "category": "theme",
                          "color": "#5155ab"
-                    },
-                    {
-                         "name": "CO2",
-                         "category": "theme",
-                         "color": "#51f32b"
                     }
                ],
                "tagCategories": [
@@ -1752,11 +1692,6 @@
                          "name": "Consumption",
                          "category": "theme",
                          "color": "#ccc36e"
-                    },
-                    {
-                         "name": "CO2",
-                         "category": "theme",
-                         "color": "#51f32b"
                     },
                     {
                          "name": "CO2",

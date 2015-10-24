@@ -8,6 +8,7 @@ var fs = require('fs');
 
 // Get network
 exports.index = function(req, res) {
+  res.header('Content-Type', 'application/json; charset=utf-8')
   utils.loadTranscriptions(function(err, transcriptions){
     console.log('transcriptions loaded, begining to process data');
     if(err){

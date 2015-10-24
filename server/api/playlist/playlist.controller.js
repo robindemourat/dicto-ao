@@ -5,6 +5,7 @@ var utils = require('./../api-utils.js');
 
 // Get list of playlists
 exports.index = function(req, res) {
+  res.header('Content-Type', 'application/json; charset=utf-8')
   if(req.params.id){
     utils.serveMontage(req.params.id, function(err, montage){
       if(err){
