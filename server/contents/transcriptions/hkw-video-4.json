@@ -42,11 +42,6 @@
                     "color": "#f31c46"
                },
                {
-                    "name": "Barcelona, Spain",
-                    "category": "speaker",
-                    "color": "#556dd9"
-               },
-               {
                     "name": "Dirk Forrister, President and CEO of International Emission Trading Association IETA, interviewed in Barcelona",
                     "category": "speaker",
                     "color": "#1b379b"
@@ -187,11 +182,6 @@
                     "color": "#ccc36e"
                },
                {
-                    "name": "Geneva, Switzerland",
-                    "category": "speaker",
-                    "color": "#556dd9"
-               },
-               {
                     "name": "46th Opening Session Of The Intergovernmental Panel On Climate Change, Wmo World Meteorological Organisation",
                     "category": "theme",
                     "color": "#889b1b"
@@ -210,6 +200,11 @@
                     "name": "UNEP",
                     "category": "theme",
                     "color": "#ccc36e"
+               },
+               {
+                    "name": "Rajendra K. Pachauri, Chairman IPCC Bureau, 46th Opening Session of the Intergovernmental Panel on Climate Change, World Meteorological Organisation WMO, Geneva, Switzerland",
+                    "category": "speaker",
+                    "color": "#186a6b"
                },
                {
                     "name": "Achim Steiner, Executive Director of United Nations Environment Programme UNEP, 46th Opening Session of the Intergovernmental Panel on Climate Change, World Meteorological Organisation WMO, Geneva, Switzerland ",
@@ -237,11 +232,6 @@
                     "color": "#ccc36e"
                },
                {
-                    "name": "Hamburg, Germany",
-                    "category": "speaker",
-                    "color": "#556dd9"
-               },
-               {
                     "name": "Climate Simulation",
                     "category": "theme",
                     "color": "#ccc36e"
@@ -249,7 +239,7 @@
                {
                     "name": "Thomas Ludwig, Managing Director of Deutsches Klimarechenzentrum DKRZ, Hamburg, Germany",
                     "category": "speaker",
-                    "color": "#556dd9"
+                    "color": "#b14bc8"
                },
                {
                     "name": "Science",
@@ -340,11 +330,6 @@
                "beginSrtFormat": "00:05:56,000",
                "endSrtFormat": "00:07:47,000",
                "tags": [
-                    {
-                         "name": "Barcelona, Spain",
-                         "category": "speaker",
-                         "color": "#556dd9"
-                    },
                     {
                          "name": "Dirk Forrister, President and CEO of International Emission Trading Association IETA, interviewed in Barcelona",
                          "category": "speaker",
@@ -680,11 +665,6 @@
                "endSrtFormat": "00:19:33,000",
                "tags": [
                     {
-                         "name": "Geneva, Switzerland",
-                         "category": "speaker",
-                         "color": "#556dd9"
-                    },
-                    {
                          "name": "46th Opening Session Of The Intergovernmental Panel On Climate Change, Wmo World Meteorological Organisation",
                          "category": "theme",
                          "color": "#889b1b"
@@ -708,11 +688,16 @@
                          "name": "Climate Change",
                          "category": "theme",
                          "color": "#ccc36e"
+                    },
+                    {
+                         "name": "Rajendra K. Pachauri, Chairman IPCC Bureau, 46th Opening Session of the Intergovernmental Panel on Climate Change, World Meteorological Organisation WMO, Geneva, Switzerland",
+                         "category": "speaker",
+                         "color": "#186a6b"
                     }
                ],
                "tagCategories": [
-                    "speaker",
-                    "theme"
+                    "theme",
+                    "speaker"
                ]
           },
           {
@@ -786,19 +771,19 @@
                "endSrtFormat": "00:24:46,000",
                "tags": [
                     {
-                         "name": "Hamburg, Germany",
-                         "category": "speaker",
-                         "color": "#556dd9"
-                    },
-                    {
                          "name": "Climate Simulation",
                          "category": "theme",
                          "color": "#ccc36e"
+                    },
+                    {
+                         "name": "Thomas Ludwig, Managing Director of Deutsches Klimarechenzentrum DKRZ, Hamburg, Germany",
+                         "category": "speaker",
+                         "color": "#b14bc8"
                     }
                ],
                "tagCategories": [
-                    "speaker",
-                    "theme"
+                    "theme",
+                    "speaker"
                ]
           },
           {
@@ -811,7 +796,7 @@
                     {
                          "name": "Thomas Ludwig, Managing Director of Deutsches Klimarechenzentrum DKRZ, Hamburg, Germany",
                          "category": "speaker",
-                         "color": "#556dd9"
+                         "color": "#b14bc8"
                     },
                     {
                          "name": "Science",
