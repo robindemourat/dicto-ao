@@ -7,14 +7,9 @@
           "sharable": "true",
           "tags": [
                {
-                    "name": "Jan Zalasiewicz",
+                    "name": "Jan Zalasiewicz, Convenor of the Anthropocene Working Group, University of Leicester, interviewed in Berlin",
                     "category": "speaker",
                     "color": "#556dd9"
-               },
-               {
-                    "name": "Berlin, Germany",
-                    "category": "place",
-                    "color": "#889b1b"
                },
                {
                     "name": "Nile Delta",
@@ -72,7 +67,7 @@
                     "color": "#ccc36e"
                },
                {
-                    "name": "Nebojsa Nakicenovic",
+                    "name": "Nebojsa Nakicenovic, IIASA International Institute for Advanced Systems Analysis and NTU, Vienna, Austria",
                     "category": "speaker",
                     "color": "#556dd9"
                },
@@ -97,14 +92,9 @@
                     "color": "#ccc36e"
                },
                {
-                    "name": "Davor Vidas",
+                    "name": "Davor Vidas, Member of the Anthropocene Working Group, Fridtjof Nansen Institute, Oslo, Norway",
                     "category": "speaker",
                     "color": "#556dd9"
-               },
-               {
-                    "name": "Oslo, Norway",
-                    "category": "place",
-                    "color": "#889b1b"
                },
                {
                     "name": "Geography",
@@ -232,14 +222,9 @@
                     "color": "#ccc36e"
                },
                {
-                    "name": "Chris Vane",
+                    "name": "Chris Vane, Member of the Anthropocene Working Group, British Geological Repository BGS, Keyworth, Nottingham, UK",
                     "category": "speaker",
                     "color": "#556dd9"
-               },
-               {
-                    "name": "Nottingham, United Kingdom",
-                    "category": "place",
-                    "color": "#889b1b"
                },
                {
                     "name": "United Kingdom",
@@ -298,19 +283,14 @@
           {
                "begin": 126,
                "end": 295,
-               "content": "A lot of deltas today are shrinking because most of the major rivers of the world have been dammed. The Nile is a beautiful example. The Aswan Dam built in 1964, I think, holds back a lot of water for irrigation and flood control. It also holds back almost all the sediment that used to flow to the Nile delta. There is a large unit of sediment building up and will eventually pretty well completely fill the Lake Aswan over the next few centuries. Meantime, all that sediment should have gone to the Nile delta, the Nile delta is eroding because of that. There are a lot of examples of that, great and small, all around the world. You have a redistribution that happens of erosion and sedimentation. One could go to the beach and look at the way that beaches are modified, engineered and so forth to try and stop cliffs from being eroded or do all of the things that people do to try and make the landscape more stable. That usually means distributing the movement in a different way. So that’s another example.\nOf course, one thing that is absent here which is less your concern but it’s what happens in the sea, because most geological deposits in the marine is where sediments accumulate. That is where you have the bulk of the record. So if we were doing this properly, we would film underwater. For example, a huge change that has been particular over the last 50 years has been the spread of deep sea  where ships direct behind them a kind of a net on the steel frame. They drag that through the mud to harvest fish and scallops and prawns, and things like that, just like plowing the continental shelves. By now pretty well all the continental shelves have been plowed. That has altered the structure. The sediment has altered the structure of the communities living there and so on. That plowing now goes down to depths of almost a kilometer in some parts. There are papers showing the actual landscape. There has been so much of that in areas that you’ve gone from instead of a jagged landscape you can see on sonar to a smooth landscape, a humanly smooth landscape which clearly affected the strata and created a new sort of anthropocene, anthropogenic marine strata... ",
+               "content": "A lot of deltas today are shrinking because most of the major rivers of the world have been dammed. The Nile is a beautiful example. The Aswan Dam built in 1964, I think, holds back a lot of water for irrigation and flood control. It also holds back almost all the sediment that used to flow to the Nile delta. There is a large unit of sediment building up and will eventually pretty well completely fill the Lake Aswan over the next few centuries. Meantime, all that sediment should have gone to the Nile delta, the Nile delta is eroding because of that. There are a lot of examples of that, great and small, all around the world. You have a redistribution that happens of erosion and sedimentation. One could go to the beach and look at the way that beaches are modified, engineered and so forth to try and stop cliffs from being eroded or do all of the things that people do to try and make the landscape more stable. That usually means distributing the movement in a different way. So that’s another example.\nOf course, one thing that is absent here which is less your concern but it’s what happens in the sea, because most geological deposits in the marine is where sediments accumulate. That is where you have the bulk of the record. So if we were doing this properly, we would film underwater. For example, a huge change that has been particular over the last 50 years has been the spread of deep sea  where ships direct behind them a kind of a net on the steel frame. They drag that through the mud to harvest fish and scallops and prawns, and things like that, just like plowing the continental shelves. By now pretty well all the continental shelves have been plowed. That has altered the structure. The sediment has altered the structure of the communities living there and so on. That plowing now goes down to depths of almost a kilometer in some parts. There are papers showing the actual landscape. There has been so much of that in areas that you’ve gone from instead of a jagged landscape you can see on sonar to a smooth landscape, a humanly smooth landscape which clearly affected the strata and created a new sort of anthropocene, anthropogenic marine strata...",
                "beginSrtFormat": "00:02:06,000",
                "endSrtFormat": "00:04:55,000",
                "tags": [
                     {
-                         "name": "Jan Zalasiewicz",
+                         "name": "Jan Zalasiewicz, Convenor of the Anthropocene Working Group, University of Leicester, interviewed in Berlin",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Berlin, Germany",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Nile Delta",
@@ -382,7 +362,7 @@
                "endSrtFormat": "00:05:26,000",
                "tags": [
                     {
-                         "name": "Nebojsa Nakicenovic",
+                         "name": "Nebojsa Nakicenovic, IIASA International Institute for Advanced Systems Analysis and NTU, Vienna, Austria",
                          "category": "speaker",
                          "color": "#556dd9"
                     },
@@ -405,7 +385,7 @@
                "endSrtFormat": "00:07:24,000",
                "tags": [
                     {
-                         "name": "Nebojsa Nakicenovic",
+                         "name": "Nebojsa Nakicenovic, IIASA International Institute for Advanced Systems Analysis and NTU, Vienna, Austria",
                          "category": "speaker",
                          "color": "#556dd9"
                     },
@@ -443,14 +423,9 @@
                "endSrtFormat": "00:09:07,000",
                "tags": [
                     {
-                         "name": "Davor Vidas",
+                         "name": "Davor Vidas, Member of the Anthropocene Working Group, Fridtjof Nansen Institute, Oslo, Norway",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Oslo, Norway",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Geography",
@@ -495,8 +470,8 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
-                    "theme"
+                    "theme",
+                    "place"
                ]
           },
           {
@@ -507,14 +482,9 @@
                "endSrtFormat": "00:11:33,000",
                "tags": [
                     {
-                         "name": "Davor Vidas",
+                         "name": "Davor Vidas, Member of the Anthropocene Working Group, Fridtjof Nansen Institute, Oslo, Norway",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Oslo, Norway",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Submarine Areas",
@@ -549,8 +519,8 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
-                    "theme"
+                    "theme",
+                    "place"
                ]
           },
           {
@@ -561,14 +531,9 @@
                "endSrtFormat": "00:15:42,000",
                "tags": [
                     {
-                         "name": "Davor Vidas",
+                         "name": "Davor Vidas, Member of the Anthropocene Working Group, Fridtjof Nansen Institute, Oslo, Norway",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Oslo, Norway",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Holocene",
@@ -618,7 +583,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           },
@@ -630,14 +594,9 @@
                "endSrtFormat": "00:17:12,000",
                "tags": [
                     {
-                         "name": "Davor Vidas",
+                         "name": "Davor Vidas, Member of the Anthropocene Working Group, Fridtjof Nansen Institute, Oslo, Norway",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Oslo, Norway",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "State",
@@ -667,7 +626,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           },
@@ -679,14 +637,9 @@
                "endSrtFormat": "00:18:00,000",
                "tags": [
                     {
-                         "name": "Davor Vidas",
+                         "name": "Davor Vidas, Member of the Anthropocene Working Group, Fridtjof Nansen Institute, Oslo, Norway",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Oslo, Norway",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Water",
@@ -706,7 +659,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           },
@@ -718,14 +670,9 @@
                "endSrtFormat": "00:20:49,000",
                "tags": [
                     {
-                         "name": "Davor Vidas",
+                         "name": "Davor Vidas, Member of the Anthropocene Working Group, Fridtjof Nansen Institute, Oslo, Norway",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Oslo, Norway",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Network Theory & System Thinking",
@@ -780,7 +727,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           },
@@ -792,14 +738,9 @@
                "endSrtFormat": "00:21:57,000",
                "tags": [
                     {
-                         "name": "Davor Vidas",
+                         "name": "Davor Vidas, Member of the Anthropocene Working Group, Fridtjof Nansen Institute, Oslo, Norway",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Oslo, Norway",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Law",
@@ -829,7 +770,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           },
@@ -841,14 +781,9 @@
                "endSrtFormat": "00:22:55,000",
                "tags": [
                     {
-                         "name": "Chris Vane",
+                         "name": "Chris Vane, Member of the Anthropocene Working Group, British Geological Repository BGS, Keyworth, Nottingham, UK",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Nottingham, United Kingdom",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Industrial Revolution",
@@ -878,8 +813,8 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
-                    "theme"
+                    "theme",
+                    "place"
                ]
           },
           {
@@ -890,7 +825,7 @@
                "endSrtFormat": "00:22:56,000",
                "tags": [
                     {
-                         "name": "Chris Vane",
+                         "name": "Chris Vane, Member of the Anthropocene Working Group, British Geological Repository BGS, Keyworth, Nottingham, UK",
                          "category": "speaker",
                          "color": "#556dd9"
                     },
@@ -929,7 +864,7 @@
                "endSrtFormat": "00:24:57,000",
                "tags": [
                     {
-                         "name": "Chris Vane",
+                         "name": "Chris Vane, Member of the Anthropocene Working Group, British Geological Repository BGS, Keyworth, Nottingham, UK",
                          "category": "speaker",
                          "color": "#556dd9"
                     },
@@ -957,7 +892,7 @@
                "endSrtFormat": "00:25:51,000",
                "tags": [
                     {
-                         "name": "Chris Vane",
+                         "name": "Chris Vane, Member of the Anthropocene Working Group, British Geological Repository BGS, Keyworth, Nottingham, UK",
                          "category": "speaker",
                          "color": "#556dd9"
                     },
@@ -991,7 +926,7 @@
                "endSrtFormat": "00:26:24,000",
                "tags": [
                     {
-                         "name": "Chris Vane",
+                         "name": "Chris Vane, Member of the Anthropocene Working Group, British Geological Repository BGS, Keyworth, Nottingham, UK",
                          "category": "speaker",
                          "color": "#556dd9"
                     },

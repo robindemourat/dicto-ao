@@ -7,14 +7,9 @@
           "sharable": "true",
           "tags": [
                {
-                    "name": "Pavel Kabat, Iiasa International Institute For Advanced Systems Analysis",
+                    "name": "Pavel Kabat, IIASA International Institute for Advanced Systems Analysis, Laxenburg, Austria",
                     "category": "speaker",
                     "color": "#556dd9"
-               },
-               {
-                    "name": "Laxenburg, Austria",
-                    "category": "place",
-                    "color": "#889b1b"
                },
                {
                     "name": "Satellites",
@@ -62,14 +57,9 @@
                     "color": "#ccc36e"
                },
                {
-                    "name": "Hans Joachim John Schellnhuber, Director Pik Potsdam Institute For Climate Impact Research",
+                    "name": "Hans Joachim ‘John’ Schellnhuber, Director, PIK Potsdam Institute for Climate Impact Research Potsdam, Germany",
                     "category": "speaker",
                     "color": "#556dd9"
-               },
-               {
-                    "name": "Potsdam, Germany",
-                    "category": "place",
-                    "color": "#889b1b"
                },
                {
                     "name": "Global Issues",
@@ -87,14 +77,9 @@
                     "color": "#ccc36e"
                },
                {
-                    "name": "His Royal Highness The Prince Of Wales",
+                    "name": "His Royal Highness The Prince of Wales, Live stream at Impacts World 2013 conference at PIK Potsdam Institute for Climate Impact Research, Potsdam, Germany",
                     "category": "speaker",
                     "color": "#556dd9"
-               },
-               {
-                    "name": "Potsdam Institute For Climate Impact Research",
-                    "category": "theme",
-                    "color": "#889b1b"
                },
                {
                     "name": "Decisive Actions",
@@ -132,6 +117,11 @@
                     "color": "#42542b"
                },
                {
+                    "name": "Potsdam Institute For Climate Impact Research",
+                    "category": "theme",
+                    "color": "#889b1b"
+               },
+               {
                     "name": "New Platform",
                     "category": "theme",
                     "color": "#ccc36e"
@@ -142,14 +132,9 @@
                     "color": "#ccc36e"
                },
                {
-                    "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
+                    "name": "Christiana Figueres, Executive Secretary of the United Nations Framework, Convention on Climate Change UNFCCC",
                     "category": "speaker",
                     "color": "#556dd9"
-               },
-               {
-                    "name": "Bonn, Germany",
-                    "category": "place",
-                    "color": "#889b1b"
                },
                {
                     "name": "IPCC",
@@ -202,14 +187,9 @@
                     "color": "#ccc36e"
                },
                {
-                    "name": "Sybil Seitzinger",
+                    "name": "Sybil Seitzinger, Executive Director of the International Geosphere-Biosphere Program IGBP, Stockholm, Sweden",
                     "category": "speaker",
                     "color": "#556dd9"
-               },
-               {
-                    "name": "Stockholm, Sweden",
-                    "category": "place",
-                    "color": "#889b1b"
                },
                {
                     "name": "Anthropocene",
@@ -267,14 +247,9 @@
                     "color": "#ccc36e"
                },
                {
-                    "name": "Prodipto Ghosh",
+                    "name": "Prodipto Ghosh, Member of the Prime Minister’s Council on Climate Change in India, TERI The Energy and Resources Institute, New Delhi, India",
                     "category": "speaker",
                     "color": "#556dd9"
-               },
-               {
-                    "name": "New Delhi, India",
-                    "category": "place",
-                    "color": "#889b1b"
                },
                {
                     "name": "Fossil Fuels",
@@ -337,10 +312,10 @@
                     "name": "speaker"
                },
                {
-                    "name": "place"
+                    "name": "theme"
                },
                {
-                    "name": "theme"
+                    "name": "place"
                }
           ]
      },
@@ -348,19 +323,14 @@
           {
                "begin": 128,
                "end": 165,
-               "content": "In 1955, even before sputnik went up, 1957, and before Apollo went up, we had no clue about the data. We had no clue about the geography of the earth. There were no satellites up to give us any single data. As we speak today, we talk about billions of terabytes coming down from the satellites to give us new information. We have data. We could see now. We could process the data. It’s all based on a very young science, isn’t it? 60 years, 50 years, 40 years even right now. ",
+               "content": "In 1955, even before sputnik went up, 1957, and before Apollo went up, we had no clue about the data. We had no clue about the geography of the earth. There were no satellites up to give us any single data. As we speak today, we talk about billions of terabytes coming down from the satellites to give us new information. We have data. We could see now. We could process the data. It’s all based on a very young science, isn’t it? 60 years, 50 years, 40 years even right now.",
                "beginSrtFormat": "00:02:08,000",
                "endSrtFormat": "00:02:45,000",
                "tags": [
                     {
-                         "name": "Pavel Kabat, Iiasa International Institute For Advanced Systems Analysis",
+                         "name": "Pavel Kabat, IIASA International Institute for Advanced Systems Analysis, Laxenburg, Austria",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Laxenburg, Austria",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Satellites",
@@ -380,7 +350,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           },
@@ -392,14 +361,9 @@
                "endSrtFormat": "00:03:20,000",
                "tags": [
                     {
-                         "name": "Pavel Kabat, Iiasa International Institute For Advanced Systems Analysis",
+                         "name": "Pavel Kabat, IIASA International Institute for Advanced Systems Analysis, Laxenburg, Austria",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Laxenburg, Austria",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Political Issues",
@@ -434,7 +398,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           },
@@ -446,14 +409,9 @@
                "endSrtFormat": "00:03:56,000",
                "tags": [
                     {
-                         "name": "Pavel Kabat, Iiasa International Institute For Advanced Systems Analysis",
+                         "name": "Pavel Kabat, IIASA International Institute for Advanced Systems Analysis, Laxenburg, Austria",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Laxenburg, Austria",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Governance",
@@ -463,7 +421,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           },
@@ -475,14 +432,9 @@
                "endSrtFormat": "00:04:21,000",
                "tags": [
                     {
-                         "name": "Pavel Kabat, Iiasa International Institute For Advanced Systems Analysis",
+                         "name": "Pavel Kabat, IIASA International Institute for Advanced Systems Analysis, Laxenburg, Austria",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Laxenburg, Austria",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Network Theory & System Thinking",
@@ -497,7 +449,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           },
@@ -509,14 +460,9 @@
                "endSrtFormat": "00:05:14,000",
                "tags": [
                     {
-                         "name": "Hans Joachim John Schellnhuber, Director Pik Potsdam Institute For Climate Impact Research",
+                         "name": "Hans Joachim ‘John’ Schellnhuber, Director, PIK Potsdam Institute for Climate Impact Research Potsdam, Germany",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Potsdam, Germany",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Global Issues",
@@ -536,31 +482,20 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           },
           {
                "begin": 320,
                "end": 480,
-               "content": "Well, you all know far better than I do that as every day passes, a two-degree target becomes increasingly difficult to meet. You also know that the longer we leave decisive action, the more of the risk we run of unavoidable feedbacks in the climate system. It seems as if each incremental rise in greenhouse gas laws closes the door of another possible and better future for ourselves and for our descendants. Long ago, I realized that we are now facing a crisis that will be the defining moment for humanity. Why we have not responded with any urgency in the face of such visible warnings, and instead of cutting emissions have actually increased them each year, is utterly incomprehensible to many informed people. I fear that our failure to respond will hold future generations. At the moment, our rate of consumption of the planet’s natural resources, our seeming inability to alter our model’s economic growth, and our determination to more or less carry on as usual seems set to ensure that we will knowingly destroy their tomorrows, all for the short term gains of our today. And that, ladies and gentlemen, is an act of betrayal. It is also, of course, a huge risk. Think for a moment of the impact of climate change, not in scientific terms but as a doctor would view the problem. Whereas in science a hypothesis is tested until absolute proof is secured, in medicine there is no time to be absolutely certain. If a child is presented to a doctor with a fever, the doctor cannot wait until results of tests come back from the lab. The doctor must act on what evidence is already there. There is an urgency and it depends upon the risk involved. And given that this is the greatest risk we have ever faced, surely as the doctor we can’t wait to act. The symptoms are very clear. The models have become ever more precise. If we see the planet as our patient, the risk of delay is so enormous we cannot wait until we’re absolutely sure the patient is dying. That is a monumental risk no doctor would ever take.\n",
+               "content": "Well, you all know far better than I do that as every day passes, a two-degree target becomes increasingly difficult to meet. You also know that the longer we leave decisive action, the more of the risk we run of unavoidable feedbacks in the climate system. It seems as if each incremental rise in greenhouse gas laws closes the door of another possible and better future for ourselves and for our descendants. Long ago, I realized that we are now facing a crisis that will be the defining moment for humanity. Why we have not potresponded with any urgency in the face of such visible warnings, and instead of cutting emissions have actually increased them each year, is utterly incomprehensible to many informed people. I fear that our failure to respond will hold future generations. At the moment, our rate of consumption of the planet’s natural resources, our seeming inability to alter our model’s economic growth, and our determination to more or less carry on as usual seems set to ensure that we will knowingly destroy their tomorrows, all for the short term gains of our today. And that, ladies and gentlemen, is an act of betrayal. It is also, of course, a huge risk. Think for a moment of the impact of climate change, not in scientific terms but as a doctor would view the problem. Whereas in science a hypothesis is tested until absolute proof is secured, in medicine there is no time to be absolutely certain. If a child is presented to a doctor with a fever, the doctor cannot wait until results of tests come back from the lab. The doctor must act on what evidence is already there. There is an urgency and it depends upon the risk involved. And given that this is the greatest risk we have ever faced, surely as the doctor we can’t wait to act. The symptoms are very clear. The models have become ever more precise. If we see the planet as our patient, the risk of delay is so enormous we cannot wait until we’re absolutely sure the patient is dying. That is a monumental risk no doctor would ever take.\n",
                "beginSrtFormat": "00:05:20,000",
                "endSrtFormat": "00:08:00,000",
                "tags": [
                     {
-                         "name": "His Royal Highness The Prince Of Wales",
+                         "name": "His Royal Highness The Prince of Wales, Live stream at Impacts World 2013 conference at PIK Potsdam Institute for Climate Impact Research, Potsdam, Germany",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Potsdam, Germany",
-                         "category": "place",
-                         "color": "#889b1b"
-                    },
-                    {
-                         "name": "Potsdam Institute For Climate Impact Research",
-                         "category": "theme",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Decisive Actions",
@@ -605,7 +540,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           },
@@ -617,14 +551,9 @@
                "endSrtFormat": "00:08:36,000",
                "tags": [
                     {
-                         "name": "His Royal Highness The Prince Of Wales",
+                         "name": "His Royal Highness The Prince of Wales, Live stream at Impacts World 2013 conference at PIK Potsdam Institute for Climate Impact Research, Potsdam, Germany",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Potsdam, Germany",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Potsdam Institute For Climate Impact Research",
@@ -644,7 +573,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           },
@@ -656,14 +584,9 @@
                "endSrtFormat": "00:12:49,000",
                "tags": [
                     {
-                         "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
+                         "name": "Christiana Figueres, Executive Secretary of the United Nations Framework, Convention on Climate Change UNFCCC",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Bonn, Germany",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "IPCC",
@@ -693,7 +616,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           },
@@ -705,14 +627,9 @@
                "endSrtFormat": "00:13:43,000",
                "tags": [
                     {
-                         "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
+                         "name": "Christiana Figueres, Executive Secretary of the United Nations Framework, Convention on Climate Change UNFCCC",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Bonn, Germany",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "IPCC",
@@ -732,7 +649,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           },
@@ -744,14 +660,9 @@
                "endSrtFormat": "00:14:32,000",
                "tags": [
                     {
-                         "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
+                         "name": "Christiana Figueres, Executive Secretary of the United Nations Framework, Convention on Climate Change UNFCCC",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Bonn, Germany",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Urban Area",
@@ -776,7 +687,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           },
@@ -788,14 +698,9 @@
                "endSrtFormat": "00:15:31,000",
                "tags": [
                     {
-                         "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
+                         "name": "Christiana Figueres, Executive Secretary of the United Nations Framework, Convention on Climate Change UNFCCC",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Bonn, Germany",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Climate Change",
@@ -815,7 +720,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           },
@@ -827,14 +731,9 @@
                "endSrtFormat": "00:17:05,000",
                "tags": [
                     {
-                         "name": "Christiana Figueres, Executive Secretary Of The United Nations Framework Convention On Climate Change",
+                         "name": "Christiana Figueres, Executive Secretary of the United Nations Framework, Convention on Climate Change UNFCCC",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Bonn, Germany",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Industrialized Countries",
@@ -889,7 +788,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           },
@@ -901,14 +799,9 @@
                "endSrtFormat": "00:18:03,000",
                "tags": [
                     {
-                         "name": "Sybil Seitzinger",
+                         "name": "Sybil Seitzinger, Executive Director of the International Geosphere-Biosphere Program IGBP, Stockholm, Sweden",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Stockholm, Sweden",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Anthropocene",
@@ -923,7 +816,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           },
@@ -935,14 +827,9 @@
                "endSrtFormat": "00:19:05,000",
                "tags": [
                     {
-                         "name": "Sybil Seitzinger",
+                         "name": "Sybil Seitzinger, Executive Director of the International Geosphere-Biosphere Program IGBP, Stockholm, Sweden",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Stockholm, Sweden",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Global Issues",
@@ -972,7 +859,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           },
@@ -984,14 +870,9 @@
                "endSrtFormat": "00:21:00,000",
                "tags": [
                     {
-                         "name": "Sybil Seitzinger",
+                         "name": "Sybil Seitzinger, Executive Director of the International Geosphere-Biosphere Program IGBP, Stockholm, Sweden",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Stockholm, Sweden",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Network Theory & System Thinking",
@@ -1021,11 +902,8 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
-               ],
-               "playedAt": null,
-               "playedAtP": null
+               ]
           },
           {
                "begin": 1261,
@@ -1035,14 +913,9 @@
                "endSrtFormat": "00:21:41,000",
                "tags": [
                     {
-                         "name": "Sybil Seitzinger",
+                         "name": "Sybil Seitzinger, Executive Director of the International Geosphere-Biosphere Program IGBP, Stockholm, Sweden",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Stockholm, Sweden",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Exploration",
@@ -1052,7 +925,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           },
@@ -1064,14 +936,9 @@
                "endSrtFormat": "00:22:47,000",
                "tags": [
                     {
-                         "name": "Sybil Seitzinger",
+                         "name": "Sybil Seitzinger, Executive Director of the International Geosphere-Biosphere Program IGBP, Stockholm, Sweden",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Stockholm, Sweden",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "IGBP",
@@ -1091,7 +958,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           },
@@ -1103,14 +969,9 @@
                "endSrtFormat": "00:23:59,000",
                "tags": [
                     {
-                         "name": "Sybil Seitzinger",
+                         "name": "Sybil Seitzinger, Executive Director of the International Geosphere-Biosphere Program IGBP, Stockholm, Sweden",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Stockholm, Sweden",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Developing Models",
@@ -1120,7 +981,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           },
@@ -1132,14 +992,9 @@
                "endSrtFormat": "00:24:31,000",
                "tags": [
                     {
-                         "name": "Sybil Seitzinger",
+                         "name": "Sybil Seitzinger, Executive Director of the International Geosphere-Biosphere Program IGBP, Stockholm, Sweden",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Stockholm, Sweden",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Africa",
@@ -1171,14 +1026,9 @@
                "endSrtFormat": "00:25:31,000",
                "tags": [
                     {
-                         "name": "Sybil Seitzinger",
+                         "name": "Sybil Seitzinger, Executive Director of the International Geosphere-Biosphere Program IGBP, Stockholm, Sweden",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Stockholm, Sweden",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Network Theory & System Thinking",
@@ -1193,7 +1043,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           },
@@ -1205,14 +1054,9 @@
                "endSrtFormat": "00:26:46,000",
                "tags": [
                     {
-                         "name": "Prodipto Ghosh",
+                         "name": "Prodipto Ghosh, Member of the Prime Minister’s Council on Climate Change in India, TERI The Energy and Resources Institute, New Delhi, India",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "New Delhi, India",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Fossil Fuels",
@@ -1232,7 +1076,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           },
@@ -1244,14 +1087,9 @@
                "endSrtFormat": "00:27:47,000",
                "tags": [
                     {
-                         "name": "Prodipto Ghosh",
+                         "name": "Prodipto Ghosh, Member of the Prime Minister’s Council on Climate Change in India, TERI The Energy and Resources Institute, New Delhi, India",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "New Delhi, India",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Colonialism",
@@ -1266,8 +1104,8 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
-                    "theme"
+                    "theme",
+                    "place"
                ]
           },
           {
@@ -1278,14 +1116,9 @@
                "endSrtFormat": "00:28:41,000",
                "tags": [
                     {
-                         "name": "Prodipto Ghosh",
+                         "name": "Prodipto Ghosh, Member of the Prime Minister’s Council on Climate Change in India, TERI The Energy and Resources Institute, New Delhi, India",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "New Delhi, India",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Colonialism",
@@ -1305,7 +1138,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           },
@@ -1317,14 +1149,9 @@
                "endSrtFormat": "00:29:29,000",
                "tags": [
                     {
-                         "name": "Prodipto Ghosh",
+                         "name": "Prodipto Ghosh, Member of the Prime Minister’s Council on Climate Change in India, TERI The Energy and Resources Institute, New Delhi, India",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "New Delhi, India",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Technology",
@@ -1344,8 +1171,8 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
-                    "theme"
+                    "theme",
+                    "place"
                ]
           },
           {
@@ -1356,14 +1183,9 @@
                "endSrtFormat": "00:29:53,000",
                "tags": [
                     {
-                         "name": "Prodipto Ghosh",
+                         "name": "Prodipto Ghosh, Member of the Prime Minister’s Council on Climate Change in India, TERI The Energy and Resources Institute, New Delhi, India",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "New Delhi, India",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Asymmetric Situation",
@@ -1378,7 +1200,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           },
@@ -1390,14 +1211,9 @@
                "endSrtFormat": "00:31:08,000",
                "tags": [
                     {
-                         "name": "Prodipto Ghosh",
+                         "name": "Prodipto Ghosh, Member of the Prime Minister’s Council on Climate Change in India, TERI The Energy and Resources Institute, New Delhi, India",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "New Delhi, India",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Political Issues",
@@ -1412,7 +1228,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           },
@@ -1424,14 +1239,9 @@
                "endSrtFormat": "00:31:47,000",
                "tags": [
                     {
-                         "name": "Prodipto Ghosh",
+                         "name": "Prodipto Ghosh, Member of the Prime Minister’s Council on Climate Change in India, TERI The Energy and Resources Institute, New Delhi, India",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "New Delhi, India",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "China",
@@ -1473,14 +1283,9 @@
                "endSrtFormat": "00:32:45,000",
                "tags": [
                     {
-                         "name": "Prodipto Ghosh",
+                         "name": "Prodipto Ghosh, Member of the Prime Minister’s Council on Climate Change in India, TERI The Energy and Resources Institute, New Delhi, India",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "New Delhi, India",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Global Issues",
@@ -1490,7 +1295,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           }

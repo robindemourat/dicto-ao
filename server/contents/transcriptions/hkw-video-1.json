@@ -7,14 +7,9 @@
           "sharable": "true",
           "tags": [
                {
-                    "name": "Dr. Martin Frick",
+                    "name": "Martin Frick, Bonn, Germany",
                     "category": "speaker",
                     "color": "#556dd9"
-               },
-               {
-                    "name": "Bonn, Germany",
-                    "category": "place",
-                    "color": "#889b1b"
                },
                {
                     "name": "Territory",
@@ -252,7 +247,7 @@
                     "color": "#ccc36e"
                },
                {
-                    "name": "Yulia Korshunova, Sociologist",
+                    "name": "Julia Korshunova, Sociologist, Murmansk, Russia",
                     "category": "speaker",
                     "color": "#556dd9"
                },
@@ -265,11 +260,6 @@
                     "name": "Standards",
                     "category": "theme",
                     "color": "#ccc36e"
-               },
-               {
-                    "name": "Murmansk, Russia",
-                    "category": "place",
-                    "color": "#889b1b"
                },
                {
                     "name": "Russia",
@@ -307,7 +297,7 @@
                     "color": "#ccc36e"
                },
                {
-                    "name": "Farhad Mazhar, Founder And Managing Director Of Ubinig",
+                    "name": "Farhad Mazhar, Founder And Managing Director Of Ubinig, Bangladesh",
                     "category": "speaker",
                     "color": "#556dd9"
                },
@@ -387,14 +377,9 @@
                     "color": "#889b1b"
                },
                {
-                    "name": "Veerabhadran Ramanathan, Scripps Institutions Of Oceanography, University Of California At San Diego, Usa",
+                    "name": "Veerabhadran Ramanathan, Scripps Institutions of Oceanography, University of California at San Diego, USA, interviewed in Mainz, Germany",
                     "category": "speaker",
                     "color": "#556dd9"
-               },
-               {
-                    "name": "Mainz, Germany",
-                    "category": "place",
-                    "color": "#889b1b"
                },
                {
                     "name": "Pollutants",
@@ -547,10 +532,10 @@
                     "name": "speaker"
                },
                {
-                    "name": "place"
+                    "name": "theme"
                },
                {
-                    "name": "theme"
+                    "name": "place"
                }
           ]
      },
@@ -558,19 +543,14 @@
           {
                "begin": 361,
                "end": 432,
-               "content": "In a funny way, yes and no. I mean traditionally, the three elements that you need to be a sovereign state is territory, people and power over the territory. So it is deeply, deeply territorial. I think it’s very human to think territorially. And if you look at the implementation of everything that is being decided in the framework of the United Nations, it all goes down to national legislation. You need to have a territory on which you can actually implement what you discussed internationally. So yes, it is territorial. But at the same time, people lose this sort of traditional relationship to the territory. They don’t grow up in one place and stay there all their lives anymore. They are highly mobile. They are requested to be highly mobile. They are living in the cyberspace. They have friends all over the world. They spend their holidays here and there. And they are, in a strange way, disconnected to their territory. So our relationship also to the territory, which is an integral part also of identity, is rapidly changing... ",
+               "content": "In a funny way, yes and no. I mean traditionally, the three elements that you need to be a sovereign state is territory, people and power over the territory. So it is deeply, deeply territorial. I think it’s very human to think territorially. And if you look at the implementation of everything that is being decided in the framework of the United Nations, it all goes down to national legislation. You need to have a territory on which you can actually implement what you discussed internationally. So yes, it is territorial. But at the same time, people lose this sort of traditional relationship to the territory. They don’t grow up in one place and stay there all their lives anymore. They are highly mobile. They are requested to be highly mobile. They are living in the cyberspace. They have friends all over the world. They spend their holidays here and there. And they are, in a strange way, disconnected to their territory. So our relationship also to the territory, which is an integral part also of identity, is rapidly changing...",
                "beginSrtFormat": "00:06:01,000",
                "endSrtFormat": "00:07:12,000",
                "tags": [
                     {
-                         "name": "Dr. Martin Frick",
+                         "name": "Martin Frick, Bonn, Germany",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Bonn, Germany",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Territory",
@@ -605,7 +585,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ],
                "playedAt": null,
@@ -619,14 +598,9 @@
                "endSrtFormat": "00:08:29,000",
                "tags": [
                     {
-                         "name": "Dr. Martin Frick",
+                         "name": "Martin Frick, Bonn, Germany",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Bonn, Germany",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Africa",
@@ -685,14 +659,9 @@
                "endSrtFormat": "00:12:43,000",
                "tags": [
                     {
-                         "name": "Dr. Martin Frick",
+                         "name": "Martin Frick, Bonn, Germany",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Bonn, Germany",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "EU",
@@ -764,14 +733,9 @@
                "endSrtFormat": "00:15:23,000",
                "tags": [
                     {
-                         "name": "Dr. Martin Frick",
+                         "name": "Martin Frick, Bonn, Germany",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Bonn, Germany",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "South Sudan",
@@ -835,14 +799,9 @@
                "endSrtFormat": "00:18:01,000",
                "tags": [
                     {
-                         "name": "Dr. Martin Frick",
+                         "name": "Martin Frick, Bonn, Germany",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Bonn, Germany",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Africa",
@@ -929,14 +888,9 @@
                "endSrtFormat": "00:19:29,000",
                "tags": [
                     {
-                         "name": "Dr. Martin Frick",
+                         "name": "Martin Frick, Bonn, Germany",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Bonn, Germany",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Pacific Islands",
@@ -1000,14 +954,9 @@
                "endSrtFormat": "00:20:14,000",
                "tags": [
                     {
-                         "name": "Dr. Martin Frick",
+                         "name": "Martin Frick, Bonn, Germany",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Bonn, Germany",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Land",
@@ -1027,7 +976,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           },
@@ -1039,7 +987,7 @@
                "endSrtFormat": "00:21:23,000",
                "tags": [
                     {
-                         "name": "Yulia Korshunova, Sociologist",
+                         "name": "Julia Korshunova, Sociologist, Murmansk, Russia",
                          "category": "speaker",
                          "color": "#556dd9"
                     },
@@ -1052,17 +1000,11 @@
                          "name": "Standards",
                          "category": "theme",
                          "color": "#ccc36e"
-                    },
-                    {
-                         "name": "Murmansk, Russia",
-                         "category": "place",
-                         "color": "#889b1b"
                     }
                ],
                "tagCategories": [
                     "speaker",
-                    "theme",
-                    "place"
+                    "theme"
                ]
           },
           {
@@ -1073,14 +1015,9 @@
                "endSrtFormat": "00:22:35,000",
                "tags": [
                     {
-                         "name": "Yulia Korshunova, Sociologist",
+                         "name": "Julia Korshunova, Sociologist, Murmansk, Russia",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Murmansk, Russia",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Russia",
@@ -1137,14 +1074,9 @@
                "endSrtFormat": "00:23:23,000",
                "tags": [
                     {
-                         "name": "Yulia Korshunova, Sociologist",
+                         "name": "Julia Korshunova, Sociologist, Murmansk, Russia",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Murmansk, Russia",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Relocation",
@@ -1174,7 +1106,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           },
@@ -1186,14 +1117,9 @@
                "endSrtFormat": "00:23:50,000",
                "tags": [
                     {
-                         "name": "Yulia Korshunova, Sociologist",
+                         "name": "Julia Korshunova, Sociologist, Murmansk, Russia",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Murmansk, Russia",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Small Localities",
@@ -1208,7 +1134,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           },
@@ -1220,7 +1145,7 @@
                "endSrtFormat": "00:27:25,000",
                "tags": [
                     {
-                         "name": "Farhad Mazhar, Founder And Managing Director Of Ubinig",
+                         "name": "Farhad Mazhar, Founder And Managing Director Of Ubinig, Bangladesh",
                          "category": "speaker",
                          "color": "#556dd9"
                     },
@@ -1299,7 +1224,7 @@
                "endSrtFormat": "00:30:42,000",
                "tags": [
                     {
-                         "name": "Farhad Mazhar, Founder And Managing Director Of Ubinig",
+                         "name": "Farhad Mazhar, Founder And Managing Director Of Ubinig, Bangladesh",
                          "category": "speaker",
                          "color": "#556dd9"
                     },
@@ -1365,7 +1290,7 @@
                "endSrtFormat": "00:32:44,000",
                "tags": [
                     {
-                         "name": "Farhad Mazhar, Founder And Managing Director Of Ubinig",
+                         "name": "Farhad Mazhar, Founder And Managing Director Of Ubinig, Bangladesh",
                          "category": "speaker",
                          "color": "#556dd9"
                     },
@@ -1416,14 +1341,9 @@
                "endSrtFormat": "00:36:49,000",
                "tags": [
                     {
-                         "name": "Veerabhadran Ramanathan, Scripps Institutions Of Oceanography, University Of California At San Diego, Usa",
+                         "name": "Veerabhadran Ramanathan, Scripps Institutions of Oceanography, University of California at San Diego, USA, interviewed in Mainz, Germany",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Mainz, Germany",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Global Warming",
@@ -1498,11 +1418,8 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
-               ],
-               "playedAt": null,
-               "playedAtP": null
+               ]
           },
           {
                "begin": 2212,
@@ -1512,14 +1429,9 @@
                "endSrtFormat": "00:38:01,000",
                "tags": [
                     {
-                         "name": "Veerabhadran Ramanathan, Scripps Institutions Of Oceanography, University Of California At San Diego, Usa",
+                         "name": "Veerabhadran Ramanathan, Scripps Institutions of Oceanography, University of California at San Diego, USA, interviewed in Mainz, Germany",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Mainz, Germany",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Philippines",
@@ -1561,14 +1473,9 @@
                "endSrtFormat": "00:39:31,000",
                "tags": [
                     {
-                         "name": "Veerabhadran Ramanathan, Scripps Institutions Of Oceanography, University Of California At San Diego, Usa",
+                         "name": "Veerabhadran Ramanathan, Scripps Institutions of Oceanography, University of California at San Diego, USA, interviewed in Mainz, Germany",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Mainz, Germany",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "India",
@@ -1620,14 +1527,9 @@
                "endSrtFormat": "00:40:31,000",
                "tags": [
                     {
-                         "name": "Veerabhadran Ramanathan, Scripps Institutions Of Oceanography, University Of California At San Diego, Usa",
+                         "name": "Veerabhadran Ramanathan, Scripps Institutions of Oceanography, University of California at San Diego, USA, interviewed in Mainz, Germany",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Mainz, Germany",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Visual Of Climate",
@@ -1657,8 +1559,8 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
-                    "theme"
+                    "theme",
+                    "place"
                ]
           },
           {
@@ -1669,14 +1571,9 @@
                "endSrtFormat": "00:41:32,000",
                "tags": [
                     {
-                         "name": "Veerabhadran Ramanathan, Scripps Institutions Of Oceanography, University Of California At San Diego, Usa",
+                         "name": "Veerabhadran Ramanathan, Scripps Institutions of Oceanography, University of California at San Diego, USA, interviewed in Mainz, Germany",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Mainz, Germany",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Urban Area",
@@ -1701,7 +1598,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           },
@@ -1713,14 +1609,9 @@
                "endSrtFormat": "00:42:23,000",
                "tags": [
                     {
-                         "name": "Veerabhadran Ramanathan, Scripps Institutions Of Oceanography, University Of California At San Diego, Usa",
+                         "name": "Veerabhadran Ramanathan, Scripps Institutions of Oceanography, University of California at San Diego, USA, interviewed in Mainz, Germany",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Mainz, Germany",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Energy",
@@ -1740,7 +1631,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           },
@@ -1752,14 +1642,9 @@
                "endSrtFormat": "00:43:47,000",
                "tags": [
                     {
-                         "name": "Veerabhadran Ramanathan, Scripps Institutions Of Oceanography, University Of California At San Diego, Usa",
+                         "name": "Veerabhadran Ramanathan, Scripps Institutions of Oceanography, University of California at San Diego, USA, interviewed in Mainz, Germany",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Mainz, Germany",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Indian Ocean",
@@ -1816,14 +1701,9 @@
                "endSrtFormat": "00:44:41,000",
                "tags": [
                     {
-                         "name": "Veerabhadran Ramanathan, Scripps Institutions Of Oceanography, University Of California At San Diego, Usa",
+                         "name": "Veerabhadran Ramanathan, Scripps Institutions of Oceanography, University of California at San Diego, USA, interviewed in Mainz, Germany",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Mainz, Germany",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Ocean",
@@ -1833,7 +1713,6 @@
                ],
                "tagCategories": [
                     "speaker",
-                    "place",
                     "theme"
                ]
           },
@@ -1845,14 +1724,9 @@
                "endSrtFormat": "00:47:45,000",
                "tags": [
                     {
-                         "name": "Veerabhadran Ramanathan, Scripps Institutions Of Oceanography, University Of California At San Diego, Usa",
+                         "name": "Veerabhadran Ramanathan, Scripps Institutions of Oceanography, University of California at San Diego, USA, interviewed in Mainz, Germany",
                          "category": "speaker",
                          "color": "#556dd9"
-                    },
-                    {
-                         "name": "Mainz, Germany",
-                         "category": "place",
-                         "color": "#889b1b"
                     },
                     {
                          "name": "Greenland Glaciers",
