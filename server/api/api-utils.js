@@ -137,13 +137,14 @@ var prepareChunk = function(chunk, transcription, chunkIndex){
   chunk.videoId = transcription.metadata.slug;
   chunk.videoTitle = transcription.metadata.title;
   chunk.id = transcription.metadata.slug + '-' + chunkIndex;
-  chunk.start = chunk.begin;
+  chunk.start = (chunk.start !== undefined)?chunk.start: chunk.begin;
 
   delete chunk.begin;
   delete chunk.beginSrtFormat;
   delete chunk.endSrtFormat;
   delete chunk.playedAtP;
   delete chunk.playedAt;
+
 
 
   chunk.duration = chunk.end - chunk.start;
