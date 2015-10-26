@@ -118,12 +118,7 @@
                },
                {
                     "name": "Potsdam Institute For Climate Impact Research",
-                    "category": "theme",
-                    "color": "#889b1b"
-               },
-               {
-                    "name": "New Platform",
-                    "category": "theme",
+                    "category": "place",
                     "color": "#ccc36e"
                },
                {
@@ -557,12 +552,7 @@
                     },
                     {
                          "name": "Potsdam Institute For Climate Impact Research",
-                         "category": "theme",
-                         "color": "#889b1b"
-                    },
-                    {
-                         "name": "New Platform",
-                         "category": "theme",
+                         "category": "place",
                          "color": "#ccc36e"
                     },
                     {
@@ -573,6 +563,7 @@
                ],
                "tagCategories": [
                     "speaker",
+                    "place",
                     "theme"
                ]
           },
