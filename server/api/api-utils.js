@@ -430,6 +430,23 @@ var makeLinks = function(tagsList, transcriptions){
 ENDPOINTS FORMATTING
 */
 
+//I prepare the data for serving all chunks
+var serveAllChunks = function(callback){
+  loadTranscriptions(function(err, transcriptions){
+    if(err){
+      callback(err, undefined);
+    }else{
+      var allChunks = [];
+      transcriptions.forEach(function(transcription){
+        transcription.data.forEach(function(chunk, rank){
+          allChunks.push(prepareChunk(chunk, transcription, rank));
+        })
+      });
+      callback(err, allChunks);
+    }
+  })
+}
+
 //I prepare the data for serving a simple chunk
 var serveChunk = function(slug, rank, callback){
   loadTranscription(slug, function(err, transcription){
@@ -560,6 +577,7 @@ lib.loadTranscription = loadTranscription;
 
 //API formatted data serving
 lib.serveChunk = serveChunk;
+lib.serveAllChunks = serveAllChunks;
 lib.serveTranscription = serveTranscription;
 lib.serveMontage = serveMontage;
 lib.serveTranscriptionsMetadata = serveTranscriptionsMetadata;

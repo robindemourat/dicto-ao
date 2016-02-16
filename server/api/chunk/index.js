@@ -7,6 +7,6 @@ var cors = require('cors');
 
 var router = express.Router();
 
-router.get('/:id', cors(), controller.index);
+router.get('/:id?', cors(), controller.index);
 
 module.exports = router;
