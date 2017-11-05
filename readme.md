@@ -1,6 +1,8 @@
 Dicto ao - API for anthropocene playlists
 ============
 
+![Screencast](https://github.com/robindemourat/dicto-ao/blob/master/screencast-dicto-ao.gif?raw=true)
+
 <!-- MarkdownTOC -->
 
 - [Local usage](#local-usage)
